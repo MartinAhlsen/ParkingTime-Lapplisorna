@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-pt-primary text-pt-white py-8">
     <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start md:items-center">
       <div className="flex flex-col md:flex-row items-start md:items-center">
-        <img src="logo.png" alt="Logo" className="w-20 h-20 mb-4 md:mb-0 md:mr-4" />
+        <img src="./Images/P-icon.png" alt="Logo" className="w-[48px] h-[48px] mb-4 md:mb-0 md:mr-4" />
         <div className="text-sm">
           <p className="font-bold">Address:</p>
           <p>Nyköpingsvägen 52 | 611 50</p>
@@ -15,10 +15,10 @@ const Footer = () => {
           <p>info@parkingtime.se</p>
           <div className="flex space-x-2 mt-2">
             <a href="https://instagram.com" aria-label="Instagram">
-              <img src="instagram-icon.png" alt="Instagram" className="w-6 h-6" />
+              <img src="./Images/instagram-icon.png" alt="Instagram" className="w-6 h-6" />
             </a>
             <a href="https://linkedin.com" aria-label="LinkedIn">
-              <img src="linkedin-icon.png" alt="LinkedIn" className="w-6 h-6" />
+              <img src="./Images/linkedin-icon.png" alt="LinkedIn" className="w-6 h-6" />
             </a>
           </div>
         </div>
