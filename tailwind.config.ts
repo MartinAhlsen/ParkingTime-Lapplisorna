@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "pt-primary": "rgb(6, 67, 62)",
-        "pt-secondary": "rgb(12, 5, 29)",
+        "pt-primary": "#06433F",
+        "pt-secondary": "#0C051D",
         "pt-red": "#F85252",
         "pt-background": "#ECF2F1",
         "pt-green": "#48937E",
