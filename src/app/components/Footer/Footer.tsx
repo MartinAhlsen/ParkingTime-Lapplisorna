@@ -1,16 +1,16 @@
 const Footer = () => {
   return (
     <footer className="bg-pt-primary text-pt-white py-8">
-    <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start md:items-center">
-      <div className="flex flex-col md:flex-row items-start md:items-center">
-        <img src="./Images/P-icon.png" alt="Logo" className="w-[48px] h-[48px] mb-4 md:mb-0 md:mr-4" />
-        <div className="text-sm">
-          <p className="font-bold">Address:</p>
+    <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start">
+      <div className="flex flex-col md:flex-row items-start ">
+        <img src="./Images/P-icon.png" alt="Logo" className="w-[80px] h-[80px] mb-4 md:mb-0 md:mr-4" />
+        <div className="text-sm mt-4 md:mt-0 md:ml-8 align-top">
+          <p className="p1">Address:</p>
           <p>Nyköpingsvägen 52 | 611 50</p>
           <p>NYKÖPING</p>
         </div>
         <div className="text-sm mt-4 md:mt-0 md:ml-8">
-          <p className="font-bold">Contact:</p>
+          <p className="p1">Contact:</p>
           <p>+46 72 399 15 15</p>
           <p>info@parkingtime.se</p>
           <div className="flex space-x-2 mt-2">
@@ -24,12 +24,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-sm mt-8 md:mt-0">
-        <p className="font-bold pb-4">Links</p>
+        <p className=" p1 pb-4">Links</p>
         <ul className="flex flex-col md:flex-row align-baseline space-y-4 md:space-y-0 md:py-4">
-          <li><a href="/" className="md:pr-4 underline">Support</a></li>
-          <li><a href="/" className="md:pr-4 underline">Contact</a></li>
-          <li><a href="/" className="md:pr-4 underline">About us</a></li>
-          <li><a href="/" className="md:pr-4 underline">News</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">Support</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">Contact</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">About us</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">News</a></li>
         </ul>
       </div>
     </div>
