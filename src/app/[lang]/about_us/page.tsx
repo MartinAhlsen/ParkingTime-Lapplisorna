@@ -1,10 +1,10 @@
+import { getDictionary } from "../dictionaries";
 
-
-const About_us = () => {
-  
+const About_us = async ({params: {lang}}) => {
+  const dict = await getDictionary(lang)
     return (
         <>
-          <h2>About us</h2>
+          <h2>{dict.about_us.title}</h2>
         </>
     )
 };
