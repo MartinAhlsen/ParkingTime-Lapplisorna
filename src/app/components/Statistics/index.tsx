@@ -5,10 +5,9 @@ import downloadImg from "../../../../public/Images/download-icon.png";
 import mapImg from "../../../../public/Images/map-icon.png";
 import parkingImg from "../../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Statistics = () => {
-
   const count1 = useMotionValue(0);
   const count2 = useMotionValue(0);
   const count3 = useMotionValue(0);
@@ -19,36 +18,58 @@ const Statistics = () => {
   const [countValue2, setCountValue2] = useState(0);
   const [countValue3, setCountValue3] = useState(0);
 
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
+
   useEffect(() => {
-    // Subscribe to changes in rounded and update the state
-    const unsubscribe1 = rounded1.onChange((latest) => {
-      setCountValue1(latest);
-    });
-    const unsubscribe2 = rounded2.onChange((latest) => {
-      setCountValue2(latest);
-    });
-    const unsubscribe3 = rounded3.onChange((latest) => {
-      setCountValue3(latest);
-    });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
 
-    // Start the animation
-    const animation1 = animate(count1, 5000, { duration: 6 });
-    const animation2 = animate(count2, 4700, { duration: 4 });
-    const animation3 = animate(count3, 30, { duration: 2 });
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
-    // Clean up subscription and animation on unmount
     return () => {
-      unsubscribe1();
-      unsubscribe2()
-      unsubscribe3()
-      animation1.stop();
-      animation2.stop();
-      animation3.stop();
+      if (observer && observer.unobserve) {
+        observer.unobserve(ref.current);
+      }
     };
-  }, [rounded1, count1, rounded2, count2, rounded3, count3]);
+  }, []);
+
+  useEffect(() => {
+    if (inView) {
+      const unsubscribe1 = rounded1.on("change", (latest) => setCountValue1(latest));
+      const unsubscribe2 = rounded2.on("change", (latest) => setCountValue2(latest));
+      const unsubscribe3 = rounded3.on("change", (latest) => setCountValue3(latest));
+
+      const animation1 = animate(count1, 5000, { duration: 6 });
+      const animation2 = animate(count2, 4700, { duration: 4 });
+      const animation3 = animate(count3, 30, { duration: 2 });
+
+      return () => {
+        unsubscribe1();
+        unsubscribe2();
+        unsubscribe3();
+        animation1.stop();
+        animation2.stop();
+        animation3.stop();
+      };
+    }
+  }, [inView, rounded1, count1, rounded2, count2, rounded3, count3]);
 
   return (
-    <div className="h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
+    <div ref={ref} className="h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
       <div className="bg-white h-80 rounded-xl mx-1 flex flex-col md:flex-row">
         <StatisticCard imageLink={downloadImg} number={countValue1} subtitle="Downloads" />
         <div className="basis-1/5"></div>
