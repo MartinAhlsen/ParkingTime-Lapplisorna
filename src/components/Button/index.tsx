@@ -29,6 +29,10 @@ const Button = ({ text, url, colorTheme, formCategoryState }: ButtonProps) => {
             h-[48px]
             w-[300px]
             md:w-[160px]
+            flex
+            justify-center
+            items-center
+
         `}
     >
       {text}
