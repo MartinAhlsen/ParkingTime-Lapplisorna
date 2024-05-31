@@ -4,7 +4,7 @@ interface HeroImageProps {
   page: string;
 }
 
-const HeroImage: React.FC<HeroImageProps> = ({ page }) => {
+const HeroImage = ({ page }: HeroImageProps) => {
   let imageUrl;
   let imageClassName;
 
