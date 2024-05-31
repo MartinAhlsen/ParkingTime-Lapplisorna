@@ -9,7 +9,7 @@ interface StatisticCardProps {
 
 const StatisticCard = ({number,subtitle,imageLink}:StatisticCardProps) => {
     return (
-        <div>
+        <div className="flex justify-center items-center">
           <Image src={imageLink}
                 width={50}
                 height={50}
