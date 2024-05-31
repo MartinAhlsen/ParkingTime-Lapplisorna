@@ -32,16 +32,20 @@ const Statistics = () => {
     });
 
     // Start the animation
-    const animation1 = animate(count1, 5000, { duration: 5 });
-    const animation2 = animate(count2, 4700, { duration: 5 });
-    const animation3 = animate(count3, 30, { duration: 3 });
+    const animation1 = animate(count1, 5000, { duration: 6 });
+    const animation2 = animate(count2, 4700, { duration: 4 });
+    const animation3 = animate(count3, 30, { duration: 2 });
 
     // Clean up subscription and animation on unmount
     return () => {
       unsubscribe1();
+      unsubscribe2()
+      unsubscribe3()
       animation1.stop();
+      animation2.stop();
+      animation3.stop();
     };
-  }, [rounded1, count1]);
+  }, [rounded1, count1, rounded2, count2, rounded3, count3]);
 
   return (
     <div className="h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
