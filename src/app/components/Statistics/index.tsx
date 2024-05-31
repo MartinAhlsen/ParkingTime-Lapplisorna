@@ -1,7 +1,7 @@
 import StatisticCard from "./StatisticCard";
-import downloadImg from "../../../../public/Images/download-icon.png";
-import mapImg from "../../../../public/Images/map-icon.png";
-import parkingImg from "../../../../public/Images/parking-icon.png"
+import downloadImg from "@/../public/Images/download-icon.png";
+import mapImg from "@/../public/Images/map-icon.png";
+import parkingImg from "@/../public/Images/parking-icon.png"
 
 const Statistics = () => {
     return (
