@@ -1,10 +1,10 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 
 interface StatisticCardProps {
     readonly number: number,
     readonly subtitle: string,
-    readonly imageLink: string
+    readonly imageLink: StaticImageData
 }
 
 const StatisticCard = ({number,subtitle,imageLink}:StatisticCardProps) => {
