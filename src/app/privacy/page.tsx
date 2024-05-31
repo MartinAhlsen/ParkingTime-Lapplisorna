@@ -1,4 +1,5 @@
-import Header from "@/components/header/page";
+import Header from "../components/header/page";
+import React from "react";
 
 const Privacy = () => {
   

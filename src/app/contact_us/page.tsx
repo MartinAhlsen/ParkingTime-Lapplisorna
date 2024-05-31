@@ -1,5 +1,5 @@
-import Header from "@/components/header/page";
-import HeroImage from "@/components/hero/page";
+import Header from "../components/header/page";
+import HeroImage from "../components/hero/page";
 
 const Contact_us = () => {
   

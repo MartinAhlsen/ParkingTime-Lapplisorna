@@ -1,5 +1,6 @@
-import Header from "@/components/header/page";
-import HeroImage from "@/components/hero/page";
+import Header from "../components/header/page";
+import HeroImage from "../components/hero/page";
+import React from "react";
 
 const About_us = () => {
   
