@@ -1,4 +1,7 @@
-import { StaticImageData, Image } from "next/image";
+import { StaticImageData } from "next/image";
+
+import Image from "next/image"
+
 
 interface WhyCardProps {
     imageLink: StaticImageData,
@@ -8,14 +11,14 @@ interface WhyCardProps {
 
 const WhyCard = ({imageLink, title, paragraph}:WhyCardProps) => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col p-4 m-4">
             <Image src={imageLink} 
                 width={50} 
                 height={50} 
                 alt={title} 
                 />
-            <p className="h6">PLACEHOLDER</p>
-            <p className="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea officia consectetur eaque! Eaque vero ipsum deserunt molestias reprehenderit suscipit.</p>
+            <p className="h5 text-white py-4">{title}</p>
+            <p className="p2 text-white">{paragraph}</p>
           
         </div>
     )
