@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import WhyParkingTime from "./components/WhyParkingTime";
+import Statistics from "./components/Statistics";
 
 const lato = Lato({
   weight: ["400"],
@@ -32,9 +33,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         
+        
         {children}
         
         <WhyParkingTime />
+        
+        <Statistics />
         </body>
     </html>
   );
