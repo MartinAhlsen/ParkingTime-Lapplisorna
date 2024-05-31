@@ -1,9 +1,11 @@
+"use client";
+
 interface ButtonProps {
   text: string;
   url?: string;
   colorTheme: "light" | "dark";
   formCategoryState?: string;
-  size: "small" | "large";
+  buttonSize: "small" | "large";
 }
 
 const Button = ({
@@ -11,20 +13,23 @@ const Button = ({
   url,
   colorTheme,
   formCategoryState,
-  size,
+  buttonSize,
 }: ButtonProps) => {
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log("click");
+  };
   return (
     <button
       onClick={handleClick}
       className={`
-            ${size === "small" ? "p-1" : "p2"} 
+            ${buttonSize === "small" ? "px-3 py-1" : "p-6"} 
             ${
               colorTheme === "dark"
                 ? "bg-black text-white"
                 : "bg-white text-black"
             }
-            rounded-full
+            rounded-full 
+            button-text
         `}
     >
       {text}

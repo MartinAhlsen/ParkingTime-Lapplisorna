@@ -28,7 +28,7 @@
   }
 
   .button-text {
-    @apply font-lato font-bold text-[16px];
+    @apply font-lato text-[16px];
   }
 
   .p1 {
