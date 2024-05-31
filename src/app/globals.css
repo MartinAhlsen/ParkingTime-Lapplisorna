@@ -12,7 +12,7 @@
   }
 
   .h3 {
-    @apply font-lato font-bold text-[49px] leading-[40px];
+    @apply font-lato font-bold text-[48px] leading-[40px];
   }
 
   .h4 {
