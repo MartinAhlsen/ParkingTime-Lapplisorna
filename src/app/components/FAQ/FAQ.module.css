@@ -1,7 +1,10 @@
 .accordionContainer {
     background-color: #ECF2F1;
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .accordion {
@@ -14,8 +17,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 24px 20px 32px;
-    gap: 20px;
+    padding: 10px;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    
     
   }
   
@@ -28,11 +35,12 @@
   }
   
   .accordion-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    font-family: "lato";
     padding: 10px;
     cursor: pointer;
-    text-align: center;
+    
   }
   
   .accordion-content {
@@ -43,7 +51,7 @@
 
   @media screen and (min-width:768px){
     .accordion {
-        width: 60%;
+        width: 700px;
       }
   }
 
