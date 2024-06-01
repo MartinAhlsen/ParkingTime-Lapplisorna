@@ -1,3 +1,7 @@
 export default function Home() {
-  return <main>Parking Time</main>;
+  return (
+    <>
+      <main>Parking Time</main>
+    </>
+  );
 }
