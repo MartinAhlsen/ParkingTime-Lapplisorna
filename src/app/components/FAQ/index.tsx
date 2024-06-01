@@ -10,7 +10,7 @@ const FAQ = () => {
 
   return (
     <div>
-      <Accordion className={styles.accordionContainer} selectionMode="multiple">
+      <Accordion className={styles.accordionContainer} >
         <AccordionItem className={styles.accordion} key="1" aria-label="Accordion 1" title="What is Parking Time?">
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
