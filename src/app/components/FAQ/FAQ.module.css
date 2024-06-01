@@ -1,0 +1,68 @@
+.accordionContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .accordion {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .accordion[aria-expanded="true"] {
+    background-color: #e6e6e6;
+  }
+  
+  .accordion-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  @media screen {
+    .accordionContainer {
+        width: 60%;
+      }
+  }
+
+/* 
+
+box-sizing: border-box;
+
+/* 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px 24px 20px 32px;
+gap: 20px;
+
+width: 768px;
+height: 72px;
+
+
+background: #FFFFFF;
+
+border: 1px solid #E8E8E8;
+border-radius: 36px;
+
+ */
+
+
+
+
+
