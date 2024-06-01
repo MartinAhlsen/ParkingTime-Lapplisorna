@@ -32,3 +32,4 @@ const FAQ = () => {
 }
 
 export default FAQ;
+/*!*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src\\app\\layout.tsx","import":"Lato","arguments":[{"weight":["400"],"subsets":["latin"],"display":"swap","variable":"--font-lato"}],"variableName":"lato"} ***! */
