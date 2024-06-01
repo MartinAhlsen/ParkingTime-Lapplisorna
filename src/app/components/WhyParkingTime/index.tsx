@@ -10,7 +10,7 @@ import computer from "../../../../public/Images/download-icon.png"; {/*FIND CORR
 const WhyParkingTime = () => {
     return (
         <div className="bg-pt-primary min-h-screen flex flex-col">
-            <p className="h3 text-center text-white">Why Parking Time?</p>
+            <p className="h3 text-center text-white p-6 leading-tight">Why Parking Time?</p>
             <div className="bg-pt-primary min-h-screen flex flex-col md:grid md:grid-cols-2">
           <WhyCard imageLink={arrowG} title="Increased revenue & reduced stress" paragraph="Our digital solution attracts more visitors by eliminating physical discs and reducing fines. This simplifies parking, boosts foot traffic, economic activity and city vibrancy  while reducing stress."/>
           <WhyCard imageLink={phone} title="Simplified parking for users" paragraph="Our app lets you effortlessly set, adjust, and monitor parking time. With a user-friendly interface, you can quickly find spots and manage parking. We continuously update based on customer feedback to ensure an efficient and hassle-free experience."/>
