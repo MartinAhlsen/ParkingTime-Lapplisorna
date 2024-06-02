@@ -15,8 +15,8 @@ const StatisticCard = ({number,subtitle,imageLink}:StatisticCardProps) => {
                 height={50}
                 alt={subtitle}/>
                 <div className="flex flex-col">
-                    <p className="text-xl font-bold">{number}+</p>
-                    <p className="text-base font-medium">{subtitle}</p>
+                    <p className="h6">{number}+</p>
+                    <p className="p1">{subtitle}</p>
 
                 </div>
             
