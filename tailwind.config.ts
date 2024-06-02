@@ -28,6 +28,7 @@ const config: Config = {
       fontFamily: {
         lato: ["var(--font-lato)"],
         roboto: ["var(--font-roboto)"],
+        medieval: ["var--font-medieval"],
       },
     },
   },

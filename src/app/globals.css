@@ -4,11 +4,11 @@
 
 @layer components {
   .h1 {
-    @apply font-lato font-bold text-[80px] leading-[80px];
+    @apply font-serif font-bold text-[80px] leading-[80px];
   }
 
   .h2 {
-    @apply font-lato font-semibold text-[24px] leading-[35px];
+    @apply font-medieval font-[1000] text-[24px] leading-[35px];
   }
 
   .h3 {
@@ -56,6 +56,6 @@
   }
 
   .p3Quote {
-    @apply font-roboto italic font-normal text-[16px] leading-[150%]
+    @apply italic font-normal text-[16px] leading-[150%]
   }
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lato, Roboto } from "next/font/google";
+import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import "./globals.css";
 import Statistics from "./components/Statistics";
 
@@ -15,6 +15,13 @@ const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto",
+});
+
+const medieval = MedievalSharp({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-Medieval",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +40,7 @@ export default function RootLayout({
       <body>
         {children}
         <Statistics />
-        </body>
+      </body>
     </html>
   );
 }
