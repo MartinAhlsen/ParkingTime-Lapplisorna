@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import Statistics from "./components/Statistics";
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lato",
+});
+
+const roboto = Roboto({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "Parking Time",
@@ -18,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {children}
         <Statistics />
         </body>
