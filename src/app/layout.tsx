@@ -36,9 +36,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NextUIProvider>
-        {children}
-        <Statistics />
-        <FAQ />
+          {children}
+          <Statistics />
+          <FAQ />
         </NextUIProvider>
         </body>
     </html>
