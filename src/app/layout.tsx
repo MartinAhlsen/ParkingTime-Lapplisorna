@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import Statistics from "./components/Statistics";
+import FAQ from "./components/FAQ";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { NextUIProvider } from "@nextui-org/react";
 
 const lato = Lato({
   weight: ["400"],
@@ -31,8 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <NextUIProvider>
         {children}
         <Statistics />
+        <FAQ />
+        </NextUIProvider>
         </body>
     </html>
   );
