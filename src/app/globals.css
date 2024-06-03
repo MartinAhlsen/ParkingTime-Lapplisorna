@@ -46,11 +46,11 @@ body {
   }
 
   .p2 {
-    @apply font-roboto font-regular text-[16px] leading-[26px];
+    @apply font-roboto font-normal text-[16px] leading-[26px];
   }
 
   .p3 {
-    @apply font-roboto italic font-regular text-[16px] leading-[26px];
+    @apply font-roboto italic font-normal text-[16px] leading-[26px];
   }
 
 }
