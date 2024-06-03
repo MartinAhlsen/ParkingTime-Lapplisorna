@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-pt-primary text-pt-white py-8">
+    <footer className="bg-pt-primary text-pt-white py-8 mx-auto px-8">
     <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start">
       <div className="flex flex-col md:flex-row items-start ">
         <img src="./Images/P-icon.png" alt="Logo" className="w-[80px] h-[80px] mb-4 md:mb-0 md:mr-4" />
@@ -35,12 +35,11 @@ const Footer = () => {
     </div>
     <div className="border-t border-accent-white mt-8 pt-4 text-sm text-left">
       <div className="container mx-auto px-8 flex flex-col md:flex-row md:justify-between">
+      <p className="md:text-right md:flex-row mt-4 md:mt-0 ">© 2024 Parking Time AB</p>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:flex md:space-x-4">
           <a href="#" className="py-2 underline">Privacy Policy</a>
-          <a href="#" className="py-2 underline">Terms of Service</a>
-          <a href="#" className="py-2 underline">Cookies Settings</a>
         </div>
-        <p className="md:text-right md:flex-row mt-4 md:mt-0 ">© 2024 Parking Time AB</p>
+        
       </div>
     </div>
   </footer>
