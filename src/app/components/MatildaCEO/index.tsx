@@ -15,8 +15,8 @@ const MatildaCEO = () => {
                 <p className="h6">askMatilda@permission.write.email</p>
             </div>
             <div className="flex flex-col basis-1/2 items-start">
-                <p className="h4">Want to know more?</p>
-                <p className="p2">Contact us to find out more about our solution and how we can implement it in your municipality.</p>
+                <p className="h4 pb-10 pt-6 md:pt-0 text-left">Want to know more?</p>
+                <p className="p2 text-left">Contact us to find out more about our solution and how we can implement it in your municipality.</p>
             </div>
         </div>
     )
