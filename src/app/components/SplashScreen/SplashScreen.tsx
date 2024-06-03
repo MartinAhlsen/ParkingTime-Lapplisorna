@@ -5,16 +5,13 @@ import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
 
 const words = [
-  'Parking...',
+  'Parking',
   'Has',
   'Never',
   'Been',
   'So',
-  'Easy!!!',
-  'Skip',
-  'P-skiva!',
-  'Use',
-  'Parking Time!!!',
+  'Easy',
+  
 ]
 
 export default function SplashScreen() {
