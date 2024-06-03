@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import TitleSubtitle from "./components/TitleSubtitle";
 import Statistics from "./components/Statistics";
+import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import FAQ from "./components/FAQ";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -35,23 +35,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
-        
+      <body className={`${roboto.variable} ${lato.variable}`}>
         <NextUIProvider>
           {children}
-          
-        <TitleSubtitle title="How it works?" subtitle={null} overtitle={null}/>
 
-        <TitleSubtitle title="Customer testimonials" subtitle="Hear from some of our client" overtitle={null}/>
-        
-        <TitleSubtitle title="Don´t miss" subtitle="We are expanding rapidly, subscribe to our newsletter." overtitle="News"/>
+          <TitleSubtitle
+            title="How it works?"
+            subtitle={null}
+            overtitle={null}
+          />
 
-        
-        <Statistics />
-        <TitleSubtitle title="Do you have a question?" subtitle="Here some common questions answered" overtitle="FAQ"/>
+          <TitleSubtitle
+            title="Customer testimonials"
+            subtitle="Hear from some of our client"
+            overtitle={null}
+          />
+
+          <TitleSubtitle
+            title="Don´t miss"
+            subtitle="We are expanding rapidly, subscribe to our newsletter."
+            overtitle="News"
+          />
+
+          <Statistics />
+          <TitleSubtitle
+            title="Do you have a question?"
+            subtitle="Here some common questions answered"
+            overtitle="FAQ"
+          />
           <FAQ />
         </NextUIProvider>
-        </body>
+      </body>
     </html>
   );
 }
