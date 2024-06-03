@@ -14,7 +14,7 @@ const SmartParkingSolution = () => {
     <div className="flex flex-col align items-center m-4">
         <p className="h4 pb-8">Smart Parking</p>
         <p className="p2">The parking disc has long been a tool to promote circulation and activity in city centers. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.</p>
-        <div>
+        <div className="mt-6 mb-6">
         <ArrowTextSubComponent text="We aim to support the growth and efficiency of urban areas."/>
         <ArrowTextSubComponent text="Our digital parking disc simplifies the parking process."/>
         <ArrowTextSubComponent text="Any parking attendant systems can easily be integrated with our system."/>

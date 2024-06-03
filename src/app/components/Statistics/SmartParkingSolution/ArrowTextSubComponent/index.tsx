@@ -8,14 +8,14 @@ interface ArrowTextSubComponentProps {
 const ArrowTextSubComponent = ({text}:ArrowTextSubComponentProps) => {
     return (
         <div className="flex">
-            <Image
+            <Image className="h-16"
       src={arrow}
-      width={45}
-      height={45}
+      width={40}
+      height={40}
       alt="arrow"
     />
     <div>
-    <p className="h7 pt-4 pb-2">{text}</p>
+    <p className="h7 pt-4 pb-2 m-0">{text}</p>
 
     </div>
           
