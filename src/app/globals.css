@@ -4,58 +4,58 @@
 
 @layer components {
   .h1 {
-    @apply font-sans font-bold text-[80px] leading-[80px];
+    @apply font-lato font-bold text-[80px] leading-[80px];
   }
 
   .h2 {
-    @apply font-sans font-[1000] text-[24px] leading-[35px];
+    @apply font-lato font-semibold text-[24px] leading-[35px];
   }
 
   .h3 {
-    @apply font-sans font-bold text-[48px] leading-[120px];
+    @apply font-lato font-bold text-[48px] leading-[120px];
   }
 
   .h4 {
-    @apply font-sans font-bold text-[36px];
+    @apply font-lato font-bold text-[36px];
   }
 
   .h5 {
-    @apply font-sans font-bold text-[32px];
+    @apply font-lato font-bold text-[32px];
   }
 
   .h6 {
-    @apply font-sans font-bold text-[24px];
+    @apply font-lato font-bold text-[24px];
   }
 
   .h7 {
-    @apply font-sans font-bold text-[18px]
+    @apply font-lato font-bold text-[18px]
   }
 
   .button-text {
-    @apply font-sans font-medium text-[16px];
+    @apply font-lato font-medium text-[16px];
   }
 
   .p1 {
-    @apply font-mono font-medium text-[16px] leading-[32px];
+    @apply font-roboto font-medium text-[16px] leading-[32px];
   }
 
   .links {
-    @apply font-mono font-medium text-[16px] leading-[150%]
+    @apply font-roboto font-medium text-[16px] leading-[150%]
   }
 
   .p2 {
-    @apply font-mono font-normal text-[16px] leading-[150%];
+    @apply font-roboto font-normal text-[16px] leading-[150%];
   }
 
   .p3 {
-    @apply font-mono italic font-normal text-[14px];
+    @apply font-roboto italic font-normal text-[14px];
   }
 
   .p3Italic {
-    @apply font-mono italic font-normal text-[16px] leading-[26px]
+    @apply font-roboto italic font-normal text-[16px] leading-[26px]
   }
 
   .p3Quote {
-    @apply font-mono italic font-normal text-[16px] leading-[150%]
+    @apply font-roboto italic font-normal text-[16px] leading-[150%]
   }
 }

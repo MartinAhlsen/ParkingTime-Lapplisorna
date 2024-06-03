@@ -26,8 +26,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        sans: ["Lato", "sans-serif"],
-        mono: ["Roboto", "monospace"],
+        lato: ["var(--font-lato)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },

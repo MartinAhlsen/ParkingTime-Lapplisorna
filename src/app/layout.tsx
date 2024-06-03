@@ -1,28 +1,21 @@
 import type { Metadata } from "next";
-import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import "./globals.css";
 import Statistics from "./components/Statistics";
+import { Lato, Roboto, MedievalSharp } from "next/font/google";
 
-// const lato = Lato({
-//   weight: ["400"],
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-lato",
-// });
+const lato = Lato({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lato",
+});
 
-// const roboto = Roboto({
-//   weight: ["400"],
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-roboto",
-// });
-
-// const medieval = MedievalSharp({
-//   weight: ["400"],
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-Medieval",
-// });
+const roboto = Roboto({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "Parking Time",
@@ -37,15 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <body>
+      <body className={`${roboto.variable} ${lato.variable}`}>
         {children}
         <Statistics />
       </body>
