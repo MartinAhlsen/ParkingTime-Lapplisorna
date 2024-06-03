@@ -3,6 +3,8 @@ import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
+import TrustedBy from "./components/TrustedBy";
+import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
 
 const lato = Lato({
   weight: ["400"],
@@ -32,14 +34,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        
-        
         {children}
-        
+
         <WhyParkingTime />
-        
+
         <Statistics />
-        </body>
+        <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
+      </body>
     </html>
   );
 }
