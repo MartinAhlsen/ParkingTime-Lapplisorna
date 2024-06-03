@@ -26,6 +26,9 @@
   .h6 {
     @apply font-lato font-bold text-[18px] leading-[20px];
   }
+  .h7 {
+    @apply font-lato font-bold text-[18px] leading-[20px];
+  }
 
   .button-text {
     @apply font-lato font-bold text-[16px];
