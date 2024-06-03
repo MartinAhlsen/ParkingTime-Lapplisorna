@@ -16,7 +16,7 @@
   }
 
   .h4 {
-    @apply font-lato font-bold text-[32px] leading-[35px];
+    @apply font-lato font-bold text-[36px] leading-[35px];
   }
 
   .h5 {
@@ -36,7 +36,7 @@
   }
 
   .p2 {
-    @apply font-roboto font-bold text-[16px] leading-[26px];
+    @apply font-roboto font-normal text-[16px] leading-[26px];
   }
 
   .p3 {
