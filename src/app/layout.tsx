@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
+import TitleSubtitle from "./components/TitleSubtitle";
 import Statistics from "./components/Statistics";
+import FAQ from "./components/FAQ";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { NextUIProvider } from "@nextui-org/react";
 
 const lato = Lato({
   weight: ["400"],
@@ -30,9 +35,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <body >
+        
+        <NextUIProvider>
+          {children}
+          
+        <TitleSubtitle title="How it works?" subtitle={null} overtitle={null}/>
+
+        <TitleSubtitle title="Customer testimonials" subtitle="Hear from some of our client" overtitle={null}/>
+        
+        <TitleSubtitle title="Don´t miss" subtitle="We are expanding rapidly, subscribe to our newsletter." overtitle="News"/>
+
+        
         <Statistics />
+        <TitleSubtitle title="Do you have a question?" subtitle="Here some common questions answered" overtitle="FAQ"/>
+          <FAQ />
+        </NextUIProvider>
         </body>
     </html>
   );
