@@ -1,7 +1,7 @@
 const trustedByOne = [
   {
-    url: "Images/TrustedByLogotypes/ventureCup.png",
-    alt: "Venture Cup",
+    url: "Images/TrustedByLogotypes/luleåTekniskaUniversitet.png",
+    alt: "Luleå tekniska universitet",
   },
   {
     url: "Images/TrustedByLogotypes/arcticBusiness.png",
@@ -27,8 +27,8 @@ const trustedByTwo = [
     alt: "Skapa",
   },
   {
-    url: "Images/TrustedByLogotypes/luleåTekniskaUniversitet.png",
-    alt: "Luleå tekniska universitet",
+    url: "Images/TrustedByLogotypes/ventureCup.png",
+    alt: "Venture Cup",
   },
   {
     url: "Images/TrustedByLogotypes/foundersLoft.png",

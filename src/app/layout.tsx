@@ -3,7 +3,7 @@ import "./globals.css";
 import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
-import TrustedBy from "./components/TrustedBy";
+import TrustedBy2 from "./components/TrustedBy";
 import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
 
 const lato = Lato({
@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <WhyParkingTime />
 
-        <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
+        <TrustedBy2 arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
       </body>
     </html>
