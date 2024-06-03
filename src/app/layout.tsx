@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
+import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import TrustedBy from "./components/TrustedBy";
 import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
 
@@ -33,13 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${roboto.variable} ${lato.variable}`}>
         {children}
 
         <WhyParkingTime />
 
-        <Statistics />
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
+        <Statistics />
       </body>
     </html>
   );

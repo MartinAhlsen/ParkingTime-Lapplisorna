@@ -12,11 +12,11 @@ interface TrustedByProps {
 
 const TrustedBy = ({ arrayOne, arrayTwo }: TrustedByProps) => {
   return (
-    <div>
-      <div className="p1">Trusted by</div>
+    <div className="flex flex-col">
+      <div className="p1 md:h7 text-center">Trusted by</div>
       <div className={styles.orgSliderContainer}>
         <div className="org-slider">
-          <div className="slide-track">
+          <div className="slide-track flex gap-4">
             {arrayOne.map((partner, index) => (
               <div key={index} className="slide">
                 <img src={partner.url} alt={partner.alt} />
@@ -25,7 +25,7 @@ const TrustedBy = ({ arrayOne, arrayTwo }: TrustedByProps) => {
           </div>
         </div>
         <div className="org-slider">
-          <div className="slide-track">
+          <div className="slide-track flex gap-4">
             {arrayTwo.map((partner, index) => (
               <div key={index} className="slide">
                 <img src={partner.url} alt={partner.alt} />
