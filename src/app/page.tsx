@@ -3,7 +3,6 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Header from './components/header/page';
-import Hero from './components/hero/page';
 import Button from '../components/Button';
 
 interface ButtonProperties {
@@ -25,7 +24,6 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Hero currentPath={pathname} />
       <main>Parking Time</main>
       <Button {...TestButton} />
     </div>

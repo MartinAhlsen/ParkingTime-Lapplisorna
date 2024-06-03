@@ -1,5 +1,6 @@
-import Header from "../components/header/page";
 import React from "react";
+import Header from "../components/header/page";
+
 
 const Privacy = () => {
   
