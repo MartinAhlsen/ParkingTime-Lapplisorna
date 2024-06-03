@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import TitleSubtitle from "./components/TitleSubtitle";
+import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import FAQ from "./components/FAQ";
