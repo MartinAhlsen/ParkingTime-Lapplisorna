@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "pt-primary": "#06433F",
+        "pt-primary": "#06433E",
         "pt-secondary": "#0C051D",
         "pt-red": "#F85252",
         "pt-background": "#ECF2F1",
@@ -24,6 +24,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        lato: ["var(--font-lato)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },
