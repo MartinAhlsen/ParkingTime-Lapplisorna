@@ -28,7 +28,6 @@ const App = () => {
       <Hero currentPath={pathname} />
       <main>Parking Time</main>
       <Button {...TestButton} />
-    </div>
   );
 };
 
