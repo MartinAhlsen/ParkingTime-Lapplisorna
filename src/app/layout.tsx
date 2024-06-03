@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import Statistics from "./components/Statistics";
+import MatildaCEO from "./components/MatildaCEO";
 
 const lato = Lato({
   weight: ["400"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body>
         {children}
         <Statistics />
+        <MatildaCEO />
         </body>
     </html>
   );
