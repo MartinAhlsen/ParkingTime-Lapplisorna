@@ -23,8 +23,22 @@ const config: Config = {
     },
 
     extend: {
+      animation: {
+        "infinite-scroll-left": "infinite-scroll-left 65s linear infinite",
+        "infinite-scroll-right": "infinite-scroll-right 65s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll-left": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "infinite-scroll-right": {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
+        },
+      },
       colors: {
-        "pt-primary": "#06433F",
+        "pt-primary": "#06433E",
         "pt-secondary": "#0C051D",
         "pt-red": "#F85252",
         "pt-background": "#ECF2F1",
@@ -39,6 +53,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        lato: ["var(--font-lato)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },
