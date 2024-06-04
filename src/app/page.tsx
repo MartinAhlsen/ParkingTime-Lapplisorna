@@ -1,6 +1,7 @@
 "client component";
 
 import Button from "@/components/Button";
+import Footer from "./components/Footer/Footer";
 
 interface ButtonProperties {
   text: string;
@@ -35,6 +36,7 @@ export default function Home() {
       <div className="p3">Lorem ipsum dolor sit amet.</div>
       <div className="p3Italic">Lorem ipsum dolor sit amet.</div>
       <div className="p3Quote">Lorem ipsum dolor sit amet.</div>
+      <Footer/>
     </>
   );
 }
