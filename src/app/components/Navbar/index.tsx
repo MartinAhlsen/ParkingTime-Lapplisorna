@@ -41,7 +41,7 @@ const Navbar = () => {
             src="/Images/P-icon.png"
             alt="Icon"
             width="60"
-            height="1"
+            height="20"
             className="cursor-pointer"
             priority
           />
