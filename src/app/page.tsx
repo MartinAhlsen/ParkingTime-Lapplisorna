@@ -41,6 +41,6 @@ const App = () => {
       <div className="p3">Lorem ipsum dolor sit amet.</div>
       <div className="p3Italic">Lorem ipsum dolor sit amet.</div>
       <div className="p3Quote">Lorem ipsum dolor sit amet.</div>
-    </>
+    </div>
   );
 }
