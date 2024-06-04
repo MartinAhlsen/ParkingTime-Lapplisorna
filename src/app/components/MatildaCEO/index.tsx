@@ -12,7 +12,7 @@ const MatildaCEO = () => {
                     alt="Picture of the author"
                 />
                 <p className="h5">Matilda Öhman, CEO</p>
-                <p className="h6">askMatilda@permission.write.email</p>
+                <p className="h6">Matilda@email.123</p>
             </div>
             <div className="flex flex-col basis-1/2 items-start">
                 <p className="h4 pb-10 pt-6 md:pt-0 text-left">Want to know more?</p>
