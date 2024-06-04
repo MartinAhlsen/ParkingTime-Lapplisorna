@@ -4,7 +4,7 @@ import ArrowTextSubComponent from "./ArrowTextSubComponent";
 
 const SmartParkingSolution = () => {
     return (
-        <div className="h-[881px] md:h-[80vh] flex flex-col items-center md:flex-row ">
+        <div className="min-h-[881px] md:h-[80vh] pt-12 pb-12 flex flex-col items-center md:flex-row ">
             <Image className="mt-10 mb-10  md:basis-1/2"
       src={SmartParkingImg}
       width={800}
