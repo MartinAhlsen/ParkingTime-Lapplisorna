@@ -1,25 +1,27 @@
-"use client"
+"use client";
 
 import StatisticCard from "./StatisticCard";
 import downloadImg from "../../../../public/Images/download-icon.png";
 import mapImg from "../../../../public/Images/map-icon.png";
 import parkingImg from "../../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, RefObject } from "react";
 
-const Statistics = () => {
+const Statistics: React.FC = () => {
   const count1 = useMotionValue(4500);
   const count2 = useMotionValue(3500);
   const count3 = useMotionValue(0);
+
   const rounded1 = useTransform(count1, Math.round);
   const rounded2 = useTransform(count2, Math.round);
   const rounded3 = useTransform(count3, Math.round);
-  const [countValue1, setCountValue1] = useState(0);
-  const [countValue2, setCountValue2] = useState(0);
-  const [countValue3, setCountValue3] = useState(0);
 
-  const ref = useRef(null);
-  const [inView, setInView] = useState(false);
+  const [countValue1, setCountValue1] = useState<number>(0);
+  const [countValue2, setCountValue2] = useState<number>(0);
+  const [countValue3, setCountValue3] = useState<number>(0);
+
+  const ref: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState<boolean>(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,11 +43,11 @@ const Statistics = () => {
     }
 
     return () => {
-      if (observer && observer.unobserve) {
+      if (ref.current) {
         observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [ref]);
 
   useEffect(() => {
     if (inView) {
