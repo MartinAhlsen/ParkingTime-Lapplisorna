@@ -26,9 +26,6 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Parking Time",
   description:
