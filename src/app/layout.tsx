@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
 
@@ -32,6 +33,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${lato.variable}`}>
         {children}
+
+        <WhyParkingTime />
+
         <Statistics />
       </body>
     </html>
