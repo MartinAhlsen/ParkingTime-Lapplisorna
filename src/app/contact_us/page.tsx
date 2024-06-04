@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header/page";
+import Header from "../components/header";
 
 const Contact_us = () => {
   

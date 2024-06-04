@@ -18,7 +18,7 @@ const Footer = () => {
               <img src="./Images/instagram-icon.png" alt="Instagram" className="w-6 h-6" />
             </a>
             <a href="https://linkedin.com" aria-label="LinkedIn">
-              <img src="./Images/linkedIn-icon.png" alt="LinkedIn" className="w-6 h-6" />
+            <img src="./Images/linkedIn-icon.png" alt="LinkedIn" className="w-6 h-6" />
             </a>
           </div>
         </div>
