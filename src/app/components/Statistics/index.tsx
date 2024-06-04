@@ -8,8 +8,8 @@ import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
 const Statistics = () => {
-  const count1 = useMotionValue(0);
-  const count2 = useMotionValue(0);
+  const count1 = useMotionValue(3500);
+  const count2 = useMotionValue(300);
   const count3 = useMotionValue(0);
   const rounded1 = useTransform(count1, Math.round);
   const rounded2 = useTransform(count2, Math.round);
@@ -53,9 +53,9 @@ const Statistics = () => {
       const unsubscribe2 = rounded2.on("change", (latest) => setCountValue2(latest));
       const unsubscribe3 = rounded3.on("change", (latest) => setCountValue3(latest));
 
-      const animation1 = animate(count1, 5000, { duration: 6 });
-      const animation2 = animate(count2, 4700, { duration: 4 });
-      const animation3 = animate(count3, 30, { duration: 2 });
+      const animation1 = animate(count1, 5000, { duration: 3 });
+      const animation2 = animate(count2, 4700, { duration: 3 });
+      const animation3 = animate(count3, 30, { duration: 3 });
 
       return () => {
         unsubscribe1();
