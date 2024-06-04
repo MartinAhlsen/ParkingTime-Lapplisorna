@@ -1,5 +1,9 @@
 const ContactForm = () => {
-  return <></>;
+  return (
+    <>
+      <div>Hej</div>
+    </>
+  );
 };
 
 export default ContactForm;

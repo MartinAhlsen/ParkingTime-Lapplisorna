@@ -1,4 +1,4 @@
-"client component";
+"use client";
 
 import type { Metadata } from "next";
 import "./globals.css";
@@ -10,6 +10,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import Button from "@/app/components/Button";
+import ContactForm from "./components/ContactForm";
 
 interface ButtonProperties {
   text: string;
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <>
       <main>Parking Time</main>
+      <ContactForm />
       <Button {...TestButton} />
 
       <TitleSubtitle title="How it works?" subtitle={null} overtitle={null} />

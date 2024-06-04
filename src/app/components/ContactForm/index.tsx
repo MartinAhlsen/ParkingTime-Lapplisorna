@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "../Button";
 
 interface ContactFormData {
   name: string;
@@ -104,12 +105,7 @@ const ContactForm: React.FC = () => {
             <p className="text-red-500 text-sm">{errors.message}</p>
           )}
         </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-        >
-          Send Message
-        </button>
+        <Button text={"Send message"} type={"submit"} colorTheme="dark" />
       </form>
     </div>
   );
