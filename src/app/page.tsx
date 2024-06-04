@@ -4,7 +4,6 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import Header from './components/header/page';
 import Button from '../components/Button';
-import Footer from "./components/Footer/Footer";
 
 interface ButtonProperties {
   text: string;
