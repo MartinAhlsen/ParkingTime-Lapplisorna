@@ -35,7 +35,7 @@ const trustedByTwo = [
     alt: "Founders loft",
   },
   {
-    url: "Images/TrustedByLogotypes/nässjö-svart.png",
+    url: "Images/TrustedByLogotypes/nässjö-Svart.png",
     alt: "Nässjö kommun",
   },
   {

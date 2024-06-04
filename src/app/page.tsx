@@ -1,6 +1,9 @@
-"client component";
+"use client";
 
-import Button from "@/components/Button";
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import Header from './components/header/page';
+import Button from '../components/Button';
 import Footer from "./components/Footer/Footer";
 
 interface ButtonProperties {
@@ -14,29 +17,18 @@ const TestButton: ButtonProperties = {
   text: "Test",
   url: "/se/news",
   colorTheme: "dark",
-  // formCategoryState?: string;
 };
 
-export default function Home() {
+const App = () => {
+  const pathname = usePathname();
+
   return (
-    <>
+    <div>
+      <Header />
       <main>Parking Time</main>
       <Button {...TestButton} />
-      <div className="h1">Lorem ipsum dolor sit amet.</div>
-      <div className="h2">Lorem ipsum dolor sit amet.</div>
-      <div className="h3">Lorem ipsum dolor sit amet.</div>
-      <div className="h4">Lorem ipsum dolor sit amet.</div>
-      <div className="h5">Lorem ipsum dolor sit amet.</div>
-      <div className="h6">Lorem ipsum dolor sit amet.</div>
-      <div className="h7">Lorem ipsum dolor sit amet.</div>
-      <div className="button-text">Lorem ipsum dolor sit amet.</div>
-      <div className="p1">Lorem ipsum dolor sit amet.</div>
-      <div className="links">Lorem ipsum dolor sit amet.</div>
-      <div className="p2">Lorem ipsum dolor sit amet.</div>
-      <div className="p3">Lorem ipsum dolor sit amet.</div>
-      <div className="p3Italic">Lorem ipsum dolor sit amet.</div>
-      <div className="p3Quote">Lorem ipsum dolor sit amet.</div>
-      <Footer/>
-    </>
+    </div>
   );
-}
+};
+
+export default App;
