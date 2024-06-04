@@ -9,24 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@formatjs/intl-localematcher": "^0.5.4",
     "@nextui-org/react": "^2.4.1",
     "framer-motion": "^11.2.10",
     "negotiator": "^0.6.3",
     "lucide": "^0.383.0",
-=======
-    "framer-motion": "^11.2.10",
->>>>>>> feature/PAR-40-fixer-style-animattion
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@types/negotiator": "^0.6.3",
-=======
->>>>>>> feature/PAR-40-fixer-style-animattion
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
