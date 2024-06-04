@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    min-height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
 @layer components {
   .h1 {
     @apply font-lato font-bold text-[80px] leading-[80px];
@@ -30,7 +38,9 @@
   .h7 {
     @apply font-lato font-bold text-[18px]
   }
-
+  .h7 {
+    @apply font-lato font-bold text-[18px] leading-[20px];
+  }
   .button-text {
     @apply font-lato font-medium text-[16px];
   }
