@@ -33,9 +33,6 @@ const Header = () => {
 
   return (
     <header className="bg-pt-primary text-white sticky top-0 z-50">
-      <div>
-        Hello world
-      </div>
       <div className="container mx-auto flex justify-between items-center p-8">
         <div className="flex justify-end w-full">
           <button
