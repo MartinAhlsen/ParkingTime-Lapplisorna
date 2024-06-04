@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
+import { NextUIProvider } from "@nextui-org/react";
 
 const lato = Lato({
   weight: ["400"],
@@ -30,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${lato.variable}`}>{children}</body>
+      <body className={`${roboto.variable} ${lato.variable}`}>
+        <NextUIProvider>{children}</NextUIProvider>
+      </body>
     </html>
   );
 }

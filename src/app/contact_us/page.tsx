@@ -12,6 +12,7 @@ const Contact_us = () => {
       </div>
       <ContactForm />
       <h2>Contact us</h2>
+      <p>Hej</p>
     </>
   );
 };
