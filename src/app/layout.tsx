@@ -10,6 +10,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import TrustedBy from "./components/TrustedBy";
 import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
+import Footer from "./components/Footer";
 
 const lato = Lato({
   weight: ["400"],
@@ -68,7 +69,10 @@ export default function RootLayout({
           />
           <FAQ />
         </NextUIProvider>
+      
+      <Footer/>
       </body>
     </html>
+    
   );
 }

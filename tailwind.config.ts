@@ -7,6 +7,21 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
+    colors: {
+      "pt-primary": "#06433F",
+      "pt-secondary": "#0C051D",
+      "pt-white": "#FFFFFF",
+      "pt-red": "#F85252",
+      "pt-background": "#ECF2F1",
+      "pt-green": "#48937E 80%",
+      "pt-darkblue1": "#14243C",
+      "pt-darkblue2": "#2A394E",
+      "pt-gray1": "#868686",
+      "pt-lightgrayborder": "#E8E8E8",
+      "pt-gray2": "#F0F0F0",
+    },
+
     extend: {
       animation: {
         "infinite-scroll-left": "infinite-scroll-left 65s linear infinite",
