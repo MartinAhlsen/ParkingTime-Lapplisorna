@@ -4,7 +4,7 @@ import { title } from "process";
 const project = {
     name: "project",
     title: "Projects",
-    type: "Document",
+    type: "document",
     fields: [{
         name:"name",
         title: "Name",
