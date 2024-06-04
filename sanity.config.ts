@@ -16,7 +16,7 @@ import schemas from './sanity/schemas'
 
 export default defineConfig({
   basePath: '/studio',
-  projectId,
+  projectId: "m838832i",
   dataset: "production",
   title:"Parking time",
   
