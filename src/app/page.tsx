@@ -1,13 +1,9 @@
-"client component";
+"use client";
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Header from './components/header';
-
-import Footer from "./components/Footer/Footer";
 import Button from './components/Button';
-
-
 
 interface ButtonProperties {
   text: string;
@@ -46,6 +42,7 @@ const App = () => {
       <div className="p3Italic">Lorem ipsum dolor sit amet.</div>
       <div className="p3Quote">Lorem ipsum dolor sit amet.</div>
   </div>
-   
   );
-}
+};
+
+export default App;
