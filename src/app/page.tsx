@@ -2,7 +2,25 @@
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 import { AnimatePresence } from "framer-motion";
-export default function Home() {
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import Header from './components/header';
+import Button from '../components/Button';
+
+interface ButtonProperties {
+  text: string;
+  url: string;
+  colorTheme: "light" | "dark";
+  formCategoryState?: string;
+}
+
+const TestButton: ButtonProperties = {
+  text: "Test",
+  url: "/se/news",
+  colorTheme: "dark",
+};
+const App=()=> {
+  const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     (async () => {
@@ -16,15 +34,16 @@ export default function Home() {
       }, 2000)
     })()
   }, [])
-  return (<main>
+  return (<div>
     <AnimatePresence mode="wait">
           {isLoading && <SplashScreen />}
         </AnimatePresence>
     
+        <Header />
+      <main>Parking Time</main>
+      <Button {...TestButton} />
     
-    Parking Time
-    
-    
-    
-    </main>);
+    </div>);
 }
+
+export default App;
