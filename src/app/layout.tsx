@@ -9,6 +9,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { NextUIProvider } from "@nextui-org/react";
 import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
+import TrustedBy from "./components/TrustedBy";
+import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
 
 const lato = Lato({
   weight: ["400"],
@@ -46,7 +48,7 @@ export default function RootLayout({
             subtitle={null}
             overtitle={null}
           />
-        <WhyParkingTime />
+          <WhyParkingTime />
           <TitleSubtitle
             title="Customer testimonials"
             subtitle="Hear from some of our client"
@@ -59,8 +61,8 @@ export default function RootLayout({
             overtitle="News"
           />
 
-          
-        <Statistics />
+          <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
+          <Statistics />
           <TitleSubtitle
             title="Do you have a question?"
             subtitle="Here some common questions answered"
