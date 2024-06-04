@@ -12,6 +12,7 @@
     "@formatjs/intl-localematcher": "^0.5.4",
     "negotiator": "^0.6.3",
     "@nextui-org/react": "^2.4.1",
+    "lucide": "^0.383.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"

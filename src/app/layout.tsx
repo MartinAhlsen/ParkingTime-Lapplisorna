@@ -8,6 +8,7 @@ import FAQ from "./components/FAQ";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { NextUIProvider } from "@nextui-org/react";
+import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
 
 const lato = Lato({
   weight: ["400"],
@@ -39,7 +40,7 @@ export default function RootLayout({
       <body className={`${roboto.variable} ${lato.variable}`}>
         <NextUIProvider>
           {children}
-
+          <SmartParkingSolution />
           <TitleSubtitle
             title="How it works?"
             subtitle={null}
@@ -58,7 +59,8 @@ export default function RootLayout({
             overtitle="News"
           />
 
-          <Statistics />
+          
+        <Statistics />
           <TitleSubtitle
             title="Do you have a question?"
             subtitle="Here some common questions answered"
