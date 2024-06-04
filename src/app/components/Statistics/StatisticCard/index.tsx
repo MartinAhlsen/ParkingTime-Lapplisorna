@@ -1,8 +1,9 @@
+import { MotionValue } from "framer-motion";
 import Image, { StaticImageData } from "next/image"
 
 
 interface StatisticCardProps {
-    readonly number: number,
+    readonly number: number ,
     readonly subtitle: string,
     readonly imageLink: StaticImageData
 }

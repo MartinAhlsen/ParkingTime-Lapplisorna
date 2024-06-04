@@ -1,6 +1,10 @@
-"client component";
+"use client";
 
-import Button from "@/components/Button";
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import Header from './components/header';
+import Button from '../components/Button';
+import Footer from "./components/Footer/Footer";
 
 interface ButtonProperties {
   text: string;
@@ -13,12 +17,14 @@ const TestButton: ButtonProperties = {
   text: "Test",
   url: "/se/news",
   colorTheme: "dark",
-  // formCategoryState?: string;
 };
 
-export default function Home() {
+const App = () => {
+  const pathname = usePathname();
+
   return (
-    <>
+    <div>
+      <Header />
       <main>Parking Time</main>
       <Button {...TestButton} />
       <div className="h1">Lorem ipsum dolor sit amet.</div>
