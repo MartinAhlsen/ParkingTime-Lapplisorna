@@ -19,6 +19,7 @@ export default defineConfig({
   projectId: "m838832i",
   dataset: "production",
   title:"Parking time",
+  useCdn: false, //set to false to deliver content faster
   
   // Add and edit the content schema in the './sanity/schema' folder
   schema: {types: schemas},

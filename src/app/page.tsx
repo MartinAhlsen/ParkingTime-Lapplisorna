@@ -8,6 +8,7 @@ import Button from './components/Button';
 import { getProjects } from '../../sanity/sanity-utils';
 import project from '../../sanity/schemas/project-schema';
 
+
 interface ButtonProperties {
   text: string;
   url: string;
@@ -29,7 +30,7 @@ const App = async () => {
       <Header />
       <main>Parking Time</main>
       <Button {...TestButton} />
-      <div>
+      <div className='bg-red-500'>
         {projects.map((project)=> (
           <div key={project._id}>{project.name}</div>
 
