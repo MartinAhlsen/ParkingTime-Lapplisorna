@@ -3,6 +3,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Button from "@/components/Button";
+
+interface ButtonProperties {
+  text: string;
+  url: string;
+  colorTheme: "light" | "dark";
+  formCategoryState?: string;
+}
+ 
+const ContactButton: ButtonProperties = {
+  text: "Contact us",
+  url: "/se/contact_us",
+  colorTheme: "light",
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,21 +61,21 @@ const Navbar = () => {
           />
         </Link>
         <div className="hidden sm:flex">
-          <ul className="flex">
+          <ul className="flex pr-3 justify-end">
             <Link href="/WhyParkingTime" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text">Why Parking Time?</li>
+              <li className="ml-10 hover:border-b button-text text-nowrap">Why Parking Time?</li>
             </Link>
             <Link href="/about_us" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text">About us</li>
+              <li className="ml-10 hover:border-b button-text text-nowrap">About us</li>
             </Link>
             <Link href="/news" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text">News</li>
+              <li className="ml-10 hover:border-b button-text text-nowrap">News</li>
             </Link>
             <Link href="/FAQ" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text">FAQ</li>
+              <li className="ml-10 hover:border-b button-text text-nowrap">FAQ</li>
             </Link>
             <Link href="/contact_us" className="flex items-center">
-              <button className="ml-4 sm:ml-10 bg-white text-black button-text px-4 py-2 rounded-full -mt-3">Contact us</button>
+              <Button {...ContactButton}/>
             </Link>
           </ul>
         </div>
