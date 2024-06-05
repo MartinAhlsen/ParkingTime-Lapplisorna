@@ -6,6 +6,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import Header from './components/header';
 import Button from '../components/Button';
+import Banner from "./components/Hero";
 
 interface ButtonProperties {
   text: string;
@@ -40,6 +41,7 @@ const App=()=> {
         </AnimatePresence>
     
         <Header />
+        <Banner page="home"/>
       <main>Parking Time</main>
       <Button {...TestButton} />
     
