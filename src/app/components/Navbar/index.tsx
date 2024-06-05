@@ -34,8 +34,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white sticky top-0 z-50" style={{height: '61px'}}>
-      <div className="flex justify-between items-center px-5">
+    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50" style={{height: '80px'}}>
+      <div className="flex justify-between px-5">
         <Link href="/">
           <Image
             src="/Images/P-icon.png"

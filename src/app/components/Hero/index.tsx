@@ -10,7 +10,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
     case 'home':
       src = '/Images/hero-homepage.png';
       alt = 'Home Banner';
-      imageClass = 'h-[calc(100vh-61px)]';
+      imageClass = 'h-[calc(100vh-80px)]';
       break;
     case 'news':
       src = '/Images/hero-news.png';
