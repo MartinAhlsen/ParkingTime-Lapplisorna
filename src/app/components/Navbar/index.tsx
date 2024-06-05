@@ -36,32 +36,32 @@ const Navbar = () => {
   return (
     <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50" style={{height: '80px'}}>
       <div className="flex justify-between px-5">
-        <Link href="/">
+        <Link href="/" className="flex items-center">
           <Image
             src="/Images/P-icon.png"
             alt="Icon"
-            width="48"
-            height="20"
+            width="50"
+            height="50"
             className="cursor-pointer -mt-3"
             priority
           />
         </Link>
         <div className="hidden sm:flex">
           <ul className="flex">
-            <Link href="/WhyParkingTime">
-              <li className="ml-10 hover:border-b text-xl">Why Parking Time?</li>
+            <Link href="/WhyParkingTime" className="flex items-center">
+              <li className="ml-10 hover:border-b button-text">Why Parking Time?</li>
             </Link>
-            <Link href="/about_us">
-              <li className="ml-10 hover:border-b text-xl">About us</li>
+            <Link href="/about_us" className="flex items-center">
+              <li className="ml-10 hover:border-b button-text">About us</li>
             </Link>
-            <Link href="/news">
-              <li className="ml-10 hover:border-b text-xl">News</li>
+            <Link href="/news" className="flex items-center">
+              <li className="ml-10 hover:border-b button-text">News</li>
             </Link>
-            <Link href="/FAQ">
-              <li className="ml-10 hover:border-b text-xl">FAQ</li>
+            <Link href="/FAQ" className="flex items-center">
+              <li className="ml-10 hover:border-b button-text">FAQ</li>
             </Link>
-            <Link href="/contact_us">
-              <button className="ml-4 sm:ml-10 bg-white text-black text-xl px-4 py-2 rounded-full -mt-3">Contact us</button>
+            <Link href="/contact_us" className="flex items-center">
+              <button className="ml-4 sm:ml-10 bg-white text-black button-text px-4 py-2 rounded-full -mt-3">Contact us</button>
             </Link>
           </ul>
         </div>
@@ -96,11 +96,11 @@ const Navbar = () => {
           variants={wrapperVariants}
           className="bg-pt-primary w-full sm:hidden flex flex-col p-4 space-y-4 fixed top-15 left-0"
         >
-          <motion.p variants={itemVariants} >Why Parking Time?</motion.p>
-          <motion.a variants={itemVariants} href="/about_us" className="block mb-2">About Us</motion.a>
-          <motion.a variants={itemVariants} href="/news" className="block mb-2">News</motion.a>
-          <motion.a variants={itemVariants} href="/FAQ" className="block mb-2">FAQ</motion.a>
-          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full">Contact Us</motion.a>
+          <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
+          <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
+          <motion.a variants={itemVariants} href="/news" className="block mb-2 button-text">News</motion.a>
+          <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
+          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full button-text">Contact Us</motion.a>
         </motion.div>
       )}
     </nav>
