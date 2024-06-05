@@ -25,7 +25,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
     case 'about':
       src = '/Images/hero-aboutUs.png';
       alt = 'About Us Banner';
-      imageClass = 'h-[40vh] md:h-auto max-w-full';
+      imageClass = 'h-[40vh] w-full object-cover md:h-auto max-w-full';
       break;
     default:
       src = '/Images/hero.homepage.png';
