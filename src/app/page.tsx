@@ -11,6 +11,7 @@ import ReactDOM from "react-dom/client";
 import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import Button from "@/app/components/Button";
 import ContactForm from "./components/ContactForm";
+import Contact from "./components/Contact";
 
 interface ButtonProperties {
   text: string;
@@ -31,6 +32,7 @@ export default function Home() {
     <>
       <main>Parking Time</main>
       <ContactForm />
+      <Contact />
       <Button {...TestButton} />
 
       <TitleSubtitle title="How it works?" subtitle={null} overtitle={null} />
