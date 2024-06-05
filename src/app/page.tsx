@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Header from './components/header';
-import Button from '../components/Button';
+import Button from './components/Button';
 
 interface ButtonProperties {
   text: string;

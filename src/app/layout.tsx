@@ -1,16 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Lato, Roboto, MedievalSharp } from "next/font/google";
+import { NextUIProvider } from "@nextui-org/react";
+import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
 import type { Metadata } from "next";
 import "./globals.css";
 import TitleSubtitle from "./components/TitleSubtitle";
 import WhyParkingTime from "./components/WhyParkingTime";
 import Statistics from "./components/Statistics";
-import { Lato, Roboto, MedievalSharp } from "next/font/google";
 import FAQ from "./components/FAQ";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { NextUIProvider } from "@nextui-org/react";
 import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
 import TrustedBy from "./components/TrustedBy";
-import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
+
 import MatildaCEO from "./components/MatildaCEO";
 import Footer from "./components/Footer";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${lato.variable}`}>
+      
         <NextUIProvider>
           {children}
           <SmartParkingSolution />
