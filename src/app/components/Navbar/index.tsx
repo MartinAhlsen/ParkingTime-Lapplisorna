@@ -49,37 +49,37 @@ const Navbar = () => {
 
   return (
     <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50" style={{height: '80px'}}>
-      <div className="flex justify-between px-5">
+      <div className="flex justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/Images/P-icon.png"
             alt="Icon"
             width="50"
             height="50"
-            className="cursor-pointer -mt-3"
+            className="cursor-pointer"
             priority
           />
         </Link>
-        <div className="hidden sm:flex">
-          <ul className="flex pr-3 justify-end">
+        <div className="hidden md:flex">
+          <ul className="flex justify-end gap-[5%]">
             <Link href="/WhyParkingTime" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text text-nowrap">Why Parking Time?</li>
+              <li className="hover:border-b button-text text-nowrap">Why Parking Time?</li>
             </Link>
             <Link href="/about_us" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text text-nowrap">About us</li>
+              <li className="hover:border-b button-text text-nowrap">About us</li>
             </Link>
             <Link href="/news" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text text-nowrap">News</li>
+              <li className="hover:border-b button-text text-nowrap">News</li>
             </Link>
             <Link href="/FAQ" className="flex items-center">
-              <li className="ml-10 hover:border-b button-text text-nowrap">FAQ</li>
+              <li className="hover:border-b button-text text-nowrap">FAQ</li>
             </Link>
             <Link href="/contact_us" className="flex items-center">
               <Button {...ContactButton}/>
             </Link>
           </ul>
         </div>
-        <div className="block sm:hidden">
+        <div className="block md:hidden">
           <button
             className="focus:outline-none"
             onClick={toggleMenu}
@@ -108,13 +108,13 @@ const Navbar = () => {
           initial="closed"
           animate="open"
           variants={wrapperVariants}
-          className="bg-pt-primary w-full sm:hidden flex flex-col p-4 space-y-4 fixed top-15 left-0"
+          className="bg-pt-primary w-full md:hidden flex flex-col p-4 space-y-4 fixed top-15 left-0"
         >
           <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
           <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
           <motion.a variants={itemVariants} href="/news" className="block mb-2 button-text">News</motion.a>
           <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
-          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full button-text">Contact Us</motion.a>
+          <Button {...ContactButton} />
         </motion.div>
       )}
     </nav>
