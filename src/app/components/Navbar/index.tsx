@@ -13,14 +13,14 @@ const Navbar = () => {
 
   const wrapperVariants = {
     open: {
-      scaleY: 1,
+      x: 0,
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,
       },
     },
     closed: {
-      scaleY: 0,
+      x: "-100%",
       transition: {
         when: "afterChildren",
         staggerChildren: 0.1,
@@ -29,20 +29,20 @@ const Navbar = () => {
   };
 
   const itemVariants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: -10 },
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: -20 },
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white sticky top-0 z-50">
-      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+    <nav className="p-5 bg-pt-primary text-white sticky top-0 z-50" style={{height: '61px'}}>
+      <div className="flex justify-between items-center px-5">
         <Link href="/">
           <Image
             src="/Images/P-icon.png"
             alt="Icon"
-            width="60"
+            width="48"
             height="20"
-            className="cursor-pointer"
+            className="cursor-pointer -mt-3"
             priority
           />
         </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <li className="ml-10 hover:border-b text-xl">FAQ</li>
             </Link>
             <Link href="/contact_us">
-              <button className="ml-10 bg-white text-black text-xl px-8 py-4 rounded-full">Contact us</button>
+              <button className="ml-4 sm:ml-10 bg-white text-black text-xl px-4 py-2 rounded-full -mt-3">Contact us</button>
             </Link>
           </ul>
         </div>
@@ -94,13 +94,13 @@ const Navbar = () => {
           initial="closed"
           animate="open"
           variants={wrapperVariants}
-          className="bg-pt-primary sticky p-8 sm:hidden"
+          className="bg-pt-primary w-full sm:hidden flex flex-col p-4 space-y-4 fixed top-15 left-0"
         >
-          <motion.p variants={itemVariants} className="mb-4">Why Parking Time?</motion.p>
+          <motion.p variants={itemVariants} >Why Parking Time?</motion.p>
           <motion.a variants={itemVariants} href="/about_us" className="block mb-2">About Us</motion.a>
           <motion.a variants={itemVariants} href="/news" className="block mb-2">News</motion.a>
           <motion.a variants={itemVariants} href="/FAQ" className="block mb-2">FAQ</motion.a>
-          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full fixed bottom w-3/4">Contact Us</motion.a>
+          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full">Contact Us</motion.a>
         </motion.div>
       )}
     </nav>

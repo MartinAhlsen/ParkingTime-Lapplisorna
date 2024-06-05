@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 interface BannerProps {
   page: string;
@@ -11,22 +10,22 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
     case 'home':
       src = '/Images/hero-homepage.png';
       alt = 'Home Banner';
-      imageClass = 'w-screen';
+      imageClass = 'h-[calc(100vh-61px)]';
       break;
     case 'news':
       src = '/Images/hero-news.png';
-      alt = 'New Banner';
-      imageClass = 'w-2/5';
+      alt = 'News Banner';
+      imageClass = 'h-[40vh] w-full object-cover md:h-auto';
       break;
     case 'contact':
       src = '/Images/hero-contact.png';
       alt = 'Contact Banner';
-      imageClass = 'w-2/5 hidden md:block';
+      imageClass = 'hidden md:block';
       break;
     case 'about':
       src = '/Images/hero-aboutUs.png';
       alt = 'About Us Banner';
-      imageClass = 'w-2/5';
+      imageClass = 'h-[40vh] md:h-auto max-w-full';
       break;
     default:
       src = '/Images/hero.homepage.png';
@@ -34,14 +33,9 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
   }
 
   return (
-    <Image
-      src={src}
-      alt={alt}
-      className={imageClass}
-      width={500}
-      height={300}
-      layout="responsive"
-    />
+    <div>
+      <img src={src} alt={alt} className={`w-full ${imageClass}`} />
+    </div>
   );
 };
 
