@@ -1,7 +1,13 @@
+"use client"
+import React from 'react';
+import { usePathname } from "next/navigation";
+import { getProjects } from "../../../../sanity/sanity-utils";
 import TitleSubtitle from "../TitleSubtitle";
 
 
-const Articles = () => {
+const Articles = async() => {
+    const pathname = usePathname();
+    const projects = await getProjects();
     return (
         <div className="min-h-[1000px] bg-pt-grey2">
           <TitleSubtitle
