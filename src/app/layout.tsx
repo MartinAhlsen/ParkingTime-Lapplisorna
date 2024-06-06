@@ -13,6 +13,7 @@ import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
 import TrustedBy from "./components/TrustedBy";
 
 import MatildaCEO from "./components/MatildaCEO";
+import Articles from "./components/Articles";
 
 const lato = Lato({
   weight: ["400"],
@@ -58,11 +59,7 @@ export default function RootLayout({
             overtitle={null}
           />
 
-          <TitleSubtitle
-            title="Don´t miss"
-            subtitle="We are expanding rapidly, subscribe to our newsletter."
-            overtitle="News"
-          />
+          <Articles />
 
           <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
           <Statistics />
