@@ -6,22 +6,14 @@ import { getProjects } from '../../../../sanity/sanity-utils';
 import TitleSubtitle from '../TitleSubtitle';
 import Image, { StaticImageData } from 'next/image';
 import { PortableTextBlock } from 'next-sanity';
+import { Project } from '../../../../types/Project';
 
 
-
-interface Project {
-  image: StaticImageData;
-  id: string;
-  name: string;
-  alt: string;
-  text2: string;
-
-}
 
 const Articles: React.FC = () => {
   const pathname = usePathname();
   const [projects, setProjects] = useState<Project[]>([]);
-//DAVIDE-CHnage in normal dat fetching???
+
   useEffect(() => {
     const fetchProjects = async () => {
       const fetchedProjects = await getProjects();
@@ -32,25 +24,28 @@ const Articles: React.FC = () => {
   }, []);
 
     return (
-        <div className="min-h-[1000px] bg-pt-gray2">
+        <div className="min-h-[1000px] bg-pt-background">
             <TitleSubtitle
                 title="Don’t miss"
                 subtitle="We are expanding rapidly, subscribe to our newsletter."
                 overtitle="News"
             />
-            {/* You can render the projects here if needed */}
-            <div className="flex  flex-col md:flex-row justify-evenly bg-pt-gray2">
-                {projects.map(project => (
-                    <div className="flex bg-white flex-col basis-1/3" key={project.id}>
+            
+            <div className="flex  flex-col md:flex-row justify-evenly bg-pt-background pt-14 pb-14 md:pb-10">
+                {projects.map((project, index) => (
+                    <div className="flex bg-white flex-col basis-1/3 p-10" key={index}>
                         
-                        <p className='h6'>{project.name} </p>
+                        
                         <Image
+                        className='rounded-xl'
                         src={project.image}
                         width={300}
                         height={300}
                         alt={project.name}
                         />
-                        <p className='p2'>{project.text2}</p>
+                        <p className='h6 pt-4 pb-4'>{project.name} </p>
+                        <p className='p2 max-w-[300px]'>{project.text2}</p>
+                        
                         <p className='links'>Read more</p>
                     
                     </div>
