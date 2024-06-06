@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 import { AnimatePresence } from "framer-motion";
-import React from 'react';
 import { usePathname } from 'next/navigation';
+import React from 'react';
 import Header from './components/header';
-import Button from '../components/Button';
+import Button from './components/Button';
 import Banner from "./components/Hero";
 
 interface ButtonProperties {
