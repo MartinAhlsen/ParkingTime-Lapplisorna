@@ -41,7 +41,7 @@ const Articles: React.FC = () => {
             {/* You can render the projects here if needed */}
             <div className="flex  flex-col md:flex-row justify-evenly bg-pt-gray2">
                 {projects.map(project => (
-                    <div className="flex bg-white flex-col" key={project.id}>
+                    <div className="flex bg-white flex-col basis-1/3" key={project.id}>
                         
                         <p className='h6'>{project.name} </p>
                         <Image
@@ -50,7 +50,7 @@ const Articles: React.FC = () => {
                         height={300}
                         alt={project.name}
                         />
-                        <p>{project.text2}</p>
+                        <p className='p2'>{project.text2}</p>
                         <p className='links'>Read more</p>
                     
                     </div>
