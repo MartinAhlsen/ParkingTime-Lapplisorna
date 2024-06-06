@@ -17,7 +17,7 @@ import schemas from './sanity/schemas'
 export default defineConfig({
   basePath: '/studio',
   projectId: "m838832i",
-  dataset: "production",
+  dataset: "develop",
   title:"Parking time",
   useCdn: false, //set to false to deliver content faster
   
