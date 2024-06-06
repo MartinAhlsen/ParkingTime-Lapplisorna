@@ -41,6 +41,11 @@ const project = {
         type: "array", //inbuild type in QROQ
         of: [{type: "block"}]
     },
+    {
+        name:"text2",
+        title: "Text2",
+        type: "string"
+    },
        
 
     ]
