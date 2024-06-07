@@ -42,7 +42,7 @@ const Button = ({
             flex
             justify-center
             items-center
-
+            text-nowrap
         `}
     >
       {text}
