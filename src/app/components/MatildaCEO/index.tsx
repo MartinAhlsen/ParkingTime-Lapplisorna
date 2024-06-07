@@ -4,24 +4,7 @@ import React from "react";
 import Image from "next/image";
 import MatildaImg from "../../../../public/Images/Matilda-image.png";
 import "./styles.css";
-import { motion, Variants } from "framer-motion";
 import StaffCard from "../StaffCard";
-
-
-const cardVariants: Variants = {
-  offscreen: {
-    y: 300
-  },
-  onscreen: {
-    y: 50,
-    rotate: -5,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8
-    }
-  }
-};
 
 
 
@@ -31,7 +14,7 @@ const MatildaCEO: React.FC = () => {
       
 
       <div className="flex flex-col basis-1/2 items-center">
-      <StaffCard staffImg={MatildaImg} hueA={20} hueB={40} />
+      <StaffCard staffImg={MatildaImg} hueA={20} hueB={40} text1={"Matilda Öhman"} text2={"Matilda@email.com"} />
       </div>
 
       <div className="flex flex-col basis-1/2 items-start">

@@ -27,9 +27,11 @@ interface StaffCardProps {
     staffImg: StaticImageData;
     hueA: number;
     hueB: number;
+    text1: string;
+    text2: string;
   }
 const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
-const StaffCard= ({staffImg,hueA,hueB}:StaffCardProps) => {
+const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
     const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
   return (
@@ -48,8 +50,8 @@ const StaffCard= ({staffImg,hueA,hueB}:StaffCardProps) => {
           height={300}
           alt="Picture of the author"
         />
-        <p className="h5 text-black">Matilda Öhman, CEO</p>
-        <p className="h6 text-black">Matilda@email.123</p>
+        <p className="h5 text-black">{text1}</p>
+        <p className="h6 text-black">{text2}</p>
       </motion.div>
     </motion.div>
   );
