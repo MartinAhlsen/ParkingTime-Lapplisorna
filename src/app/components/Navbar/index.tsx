@@ -3,6 +3,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Button from "../Button";
+
+interface ButtonProperties {
+  text: string;
+  url: string;
+  colorTheme: "light" | "dark";
+  formCategoryState?: string;
+}
+ 
+const ContactButton: ButtonProperties = {
+  text: "Contact us",
+  url: "/se/contact_us",
+  colorTheme: "light",
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +27,14 @@ const Navbar = () => {
 
   const wrapperVariants = {
     open: {
-      scaleY: 1,
+      x: 0,
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.1,
       },
     },
     closed: {
-      scaleY: 0,
+      x: "-100%",
       transition: {
         when: "afterChildren",
         staggerChildren: 0.1,
@@ -29,45 +43,45 @@ const Navbar = () => {
   };
 
   const itemVariants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: -10 },
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: -20 },
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white sticky top-0 z-50">
-      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
-        <Link href="/">
+    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
+      <div className="flex justify-between grow">
+        <Link href="/" className="flex items-center">
           <Image
             src="/Images/P-icon.png"
             alt="Icon"
-            width="60"
-            height="20"
+            width="50"
+            height="50"
             className="cursor-pointer"
             priority
           />
         </Link>
-        <div className="hidden sm:flex">
-          <ul className="flex">
-            <Link href="/WhyParkingTime">
-              <li className="ml-10 hover:border-b text-xl">Why Parking Time?</li>
+        <div className="hidden md:flex">
+          <ul className="flex justify-end gap-[5%]">
+            <Link href="/WhyParkingTime" className="flex items-center">
+              <li className="hover:border-b button-text text-nowrap">Why Parking Time?</li>
             </Link>
-            <Link href="/about_us">
-              <li className="ml-10 hover:border-b text-xl">About us</li>
+            <Link href="/about_us" className="flex items-center">
+              <li className="hover:border-b button-text text-nowrap">About us</li>
             </Link>
-            <Link href="/news">
-              <li className="ml-10 hover:border-b text-xl">News</li>
+            <Link href="/news" className="flex items-center">
+              <li className="hover:border-b button-text text-nowrap">News</li>
             </Link>
-            <Link href="/FAQ">
-              <li className="ml-10 hover:border-b text-xl">FAQ</li>
+            <Link href="/FAQ" className="flex items-center">
+              <li className="hover:border-b button-text text-nowrap">FAQ</li>
             </Link>
-            <Link href="/contact_us">
-              <button className="ml-10 bg-white text-black text-xl px-8 py-4 rounded-full">Contact us</button>
+            <Link href="/contact_us" className="flex items-center">
+              <Button {...ContactButton}/>
             </Link>
           </ul>
         </div>
-        <div className="block sm:hidden">
+        <div className="flex items-center md:hidden">
           <button
-            className="focus:outline-none"
+            className="focus:outline-none flex items-center justify-center"
             onClick={toggleMenu}
           >
             <motion.svg
@@ -94,13 +108,13 @@ const Navbar = () => {
           initial="closed"
           animate="open"
           variants={wrapperVariants}
-          className="bg-pt-primary sticky p-8 sm:hidden"
+          className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
         >
-          <motion.p variants={itemVariants} className="mb-4">Why Parking Time?</motion.p>
-          <motion.a variants={itemVariants} href="/about_us" className="block mb-2">About Us</motion.a>
-          <motion.a variants={itemVariants} href="/news" className="block mb-2">News</motion.a>
-          <motion.a variants={itemVariants} href="/FAQ" className="block mb-2">FAQ</motion.a>
-          <motion.a variants={itemVariants} href="/contact_us" className="block bg-white text-black text-center py-2 rounded-full fixed bottom w-3/4">Contact Us</motion.a>
+          <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
+          <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
+          <motion.a variants={itemVariants} href="/news" className="block mb-2 button-text">News</motion.a>
+          <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
+          <Button {...ContactButton} />
         </motion.div>
       )}
     </nav>
