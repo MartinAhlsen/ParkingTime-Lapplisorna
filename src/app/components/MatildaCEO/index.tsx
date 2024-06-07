@@ -6,9 +6,7 @@ import MatildaImg from "../../../../public/Images/Matilda-image.png";
 import "./styles.css";
 import { motion, Variants } from "framer-motion";
 
-interface Props {
-  emoji: string;
-}
+
 
 const cardVariants: Variants = {
   offscreen: {
@@ -16,7 +14,7 @@ const cardVariants: Variants = {
   },
   onscreen: {
     y: 50,
-    rotate: -10,
+    rotate: -5,
     transition: {
       type: "spring",
       bounce: 0.4,
@@ -25,7 +23,7 @@ const cardVariants: Variants = {
   }
 };
 
-const Card: React.FC<Props> = ({ emoji }) => {
+const Card= () => {
   const background = `linear-gradient(306deg, hsl(20, 100%, 50%), hsl(40, 100%, 50%))`;
 
   return (
@@ -36,8 +34,16 @@ const Card: React.FC<Props> = ({ emoji }) => {
       viewport={{ once: true, amount: 0.8 }}
     >
       <div className="splash" style={{ background }} />
-      <motion.div className="card" variants={cardVariants}>
-        {emoji}
+      <motion.div className="card flex flex-col basis-1/2 items-center" variants={cardVariants}>
+      <Image
+          className="rounded-full p-8"
+          src={MatildaImg}
+          width={300}
+          height={300}
+          alt="Picture of the author"
+        />
+        <p className="h5 text-black">Matilda Öhman, CEO</p>
+        <p className="h6 text-black">Matilda@email.123</p>
       </motion.div>
     </motion.div>
   );
@@ -45,19 +51,11 @@ const Card: React.FC<Props> = ({ emoji }) => {
 
 const MatildaCEO: React.FC = () => {
   return (
-    <div className="h-[840px] md:h-[494px] bg-pt-primary flex flex-col text-center text-white items-center p-6 md:flex-row">
-      <Card emoji={"🍊"} />
+    <div className="h-[840px] md:h-[494px] bg-pt-primary flex flex-col text-center text-white items-center p-6 md:flex-row ">
+      
 
       <div className="flex flex-col basis-1/2 items-center">
-        <Image
-          className="rounded-full p-8"
-          src={MatildaImg}
-          width={250}
-          height={250}
-          alt="Picture of the author"
-        />
-        <p className="h5">Matilda Öhman, CEO</p>
-        <p className="h6">Matilda@email.123</p>
+      <Card />
       </div>
 
       <div className="flex flex-col basis-1/2 items-start">
