@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Button from "@/components/Button";
+import Button from "@/app/components/Button";
 
 interface ButtonProperties {
   text: string;
