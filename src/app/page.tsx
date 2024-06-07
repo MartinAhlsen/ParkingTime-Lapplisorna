@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import Header from './components/header';
-import Button from './components/Button';
+import Button from "./components/Button";
 import Banner from "./components/Hero";
 
 interface ButtonProperties {
