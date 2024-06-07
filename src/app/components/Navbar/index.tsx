@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Button from "@/app/components/Button";
+import Button from "../Button";
 
 interface ButtonProperties {
   text: string;
@@ -48,8 +48,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50" style={{height: '80px'}}>
-      <div className="flex justify-between">
+    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
+      <div className="flex justify-between grow">
         <Link href="/" className="flex items-center">
           <Image
             src="/Images/P-icon.png"
@@ -79,9 +79,9 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <div className="block md:hidden">
+        <div className="flex items-center md:hidden">
           <button
-            className="focus:outline-none"
+            className="focus:outline-none flex items-center justify-center"
             onClick={toggleMenu}
           >
             <motion.svg
@@ -108,7 +108,7 @@ const Navbar = () => {
           initial="closed"
           animate="open"
           variants={wrapperVariants}
-          className="bg-pt-primary w-full md:hidden flex flex-col p-4 space-y-4 fixed top-15 left-0"
+          className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
         >
           <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
           <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
