@@ -5,7 +5,7 @@ import Image from "next/image";
 import MatildaImg from "../../../../public/Images/Matilda-image.png";
 import "./styles.css";
 import { motion, Variants } from "framer-motion";
-
+import StaffCard from "../StaffCard";
 
 
 const cardVariants: Variants = {
@@ -23,31 +23,7 @@ const cardVariants: Variants = {
   }
 };
 
-const Card= () => {
-  const background = `linear-gradient(306deg, hsl(20, 100%, 50%), hsl(40, 100%, 50%))`;
 
-  return (
-    <motion.div
-      className="card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
-    >
-      <div className="splash" style={{ background }} />
-      <motion.div className="card flex flex-col basis-1/2 items-center" variants={cardVariants}>
-      <Image
-          className="rounded-full p-8"
-          src={MatildaImg}
-          width={300}
-          height={300}
-          alt="Picture of the author"
-        />
-        <p className="h5 text-black">Matilda Öhman, CEO</p>
-        <p className="h6 text-black">Matilda@email.123</p>
-      </motion.div>
-    </motion.div>
-  );
-};
 
 const MatildaCEO: React.FC = () => {
   return (
@@ -55,7 +31,7 @@ const MatildaCEO: React.FC = () => {
       
 
       <div className="flex flex-col basis-1/2 items-center">
-      <Card />
+      <StaffCard staffImg={MatildaImg} hueA={20} hueB={40} />
       </div>
 
       <div className="flex flex-col basis-1/2 items-start">
