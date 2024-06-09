@@ -1,7 +1,10 @@
 "use client"
 
 import React from "react";
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Accordion, AccordionItem} from "@nextui-org/accordion";
+import AnchorIcon from "../accordions/anchorIcon"
+import MoonIcon from "../accordions/moonIcon"
+import SunIcon from "../accordions/sunIcon"
 import styles from "./FAQ.module.css"
 
 const FAQ = () => {
@@ -27,6 +30,18 @@ const FAQ = () => {
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
       </Accordion>
+      <Accordion >
+      <AccordionItem key="anchor" aria-label="Anchor" indicator={<AnchorIcon className="rotate" />} title="Anchor">
+        {defaultContent}
+      </AccordionItem>
+      <AccordionItem key="moon" aria-label="Moon" indicator={<MoonIcon />} title="Moon">
+        {defaultContent}
+      </AccordionItem>
+      <AccordionItem key="sun" aria-label="Sun" indicator={<SunIcon />} title="Sun">
+        {defaultContent}
+      </AccordionItem>
+    </Accordion>
+    
     </div>
   );
 }
