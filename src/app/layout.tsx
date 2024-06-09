@@ -14,6 +14,7 @@ import TrustedBy from "./components/TrustedBy";
 
 import MatildaCEO from "./components/MatildaCEO";
 import Footer from "./components/Footer";
+import Header from "./components/header";
 
 
 const lato = Lato({
@@ -45,7 +46,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${lato.variable}`}>
       
-        
+     
           {children}
           
         <Footer/>
