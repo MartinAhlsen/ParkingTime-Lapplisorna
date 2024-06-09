@@ -6,6 +6,13 @@ Precedes:
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import styles from "./FAQ.module.css"
+import Moon from "../accordions/moonIcon"
+import Sun from "../accordions/sunIcon"
+import Anchor from "../accordions/anchorIcon"
+import Dollar from "../accordions/dollarIcon"
+
+
+
 
 const FAQ = () => {
   const defaultContent: string =
@@ -14,19 +21,19 @@ const FAQ = () => {
   return (
     <div>
       <Accordion className={styles.accordionContainer} >
-        <AccordionItem className={styles.accordion} key="1" aria-label="Accordion 1" title="What is Parking Time?">
+        <AccordionItem className={styles.accordion} key="1" aria-label="Accordion 1" title="What is Parking Time?" indicator={"❤️"}>
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="2" aria-label="Accordion 2" title="How do I use Parking Time?">
+        <AccordionItem className={styles.accordion} key="2" aria-label="Accordion 2" title="How do I use Parking Time?" indicator={"🧡"}>
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="3" aria-label="Accordion 3" title="Is it free?">
+        <AccordionItem className={styles.accordion} key="3" aria-label="Accordion 3" title="Is it free?" indicator={"💛"}>
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="4" aria-label="Accordion 4" title="How do I get it in my municipality?">
+        <AccordionItem className={styles.accordion} key="4" aria-label="Accordion 4" title="How do I get it in my municipality?" indicator={"💚"}>
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="5" aria-label="Accordion 5" title="Known problems with the app">
+        <AccordionItem className={styles.accordion} key="5" aria-label="Accordion 5" title="Known problems with the app" indicator={"💙"}>
           <div className={styles.accordionContent}>{defaultContent}</div>
         </AccordionItem>
       </Accordion>
