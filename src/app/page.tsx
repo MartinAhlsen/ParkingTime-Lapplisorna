@@ -54,7 +54,7 @@ const App = () => {
         <Banner page={"home"}/>
       <main>Parking Time</main>
       <Button {...TestButton} />
-      <NextUIProvider>
+      
           
           <SmartParkingSolution />
           <TitleSubtitle
@@ -83,6 +83,7 @@ const App = () => {
             subtitle="Here some common questions answered"
             overtitle="FAQ"
           />
+          <NextUIProvider>
           <FAQ />
         </NextUIProvider>
     </div>);
