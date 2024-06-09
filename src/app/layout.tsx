@@ -14,6 +14,7 @@ import TrustedBy from "./components/TrustedBy";
 
 import MatildaCEO from "./components/MatildaCEO";
 import Footer from "./components/Footer";
+import DownloadNow from "./components/DownloadNow";
 
 
 const lato = Lato({
@@ -68,6 +69,7 @@ export default function RootLayout({
 
           <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
           <Statistics />
+          <DownloadNow />
           <MatildaCEO />
           <TitleSubtitle
             title="Do you have a question?"
