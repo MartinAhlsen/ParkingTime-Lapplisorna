@@ -1,7 +1,7 @@
+import { dataFocusVisibleClasses, tv } from "@nextui-org/react";
 import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses} from "../utils";
+
 
 /**
  * Accordion wrapper **Tailwind Variants** component

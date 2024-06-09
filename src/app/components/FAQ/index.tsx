@@ -6,12 +6,6 @@ Precedes:
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import styles from "./FAQ.module.css"
-import Moon from "../accordions/moonIcon"
-import Sun from "../accordions/sunIcon"
-import Anchor from "../accordions/anchorIcon"
-import Dollar from "../accordions/dollarIcon"
-
-
 
 
 const FAQ = () => {
