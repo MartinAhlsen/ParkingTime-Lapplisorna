@@ -6,6 +6,7 @@ import mapImg from "../../../../public/Images/map-icon.png";
 import parkingImg from "../../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState, useRef, RefObject } from "react";
+import TitleSubtitle from "../TitleSubtitle";
 
 const Statistics: React.FC = () => {
   const count1 = useMotionValue(4980);
@@ -71,8 +72,11 @@ const Statistics: React.FC = () => {
   }, [inView, rounded1, count1, rounded2, count2, rounded3, count3]);
 
   return (
+    <>
+    <div className=" bg-pt-background text-center h4 pt-12"> Our journey</div> {/*How far we have come*/}
     <div ref={ref} className="min-h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
-      <div className="bg-white min-h-80 pt-8 pb-8 mt-12 mb-12 rounded-xl mx-1 flex flex-col md:flex-row">
+      
+      <div className="bg-white min-h-80 pt-8 pb-8 mt-4 mb-12 rounded-xl w-[90%] flex flex-col md:flex-row">
         <StatisticCard imageLink={downloadImg} number={countValue1} subtitle="Downloads" />
         <div className="basis-1/5"></div>
         <StatisticCard imageLink={parkingImg} number={countValue2} subtitle="Parking sessions" />
@@ -80,6 +84,7 @@ const Statistics: React.FC = () => {
         <StatisticCard imageLink={mapImg} number={countValue3} subtitle="Parking zones" />
       </div>
     </div>
+    </>
   );
 };
 
