@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@nextui-org/accordion": "^2.0.34",
     "@nextui-org/react": "^2.4.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.44.0",

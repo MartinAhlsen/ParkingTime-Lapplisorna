@@ -1,30 +1,36 @@
+Follows: 
+Precedes: 
+
 "use client"
 
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import styles from "./FAQ.module.css"
 
-const FAQ = () => {
-  const defaultContent: string =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
+const FAQ = () => {
+  const defaultContent1: string ="Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva";
+  const defaultContent2: string ="Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!";
+  const defaultContent3: string ="Of course is for free!";
+  const defaultContent4: string ="Contact your municaipality if you want to implent this amazing piece of tecnology in your area!";
+  const defaultContent5: string ="No problem known with the app! Best App and website ever!";
   return (
     <div>
-      <Accordion className={styles.accordionContainer} >
-        <AccordionItem className={styles.accordion} key="1" aria-label="Accordion 1" title="What is Parking Time?">
-          <div className={styles.accordionContent}>{defaultContent}</div>
+      <Accordion className="bg-[#ECF2F1] p-5 flex flex-col justify-center items-center" >
+        <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="1" aria-label="Accordion 1" title="What is Parking Time?" indicator={"❤️"}>
+          <div className="font-normal">{defaultContent1}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="2" aria-label="Accordion 2" title="How do I use Parking Time?">
-          <div className={styles.accordionContent}>{defaultContent}</div>
+        <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="2" aria-label="Accordion 2" title="How do I use Parking Time?" indicator={"🧡"}>
+          <div className="font-normal">{defaultContent2}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="3" aria-label="Accordion 3" title="Is it free?">
-          <div className={styles.accordionContent}>{defaultContent}</div>
+        <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="3" aria-label="Accordion 3" title="Is it free?" indicator={"💛"}>
+          <div className="font-normal">{defaultContent3}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="4" aria-label="Accordion 4" title="How do I get it in my municipality?">
-          <div className={styles.accordionContent}>{defaultContent}</div>
+        <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="4" aria-label="Accordion 4" title="How do I get it in my municipality?" indicator={"💚"}>
+          <div className="font-normal">{defaultContent4}</div>
         </AccordionItem>
-        <AccordionItem className={styles.accordion} key="5" aria-label="Accordion 5" title="Known problems with the app">
-          <div className={styles.accordionContent}>{defaultContent}</div>
+        <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="5" aria-label="Accordion 5" title="Known problems with the app" indicator={"💙"}>
+          <div className="font-normal">{defaultContent5}</div>
         </AccordionItem>
       </Accordion>
     </div>
@@ -32,4 +38,3 @@ const FAQ = () => {
 }
 
 export default FAQ;
-/*!*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src\\app\\layout.tsx","import":"Lato","arguments":[{"weight":["400"],"subsets":["latin"],"display":"swap","variable":"--font-lato"}],"variableName":"lato"} ***! */
