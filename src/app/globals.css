@@ -38,9 +38,6 @@ body {
   .h7 {
     @apply font-lato font-bold text-[18px]
   }
-  .h7 {
-    @apply font-lato font-bold text-[18px] leading-[20px];
-  }
 
   .button-text {
     @apply font-lato font-medium text-[16px];
