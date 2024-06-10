@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import MatildaImg from "../../../../public/Images/Matilda-image.png";
 import "./styles.css";
 import { motion, Variants } from "framer-motion";
 
