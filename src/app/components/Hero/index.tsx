@@ -48,10 +48,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <p>• Free to download</p>
             </div>
             <div className="w-1/2 md:w-auto text-center md:text-left">
-              <p>• Convenience</p>
+              <p>• Avoid fines</p>
             </div>
             <div className="w-1/2 md:w-auto text-center md:text-right">
-              <p>• Increased Revenue</p>
+              <p>• Reduced Stress</p>
             </div>
           </div>
               </div>
