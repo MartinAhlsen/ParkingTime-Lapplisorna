@@ -12,7 +12,7 @@ const words = [
   'So',
   'Easy',
   "with",
-  '😘Parking Time❤️',
+  'Parking Time',
   
 ]
 /*DEMO 1
