@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import Header from './components/header';
 import Button from "./components/Button";
 import Banner from "./components/Hero";
-import { Ban } from "lucide";
+
 import { NextUIProvider } from "@nextui-org/react";
 import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
 import TitleSubtitle from "./components/TitleSubtitle";

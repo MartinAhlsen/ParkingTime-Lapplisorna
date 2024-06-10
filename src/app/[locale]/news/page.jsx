@@ -1,4 +1,4 @@
-import { getDictionary } from "../dictionaries";
+import {useTranslations} from 'next-intl';
 
 const News = async ({params: {lang}}) => {
   const dict = await getDictionary(lang)
@@ -10,3 +10,4 @@ const News = async ({params: {lang}}) => {
 };
 
 export default News
+

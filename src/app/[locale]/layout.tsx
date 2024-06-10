@@ -1,13 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Lato, Roboto } from "next/font/google";
-
-import type { Metadata } from "next";
-import "./globals.css";
-
-
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+
+import type { Metadata } from "next";
 import Footer from "../components/Footer";
 
 
@@ -31,23 +28,26 @@ export const metadata: Metadata = {
     "Digital parking disc - directly on your mobile. A winning concept in a new, digitalized format.",
 };
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params: {locale}
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: {locale: string};
-}>) {
+}) {
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  
 
   const messages = await getMessages();
   return (
-    <html lang={locale} style={{ scrollBehavior: 'smooth' }} suppressHydrationWarning={true}>
-      <body className={`${roboto.variable} ${lato.variable}`}>
+    <html lang={locale} suppressHydrationWarning={true}>
+      <body className={`${roboto.variable} ${lato.variable}`} suppressHydrationWarning={true}>
       <NextIntlClientProvider messages={messages} >
           {children}
         </NextIntlClientProvider>
      
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

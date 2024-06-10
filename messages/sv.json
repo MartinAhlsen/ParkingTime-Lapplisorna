@@ -1,0 +1,21 @@
+{
+    "home": {
+      "title": "Parkerings Tid",
+      "Comp_1_title":"En smart lösning för parkering",
+      "Comp_1_paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
+      "Comp_2_title":"Hur det fungerar"
+    },
+    "policy": {
+      "title": "Politik SE"
+    },
+    "contact_us": {
+      "title": "Kontakta Oss"
+    },
+    "news": {
+      "title": "Nyheter"
+    },
+    "about_us": {
+      "title": "Om oss"
+    }
+  
+  }

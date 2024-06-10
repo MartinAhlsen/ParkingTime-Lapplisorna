@@ -1,6 +1,9 @@
 {
     "home": {
-      "title": "Parking time"
+      "title": "Parking time",
+      "Comp_1_title":"Smart Parking Solution",
+      "Comp_1_paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
+      "Comp_2_title":"How it works?"
     },
     "policy": {
       "title": "policy EN"
