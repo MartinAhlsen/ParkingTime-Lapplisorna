@@ -9,9 +9,13 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# Next.js
+/.next
+!/ .next/static
+/.next/static/*
+!/ .next/static/css
+/.next/static/css/*
+!/ .next/static/css/layout.css
 
 # production
 /build
