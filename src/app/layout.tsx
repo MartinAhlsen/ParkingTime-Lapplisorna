@@ -2,20 +2,13 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Lato, Roboto, MedievalSharp } from "next/font/google";
-import { NextUIProvider } from "@nextui-org/react";
-import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
+import { Lato, Roboto } from "next/font/google";
+
 import type { Metadata } from "next";
 import "./globals.css";
-import TitleSubtitle from "./components/TitleSubtitle";
-import WhyParkingTime from "./components/WhyParkingTime";
-import Statistics from "./components/Statistics";
-import FAQ from "./components/FAQ";
-import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
-import TrustedBy from "./components/TrustedBy";
 
-import MatildaCEO from "./components/MatildaCEO";
 import Footer from "./components/Footer";
+
 
 
 const lato = Lato({
