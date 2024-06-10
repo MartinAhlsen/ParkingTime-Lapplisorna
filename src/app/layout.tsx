@@ -1,20 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Lato, Roboto, MedievalSharp } from "next/font/google";
-import { NextUIProvider } from "@nextui-org/react";
-import { trustedByOne, trustedByTwo } from "@/../public/data/trustedByData";
+import { Lato, Roboto } from "next/font/google";
+
 import type { Metadata } from "next";
 import "./globals.css";
-import TitleSubtitle from "./components/TitleSubtitle";
-import WhyParkingTime from "./components/WhyParkingTime";
-import Statistics from "./components/Statistics";
-import FAQ from "./components/FAQ";
-import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
-import TrustedBy from "./components/TrustedBy";
 
-import MatildaCEO from "./components/MatildaCEO";
-import Articles from "./components/Articles";
 import Footer from "./components/Footer";
+
 
 
 const lato = Lato({
@@ -46,33 +38,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.variable} ${lato.variable}`}>
       
-        <NextUIProvider>
+     
           {children}
-          <SmartParkingSolution />
-          <TitleSubtitle
-            title="How it works?"
-            subtitle={null}
-            overtitle={null}
-          />
-          <WhyParkingTime />
-          <TitleSubtitle
-            title="Customer testimonials"
-            subtitle="Hear from some of our client"
-            overtitle={null}
-          />
-
-          <Articles />
-
-          <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
-          <Statistics />
-          <MatildaCEO />
-          <TitleSubtitle
-            title="Do you have a question?"
-            subtitle="Here some common questions answered"
-            overtitle="FAQ"
-          />
-          <FAQ />
-        </NextUIProvider>
+        
         <Footer/>
       </body>
     </html>
