@@ -1,5 +1,6 @@
 .splash {
     position: absolute;
+    padding: 48px;
     z-index: 10;
     bottom: 0;
     left: 0;
