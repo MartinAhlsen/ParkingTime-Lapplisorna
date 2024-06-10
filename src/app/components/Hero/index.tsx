@@ -23,7 +23,7 @@ const DownloadButton: ButtonProperties = {
 };
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
-  let src, alt, imageClass, bannerContent;
+  let src, alt, imageClass, bannerContent, greenBar;
 
   switch (page) {
     case 'home':
@@ -40,8 +40,22 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
             <Button {...ContactButton}/>
             <Button {...DownloadButton}/>
           </div>
-        </div>
-      );
+          <div className="bg-pt-green bg-opacity-80 absolute inset-x-0 bottom-0 h-32 md:h-16 flex flex-wrap md:flex-nowrap justify-around md:justify-center items-center md:space-x-20 text-white p-4">
+            <div className="w-1/2 md:w-auto text-center md:text-left mb-2 md:mb-0">
+              <p>• Easy to use</p>
+            </div>
+            <div className="w-1/2 md:w-auto text-center md:text-right mb-2 md:mb-0">
+              <p>• Free to download</p>
+            </div>
+            <div className="w-1/2 md:w-auto text-center md:text-left">
+              <p>• Convenience</p>
+            </div>
+            <div className="w-1/2 md:w-auto text-center md:text-right">
+              <p>• Increased Revenue</p>
+            </div>
+          </div>
+              </div>
+            );
       break;
     case 'news':
       src = '/Images/hero-news.png';
@@ -60,7 +74,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       break;
     default:
       src = '/Images/hero.homepage.png';
-      alt = 'Default Banner';
+      alt = 'Default Banner';  
   }
 
   return (
