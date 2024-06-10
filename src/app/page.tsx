@@ -33,7 +33,7 @@ const App = () => {
         setIsLoading(false)
         document.body.style.cursor = 'default'
         window.scrollTo(0, 0)
-      }, 2000)
+      }, 2700)
     })()
   }, [])
   return (<div>
