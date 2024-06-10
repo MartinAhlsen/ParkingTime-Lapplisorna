@@ -6,10 +6,11 @@ import mapImg from "../../../../public/Images/map-icon.png";
 import parkingImg from "../../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState, useRef, RefObject } from "react";
+import TitleSubtitle from "../TitleSubtitle";
 
 const Statistics: React.FC = () => {
-  const count1 = useMotionValue(4500);
-  const count2 = useMotionValue(3500);
+  const count1 = useMotionValue(4980);
+  const count2 = useMotionValue(4650);
   const count3 = useMotionValue(0);
 
   const rounded1 = useTransform(count1, Math.round);
@@ -55,9 +56,9 @@ const Statistics: React.FC = () => {
       const unsubscribe2 = rounded2.on("change", (latest) => setCountValue2(latest));
       const unsubscribe3 = rounded3.on("change", (latest) => setCountValue3(latest));
 
-      const animation1 = animate(count1, 5000, { duration: 4 });
-      const animation2 = animate(count2, 4700, { duration: 3 });
-      const animation3 = animate(count3, 30, { duration: 2 });
+      const animation1 = animate(count1, 5000, { duration: 2.5 });
+      const animation2 = animate(count2, 4700, { duration: 2.5 });
+      const animation3 = animate(count3, 30, { duration: 2.5 });
 
       return () => {
         unsubscribe1();
@@ -71,8 +72,11 @@ const Statistics: React.FC = () => {
   }, [inView, rounded1, count1, rounded2, count2, rounded3, count3]);
 
   return (
+    <>
+    <div className=" bg-pt-background text-center h4 pt-12"> Our journey</div> {/*How far we have come*/}
     <div ref={ref} className="min-h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
-      <div className="bg-white min-h-80 pt-8 pb-8 mt-12 mb-12 rounded-xl mx-1 flex flex-col md:flex-row">
+      
+      <div className="bg-white min-h-80 pt-8 pb-8 mt-4 mb-12 rounded-xl w-[90%] flex flex-col md:flex-row">
         <StatisticCard imageLink={downloadImg} number={countValue1} subtitle="Downloads" />
         <div className="basis-1/5"></div>
         <StatisticCard imageLink={parkingImg} number={countValue2} subtitle="Parking sessions" />
@@ -80,6 +84,7 @@ const Statistics: React.FC = () => {
         <StatisticCard imageLink={mapImg} number={countValue3} subtitle="Parking zones" />
       </div>
     </div>
+    </>
   );
 };
 
