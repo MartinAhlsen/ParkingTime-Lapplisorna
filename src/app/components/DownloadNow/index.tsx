@@ -14,10 +14,10 @@ const DownloadNow = () => {
         
         
     </div>
-    <Image className="mt-10 mb-10  md:min-h-[600px]"
+    <Image className="mt-5 mb-10  md:w-[600px] "
       src={ImageCarPhone}
-      width={400}
-      height={400}
+      width={300}
+      height={300}
       alt=""
     />
         </div>
