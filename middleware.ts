@@ -1,9 +1,12 @@
-import { match } from '@formatjs/intl-localematcher'
-import Negotiator from 'negotiator'
+import createMiddleware from 'next-intl/middleware';
  
-let headers = { 'accept-language': 'en-US,en;q=0.5' }
-let languages = new Negotiator({ headers }).languages()
-let locales = ['en-US', 'se-SE', 'se']
-let defaultLocale = 'se-SE'
+export default createMiddleware({
+  
+  locales: ['en', 'sv'],
  
-match(languages, locales, defaultLocale) 
+  defaultLocale: 'sv'
+});
+ 
+export const config = {
+  matcher: ['/', '/(sv|en)/:path*']
+};

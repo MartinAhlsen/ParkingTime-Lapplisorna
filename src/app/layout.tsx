@@ -14,7 +14,8 @@ import TrustedBy from "./components/TrustedBy";
 
 import MatildaCEO from "./components/MatildaCEO";
 import Footer from "./components/Footer";
-
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 
 const lato = Lato({
   weight: ["400"],
@@ -36,11 +37,15 @@ export const metadata: Metadata = {
     "Digital parking disc - directly on your mobile. A winning concept in a new, digitalized format.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: {locale}
 }: Readonly<{
   children: React.ReactNode;
+  params: {locale: string};
 }>) {
+
+  const messages = await getMessages();
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${lato.variable}`}>
