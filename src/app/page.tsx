@@ -8,6 +8,15 @@ import Header from './components/header';
 import Button from "./components/Button";
 import Banner from "./components/Hero";
 import { Ban } from "lucide";
+import { NextUIProvider } from "@nextui-org/react";
+import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
+import TitleSubtitle from "./components/TitleSubtitle";
+import WhyParkingTime from "./components/WhyParkingTime";
+import TrustedBy from "./components/TrustedBy";
+import Statistics from "./components/Statistics";
+import MatildaCEO from "./components/MatildaCEO";
+import FAQ from "./components/FAQ";
+import { trustedByOne, trustedByTwo } from "../../public/data/trustedByData";
 
 interface ButtonProperties {
   text: string;
@@ -45,7 +54,38 @@ const App = () => {
         <Banner page={"home"}/>
       <main>Parking Time</main>
       <Button {...TestButton} />
-    
+      
+          
+          <SmartParkingSolution />
+          <TitleSubtitle
+            title="How it works?"
+            subtitle={null}
+            overtitle={null}
+          />
+          <WhyParkingTime />
+          <TitleSubtitle
+            title="Customer testimonials"
+            subtitle="Hear from some of our client"
+            overtitle={null}
+          />
+
+          <TitleSubtitle
+            title="Don´t miss"
+            subtitle="We are expanding rapidly, subscribe to our newsletter."
+            overtitle="News"
+          />
+
+          <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
+          <Statistics />
+          <MatildaCEO />
+          <TitleSubtitle
+            title="Do you have a question?"
+            subtitle="Here some common questions answered"
+            overtitle="FAQ"
+          />
+          <NextUIProvider>
+          <FAQ />
+        </NextUIProvider>
     </div>);
 }
 
