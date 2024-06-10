@@ -5,33 +5,32 @@ import { useRouter } from 'next/navigation';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useTransition } from 'react';
 import Image from 'next/image';
-import Sweden from '../../../public/images/sweden.png';
-import English from '../../../public/images/circle.png';
-import Sweden1 from '../../../public/images/sweden1.png';
-import England1 from '../../../public/images/unoitedKingdom.png';
+import Sweden from "../../../../public/Images/languages/sweden.png"
+import English from "../../../../public/Images/languages/uk.png"
+
 
 const defaultLanguage = 'sv'; 
 
-const LocaleSwitcher = () => {
+const LangToogle = () => {
   const [isPending, startTransition] = useTransition();
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [selectedLocale, setSelectedLocale] = useState(defaultLanguage); // default to defaultLanguage
+  const [selectedLocale, setSelectedLocale] = useState(defaultLanguage); 
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Extract locale from the URL and set the initial locale
+    
     const localeFromUrl = pathname.split('/')[1];
-    if (localeFromUrl && ['sv', , 'no', 'fi', 'en'].includes(localeFromUrl)) {
+    if (localeFromUrl && ['sv', 'en'].includes(localeFromUrl)) {
       setSelectedLocale(localeFromUrl);
     } else {
-      setSelectedLocale(defaultLanguage); // Set to default language if not found in URL
+      setSelectedLocale(defaultLanguage); 
     }
   }, [pathname]);
 
   const onSelectChange = (nextLocale: string) => {
-    // Update the selected locale
+    
     setSelectedLocale(nextLocale);
 
     // Construct the new URL with the next locale
@@ -101,7 +100,7 @@ const LocaleSwitcher = () => {
               className="flex items-center p-2 cursor-pointer"
             >
               <Image
-                src={Sweden1}
+                src={Sweden}
                 alt="Swedish"
                 width={20}
                 height={20}
@@ -109,66 +108,7 @@ const LocaleSwitcher = () => {
               />{' '}
               Sv
             </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4 },
-              }}
-              viewport={{ once: true }}
-              onClick={() => onSelectChange('da')}
-              className="flex items-center p-2 cursor-pointer"
-            >
-              <Image
-                src={Denmark1}
-                alt="Danish"
-                width={20}
-                height={20}
-                className="mr-2"
-              />{' '}
-              Da
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4 },
-              }}
-              viewport={{ once: true }}
-              onClick={() => onSelectChange('no')}
-              className="flex items-center p-2 cursor-pointer"
-            >
-              <Image
-                src={Norway1}
-                alt="Norwegian"
-                width={20}
-                height={20}
-                className="mr-2"
-              />{' '}
-              No
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.4 },
-              }}
-              viewport={{ once: true }}
-              onClick={() => onSelectChange('fi')}
-              className="flex items-center p-2 cursor-pointer"
-            >
-              <Image
-                src={Finland1}
-                alt="Finnish"
-                width={20}
-                height={20}
-                className="mr-2"
-              />{' '}
-              Fi
-            </motion.li>
+            
             <motion.li
               initial={{ opacity: 0, y: -10 }}
               whileInView={{
@@ -181,7 +121,7 @@ const LocaleSwitcher = () => {
               className="flex items-center p-2 cursor-pointer"
             >
               <Image
-                src={England1}
+                src={England}
                 alt="English"
                 width={20}
                 height={20}
@@ -196,4 +136,4 @@ const LocaleSwitcher = () => {
   );
 };
 
-export default LocaleSwitcher;
+export default LangToogle;

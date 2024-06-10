@@ -21,6 +21,20 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "middleware.ts", "src/app/[lang]/dictionaries.js", "src/app/[lang]/article/[slug]/page.jsx", "src/app/[lang]/policy/page.jsx", "src/app/[lang]/page.jsx", "src/app/[lang]/news/page.jsx", "src/app/[lang]/contact_us/page.jsx", "src/app/[lang]/about_us/page.jsx", "src/app/REMOVEpage.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/middleware.ts",
+    "src/app/[locale]/dictionaries.js",
+    "src/app/[locale]/article/[slug]/page.jsx",
+    "src/app/[locale]/policy/page.jsx",
+    "src/app/[locale]/page.jsx",
+    "src/app/[locale]/news/page.jsx",
+    "src/app/[locale]/contact_us/page.jsx",
+    "src/app/[locale]/about_us/page.jsx",
+    "src/app/REMOVEpage.jsx"
+  ],
   "exclude": ["node_modules"]
 }

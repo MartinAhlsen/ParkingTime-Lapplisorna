@@ -17,6 +17,7 @@ import Statistics from "./components/Statistics";
 import MatildaCEO from "./components/MatildaCEO";
 import FAQ from "./components/FAQ";
 import { trustedByOne, trustedByTwo } from "../../public/data/trustedByData";
+import LangToogle from "./components/LangToogle";
 
 interface ButtonProperties {
   text: string;
@@ -51,6 +52,7 @@ const App = () => {
         </AnimatePresence>
     
         <Header />
+        <LangToogle />
         <Banner page={"home"}/>
       <main>Parking Time</main>
       <Button {...TestButton} />
