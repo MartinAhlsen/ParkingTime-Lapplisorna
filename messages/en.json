@@ -13,10 +13,11 @@
       "Comp_5_overtitle":"FAQ"
     },
     "NavItem": {
-    "Why parking Time?": "Why parking Time?",
-    "About us": "About us",
+    "Why_parking_time?": "Why parking Time?",
+    "About_us": "About us",
     "News": "News",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "Contact_us": "Contact us"
   },
   "smart_parking_solution": {
       "title":"Smart Parking Solution",

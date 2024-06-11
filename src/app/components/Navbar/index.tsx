@@ -14,11 +14,7 @@ interface ButtonProperties {
   formCategoryState?: string;
 }
  
-const ContactButton: ButtonProperties = {
-  text: "Contact us",
-  url: "/se/contact_us",
-  colorTheme: "light",
-};
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,8 +44,13 @@ const Navbar = () => {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: -20 },
   };
-  const t = useTranslations('NavItem');
+  const t = useTranslations("NavItem");
   const locale = useLocale(); // Get the current locale from next-intl
+  const ContactButton: ButtonProperties = {
+  text: "Contact us",
+  url: "/se/contact_us",
+  colorTheme: "light",
+};
   return (
     <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
       <div className="flex justify-between grow">
@@ -66,19 +67,19 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <ul className="flex justify-end gap-[5%]">
             <Link href="/WhyParkingTime" className="flex items-center">
-              <li className="hover:border-b button-text text-nowrap">Why Parking Time?</li>
+              <li className="hover:border-b button-text text-nowrap">{t("Why_parking_time?")}</li>
             </Link>
             <Link href={`/${locale}/about_us`} className="flex items-center">
-              <li className="hover:border-b button-text text-nowrap">About us</li>
+              <li className="hover:border-b button-text text-nowrap">{t("About_us")}</li>
             </Link>
             <Link href={`/${locale}/news`} className="flex items-center">
-              <li className="hover:border-b button-text text-nowrap">News</li>
+              <li className="hover:border-b button-text text-nowrap">{t("News")}</li>
             </Link>
             <Link href="/FAQ" className="flex items-center">
-              <li className="hover:border-b button-text text-nowrap">FAQ</li>
+              <li className="hover:border-b button-text text-nowrap">{t("FAQ")}</li>
             </Link>
             
-            <Link href={`/${locale}/contact_us`} className="flex items-center">
+            <Link href={`/${locale}/{contact_us}`} className="flex items-center">
             
               <Button {...ContactButton}/>
             </Link>

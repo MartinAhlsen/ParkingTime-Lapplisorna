@@ -55,11 +55,11 @@ const LangToogle = () => {
   // Get the flag image based on the selected locale
   const getFlagImage = (locale: string) => {
     if (locale === 'sv') {
-      return Sweden;
-    } else if (locale === 'en') {
       return England;
+    } else if (locale === 'en') {
+      return Sweden;
     } else {
-      return Sweden; // Default to Swedish if locale is not recognized
+      return England; // Default to Swedish if locale is not recognized
     }
   };
 
