@@ -1,5 +1,5 @@
 import Image from "next/image";
-import arrow from "../../../../../public/Images/arrowRight.svg"
+import arrow from "../../../../public/Images/arrowRight.svg"
 
 interface ArrowTextSubComponentProps {
     text: string,
