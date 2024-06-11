@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+# next.js
+/.next/
+!/.next/static/css/app/layout.css
 # Next.js
 /.next
 !/.next/static

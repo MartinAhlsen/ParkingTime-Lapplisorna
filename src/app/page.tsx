@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 import { AnimatePresence } from "framer-motion";
-import { usePathname } from 'next/navigation';
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import Header from './components/header';
 import Button from "./components/Button";
 import Banner from "./components/Hero";
@@ -17,10 +17,7 @@ import Statistics from "./components/Statistics";
 import MatildaCEO from "./components/MatildaCEO";
 import FAQ from "./components/FAQ";
 import { trustedByOne, trustedByTwo } from "../../public/data/trustedByData";
-
 import DownloadNow from "./components/DownloadNow";
-
-
 
 interface ButtonProperties {
   text: string;
@@ -58,9 +55,7 @@ const App = () => {
         <Banner page={"home"}/>
       <main>Parking Time</main>
       <Button {...TestButton} />
-
-      <NextUIProvider>
-
+      
           
           <SmartParkingSolution />
           <TitleSubtitle
@@ -83,20 +78,14 @@ const App = () => {
 
           <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
           <Statistics />
-
           <DownloadNow />
-
-
           <MatildaCEO />
           <TitleSubtitle
             title="Do you have a question?"
             subtitle="Here some common questions answered"
             overtitle="FAQ"
           />
-
-
-          
-
+          <NextUIProvider>
           <FAQ />
         </NextUIProvider>
     </div>);

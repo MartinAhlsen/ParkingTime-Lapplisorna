@@ -9,6 +9,10 @@ import MatildaImg from "../../../public/Images/Matilda-image.png"
 import Nordea from "../../../public/Images/nordea.jpg"
 import Vattenfall from "../../../public/Images/vattenfall.jpg"
 import Swedbank from "../../../public/Images/swedbank.jpg"
+
+
+
+
 const About_us = () => {
   
     return (
@@ -16,6 +20,7 @@ const About_us = () => {
         <Header/>
         <Banner page="about "/>
           <h2>About us</h2>
+
           <RightTextLeftImage />
           <TitleSubtitle
             title="Our Values"
@@ -38,9 +43,8 @@ const About_us = () => {
             subtitle="Contact us to find out more about our solution and how we can implement it in your municipality"
             overtitle={null}
             />
-            <Footer />
-          
-         
+           
+
           
         </>
     )
