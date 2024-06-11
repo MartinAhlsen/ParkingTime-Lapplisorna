@@ -42,6 +42,11 @@
 
 
     },
+    "statitics": {
+      "stat1": "Nedladdningar",
+      "stat2": "Parkeringsessioner",
+      "stat3": "Parkeringplatser"
+    },
     "MatildaCEO": {
       "title": "Vill du veta mer?",
       "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."

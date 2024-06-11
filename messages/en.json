@@ -1,8 +1,7 @@
 {
     "home": {
       "title": "Parking time",
-      "Comp_1_title":"Smart Parking Solution",
-      "Comp_1_paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
+
       "Comp_2_title":"How it works?",
       "Comp_3_title": "Customer testimonials",
       "Comp_3_subtitle": "Hear from some of our client",
@@ -37,6 +36,11 @@
       "Comp_3_paragraph": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
       "Comp_4_title": "Data-driven urban planning",
       "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
+    },
+    "statitics": {
+      "stat1": "Downloads",
+      "stat2": "Parking sessions",
+      "stat3": "Parking zones"
     },
     "MatildaCEO": {
       "title": "Want to know more?",
