@@ -61,16 +61,57 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       src = '/Images/hero-news.png';
       alt = 'News Banner';
       imageClass = 'h-[40vh] object-cover md:h-auto';
+      bannerContent = (
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="flex items-center mb-4">
+            <span className="relative flex h-3 w-3 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <span className="text-lg button-text">News</span>
+          </div>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We are Transforming</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">Parking Experiences</h1>
+        </div>
+      );
       break;
     case 'contact':
       src = '/Images/hero-contact.png';
       alt = 'Contact Banner';
       imageClass = 'hidden md:block';
+      bannerContent = (
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="flex items-center mb-4">
+            <span className="relative flex h-3 w-3 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <span className="text-lg button-text">News</span>
+          </div>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We would love to</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">hear from you!</h1>
+        </div>
+      );
       break;
     case 'about':
       src = '/Images/hero-aboutUs.png';
       alt = 'About Us Banner';
       imageClass = 'h-[40vh] object-cover md:h-auto max-w-full';
+      bannerContent = (
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="flex items-center mb-4 md:mt-2">
+            <span className="relative flex h-3 w-3 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <span className="text-lg button-text">News</span>
+          </div>
+          <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">Parking Time Sweden</h1>
+          <p className="button-text mb-2">We are a tech startup dedicated to transforming the parking</p>
+          <p className="button-text mb-2">experience for all stakeholders - parkers, parking attendants,</p>
+          <p className="button-text mb-2">municipalities and property owners.</p>
+        </div>
+      );
       break;
     default:
       src = '/Images/hero.homepage.png';
@@ -80,7 +121,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
   return (
     <div className="relative">
       <img src={src} alt={alt} className={`w-full ${imageClass}`} />
-      {page === 'home' && bannerContent}
+      {bannerContent}
     </div>
   );
 };
