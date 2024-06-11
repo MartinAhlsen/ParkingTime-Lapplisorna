@@ -6,7 +6,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useTransition } from 'react';
 import Image from 'next/image';
 import Sweden from "../../../../public/Images/languages/sweden.png"
-import English from "../../../../public/Images/languages/uk.png"
+import England from "../../../../public/Images/languages/uk.png"
 
 
 const defaultLanguage = 'sv'; 
@@ -57,7 +57,7 @@ const LangToogle = () => {
     if (locale === 'sv') {
       return Sweden;
     } else if (locale === 'en') {
-      return English;
+      return England;
     } else {
       return Sweden; // Default to Swedish if locale is not recognized
     }

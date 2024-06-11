@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "../Button";
+import LangToogle from "../LangToogle";
 
 interface ButtonProperties {
   text: string;
@@ -74,12 +75,16 @@ const Navbar = () => {
             <Link href="/FAQ" className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">FAQ</li>
             </Link>
+            
             <Link href="/contact_us" className="flex items-center">
+            
               <Button {...ContactButton}/>
             </Link>
           </ul>
+          <LangToogle />
         </div>
         <div className="flex items-center md:hidden">
+          <LangToogle />
           <button
             className="focus:outline-none flex items-center justify-center"
             onClick={toggleMenu}
@@ -114,7 +119,9 @@ const Navbar = () => {
           <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
           <motion.a variants={itemVariants} href="/news" className="block mb-2 button-text">News</motion.a>
           <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
+          
           <Button {...ContactButton} />
+          
         </motion.div>
       )}
     </nav>
