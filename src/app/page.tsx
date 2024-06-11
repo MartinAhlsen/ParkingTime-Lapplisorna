@@ -30,7 +30,7 @@ function HomeInside() {
 
   const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleSubmitForm = function (e: any) {
+  const handleSubmitForm = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!executeRecaptcha) {
       console.log("Execute recaptcha not available yet");
@@ -39,43 +39,39 @@ function HomeInside() {
       );
       return;
     }
-    executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
-      submitEnquiryForm(gReCaptchaToken);
-    });
+    try {
+      const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
+      await submitEnquiryForm(gRecaptchaToken);
+    } catch (error) {
+      console.log("Recaptcha execution error:", error);
+      setNotification("Recaptcha execution error");
+    }
   };
 
-  const submitEnquiryForm = (gReCaptchaToken: string) => {
-    async function goAsync() {
-      const response = await axios({
-        method: "post",
-        url: "/api/contactFormSubmit",
-        data: {
-          firstName: firstName,
-          lastName: lastName,
-          email: email,
-          hearFromSponsors: hearFromSponsors,
-          gRecaptchaToken: gReCaptchaToken,
-        },
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
+  const submitEnquiryForm = async (gRecaptchaToken: string) => {
+    try {
+      const response = await axios.post("/api/contactFormSubmit", {
+        firstName,
+        lastName,
+        email,
+        hearFromSponsors,
+        gRecaptchaToken,
       });
 
-      if (response?.data?.success === true) {
-        setNotification(`Success with score: ${response?.data?.score}`);
+      if (response.data.success) {
+        setNotification(`Success with score: ${response.data.score}`);
       } else {
-        setNotification(`Failure with score: ${response?.data?.score}`);
+        setNotification(`Failure with score: ${response.data.score}`);
       }
+    } catch (error) {
+      console.log("Form submission error:", error);
+      setNotification("Form submission error");
     }
-    goAsync().then(() => {}); // suppress typescript error
   };
 
   return (
     <div className="container">
       <main className="mt-5">
-        {" "}
-        {/* Add a top margin for better spacing */}
         <h2>Interested in Silicon Valley Code Camp</h2>
         <form onSubmit={handleSubmitForm}>
           <div className="mb-3">
@@ -83,7 +79,7 @@ function HomeInside() {
               type="text"
               name="firstName"
               value={firstName}
-              onChange={(e) => setFirstName(e?.target?.value)}
+              onChange={(e) => setFirstName(e.target.value)}
               className="form-control"
               placeholder="First Name"
             />
@@ -93,7 +89,7 @@ function HomeInside() {
               type="text"
               name="lastName"
               value={lastName}
-              onChange={(e) => setLastName(e?.target?.value)}
+              onChange={(e) => setLastName(e.target.value)}
               className="form-control"
               placeholder="Last Name"
             />
@@ -103,7 +99,7 @@ function HomeInside() {
               type="text"
               name="email"
               value={email}
-              onChange={(e) => setEmail(e?.target?.value)}
+              onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               placeholder="Email Address"
             />
@@ -113,7 +109,7 @@ function HomeInside() {
               type="checkbox"
               name="hearFromSponsors"
               checked={hearFromSponsors}
-              onChange={(e) => setHearFromSponsors(e?.target?.checked)}
+              onChange={(e) => setHearFromSponsors(e.target.checked)}
               className="form-check-input"
             />
             <label className="form-check-label">Hear from our sponsors</label>

@@ -7,11 +7,14 @@ export default function GoogleCaptchaWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  const recaptchaKey: string | undefined =
-    process?.env?.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  const recaptchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  if (!recaptchaKey) {
+    console.error("reCAPTCHA site key is not defined");
+  }
+
   return (
     <GoogleReCaptchaProvider
-      reCaptchaKey={recaptchaKey ?? "NOT DEFINED"}
+      reCaptchaKey={recaptchaKey ?? ""}
       scriptProps={{
         async: false,
         defer: false,

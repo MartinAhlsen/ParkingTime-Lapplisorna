@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.4.1",
     "@types/grecaptcha": "^3.0.9",
     "@types/nodemailer": "^6.4.15",
+    "@types/react-google-recaptcha": "^2.1.9",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "negotiator": "^0.6.3",
