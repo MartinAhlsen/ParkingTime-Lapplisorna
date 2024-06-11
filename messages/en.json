@@ -13,6 +13,12 @@
       "Comp_5_subtitle": "Here some common questions answered",
       "Comp_5_overtitle":"FAQ"
     },
+    "NavItem": {
+    "Why parking Time?": "Why parking Time?",
+    "About us": "About us",
+    "News": "News",
+    "FAQ": "FAQ"
+  },
     "policy": {
       "title": "policy EN"
     },

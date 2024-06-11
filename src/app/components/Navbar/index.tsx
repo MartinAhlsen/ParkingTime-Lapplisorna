@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "../Button";
 import LangToogle from "../LangToogle";
+import { useLocale, useTranslations } from "next-intl";
 
 interface ButtonProperties {
   text: string;
@@ -47,11 +48,12 @@ const Navbar = () => {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: -20 },
   };
-
+  const t = useTranslations('NavItem');
+  const locale = useLocale(); // Get the current locale from next-intl
   return (
     <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
       <div className="flex justify-between grow">
-        <Link href="/" className="flex items-center">
+        <Link href={`/${locale}/`}  className="flex items-center">
           <Image
             src="/Images/P-icon.png"
             alt="Icon"
@@ -66,17 +68,17 @@ const Navbar = () => {
             <Link href="/WhyParkingTime" className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">Why Parking Time?</li>
             </Link>
-            <Link href="/about_us" className="flex items-center">
+            <Link href={`/${locale}/about_us`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">About us</li>
             </Link>
-            <Link href="/news" className="flex items-center">
+            <Link href={`/${locale}/news`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">News</li>
             </Link>
             <Link href="/FAQ" className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">FAQ</li>
             </Link>
             
-            <Link href="/contact_us" className="flex items-center">
+            <Link href={`/${locale}/contact_us`} className="flex items-center">
             
               <Button {...ContactButton}/>
             </Link>

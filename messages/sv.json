@@ -13,6 +13,13 @@
       "Comp_5_subtitle": "Här är några vanliga frågor besvarade",
       "Comp_5_overtitle":"FAQ"
     },
+    "NavItem": {
+        "Why parking Time?": "Varför parking Time?",
+        "About us": "Om oss",
+        "News": "Nyheter",
+        "FAQ": "FAQ"
+    
+    },
     "policy": {
       "title": "Politik SE"
     },
