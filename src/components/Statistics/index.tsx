@@ -1,9 +1,9 @@
 "use client";
 
 import StatisticCard from "./StatisticCard";
-import downloadImg from "../../../../public/Images/download-icon.png";
-import mapImg from "../../../../public/Images/map-icon.png";
-import parkingImg from "../../../../public/Images/parking-icon.png";
+import downloadImg from "../../../public/Images/download-icon.png";
+import mapImg from "../../../public/Images/map-icon.png";
+import parkingImg from "../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState, useRef, RefObject } from "react";
 import TitleSubtitle from "../TitleSubtitle";
