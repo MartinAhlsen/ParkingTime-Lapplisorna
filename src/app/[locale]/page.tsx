@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import SplashScreen from '@/components/SplashScreen/SplashScreen';
 import Header from '@/components/header';
 import Banner from '@/components/Hero';
-import SmartParkingSolution from '@/components/Statistics/SmartParkingSolution';
+import SmartParkingSolution from '@/components/SmartParkingSolution';
 import TitleSubtitle from '@/components/TitleSubtitle';
 import WhyParkingTime from '@/components/WhyParkingTime';
 import TrustedBy from '@/components/TrustedBy';
