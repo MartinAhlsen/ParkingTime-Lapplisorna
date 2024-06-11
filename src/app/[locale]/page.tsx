@@ -54,8 +54,6 @@ export default function Home() {
       <Header />
       <LangToogle />
       <Banner page={"home"} />
-      <main>Parking Time</main>
-      <Button {...TestButton} />
       <NextUIProvider>
         <SmartParkingSolution />
         <TitleSubtitle
@@ -65,24 +63,24 @@ export default function Home() {
         />
         <WhyParkingTime />
         <TitleSubtitle
-          title="Customer testimonials"
-          subtitle="Hear from some of our client"
+          title={t("Comp_3_title")}
+          subtitle={t("Comp_3_subtitle")}
           overtitle={null}
         />
 
         <TitleSubtitle
-          title="Don´t miss"
-          subtitle="We are expanding rapidly, subscribe to our newsletter."
-          overtitle="News"
+          title={t("Comp_4_title")}
+          subtitle={t("Comp_4_subtitle")}
+          overtitle={t("Comp_4_overtitle")}
         />
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
         <MatildaCEO />
         <TitleSubtitle
-          title="Do you have a question?"
-          subtitle="Here some common questions answered"
-          overtitle="FAQ"
+          title={t("Comp_5_title")}
+          subtitle={t("Comp_5_subtitle")}
+          overtitle={t("Comp_5_overtitle")}
         />
         <FAQ />
       </NextUIProvider>
