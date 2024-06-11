@@ -50,9 +50,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <SplashScreen />}
       </AnimatePresence>
-      <h1>{t("title")}</h1>
       <Header />
-      <LangToogle />
       <Banner page={"home"} />
       <NextUIProvider>
         <SmartParkingSolution />

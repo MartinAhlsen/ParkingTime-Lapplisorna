@@ -20,9 +20,17 @@
         "FAQ": "FAQ"
     
     },
+    "smart_parking_solution": {
+      "title":"En smart lösning för parkering",
+      "paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
+      "arrow1": "Vi strävar efter att stödja tillväxten och effektiviteten i stadsmiljöer.",
+      "arrow2": "Vår digitala p-skiva förenklar parkeringsprocessen.",
+      "arrow3": "Befintliga parkeringsvaktssystem kan enkelt integreras med vårt system.",
+      "final_paragraph": "Vi ser fram emot att dela mer om vår lösning i ett möte."
+    },
     "why_parking_time": {
       
-      "title":"Why Parking Time?",
+      "title":"Varför Parking Time?",
       "Comp_1_title":"Undvik böter och minska stressen",
       "Comp_1_paragraph":"Vår digitala lösning lockar fler besökare genom att eliminera fysiska skivor och minska böter. Detta förenklar parkeringen, ökar fottrafiken, ekonomisk aktivitet och stadens vitalitet samtidigt som det minskar stressen.",
       "Comp_2_title":"Förenklad parkering för användare",
@@ -33,6 +41,10 @@
       "Comp_4_paragraph": "Den digitala parkeringsskivan kan på sikt optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser."
 
 
+    },
+    "MatildaCEO": {
+      "title": "Vill du veta mer?",
+      "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
     },
     "policy": {
       "title": "Politik SE"
