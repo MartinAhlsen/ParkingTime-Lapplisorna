@@ -6,7 +6,7 @@ import mapImg from "../../../public/Images/map-icon.png";
 import parkingImg from "../../../public/Images/parking-icon.png";
 import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState, useRef, RefObject } from "react";
-import TitleSubtitle from "../TitleSubtitle";
+
 
 const Statistics: React.FC = () => {
   const count1 = useMotionValue(4980);
