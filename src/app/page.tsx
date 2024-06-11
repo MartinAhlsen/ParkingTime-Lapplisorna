@@ -53,8 +53,7 @@ const App = () => {
     
         <Header />
         <Banner page={"home"}/>
-      <main>Parking Time</main>
-      <Button {...TestButton} />
+      
       
           
           <SmartParkingSolution />
