@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SmartParkingImg from "../../../../../public/Images/smartParkingSolution-homepage.png"
+import SmartParkingImg from "../../../../../../public/Images/smartParkingSolution-homepage.png"
 import ArrowTextSubComponent from "./ArrowTextSubComponent";
 
 const SmartParkingSolution = () => {
