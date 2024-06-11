@@ -4,7 +4,7 @@ import { Project } from "../types/Project";
 export async function getProjects(): Promise<Project[]> {
     const client = createClient({
         projectId: "m838832i",
-        dataset: "production",
+        dataset: "Production",
     });
 
     return client.fetch(
