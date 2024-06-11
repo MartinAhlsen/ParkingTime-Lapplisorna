@@ -1,4 +1,7 @@
+import { useTranslations } from "next-intl";
+
 const Footer = () => {
+  const t = useTranslations("footer");
   return (
     <footer className="bg-pt-primary text-white py-8 mx-auto px-8">
     <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start">
@@ -10,7 +13,7 @@ const Footer = () => {
           <p>NYKÖPING</p>
         </div>
         <div className="text-sm mt-4 md:mt-0 md:ml-8">
-          <p className="p1">Contact:</p>
+          <p className="p1">{t("contact")}:</p>
           <p>+46 72 399 15 15</p>
           <p>info@parkingtime.se</p>
           <div className="flex space-x-2 mt-2">
@@ -26,10 +29,9 @@ const Footer = () => {
       <div className="text-sm mt-8 md:mt-0">
         <p className=" p1 pb-4">Links</p>
         <ul className="flex flex-col md:flex-row align-baseline space-y-4 md:space-y-0 md:py-4">
-          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">Support</a></li>
-          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">Contact</a></li>
-          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">About us</a></li>
-          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">News</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">{t("contact")}</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">{t("about_us")}</a></li>
+          <li><a href="/" className="md:pr-4 p2 font-size-[14px] md:underline">{t("news")}</a></li>
         </ul>
       </div>
     </div>
@@ -37,7 +39,7 @@ const Footer = () => {
       <div className="container mx-auto px-8 flex flex-col md:flex-row md:justify-between">
       <p className="md:text-right md:flex-row mt-4 md:mt-0 ">© 2024 Parking Time AB</p>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:flex md:space-x-4">
-          <a href="#" className="py-2 underline">Privacy Policy</a>
+          <a href="#" className="py-2 underline">{t("policy")}</a>
         </div>
         
       </div>

@@ -38,7 +38,7 @@
       "Comp_4_title": "Data-driven urban planning",
       "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
     },
-    "statitics": {
+    "statistics": {
       "stat1": "Downloads",
       "stat2": "Parking sessions",
       "stat3": "Parking zones"
@@ -46,6 +46,12 @@
     "MatildaCEO": {
       "title": "Want to know more?",
       "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
+    },
+    "footer": {
+      "contact": "Contact",
+      "about_us": "About us",
+      "news": "News",
+      "policy": "Privacy Policy"
     },
     "policy": {
       "title": "policy EN"

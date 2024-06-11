@@ -51,6 +51,12 @@
       "title": "Vill du veta mer?",
       "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
     },
+    "footer": {
+      "contact": "Kontakt",
+      "about_us": "Om oss",
+      "news": "Nyheter",
+      "policy": "Integretspolicy"
+    },
     "policy": {
       "title": "Politik SE"
     },
