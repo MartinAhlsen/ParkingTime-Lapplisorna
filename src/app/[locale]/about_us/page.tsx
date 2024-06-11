@@ -1,14 +1,14 @@
 import React from "react";
+
+import MatildaImg from "../../../../public/Images/Matilda-image.png"
+import Nordea from "../../../../public/Images/nordea.jpg"
+import Vattenfall from "../../../../public/Images/vattenfall.jpg"
+import Swedbank from "../../../../public/Images/swedbank.jpg"
 import Header from "../components/header";
 import Banner from "../components/Hero";
-import TitleSubtitle from "../components/TitleSubtitle";
-import Footer from "../components/Footer";
 import RightTextLeftImage from "../components/RightTextLeftImage";
+import TitleSubtitle from "../components/TitleSubtitle";
 import StaffCard from "../components/StaffCard";
-import MatildaImg from "../../../public/Images/Matilda-image.png"
-import Nordea from "../../../public/Images/nordea.jpg"
-import Vattenfall from "../../../public/Images/vattenfall.jpg"
-import Swedbank from "../../../public/Images/swedbank.jpg"
 
 
 

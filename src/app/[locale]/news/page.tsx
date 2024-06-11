@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from "../components/header";
-import Banner from '../components/Hero';
 import TitleSubtitle from '../components/TitleSubtitle';
+import Banner from '../components/Hero';
+import Header from '../components/header';
+
 
 const News = () => {
   return (
