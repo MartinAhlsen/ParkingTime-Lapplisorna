@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { Lato, Roboto } from "next/font/google";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import "./globals.css"
-import type { Metadata } from "next";
-import Footer from "../components/Footer";
-
+import "../globals.css"
+import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+import { Lato, Roboto } from "next/font/google";
 
 const lato = Lato({
   weight: ["400"],

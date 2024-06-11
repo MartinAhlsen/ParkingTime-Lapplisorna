@@ -1,22 +1,21 @@
-"use client";
-import { useTranslations } from "next-intl";
+"use client"
+
+import {useTranslations} from 'next-intl';
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NextUIProvider } from "@nextui-org/react";
-import SplashScreen from "../components/SplashScreen/SplashScreen";
 import { AnimatePresence } from "framer-motion";
-import Header from "../components/header";
-import FAQ from "../components/FAQ";
-import TitleSubtitle from "../components/TitleSubtitle";
-import MatildaCEO from "../components/MatildaCEO";
-import TrustedBy from "../components/TrustedBy";
-import Statistics from "../components/Statistics";
-import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData";
-import WhyParkingTime from "../components/WhyParkingTime";
-import SmartParkingSolution from "../components/SmartParkingSolution";
-import Button from "../components/Button";
-import LangToogle from "../components/LangToogle";
-import Banner from "../components/Hero";
+import SplashScreen from '@/components/SplashScreen/SplashScreen';
+import Header from '@/components/header';
+import Banner from '@/components/Hero';
+import SmartParkingSolution from '@/components/SmartParkingSolution';
+import TitleSubtitle from '@/components/TitleSubtitle';
+import WhyParkingTime from '@/components/WhyParkingTime';
+import TrustedBy from '@/components/TrustedBy';
+import Statistics from '@/components/Statistics';
+import MatildaCEO from '@/components/MatildaCEO';
+import FAQ from '@/components/FAQ';
+import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 interface ButtonProperties {
   text: string;
   url: string;

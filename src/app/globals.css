@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+@layer components {
+  .h1 {
+    @apply font-lato font-bold text-[80px] leading-[80px];
+  }
+
+  .h2 {
+    @apply font-lato font-semibold text-[24px] leading-[35px];
+  }
+
+  .h3 {
+    @apply font-lato font-bold text-[48px] leading-[120px];
+  }
+
+  .h4 {
+    @apply font-lato font-bold text-[36px];
+  }
+
+  .h5 {
+    @apply font-lato font-bold text-[32px];
+  }
+
+  .h6 {
+    @apply font-lato font-bold text-[24px];
+  }
+
+  .h7 {
+    @apply font-lato font-bold text-[18px]
+  }
+
+  .button-text {
+    @apply font-lato font-medium text-[16px];
+  }
+
+  .p1 {
+    @apply font-roboto font-medium text-[16px] leading-[32px];
+  }
+
+  .links {
+    @apply font-roboto font-medium text-[16px] leading-[150%]
+  }
+
+  .p2 {
+    @apply font-roboto font-normal text-[16px] leading-[150%];
+  }
+
+  .p3 {
+    @apply font-roboto italic font-normal text-[14px];
+  }
+
+  .p3Italic {
+    @apply font-roboto italic font-normal text-[16px] leading-[26px]
+  }
+
+  .p3Quote {
+    @apply font-roboto italic font-normal text-[16px] leading-[150%]
+  }
+}
