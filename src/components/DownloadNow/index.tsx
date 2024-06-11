@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageCarPhone from "../../../../../public/Images/mobileDownloadNow-picture.png"
+import ImageCarPhone from "../../../public/Images/mobileDownloadNow-picture.png"
 
 
 const DownloadNow = () => {

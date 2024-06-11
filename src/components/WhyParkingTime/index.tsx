@@ -1,8 +1,8 @@
 import WhyCard from "./WhyCard";
-import arrowG from "../../../../public/Images/arrowGrowth-icon.png";
-import phone from "../../../../public/Images/phoneTap-icon.png"
-import group from "../../../../public/Images/group-icon.png"
-import computer from "../../../../public/Images/download-icon.png"; {/*FIND CORRECT ONE  */}
+import arrowG from "../../../public/Images/arrowGrowth-icon.png";
+import phone from "../../../public/Images/phoneTap-icon.png"
+import group from "../../../public/Images/group-icon.png"
+import computer from "../../../public/Images/download-icon.png"; 
 
 
 
