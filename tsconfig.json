@@ -26,15 +26,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/middleware.ts",
-    "src/app/[locale]/dictionaries.js",
-    "src/app/[locale]/article/[slug]/page.jsx",
-    "src/app/[locale]/policy/page.jsx",
-    "src/app/[locale]/page.tsx",
-    "src/app/[locale]/news/page.jsx",
-    "src/app/[locale]/contact_us/page.jsx",
-    "src/app/[locale]/about_us/page.jsx",
-    "src/app/REMOVEpage.jsx"
   ],
   "exclude": ["node_modules"]
 }
