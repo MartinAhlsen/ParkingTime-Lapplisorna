@@ -1,7 +1,12 @@
 import React from 'react';
+<<<<<<< HEAD:src/app/news/page.tsx
 import Header from "../components/header";
 import Banner from '../components/Hero';
 import TitleSubtitle from '../components/TitleSubtitle';
+=======
+import Header from "../../components/header";
+import Banner from '../../components/Hero';
+>>>>>>> feature/PAR-37-BETA-INT:src/app/[locale]/news/page.tsx
 
 const News = () => {
   return (

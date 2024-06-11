@@ -1,20 +1,11 @@
-
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Lato, Roboto } from "next/font/google";
-<<<<<<< HEAD
-
-import type { Metadata } from "next";
-import "./globals.css";
-
-=======
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import "../app/[locale]/globals.css"
+import "./globals.css"
 import type { Metadata } from "next";
->>>>>>> feature/PAR-37-BETA-INT
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 
 const lato = Lato({
@@ -54,14 +45,9 @@ export default async function LocaleLayout({
       <body className={`${roboto.variable} ${lato.variable}`} suppressHydrationWarning={true}>
       <NextIntlClientProvider messages={messages} >
           {children}
-<<<<<<< HEAD
-        
-        <Footer/>
-=======
         </NextIntlClientProvider>
      
-       
->>>>>>> feature/PAR-37-BETA-INT
+        <Footer />
       </body>
     </html>
   );

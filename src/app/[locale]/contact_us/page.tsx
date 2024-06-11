@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/header";
-import Banner from "../components/Hero";
+import Header from "../../components/header";
+import Banner from "../../components/Hero";
 
 const Contact_us = () => {
   

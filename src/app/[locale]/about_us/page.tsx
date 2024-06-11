@@ -1,4 +1,7 @@
+import Banner from "@/app/components/Hero";
+import Header from "@/app/components/header";
 import React from "react";
+<<<<<<< HEAD:src/app/about_us/page.tsx
 import Header from "../components/header";
 import Banner from "../components/Hero";
 import TitleSubtitle from "../components/TitleSubtitle";
@@ -9,6 +12,10 @@ import MatildaImg from "../../../public/Images/Matilda-image.png"
 import Nordea from "../../../public/Images/nordea.jpg"
 import Vattenfall from "../../../public/Images/vattenfall.jpg"
 import Swedbank from "../../../public/Images/swedbank.jpg"
+=======
+
+
+>>>>>>> feature/PAR-37-BETA-INT:src/app/[locale]/about_us/page.tsx
 const About_us = () => {
   
     return (
