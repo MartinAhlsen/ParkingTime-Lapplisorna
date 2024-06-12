@@ -67,7 +67,9 @@
       "title": "Nyheter"
     },
     "about_us": {
-      "title": "Om oss"
+      "title": "Om oss",
+      "values_title":"Våra värderingar",
+      "values_subtitle":"Våra saker vi tror på."
     }
   
   }

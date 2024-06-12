@@ -63,7 +63,9 @@
       "title": "News"
     },
     "about_us": {
-      "title": "About Us"
+      "title": "Om oss",
+      "values_title":"Our Values",
+      "values_subtitle":"The things we believe in."
     }
   
   }
