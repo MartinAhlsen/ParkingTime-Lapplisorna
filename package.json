@@ -12,20 +12,15 @@
     "@formatjs/intl-localematcher": "^0.5.4",
     "@nextui-org/accordion": "^2.0.34",
     "@nextui-org/react": "^2.4.1",
-    "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.44.0",
     "framer-motion": "^11.2.10",
     "locomotive-scroll": "^4.1.4",
     "lucide": "^0.383.0",
     "negotiator": "^0.6.3",
     "next": "14.2.3",
-    "next-sanity": "^9.3.10",
+    "next-intl": "^3.15.0",
     "react": "^18",
     "react-dom": "^18",
-    "sanity": "^3.44.0",
-    "sass": "^1.77.4",
-    "sharp": "^0.33.4",
-    "styled-components": "^6.1.11"
+    "sass": "^1.77.4"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",
