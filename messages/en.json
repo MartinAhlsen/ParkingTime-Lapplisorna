@@ -1,0 +1,70 @@
+{
+    "home": {
+      "title": "Parking time",
+
+      "Comp_2_title":"How it works?",
+      "Comp_3_title": "Customer testimonials",
+      "Comp_3_subtitle": "Hear from some of our client",
+      "Comp_4_title": "Don´t miss",
+      "Comp_4_subtitle": "We are expanding rapidly, subscribe to our newsletter.",
+      "Comp_4_overtitle":"News",
+      "Comp_5_title": "Do you have a question?",
+      "Comp_5_subtitle": "Here some common questions answered",
+      "Comp_5_overtitle":"FAQ"
+    },
+    "NavItem": {
+    "Why_parking_time?": "Why parking Time?",
+    "About_us": "About us",
+    "News": "News",
+    "FAQ": "FAQ",
+    "Contact_us": "Contact us"
+  },
+  "smart_parking_solution": {
+      "title":"Smart Parking Solution",
+      "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
+      "arrow1": "We aim to support the growth and efficiency of urban areas.",
+      "arrow2": "Our digital parking disc simplifies the parking process.",
+      "arrow3": "Any parking attendant systems can easily be integrated with our system.",
+      "final_paragraph": "We're excited to share more about our solution in a meeting."
+  },
+    "why_parking_time": {
+      "title":"Why Parking Time?",
+      "Comp_1_title":"Increased revenue & reduced stress",
+      "Comp_1_paragraph":"Our digital solution attracts more visitors by eliminating physical discs and reducing fines. This simplifies parking, boosts foot traffic, economic activity and city vibrancy  while reducing stress.",
+      "Comp_2_title":"Simplified parking for users",
+      "Comp_2_paragraph":"Our app lets you effortlessly set, adjust, and monitor parking time. With a user-friendly interface, you can quickly find spots and manage parking. We continuously update based on customer feedback to ensure an efficient and hassle-free experience.",
+      "Comp_3_title": "Integration with existing systems",
+      "Comp_3_paragraph": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
+      "Comp_4_title": "Data-driven urban planning",
+      "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
+    },
+    "statistics": {
+      "stat1": "Downloads",
+      "stat2": "Parking sessions",
+      "stat3": "Parking zones"
+    },
+    "MatildaCEO": {
+      "title": "Want to know more?",
+      "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
+    },
+    "footer": {
+      "contact": "Contact",
+      "about_us": "About us",
+      "news": "News",
+      "policy": "Privacy Policy"
+    },
+    "policy": {
+      "title": "policy EN"
+    },
+    "contact_us": {
+      "title": "Contac Us"
+    },
+    "news": {
+      "title": "News"
+    },
+    "about_us": {
+      "title": "About Us"
+    }
+  
+  }
+
