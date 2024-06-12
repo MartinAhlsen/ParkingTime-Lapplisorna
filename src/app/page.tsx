@@ -10,6 +10,7 @@ import Banner from "./components/Hero";
 import { Ban } from "lucide";
 import { NextUIProvider } from "@nextui-org/react";
 import SmartParkingSolution from "./components/Statistics/SmartParkingSolution";
+import HowItWorks from "./components/HowItWorks";
 import TitleSubtitle from "./components/TitleSubtitle";
 import WhyParkingTime from "./components/WhyParkingTime";
 import TrustedBy from "./components/TrustedBy";
@@ -57,11 +58,7 @@ const App = () => {
       
           
           <SmartParkingSolution />
-          <TitleSubtitle
-            title="How it works?"
-            subtitle={null}
-            overtitle={null}
-          />
+          <HowItWorks/>
           <WhyParkingTime />
           <TitleSubtitle
             title="Customer testimonials"
