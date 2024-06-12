@@ -68,8 +68,14 @@
     },
     "about_us": {
       "title": "Om oss",
-      "values_title":"Våra värderingar",
-      "values_subtitle":"Våra saker vi tror på."
+      "values_title":"Our Values",
+      "values_subtitle":"The things we believe in.",
+      "card_1_title": "Enkelhet",
+      "card_1_p": "Vi strävar efter att skapa enkla och smidiga upplevelser.",
+      "card_2_title": "Innovation",
+      "card_2_p": "Försöker alltid förbättra och göra vår app till en ledande inom sitt område.",
+      "card_3_title": "Användarvänlig",
+      "card_3_p": "Det är avgörande att vår tjänst möter användarnas behov och förbättrar deras parkeringsupplevelse."
     }
   
   }

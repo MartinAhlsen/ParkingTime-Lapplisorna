@@ -65,7 +65,13 @@
     "about_us": {
       "title": "Om oss",
       "values_title":"Our Values",
-      "values_subtitle":"The things we believe in."
+      "values_subtitle":"The things we believe in.",
+      "card_1_title": "Simplicity",
+      "card_1_p": "We are striving to create simple and smooth experiences.",
+      "card_2_title": "Innovation",
+      "card_2_p": " Always trying to improve and making our app a leader in its field.",
+      "card_3_title": "User friendly",
+      "card_3_p": "It's crucial that our service meets users' needs and enhances their parking experience."
     }
   
   }
