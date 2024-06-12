@@ -32,7 +32,7 @@ const Story = () => {
         <div className="flex p-10 justify-center md:justify-normal">
         <Button
           text="Book a meeting" 
-          url="/" 
+          url="/contact_us" 
           colorTheme="dark"
         />
         </div>
