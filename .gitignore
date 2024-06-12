@@ -12,6 +12,15 @@
 # next.js
 /.next/
 !/.next/static/css/app/layout.css
+# Next.js
+/.next
+!/.next/static
+/.next/static/*
+!/.next/static/css
+/.next/static/css/*
+!/.next/static/css/app
+/.next/static/css/app/*
+!/.next/static/css/app/layout.css
 
 # production
 /build
