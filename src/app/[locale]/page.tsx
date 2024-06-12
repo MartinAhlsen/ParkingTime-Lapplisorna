@@ -40,7 +40,7 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 2000);
+      }, 2700);
     })();
   }, []);
   const t = useTranslations("home");

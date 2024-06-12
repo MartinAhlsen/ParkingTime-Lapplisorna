@@ -14,7 +14,7 @@ const About_us = () => {
   return (
     <>
       <Header />
-      <Banner page="about " />
+      <Banner page="about" />
       <h2>About us</h2>
 
       <RightTextLeftImage />
