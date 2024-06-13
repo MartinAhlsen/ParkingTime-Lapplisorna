@@ -28,6 +28,14 @@
       "arrow3": "Befintliga parkeringsvaktssystem kan enkelt integreras med vårt system.",
       "final_paragraph": "Vi ser fram emot att dela mer om vår lösning i ett möte."
     },
+    "testimonials": {
+      "title": "Kundreferenser",
+      "subtitle": "Hör från några av våra kunder.",
+      "main_text1":"“Parking Time har betydligt förbättrat vår parkeringshantering och användarnöjdhet i stadskärnan. Enkelheten och den intuitiva gränssnittet har gjort det enkelt för invånare och besökare att hitta och hantera parkering. Vi rekommenderar starkt Parking Time till andra kommuner som letar efter en modern och effektiv parkeringslösning.”",
+      "main_text2":"“Implementering av Parking Time har varit en spelomvandlare för vårt stadsplaneringsarbete. De detaljerade användningsdata och beteendemönster som tillhandahålls av appen har gett oss värdefulla insikter om parkeringstrender och hjälpt oss att optimera våra parkeringsresurser. Parking Time har verkligen revolutionerat vårt sätt att närma oss parkering och stadsutveckling.”",
+      "role1":"Stad Arkitekt, Falköping Kommun",
+      "role2": "Kommun ansvarig, Nässjö Kommun" 
+  },
     "why_parking_time": {
       
       "title":"Varför Parking Time?",

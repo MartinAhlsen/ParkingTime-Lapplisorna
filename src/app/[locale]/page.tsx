@@ -17,6 +17,7 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
 interface ButtonProperties {
   text: string;
@@ -45,9 +46,7 @@ export default function Home() {
       }, 2700);
     })();
   }, []);
-
   const t = useTranslations("home");
-  
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -58,25 +57,11 @@ export default function Home() {
       <NextUIProvider>
         <SmartParkingSolution />
         <HowItWorks/>
-        <TitleSubtitle
-          title={t("Comp_2_title")}
-          subtitle={null}
-          overtitle={null}
-        />
         <WhyParkingTime />
-        <TitleSubtitle
-          title={t("Comp_3_title")}
-          subtitle={t("Comp_3_subtitle")}
-          overtitle={null}
-        />
+       
+        <Testimonial />
 
-        <TitleSubtitle
-          title={t("Comp_4_title")}
-          subtitle={t("Comp_4_subtitle")}
-          overtitle={t("Comp_4_overtitle")}
-        />
-
-        {/*<TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} /> */}
+        <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
         <DownloadNow />
         <MatildaCEO />
