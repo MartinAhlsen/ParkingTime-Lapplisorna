@@ -10,6 +10,7 @@ import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
 import StaffCard from "../../../components/StaffCard";
 import Story from "@/components/Story";
+import Quotation from "@/components/Quotation";
 
 const About_us = () => {
   return (
@@ -23,6 +24,7 @@ const About_us = () => {
         subtitle="The things we believe in."
         overtitle={null}
       />
+      <Quotation />
       <TitleSubtitle
         title="Meet our team"
         subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
