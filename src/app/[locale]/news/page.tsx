@@ -8,7 +8,7 @@ const News = () => {
     <>
       <Header />
       <Banner page="news" />
-      <h2>news</h2>
+     
       <TitleSubtitle
         title="Don´t miss"
         subtitle="We are expanding rapidly, subscribe to our newsletter."

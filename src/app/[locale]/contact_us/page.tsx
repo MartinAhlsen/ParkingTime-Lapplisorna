@@ -7,7 +7,7 @@ const Contact_us = () => {
     <>
       <Header />
       <Banner page="contact" />
-      <h2>Contact us</h2>
+      
     </>
   );
 };
