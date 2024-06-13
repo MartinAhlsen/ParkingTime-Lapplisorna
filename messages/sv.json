@@ -13,6 +13,8 @@
       "Comp_5_subtitle": "Här är några vanliga frågor besvarade",
       "Comp_5_overtitle":"FAQ"
     },
+    
+    
     "NavItem": {
         "Why_parking_time?": "Varför parking Time?",
         "About_us": "Om oss",
@@ -20,6 +22,16 @@
         "FAQ": "FAQ"
     
     },
+    "hero_home": {
+      "text1": "Vilken tid är nu?",
+      "text2": "Parking time!",
+      "text3": "Digital parkeringsskiva - direkt på din mobil.",
+      "text4": "Ett vinnande koncept i ett nytt, digitaliserat format",
+      "sub1": "Lätt att använda",
+      "sub2": "Gratis nedladdning",
+      "sub3": "Undvik böter",
+      "sub4": "Minska stressen"
+},
     "smart_parking_solution": {
       "title":"En smart lösning för parkering",
       "paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",

@@ -19,6 +19,17 @@
     "FAQ": "FAQ",
     "Contact_us": "Contact us"
   },
+  "hero_home": {
+      "text1": "What time is it?",
+      "text2": "Parking time!",
+      "text3": "Digital parking disc - directly on your mobile.",
+      "text4": "A winning concept in a new, digitalized format",
+      "sub1": "Easy to use",
+      "sub2": "Free to download",
+      "sub3": "Avoid fines",
+      "sub4": "Reduce Stress"
+
+    },
   "smart_parking_solution": {
       "title":"Smart Parking Solution",
       "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
