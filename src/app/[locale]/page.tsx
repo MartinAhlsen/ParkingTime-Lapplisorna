@@ -15,7 +15,8 @@ import TrustedBy from '@/components/TrustedBy';
 import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
-import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData.js"
+import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import DownloadNow from '@/components/DownloadNow';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -43,9 +44,7 @@ export default function Home() {
       }, 2700);
     })();
   }, []);
-
   const t = useTranslations("home");
-  
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -73,8 +72,9 @@ export default function Home() {
           overtitle={t("Comp_4_overtitle")}
         />
 
-        {/*<TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} /> */}
+        <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
+        <DownloadNow />
         <MatildaCEO />
         <TitleSubtitle
           title={t("Comp_5_title")}
