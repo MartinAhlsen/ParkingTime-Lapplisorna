@@ -127,5 +127,3 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
 };
 
 export default Banner;
-
-
