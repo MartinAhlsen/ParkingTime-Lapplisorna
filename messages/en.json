@@ -70,11 +70,24 @@
       "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality.",
       "text1": "Matilda Öhman, CEO"
     },
+    "FAQ": {
+      "title1": "What is Parking Time?",
+      "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
+      "title2": "How do I use Parking Time?",
+      "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
+      "title3": "Is it free?",
+      "answer3": "Of course is for free!",
+      "title4": "How do I get it in my municipality?",
+      "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
+      "title5": "Known problems with the app",
+      "answer5": "No problem known with the app! Best App and website ever!"
+    },
     "footer": {
       "contact": "Contact",
       "about_us": "About us",
       "news": "News",
-      "policy": "Privacy Policy"
+      "policy": "Privacy Policy",
+      "link": "Links"
     },
     "policy": {
       "title": "policy EN"
