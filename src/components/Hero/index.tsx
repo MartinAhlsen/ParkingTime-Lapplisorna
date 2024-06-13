@@ -106,12 +106,12 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("about1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">Parking Time Sweden</h1>
-          <p className="button-text mb-2">We are a tech startup dedicated to transforming the parking</p>
-          <p className="button-text mb-2">experience for all stakeholders - parkers, parking attendants,</p>
-          <p className="button-text mb-2">municipalities and property owners.</p>
+          <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("about2")}</h1>
+          <p className="button-text mb-2">{t("about3")}</p>
+          <p className="button-text mb-2">{t("about4")}</p>
+          <p className="button-text mb-2">{t("about5")}</p>
         </div>
       );
       break;
