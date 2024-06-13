@@ -61,7 +61,8 @@
       "contact": "Contact",
       "about_us": "About us",
       "news": "News",
-      "policy": "Privacy Policy"
+      "policy": "Privacy Policy",
+      "link": "Links"
     },
     "policy": {
       "title": "policy EN"
@@ -76,7 +77,41 @@
       "title": "About Us",
       "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
       "author": "- Matilda, CEO and Founder."
-    }
+    },
+    "hero": {
+        "text1": "What time is it?",
+        "text2": "Parking time!",
+        "text3": "Digital parking disc - directly on your mobile.",
+        "text4": "A winning concept in a new, digitalized format",
+        "sub1": "Easy to use",
+        "sub2": "Free to download",
+        "sub3": "Avoid fines",
+        "sub4": "Reduce Stress",
+        "news1": "News",
+        "news2": "We are Transforming",
+        "news3": "Parking Experiences",
+        "contact1": "Contact",
+        "contact2": "We would love to",
+        "contact3": "hear from you!",
+        "about1": "About Us",
+        "about2": "Parking Time Sweden",
+        "about3": "We are a tech startup dedicated to transforming the parking",
+        "about4": "experience for all stakeholders – parkers, parking attendants,",
+        "about5": "municipalities, and property owners."
+  
+      },
+      "FAQ": {
+      "title1": "What is Parking Time?",
+      "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
+      "title2": "How do I use Parking Time?",
+      "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
+      "title3": "Is it free?",
+      "answer3": "Of course is for free!",
+      "title4": "How do I get it in my municipality?",
+      "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
+      "title5": "Known problems with the app",
+      "answer5": "No problem known with the app! Best App and website ever!"
+    },
   
   }
 

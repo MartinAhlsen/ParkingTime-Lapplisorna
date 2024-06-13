@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-sm mt-8 md:mt-0">
-        <p className=" p1 pb-4">Links</p>
+        <p className=" p1 pb-4">{t("link")}</p>
         <ul className="flex flex-col md:flex-row align-baseline space-y-4 md:space-y-0 md:py-4">
           <li><Link href="/" className="md:pr-4 p2 font-size-[14px] md:underline">{t("contact")}</Link></li>
           <li><Link href="/" className="md:pr-4 p2 font-size-[14px] md:underline">{t("about_us")}</Link></li>
