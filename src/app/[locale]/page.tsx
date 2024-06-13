@@ -56,11 +56,6 @@ export default function Home() {
       <NextUIProvider>
         <SmartParkingSolution />
         <HowItWorks/>
-        <TitleSubtitle
-          title={t("Comp_2_title")}
-          subtitle={null}
-          overtitle={null}
-        />
         <WhyParkingTime />
         <TitleSubtitle
           title={t("Comp_3_title")}
