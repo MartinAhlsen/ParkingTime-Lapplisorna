@@ -36,7 +36,9 @@
       "Comp_3_title": "Integration with existing systems",
       "Comp_3_paragraph": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
       "Comp_4_title": "Data-driven urban planning",
-      "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
+      "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces.",
+      "Button": "Learn more about us",
+      "url": "en/about_us"
     },
     "statistics": {
       "stat1": "Downloads",
