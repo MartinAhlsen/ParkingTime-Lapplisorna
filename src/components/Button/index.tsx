@@ -34,6 +34,7 @@ const Button = ({ text, url, colorTheme, formCategoryState }: ButtonProps) => {
             justify-center
             items-center
             text-nowrap
+
         `}
     >
       {text}
