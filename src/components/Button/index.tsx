@@ -32,7 +32,7 @@ const Button = ({ text, url, colorTheme, formCategoryState }: ButtonProps) => {
             flex
             justify-center
             items-center
-
+            text-nowrap
         `}
     >
       {text}
