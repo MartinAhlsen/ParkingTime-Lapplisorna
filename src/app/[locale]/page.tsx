@@ -16,6 +16,7 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import Testimonial from '@/components/Testimonial';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -59,12 +60,8 @@ export default function Home() {
           overtitle={null}
         />
         <WhyParkingTime />
-        <TitleSubtitle
-          title={t("Comp_3_title")}
-          subtitle={t("Comp_3_subtitle")}
-          overtitle={null}
-        />
-
+       
+        <Testimonial />
         <TitleSubtitle
           title={t("Comp_4_title")}
           subtitle={t("Comp_4_subtitle")}
