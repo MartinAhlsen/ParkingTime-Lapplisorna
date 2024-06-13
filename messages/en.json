@@ -65,7 +65,6 @@
       "stat2": "Parking sessions",
       "stat3": "Parking zones"
     },
-    ,
     "download_now": {
       "title": "Download now",
       "p": "The app is free to download for you as a user. However, your municipality must be registered as a customer with us for our app to be valid in your area. If our app is not available in your municipality, you are welcome to contact us or suggest us to your municipality!"
@@ -103,7 +102,6 @@
     "news": {
       "title": "News"
     },
-    ,
     "about_us": {
       "title": "About Us",
       "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
