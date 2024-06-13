@@ -9,6 +9,7 @@ import SplashScreen from '@/components/SplashScreen/SplashScreen';
 import Header from '@/components/header';
 import Banner from '@/components/Hero';
 import SmartParkingSolution from '@/components/SmartParkingSolution';
+import HowItWorks from '@/components/HowItWorks';
 import TitleSubtitle from '@/components/TitleSubtitle';
 import WhyParkingTime from '@/components/WhyParkingTime';
 import TrustedBy from '@/components/TrustedBy';
@@ -54,11 +55,7 @@ export default function Home() {
       <Banner page={"home"} />
       <NextUIProvider>
         <SmartParkingSolution />
-        <TitleSubtitle
-          title={t("Comp_2_title")}
-          subtitle={null}
-          overtitle={null}
-        />
+        <HowItWorks/>
         <WhyParkingTime />
         <TitleSubtitle
           title={t("Comp_3_title")}
