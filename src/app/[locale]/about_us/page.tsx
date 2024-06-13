@@ -10,6 +10,7 @@ import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
 import StaffCard from "../../../components/StaffCard";
 import Story from "@/components/Story";
+import Story from "@/components/Story";
 import Quotation from "@/components/Quotation";
 import Story from "@/components/Story";
 
