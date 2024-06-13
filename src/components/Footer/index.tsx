@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   const t = useTranslations("footer");
@@ -40,7 +41,8 @@ const Footer = () => {
       <div className="container mx-auto px-8 flex flex-col md:flex-row md:justify-between">
       <p className="md:text-right md:flex-row mt-4 md:mt-0 ">© 2024 Parking Time AB</p>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:flex md:space-x-4">
-          <Link href="#" className="py-2 underline">{t("policy")}</Link>
+          <Link href={`/en/privacy_policy`} className="py-2 underline">{t("policy")}</Link>
+
         </div>
         
       </div>
@@ -50,3 +52,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

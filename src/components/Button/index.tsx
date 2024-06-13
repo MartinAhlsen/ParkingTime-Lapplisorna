@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import React from "react";
 interface ButtonProps {
   text: string;
   url: string;
@@ -32,7 +33,7 @@ const Button = ({ text, url, colorTheme, formCategoryState }: ButtonProps) => {
             flex
             justify-center
             items-center
-
+            text-nowrap
         `}
     >
       {text}

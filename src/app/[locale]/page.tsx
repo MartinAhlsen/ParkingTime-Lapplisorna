@@ -16,6 +16,8 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import DownloadNow from '@/components/DownloadNow';
+import HowItWorks from '@/components/HowItWorks';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -53,11 +55,7 @@ export default function Home() {
       <Banner page={"home"} />
       <NextUIProvider>
         <SmartParkingSolution />
-        <TitleSubtitle
-          title={t("Comp_2_title")}
-          subtitle={null}
-          overtitle={null}
-        />
+        <HowItWorks/>
         <WhyParkingTime />
         <TitleSubtitle
           title={t("Comp_3_title")}
