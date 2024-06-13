@@ -62,11 +62,6 @@ export default function Home() {
         <WhyParkingTime />
        
         <Testimonial />
-        <TitleSubtitle
-          title={t("Comp_4_title")}
-          subtitle={t("Comp_4_subtitle")}
-          overtitle={t("Comp_4_overtitle")}
-        />
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
