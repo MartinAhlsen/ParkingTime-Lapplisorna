@@ -10,7 +10,7 @@ const HowItWorks: React.FC = () => {
         <div className="flex w-full mx-auto flex-col xl:flex-row container justify-evenly items-center">
             <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
                 <div className="flex justify-between">
-                <img src="./images/pen-icon.png" alt="pen"
+                <img src="/Images/pen-icon.png" alt="pen"
                 className="w-[48px] h-[48px]" />
                 <div className="text-pt-gray2 text-[100px] leading-none">01</div>
                 </div>
