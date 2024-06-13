@@ -19,7 +19,7 @@
     "FAQ": "FAQ",
     "Contact_us": "Contact us"
   },
-  "hero_home": {
+  "hero": {
       "text1": "What time is it?",
       "text2": "Parking time!",
       "text3": "Digital parking disc - directly on your mobile.",
@@ -27,8 +27,13 @@
       "sub1": "Easy to use",
       "sub2": "Free to download",
       "sub3": "Avoid fines",
-      "sub4": "Reduce Stress"
-
+      "sub4": "Reduce Stress",
+      "news1": "News",
+      "news2": "We are Transforming",
+      "news3": "Parking Experiences",
+      "contact1": "Contact",
+      "contact2": "We would love to",
+      "contact3": "hear from you!"
     },
   "smart_parking_solution": {
       "title":"Smart Parking Solution",

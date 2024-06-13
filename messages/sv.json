@@ -22,7 +22,7 @@
         "FAQ": "FAQ"
     
     },
-    "hero_home": {
+    "hero": {
       "text1": "Vilken tid är nu?",
       "text2": "Parking time!",
       "text3": "Digital parkeringsskiva - direkt på din mobil.",
@@ -30,7 +30,13 @@
       "sub1": "Lätt att använda",
       "sub2": "Gratis nedladdning",
       "sub3": "Undvik böter",
-      "sub4": "Minska stressen"
+      "sub4": "Minska stressen",
+      "news1": "Nyheter",
+      "news2": "Vi förvandlar parkerings-",
+      "news3": "upplevelserna!",
+      "contact1": "Kontakt",
+      "contact2": "Hör gärna av dig",
+      "contact3": "till oss!"
 },
     "smart_parking_solution": {
       "title":"En smart lösning för parkering",

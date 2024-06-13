@@ -25,7 +25,7 @@ const DownloadButton: ButtonProperties = {
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
   let src, alt, imageClass, bannerContent, greenBar;
-  const t = useTranslations("hero_home")
+  const t = useTranslations("hero")
 
   switch (page) {
     case 'home':
@@ -70,10 +70,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("news1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We are Transforming</h1>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">Parking Experiences</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("news2")}</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("news3")}</h1>
         </div>
       );
       break;
@@ -88,10 +88,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("contact1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We would love to</h1>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">hear from you!</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
         </div>
       );
       break;
