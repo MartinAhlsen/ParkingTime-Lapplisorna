@@ -18,12 +18,12 @@ const HowItWorks: React.FC = () => {
                 <div className="p2">Open the app, register with your car's registration number.</div>
             </div>
             <div className="p-4">
-                <img src="./images/right-icon.png" alt="right arrow"
+                <img src="/Images/right-icon.png" alt="right arrow"
                 className="rotate-90 xl:rotate-0"/>
             </div>
             <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
             <div className="flex justify-between">
-                <img src="./images/parking-icon.png" alt="parking icon"
+                <img src="/Images/parking-icon.png" alt="parking icon"
                 className="w-[48px] h-[48px]" />
                 <div className="flex text-pt-gray2 text-[100px] leading-none">02</div>
                 </div>
@@ -31,12 +31,12 @@ const HowItWorks: React.FC = () => {
                 <div className="p2">Use the map, search function, or zone list to find your desired parking location</div>
             </div>
             <div className="p-4">
-                <img src="./images/right-icon.png" alt="right arrow"
+                <img src="/Images/right-icon.png" alt="right arrow"
                 className="rotate-90 xl:rotate-0"/>
             </div>
             <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
             <div className="flex justify-between">
-                <img src="./images/clock-icon.png" alt="clock icon"
+                <img src="/Images/clock-icon.png" alt="clock icon"
                 className="w-[48px] h-[48px]" />
                 <div className="flex text-pt-gray2 text-[100px] leading-none">03</div>
                 </div>
