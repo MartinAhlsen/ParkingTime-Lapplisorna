@@ -7,12 +7,16 @@ interface TitleSubtitleProps {
     overtitle: string | null
 }
 
-const TitleSubtitle = ({title, subtitle}:TitleSubtitleProps) => {
+const TitleSubtitle = ({title, subtitle, overtitle}:TitleSubtitleProps) => {
 
     return (
-        <div className="bg-pt-background text-center"> 
-          <p className="h3 p-5 leading-normal">{title}</p>                                                                                                   
-          <p className="h7 p-5">{subtitle}</p> 
+        <div className="min-h-10 bg-pt-background text-center">
+            {/* 18/ bold-lato   */} 
+            <p className="h7 p-3">{overtitle}</p> 
+          {/*title 48/ bold-lato font ecf21 bg   */} 
+          <p className="h3 p-3">{title}</p>                                                                                                   
+          {/* colo 2a394e* robot 16 rgular*/}
+          <p className="h7 p-3">{subtitle}</p> 
         </div>
     )
 };
