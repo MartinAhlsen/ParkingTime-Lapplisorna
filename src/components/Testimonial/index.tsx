@@ -15,10 +15,10 @@ const Testimonial = () => {
           subtitle={t("subtitle")}
           overtitle={null}
         />
-        <div className="flex justify-evenly	">
+            <div className="flex flex-col md:flex-row justify-evenly items-center pt-4">
             <TestimonialCard imageMain={Folk} imageTestimonial={Maria} mainText={t("main_text1")} name={"Maria Lundin"} role={t("role1")} />
             <TestimonialCard imageMain={Nass} imageTestimonial={Jonas} mainText={t("main_text2")} name={"Jonas Eriksson"} role={t("role2")} />
-        </div>
+            </div>
         </div>
     )
 };
