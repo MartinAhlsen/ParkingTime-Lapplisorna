@@ -9,32 +9,34 @@ interface TestimonialCardProps {
     role:string
 }
 
-const TestimonialCard = ({imageMain, imageTestimonial, mainText, name, role}:TestimonialCardProps) => {
-    
-    return (
-        <div className='flex flex-col h-[550px] rounded-2xl bg-white m-4'>
-          <Image className="m-6"
-            src={imageMain}
-            width={100}
-            height={100}
-            alt="Picture of the author"
-            />
-          <p className="p3Quote p-8">{mainText}</p>
-          <div className='flex flex-row'>
-          <Image
-          className="rounded-full m-5 md:mx-4 md:m-0"
-            src={imageTestimonial}
-            width={50}
-            height={50}
-            alt="Picture of the author"
-            />
-            <div className='flex flex-col'>
-                <p className="links text-[#F85252]">{name}</p>
-                <p className="p2">{role}</p>
-            </div>
+const TestimonialCard = ({ imageMain, imageTestimonial, mainText, name, role }: TestimonialCardProps) => {
+  return (
+    <div className="h-auto w-auto md:max-w-[500px] xl:max-w-[480px] rounded-2xl bg-white m-4 shadow-lg p-10">
+          <div className="flex justify-between items-start mb-4">
+              <Image
+                  src={imageMain}
+                  width={100}
+                  height={100}
+                  alt="Main image"
+                  className='object-contain'
+              />
           </div>
-        </div>
-    )
+          <p className="p3Quote mb-6">{mainText}</p>
+          <div className='flex items-center mt-auto'>
+              <Image
+                  className="rounded-full mr-4"
+                  src={imageTestimonial}
+                  width={50}
+                  height={50}
+                  alt="Testimonial image"
+              />
+              <div className='flex flex-col'>
+                  <p className="text-lg font-semibold text-[#F85252]">{name}</p>
+                  <p className="text-sm text-gray-600">{role}</p>
+              </div>
+          </div>
+      </div>
+  );
 };
 
-export default TestimonialCard
+export default TestimonialCard;
