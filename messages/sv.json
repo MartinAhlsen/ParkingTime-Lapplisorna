@@ -1,0 +1,73 @@
+{
+    "home": {
+      "title": "Parkerings Tid",
+      "Comp_1_title":"En smart lösning för parkering",
+      "Comp_1_paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
+      "Comp_2_title":"Hur det fungerar",
+      "Comp_3_title": "Kundreferenser",
+      "Comp_3_subtitle": "Hör från några av våra kunder.",
+      "Comp_4_title": "Missa inte",
+      "Comp_4_subtitle": "Vi expanderar snabbt, prenumerera på vårt nyhetsbrev.",
+      "Comp_4_overtitle":"Nyheter",
+      "Comp_5_title": "Har du en fråga?",
+      "Comp_5_subtitle": "Här är några vanliga frågor besvarade",
+      "Comp_5_overtitle":"FAQ"
+    },
+    "NavItem": {
+        "Why_parking_time?": "Varför parking Time?",
+        "About_us": "Om oss",
+        "News": "Nyheter",
+        "FAQ": "FAQ"
+    
+    },
+    "smart_parking_solution": {
+      "title":"En smart lösning för parkering",
+      "paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
+      "arrow1": "Vi strävar efter att stödja tillväxten och effektiviteten i stadsmiljöer.",
+      "arrow2": "Vår digitala p-skiva förenklar parkeringsprocessen.",
+      "arrow3": "Befintliga parkeringsvaktssystem kan enkelt integreras med vårt system.",
+      "final_paragraph": "Vi ser fram emot att dela mer om vår lösning i ett möte."
+    },
+    "why_parking_time": {
+      
+      "title":"Varför Parking Time?",
+      "Comp_1_title":"Undvik böter och minska stressen",
+      "Comp_1_paragraph":"Vår digitala lösning lockar fler besökare genom att eliminera fysiska skivor och minska böter. Detta förenklar parkeringen, ökar fottrafiken, ekonomisk aktivitet och stadens vitalitet samtidigt som det minskar stressen.",
+      "Comp_2_title":"Förenklad parkering för användare",
+      "Comp_2_paragraph":"Vår app låter dig enkelt sätta, justera och övervaka parkeringstiden. Med en användarvänlig gränssnitt kan du snabbt hitta platser och hantera parkering. Vi uppdaterar kontinuerligt baserat på kundfeedback för att säkerställa en effektiv och problemfri upplevelse.",
+      "Comp_3_title": "Integration med befintliga system",
+      "Comp_3_paragraph": "Vårt system för parkeringsvakter integreras sömlöst med din befintliga setup. Ett enhetligt system gynnar dig genom att effektivisera operationer och förbättra upplevelsen för personalen genom att eliminera behovet av två olika system och enheter. Vi gör denna integration effektiv, intuitiv och enkel!",
+      "Comp_4_title": "Datastyrd stadsplanering",
+      "Comp_4_paragraph": "Den digitala parkeringsskivan kan på sikt optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser."
+
+
+    },
+    "statistics": {
+      "stat1": "Nedladdningar",
+      "stat2": "Parkeringsessioner",
+      "stat3": "Parkeringplatser"
+    },
+    "MatildaCEO": {
+      "title": "Vill du veta mer?",
+      "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
+    },
+    "footer": {
+      "contact": "Kontakt",
+      "about_us": "Om oss",
+      "news": "Nyheter",
+      "policy": "Integretspolicy"
+    },
+    "policy": {
+      "title": "Politik SE"
+    },
+    "contact_us": {
+      "title": "Kontakta Oss"
+    },
+    "news": {
+      "title": "Nyheter"
+    },
+    "about_us": {
+      "title": "Om oss"
+    }
+  
+  }
