@@ -19,7 +19,7 @@ const TestimonialCard = ({imageMain, imageTestimonial, mainText, name, role}:Tes
             height={100}
             alt="Picture of the author"
             />
-          <p>{mainText}</p>
+          <p className="p3Quote">{mainText}</p>
           <div className='flex flex-row'>
           <Image
           className="rounded-full"
@@ -28,9 +28,9 @@ const TestimonialCard = ({imageMain, imageTestimonial, mainText, name, role}:Tes
             height={50}
             alt="Picture of the author"
             />
-            <div className=''>
-                <p>{name}</p>
-                <p>{role}</p>
+            <div className='flex flex-col'>
+                <p className="links text-[#F85252]">{name}</p>
+                <p className="p2">{role}</p>
             </div>
           </div>
         </div>

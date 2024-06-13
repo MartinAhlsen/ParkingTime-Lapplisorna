@@ -1,10 +1,8 @@
 {
     "home": {
       "title": "Parking time",
-
       "Comp_2_title":"How it works?",
-      "Comp_3_title": "Customer testimonials",
-      "Comp_3_subtitle": "Hear from some of our client",
+      
       "Comp_4_title": "Don´t miss",
       "Comp_4_subtitle": "We are expanding rapidly, subscribe to our newsletter.",
       "Comp_4_overtitle":"News",
@@ -26,6 +24,14 @@
       "arrow2": "Our digital parking disc simplifies the parking process.",
       "arrow3": "Any parking attendant systems can easily be integrated with our system.",
       "final_paragraph": "We're excited to share more about our solution in a meeting."
+  },
+  "testimonials": {
+      "title": "Customer testimonials",
+      "subtitle": "Hear from some of our client",
+      "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
+      "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
+      "role1":"City Architect, Falköping Kommun",
+      "role2": "Municipal Manager, Nässjö Kommun" 
   },
     "why_parking_time": {
       "title":"Why Parking Time?",

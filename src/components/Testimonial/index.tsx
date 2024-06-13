@@ -7,17 +7,17 @@ import Folk from "../../../public/Images/TrustedByLogotypes/falköping.png"
 import Nass from "../../../public/Images/TrustedByLogotypes/nässjö-logoBlå.png"
 
 const Testimonial = () => {
-    const t = useTranslations("home");
+    const t = useTranslations("testimonials");
     return (
         <div className="min-h-[1000px] bg-pt-background flex flex-col">
            <TitleSubtitle
-          title={t("Comp_3_title")}
-          subtitle={t("Comp_3_subtitle")}
+          title={t("title")}
+          subtitle={t("subtitle")}
           overtitle={null}
         />
         <div className="flex justify-evenly	">
-            <TestimonialCard imageMain={Folk} imageTestimonial={Maria} mainText={""} name={""} role={""} />
-            <TestimonialCard imageMain={Nass} imageTestimonial={Jonas} mainText={""} name={""} role={""} />
+            <TestimonialCard imageMain={Folk} imageTestimonial={Maria} mainText={t("main_text1")} name={"Maria Lundin"} role={t("role1")} />
+            <TestimonialCard imageMain={Nass} imageTestimonial={Jonas} mainText={t("main_text2")} name={"Jonas Eriksson"} role={t("role2")} />
         </div>
         </div>
     )
