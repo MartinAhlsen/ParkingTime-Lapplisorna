@@ -17,6 +17,7 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
 interface ButtonProperties {
   text: string;
@@ -57,17 +58,8 @@ export default function Home() {
         <SmartParkingSolution />
         <HowItWorks/>
         <WhyParkingTime />
-        <TitleSubtitle
-          title={t("Comp_3_title")}
-          subtitle={t("Comp_3_subtitle")}
-          overtitle={null}
-        />
-
-        <TitleSubtitle
-          title={t("Comp_4_title")}
-          subtitle={t("Comp_4_subtitle")}
-          overtitle={t("Comp_4_overtitle")}
-        />
+       
+        <Testimonial />
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
