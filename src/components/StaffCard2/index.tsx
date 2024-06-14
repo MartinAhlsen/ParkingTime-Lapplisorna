@@ -31,8 +31,7 @@ interface StaffCardProps {
   }
 const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
 const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
-  const background = '#06433E';
-  
+  const background = 'linear-gradient(306deg, #06433E, #63D285)';
   return (
     <motion.div
       className="overflow-hidden flex items-center justify-center relative  p-5 pb-16 md:pb-14 sm:p-6"
