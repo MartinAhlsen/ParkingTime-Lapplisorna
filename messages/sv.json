@@ -105,7 +105,8 @@
       "about3": "Vi är en teknikstartup som är dedikerad till att förändra",
       "about4": "parkeringsupplevelsen för alla intressenter – parkerare,",
       "about5": "parkeringsvakter, kommuner och fastighetsägare."
-},"FAQ": {
+},
+"FAQ": {
         "title1": "Vad är Parking Time?",
         "answer1": "Parking Time är en ny fantastisk teknik som hjälper dig i vardagen att justera din p-skiva.",
         "title2": "Hur använder jag Parking Time?",
@@ -116,6 +117,6 @@
         "answer4": "Kontakta din kommun om du vill implementera denna fantastiska teknik i ditt område!",
         "title5": "Kända problem med appen",
         "answer5": "Inga kända problem med appen! Bästa appen och webbplatsen någonsin!"
-      },
+      }
   
   }
