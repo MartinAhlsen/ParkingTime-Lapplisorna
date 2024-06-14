@@ -1,23 +1,82 @@
 {
-    "home": {
-      "title": "Parking time",
-
-      "Comp_2_title":"How it works?",
-      "Comp_3_title": "Customer testimonials",
-      "Comp_3_subtitle": "Hear from some of our client",
-      "Comp_4_title": "Don´t miss",
-      "Comp_4_subtitle": "We are expanding rapidly, subscribe to our newsletter.",
-      "Comp_4_overtitle":"News",
-      "Comp_5_title": "Do you have a question?",
-      "Comp_5_subtitle": "Here some common questions answered",
-      "Comp_5_overtitle":"FAQ"
-    },
-    "NavItem": {
-    "Why_parking_time?": "Why parking Time?",
-    "About_us": "About us",
-    "News": "News",
-    "FAQ": "FAQ",
-    "Contact_us": "Contact us"
+  "home": {
+    "title": "Parking time",
+    "Comp_2_title":"How it works?",
+    
+    "Comp_4_title": "Don´t miss",
+    "Comp_4_subtitle": "We are expanding rapidly, subscribe to our newsletter.",
+    "Comp_4_overtitle":"News",
+    "Comp_5_title": "Do you have a question?",
+    "Comp_5_subtitle": "Here some common questions answered",
+    "Comp_5_overtitle":"FAQ"
+  },
+  "NavItem": {
+  "Why_parking_time?": "Why parking Time?",
+  "About_us": "About us",
+  "News": "News",
+  "FAQ": "FAQ",
+  "Contact_us": "Contact us"
+},
+"smart_parking_solution": {
+    "title":"Smart Parking Solution",
+    "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
+    "arrow1": "We aim to support the growth and efficiency of urban areas.",
+    "arrow2": "Our digital parking disc simplifies the parking process.",
+    "arrow3": "Any parking attendant systems can easily be integrated with our system.",
+    "final_paragraph": "We're excited to share more about our solution in a meeting."
+},
+"testimonials": {
+    "title": "Customer testimonials",
+    "subtitle": "Hear from some of our client",
+    "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
+    "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
+    "role1":"City Architect, Falköping Kommun",
+    "role2": "Municipal Manager, Nässjö Kommun" 
+},
+  "why_parking_time": {
+    "title":"Why Parking Time?",
+    "Comp_1_title":"Increased revenue & reduced stress",
+    "Comp_1_paragraph":"Our digital solution attracts more visitors by eliminating physical discs and reducing fines. This simplifies parking, boosts foot traffic, economic activity and city vibrancy  while reducing stress.",
+    "Comp_2_title":"Simplified parking for users",
+    "Comp_2_paragraph":"Our app lets you effortlessly set, adjust, and monitor parking time. With a user-friendly interface, you can quickly find spots and manage parking. We continuously update based on customer feedback to ensure an efficient and hassle-free experience.",
+    "Comp_3_title": "Integration with existing systems",
+    "Comp_3_paragraph": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
+    "Comp_4_title": "Data-driven urban planning",
+    "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
+  },
+  "statistics": {
+    "stat1": "Downloads",
+    "stat2": "Parking sessions",
+    "stat3": "Parking zones"
+  },
+  "download_now": {
+    "title": "Download now",
+    "p": "The app is free to download for you as a user. However, your municipality must be registered as a customer with us for our app to be valid in your area. If our app is not available in your municipality, you are welcome to contact us or suggest us to your municipality!"
+  },
+  "MatildaCEO": {
+    "title": "Want to know more?",
+    "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
+  },
+  "footer": {
+    "contact": "Contact",
+    "about_us": "About us",
+    "news": "News",
+    "policy": "Privacy Policy",
+    "link": "Links"
+  },
+  "policy": {
+    "title": "policy EN"
+  },
+  "contact_us": {
+    "title": "Contac Us"
+  },
+  "news": {
+    "title": "News"
+  },
+  "about_us": {
+    "title": "About Us",
+    "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
+    "author": "- Matilda, CEO and Founder."
   },
   "hero": {
       "text1": "What time is it?",
@@ -41,68 +100,20 @@
       "about5": "municipalities, and property owners."
 
     },
-  "smart_parking_solution": {
-      "title":"Smart Parking Solution",
-      "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
-      "arrow1": "We aim to support the growth and efficiency of urban areas.",
-      "arrow2": "Our digital parking disc simplifies the parking process.",
-      "arrow3": "Any parking attendant systems can easily be integrated with our system.",
-      "final_paragraph": "We're excited to share more about our solution in a meeting."
-  },
-    "why_parking_time": {
-      "title":"Why Parking Time?",
-      "Comp_1_title":"Increased revenue & reduced stress",
-      "Comp_1_paragraph":"Our digital solution attracts more visitors by eliminating physical discs and reducing fines. This simplifies parking, boosts foot traffic, economic activity and city vibrancy  while reducing stress.",
-      "Comp_2_title":"Simplified parking for users",
-      "Comp_2_paragraph":"Our app lets you effortlessly set, adjust, and monitor parking time. With a user-friendly interface, you can quickly find spots and manage parking. We continuously update based on customer feedback to ensure an efficient and hassle-free experience.",
-      "Comp_3_title": "Integration with existing systems",
-      "Comp_3_paragraph": "Our system for parking attendants integrates seamlessly with your existing setup. A unified system benefits you by streamlining operations and enhancing the experience for personnel by eliminating the need for two different systems and devices. We make this integration efficient, intuitive, and simple!",
-      "Comp_4_title": "Data-driven urban planning",
-      "Comp_4_paragraph": "The digital parking disc can eventually optimize parking resources and urban planning through valuable usage data and behavior patterns, leading to a safer society with better control and access to parking spaces."
-    },
-    "statistics": {
-      "stat1": "Downloads",
-      "stat2": "Parking sessions",
-      "stat3": "Parking zones"
-    },
-    "MatildaCEO": {
-      "title": "Want to know more?",
-      "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality.",
-      "text1": "Matilda Öhman, CEO"
-    },
     "FAQ": {
-      "title1": "What is Parking Time?",
-      "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
-      "title2": "How do I use Parking Time?",
-      "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
-      "title3": "Is it free?",
-      "answer3": "Of course is for free!",
-      "title4": "How do I get it in my municipality?",
-      "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
-      "title5": "Known problems with the app",
-      "answer5": "No problem known with the app! Best App and website ever!"
-    },
-    "footer": {
-      "contact": "Contact",
-      "about_us": "About us",
-      "news": "News",
-      "policy": "Privacy Policy",
-      "link": "Links"
-    },
-    "policy": {
-      "title": "policy EN"
-    },
-    "contact_us": {
-      "title": "Contac Us"
-    },
-    "news": {
-      "title": "News"
-    },
-    "about_us": {
-      "title": "About Us",
-      "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
-      "author": "- Matilda, CEO and Founder."
-    }
-  
+    "title1": "What is Parking Time?",
+    "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
+    "title2": "How do I use Parking Time?",
+    "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
+    "title3": "Is it free?",
+    "answer3": "Of course is for free!",
+    "title4": "How do I get it in my municipality?",
+    "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
+    "title5": "Known problems with the app",
+    "answer5": "No problem known with the app! Best App and website ever!"
   }
+
+}
+
+
 

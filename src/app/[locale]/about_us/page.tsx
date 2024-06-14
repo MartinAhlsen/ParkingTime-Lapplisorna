@@ -23,6 +23,7 @@ const About_us = () => {
         subtitle="The things we believe in."
         overtitle={null}
       />
+      <Quotation />
       <TitleSubtitle
         title="Meet our team"
         subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
