@@ -74,7 +74,7 @@ const Statistics: React.FC = () => {
   const t = useTranslations("statistics");
   return (
     <div ref={ref} className="min-h-96 bg-pt-background flex flex-col md:flex-row justify-center items-center">
-      <div className="bg-white min-h-80 pt-8 pb-8 mt-12 mb-12 rounded-xl mx-1 flex flex-col md:flex-row">
+      <div className="bg-white min-h-80 pt-8 pb-8 mt-12 mb-12 rounded-xl mx-1 flex flex-col md:flex-row w-[80%]">
         <StatisticCard imageLink={downloadImg} number={countValue1} subtitle={t("stat1")} />
         <div className="basis-1/5"></div>
         <StatisticCard imageLink={parkingImg} number={countValue2} subtitle={t("stat2")} />
