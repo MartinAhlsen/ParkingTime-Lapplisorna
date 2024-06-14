@@ -19,8 +19,6 @@ const Quotation = () => {
       1000,
       '- Makes your Parking Time Simple!!!',
       1000,
-      '- Makes your Parking Time Fun!!!',
-      1000,
       '- Makes your Parking Time Joy!!!',
       
     ]}

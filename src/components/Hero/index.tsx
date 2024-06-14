@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Button from "../Button";
 
 interface BannerProps {
@@ -24,6 +25,7 @@ const DownloadButton: ButtonProperties = {
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
   let src, alt, imageClass, bannerContent, greenBar;
+  const t = useTranslations("hero")
 
   switch (page) {
     case 'home':
@@ -32,26 +34,26 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       imageClass = 'h-screen object-cover md:h-[calc(100vh-80px)]';
       bannerContent = (
         <div className="absolute inset-0 flex flex-col items-start justify-center text-white text-left px-4 md:px-8 lg:px-20 xl:px-32" style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
-          <h1 className="button-text text-4xl md:text-7xl font-bold mb-4">What time is it?</h1>
-          <h1 className="button-text text-4xl md:text-7xl font-bold mb-10">Parking time!</h1>
-          <p className="text-lg md:text-2xl">Digital parking disc - directly on your mobile.</p>
-          <p className="text-lg md:text-2xl mb-10">A winning concept in a new, digitalized format</p>
+          <h1 className="button-text text-4xl md:text-7xl font-bold mb-4">{t("text1")}</h1>
+          <h1 className="button-text text-4xl md:text-7xl font-bold mb-10">{t("text2")}</h1>
+          <p className="text-lg md:text-2xl">{t("text3")}</p>
+          <p className="text-lg md:text-2xl mb-10">{t("text4")}</p>
           <div className="flex flex-col md:flex-row md:space-x-4 md:space-y-0 space-y-4">
             <Button {...ContactButton}/>
             <Button {...DownloadButton}/>
           </div>
           <div className="bg-pt-green bg-opacity-80 absolute inset-x-0 bottom-0 h-32 md:h-16 flex flex-wrap md:flex-nowrap justify-around md:justify-center items-center md:space-x-20 text-white p-4">
             <div className="w-1/2 md:w-auto text-center md:text-left mb-2 md:mb-0">
-              <p>• Easy to use</p>
+              <p>• {t("sub1")}</p>
             </div>
             <div className="w-1/2 md:w-auto text-center md:text-right mb-2 md:mb-0">
-              <p>• Free to download</p>
+              <p>• {t("sub2")}</p>
             </div>
             <div className="w-1/2 md:w-auto text-center md:text-left">
-              <p>• Avoid fines</p>
+              <p>• {t("sub3")}</p>
             </div>
             <div className="w-1/2 md:w-auto text-center md:text-right">
-              <p>• Reduced Stress</p>
+              <p>• {t("sub4")}</p>
             </div>
           </div>
               </div>
@@ -68,10 +70,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("news1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We are Transforming</h1>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">Parking Experiences</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("news2")}</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("news3")}</h1>
         </div>
       );
       break;
@@ -86,10 +88,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("contact1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">We would love to</h1>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">hear from you!</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
         </div>
       );
       break;
@@ -104,12 +106,12 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <span className="text-lg button-text">News</span>
+            <span className="text-lg button-text">{t("about1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">Parking Time Sweden</h1>
-          <p className="button-text mb-2">We are a tech startup dedicated to transforming the parking</p>
-          <p className="button-text mb-2">experience for all stakeholders - parkers, parking attendants,</p>
-          <p className="button-text mb-2">municipalities and property owners.</p>
+          <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("about2")}</h1>
+          <p className="button-text mb-2">{t("about3")}</p>
+          <p className="button-text mb-2">{t("about4")}</p>
+          <p className="button-text mb-2">{t("about5")}</p>
         </div>
       );
       break;

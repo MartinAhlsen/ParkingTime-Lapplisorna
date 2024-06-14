@@ -19,6 +19,7 @@ import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
+import HowItWorks from '@/components/HowItWorks';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -63,7 +64,6 @@ export default function Home() {
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
-        <DownloadNow />
         <MatildaCEO />
         <TitleSubtitle
           title={t("Comp_5_title")}

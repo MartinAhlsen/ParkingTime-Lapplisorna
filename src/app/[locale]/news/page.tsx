@@ -9,6 +9,7 @@ const News = () => {
       <Header />
       <Banner page="news" />
       
+     
       <TitleSubtitle
         title="Don´t miss"
         subtitle="We are expanding rapidly, subscribe to our newsletter."
