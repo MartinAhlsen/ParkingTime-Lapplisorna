@@ -5,14 +5,12 @@ import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
 
 const words = [
-  'Parking...',
-  'Has',
-  'Never',
-  'Been',
-  'So',
-  'Easy',
-  "with",
-  'Parking Time',
+  'Park and no Time?',
+  'Park and no',
+  'Park and',
+  'Park',
+  'Parking ',
+  'Parking Time!',
   
 ]
 /*DEMO 1

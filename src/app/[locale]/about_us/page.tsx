@@ -12,6 +12,7 @@ import StaffCard from "../../../components/StaffCard";
 import Quotation from "@/components/Quotation";
 import Story from "@/components/Story";
 import StaffCard2 from "@/components/StaffCard2";
+import Quotation2 from "@/components/Quotation2";
 
 const About_us = () => {
   return (
@@ -25,6 +26,7 @@ const About_us = () => {
         overtitle={null}
       />
       <Quotation />
+      <Quotation2 />
       <TitleSubtitle
         title="Meet our team"
         subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
