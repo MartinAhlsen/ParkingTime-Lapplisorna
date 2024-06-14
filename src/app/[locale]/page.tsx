@@ -19,7 +19,6 @@ import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
-import HowItWorks from '@/components/HowItWorks';
 interface ButtonProperties {
   text: string;
   url: string;
