@@ -4,7 +4,7 @@ import { dataset, projectId, useCdn } from '../env'
 
 export const client = createClient({
   projectId: "m838832i",
-  dataset: "production",
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   useCdn: false,
   perspective: 'published',
 })
