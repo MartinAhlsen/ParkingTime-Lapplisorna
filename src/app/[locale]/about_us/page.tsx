@@ -9,6 +9,7 @@ import Banner from "../../../components/Hero";
 import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
 import StaffCard from "../../../components/StaffCard";
+import Quotation from "@/components/Quotation";
 
 const About_us = () => {
   return (

@@ -16,6 +16,7 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import DownloadNow from '@/components/DownloadNow';
 interface ButtonProperties {
   text: string;
   url: string;

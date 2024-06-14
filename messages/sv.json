@@ -70,6 +70,10 @@
       "stat2": "Parkeringsessioner",
       "stat3": "Parkeringplatser"
     },
+    "download_now": {
+      "title": "Ladda ned nu",
+      "p": "Appen är gratis att ladda ner för dig som användare. Men din kommun måste vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
+    },
     "MatildaCEO": {
       "title": "Vill du veta mer?",
       "paragraph": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun.",
@@ -106,7 +110,9 @@
       "title": "Nyheter"
     },
     "about_us": {
-      "title": "Om oss"
+      "title": "Om oss",
+      "quotation": "“Av allt du behöver tänka på under dagen bör parkering vara en av de minsta. Parkering ska vara så sömlös att du knappt behöver tänka på det; det borde bara fungera. Vi kallar detta Smart Parkering.",
+      "author": "- Matilda, CEO och Grundare."     
     }
   
   }
