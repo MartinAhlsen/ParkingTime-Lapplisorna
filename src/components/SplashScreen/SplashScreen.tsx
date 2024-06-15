@@ -5,6 +5,24 @@ import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
 
 const words = [
+  'Parkera',
+  'Enkel',
+  "Med",
+  'Parking Time',
+]
+/*
+ALTERNATIVE DEMO 3
+const words = [
+  'Vi',
+  'Gör',
+  'Parkering',
+  'Enkel'
+  
+]*/
+
+
+/*DEMO2
+const words = [
   'Parking...',
   'Has',
   'Never',
@@ -14,7 +32,7 @@ const words = [
   "with",
   'Parking Time',
   
-]
+]*/
 /*DEMO 1
 const words = [
   'Parking',
@@ -39,7 +57,7 @@ export default function SplashScreen() {
       () => {
         setIndex(index + 1)
       },
-      index == 0 ||index==6  ? 800 : 200, //here control speed by words //1st and last word slower originalk value 150
+      index == 0 ||index==3  ? 800 : 200, //here control speed by words //1st and last word slower originalk value 150
     )
   }, [index])
 
