@@ -1,16 +1,14 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
 import MatildaImg from "../../../public/Images/Matilda-image.png";
 import "./styles.css";
-import StaffCard from "../StaffCard";
+import StaffCard from "../StaffCardanimated";
 import { useTranslations } from "next-intl";
 
-
-
 const MatildaCEO: React.FC = () => {
-  const t = useTranslations("MatildaCEO")
+  const t = useTranslations("MatildaCEO");
   return (
     <div className="h-[840px] md:h-[494px] bg-pt-primary flex flex-col text-center text-white items-center p-6 md:flex-row ">
       <div className="flex flex-col basis-1/2 items-center">
