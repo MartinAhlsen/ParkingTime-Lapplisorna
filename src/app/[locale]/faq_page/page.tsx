@@ -7,7 +7,7 @@ const faq_page = () => {
   return (
     <>
       <Header />
-      <Banner page="contact" />
+      <Banner page="faq_page" />
       <FAQ />
       
     </>
