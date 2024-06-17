@@ -1,9 +1,8 @@
 import React from "react";
 
 import MatildaImg from "../../../../public/Images/Matilda-image.png";
-import Nordea from "../../../../public/Images/nordea.jpg";
-import Vattenfall from "../../../../public/Images/vattenfall.jpg";
-import Swedbank from "../../../../public/Images/swedbank.jpg";
+import PlaceholderImg from "../../../../public/Images/Placeholder- Image.png";
+
 import Header from "../../../components/header";
 import Banner from "../../../components/Hero";
 import RightTextLeftImage from "../../../components/RightTextLeftImage";
@@ -32,10 +31,10 @@ const About_us = () => {
         overtitle={null}
       />
       <div className="flex flex-col px-[5%] lg:grid lg:gap-[32px] lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
-    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
-    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
-    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
-    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
+        <StaffCardClassic StaffImage={MatildaImg} name={"Matilda Öhman"} role={"CEO"} />
+        <StaffCardClassic StaffImage={PlaceholderImg} name={"Johan E. Bengtsson"} role={"Chief Technical Officer"} />
+        <StaffCardClassic StaffImage={PlaceholderImg} name={"Ingemar Öhman"} role={"Accountant"} />
+        <StaffCardClassic StaffImage={PlaceholderImg} name={"Fredrik Jodstam"} role={"Business Strategist"} />
 
 
       </div>
