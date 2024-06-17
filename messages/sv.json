@@ -125,6 +125,10 @@
     "title": "Om oss",
     "quotation": "“Av allt du behöver tänka på under dagen bör parkering vara en av de minsta. Parkering ska vara så sömlös att du knappt behöver tänka på det; det borde bara fungera. Vi kallar detta Smart Parkering.",
     "author": "- Matilda, CEO och Grundare."     
+  },
+  "buttons": {
+    "contact_us": "Kontakta oss",
+    "download": "Ladda ner appen"
   }
 
 }

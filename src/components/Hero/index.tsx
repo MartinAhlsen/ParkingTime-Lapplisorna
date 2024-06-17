@@ -1,5 +1,7 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
+
+
 
 interface BannerProps {
   page: string;
@@ -12,21 +14,23 @@ interface ButtonProperties {
   formCategoryState?: string;
 }
  
-const ContactButton: ButtonProperties = {
-  text: "Contact us",
-  url: "/contact_us",
-  colorTheme: "light",
-}
-const DownloadButton: ButtonProperties = {
-  text: "Download app",
-  url: " ",
-  colorTheme: "dark",
-};
+
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
   let src, alt, imageClass, bannerContent, greenBar;
   const t = useTranslations("hero")
-
+  const b = useTranslations("buttons")
+  const locale = useLocale()
+  const ContactButton: ButtonProperties = {
+    text: b("contact_us"),
+    url: `/${locale}/contact_us`,
+    colorTheme: "light",
+  }
+  const DownloadButton: ButtonProperties = {
+    text: b("download"),
+    url: "https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" ,
+    colorTheme: "dark",
+  };
   switch (page) {
     case 'home':
       src = '/Images/hero-homepage.png';

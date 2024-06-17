@@ -49,6 +49,7 @@ const HowItWorks: React.FC = () => {
           text="Download app" 
           url="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" 
           colorTheme="dark" 
+          
         />
         </div>
      </div>

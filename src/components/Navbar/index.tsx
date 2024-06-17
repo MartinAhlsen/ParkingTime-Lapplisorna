@@ -46,9 +46,10 @@ const Navbar = () => {
     closed: { opacity: 0, x: -20 },
   };
   const t = useTranslations("NavItem");
-  const locale = useLocale(); // Get the current locale from next-intl
+  const b = useTranslations("buttons");
+  const locale = useLocale(); 
   const ContactButton: ButtonProperties = {
-  text: "Contact us",
+  text: b("contact_us"),
   url: `/${locale}/contact_us`,
   colorTheme: "light",
 };
