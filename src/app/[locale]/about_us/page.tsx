@@ -30,7 +30,7 @@ const About_us = () => {
         subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
         overtitle={null}
       />
-      <div className="flex flex-col px-[5%] lg:grid lg:gap-[32px] lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
+      <div className="flex flex-col px-[5%] md:grid  md:grid-cols-2 lg:gap-[32px] lg:grid-cols-4  bg-pt-background ">
         <StaffCardClassic StaffImage={MatildaImg} name={"Matilda Öhman"} role={"CEO"} />
         <StaffCardClassic StaffImage={PlaceholderImg} name={"Johan E. Bengtsson"} role={"Chief Technical Officer"} />
         <StaffCardClassic StaffImage={PlaceholderImg} name={"Ingemar Öhman"} role={"Accountant"} />
