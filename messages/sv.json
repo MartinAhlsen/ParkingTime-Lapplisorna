@@ -13,6 +13,8 @@
     "Comp_5_subtitle": "Här är några vanliga frågor besvarade",
     "Comp_5_overtitle":"FAQ"
   },
+  
+  
   "NavItem": {
       "Why_parking_time?": "Varför parking Time?",
       "About_us": "Om oss",
@@ -20,6 +22,27 @@
       "FAQ": "FAQ"
   
   },
+  "hero": {
+    "text1": "Vilken tid är nu?",
+    "text2": "Parking time!",
+    "text3": "Digital parkeringsskiva - direkt på din mobil.",
+    "text4": "Ett vinnande koncept i ett nytt, digitaliserat format",
+    "sub1": "Lätt att använda",
+    "sub2": "Gratis nedladdning",
+    "sub3": "Undvik böter",
+    "sub4": "Minska stressen",
+    "news1": "Nyheter",
+    "news2": "Vi förvandlar parkerings-",
+    "news3": "upplevelserna!",
+    "contact1": "Kontakt",
+    "contact2": "Hör gärna av dig",
+    "contact3": "till oss!",
+    "about1": "Om Oss",
+    "about2": "Parking Time Sweden",
+    "about3": "Vi är en teknikstartup som är dedikerad till att förändra",
+    "about4": "parkeringsupplevelsen för alla intressenter – parkerare,",
+    "about5": "parkeringsvakter, kommuner och fastighetsägare."
+},
   "smart_parking_solution": {
     "title":"En smart lösning för parkering",
     "paragraph":"P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
@@ -64,6 +87,20 @@
     "paragraph": "Kontakta oss för att få veta mer om vår lösning och hur vi kan implementera den i din kommun.",
     "text1": "Matilda Öhman, VD"
   },
+  
+    "FAQ": {
+      "title1": "Vad är Parking Time?",
+      "answer1": "Parking Time är en ny fantastisk teknik som hjälper dig i vardagen att justera din p-skiva.",
+      "title2": "Hur använder jag Parking Time?",
+      "answer2": "Ladda ner appen och använd den gratis! När du behöver parkera, justera din digitala p-skiva!",
+      "title3": "Är det gratis?",
+      "answer3": "Självklart är det gratis!",
+      "title4": "Hur får jag det i min kommun?",
+      "answer4": "Kontakta din kommun om du vill implementera denna fantastiska teknik i ditt område!",
+      "title5": "Kända problem med appen",
+      "answer5": "Inga kända problem med appen! Bästa appen och webbplatsen någonsin!"
+    },
+  
   "footer": {
     "contact": "Kontakt",
     "about_us": "Om oss",
@@ -80,43 +117,11 @@
   "news": {
     "title": "Nyheter"
   },
+
   "about_us": {
     "title": "Om oss",
     "quotation": "“Av allt du behöver tänka på under dagen bör parkering vara en av de minsta. Parkering ska vara så sömlös att du knappt behöver tänka på det; det borde bara fungera. Vi kallar detta Smart Parkering.",
     "author": "- Matilda, CEO och Grundare."     
-  },
-  "hero": {
-    "text1": "Vilken tid är nu?",
-    "text2": "Parking time!",
-    "text3": "Digital parkeringsskiva - direkt på din mobil.",
-    "text4": "Ett vinnande koncept i ett nytt, digitaliserat format",
-    "sub1": "Lätt att använda",
-    "sub2": "Gratis nedladdning",
-    "sub3": "Undvik böter",
-    "sub4": "Minska stressen",
-    "news1": "Nyheter",
-    "news2": "Vi förvandlar parkerings-",
-    "news3": "upplevelserna!",
-    "contact1": "Kontakt",
-    "contact2": "Hör gärna av dig",
-    "contact3": "till oss!",
-    "about1": "Om Oss",
-    "about2": "Parking Time Sweden",
-    "about3": "Vi är en teknikstartup som är dedikerad till att förändra",
-    "about4": "parkeringsupplevelsen för alla intressenter – parkerare,",
-    "about5": "parkeringsvakter, kommuner och fastighetsägare."
-},
-"FAQ": {
-      "title1": "Vad är Parking Time?",
-      "answer1": "Parking Time är en ny fantastisk teknik som hjälper dig i vardagen att justera din p-skiva.",
-      "title2": "Hur använder jag Parking Time?",
-      "answer2": "Ladda ner appen och använd den gratis! När du behöver parkera, justera din digitala p-skiva!",
-      "title3": "Är det gratis?",
-      "answer3": "Självklart är det gratis!",
-      "title4": "Hur får jag det i min kommun?",
-      "answer4": "Kontakta din kommun om du vill implementera denna fantastiska teknik i ditt område!",
-      "title5": "Kända problem med appen",
-      "answer5": "Inga kända problem med appen! Bästa appen och webbplatsen någonsin!"
-    }
+  }
 
 }

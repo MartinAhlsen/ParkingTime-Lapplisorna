@@ -1,6 +1,7 @@
 {
   "home": {
     "title": "Parking time",
+
     "Comp_2_title":"How it works?",
     "Comp_3_title": "Customer testimonials",
     "Comp_3_subtitle": "Hear from some of our client",
@@ -18,6 +19,28 @@
   "FAQ": "FAQ",
   "Contact_us": "Contact us"
 },
+"hero": {
+    "text1": "What time is it?",
+    "text2": "Parking time!",
+    "text3": "Digital parking disc - directly on your mobile.",
+    "text4": "A winning concept in a new, digitalized format",
+    "sub1": "Easy to use",
+    "sub2": "Free to download",
+    "sub3": "Avoid fines",
+    "sub4": "Reduce Stress",
+    "news1": "News",
+    "news2": "We are Transforming",
+    "news3": "Parking Experiences",
+    "contact1": "Contact",
+    "contact2": "We would love to",
+    "contact3": "hear from you!",
+    "about1": "About Us",
+    "about2": "Parking Time Sweden",
+    "about3": "We are a tech startup dedicated to transforming the parking",
+    "about4": "experience for all stakeholders – parkers, parking attendants,",
+    "about5": "municipalities, and property owners."
+
+  },
 "smart_parking_solution": {
     "title":"Smart Parking Solution",
     "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
@@ -27,12 +50,12 @@
     "final_paragraph": "We're excited to share more about our solution in a meeting."
 },
 "testimonials": {
-    "title": "Customer testimonials",
-    "subtitle": "Hear from some of our client",
-    "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
-    "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
-    "role1":"City Architect, Falköping Kommun",
-    "role2": "Municipal Manager, Nässjö Kommun" 
+  "title": "Customer testimonials",
+  "subtitle": "Hear from some of our client",
+  "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
+  "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
+  "role1":"City Architect, Falköping Kommun",
+  "role2": "Municipal Manager, Nässjö Kommun" 
 },
   "why_parking_time": {
     "title":"Why Parking Time?",
@@ -56,7 +79,20 @@
   },
   "MatildaCEO": {
     "title": "Want to know more?",
-    "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality."
+    "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality.",
+    "text1": "Matilda Öhman, CEO"
+  },
+  "FAQ": {
+    "title1": "What is Parking Time?",
+    "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
+    "title2": "How do I use Parking Time?",
+    "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
+    "title3": "Is it free?",
+    "answer3": "Of course is for free!",
+    "title4": "How do I get it in my municipality?",
+    "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
+    "title5": "Known problems with the app",
+    "answer5": "No problem known with the app! Best App and website ever!"
   },
   "footer": {
     "contact": "Contact",
@@ -78,43 +114,7 @@
     "title": "About Us",
     "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
     "author": "- Matilda, CEO and Founder."
-  },
-  "hero": {
-      "text1": "What time is it?",
-      "text2": "Parking time!",
-      "text3": "Digital parking disc - directly on your mobile.",
-      "text4": "A winning concept in a new, digitalized format",
-      "sub1": "Easy to use",
-      "sub2": "Free to download",
-      "sub3": "Avoid fines",
-      "sub4": "Reduce Stress",
-      "news1": "News",
-      "news2": "We are Transforming",
-      "news3": "Parking Experiences",
-      "contact1": "Contact",
-      "contact2": "We would love to",
-      "contact3": "hear from you!",
-      "about1": "About us",
-      "about2": "Parking Time Sweden",
-      "about3": "We are a tech startup dedicated to transforming the parking",
-      "about4": "experience for all stakeholders – parkers, parking attendants,",
-      "about5": "municipalities, and property owners."
-
-    },
-    "FAQ": {
-    "title1": "What is Parking Time?",
-    "answer1": "Parking Time is a new amazing tecnology that will help you in every day life to adjust you p-skiva",
-    "title2": "How do I use Parking Time?",
-    "answer2": "Download the app and use it for free! Whenever you need to park adjust your digital p-skiva!",
-    "title3": "Is it free?",
-    "answer3": "Of course is for free!",
-    "title4": "How do I get it in my municipality?",
-    "answer4": "Contact your municaipality if you want to implent this amazing piece of tecnology in your area!",
-    "title5": "Known problems with the app",
-    "answer5": "No problem known with the app! Best App and website ever!"
   }
 
 }
-
-
 
