@@ -10,15 +10,16 @@ interface StaffCardClassicProps {
 const StaffCardClassic = ({StaffImage, name, role}:StaffCardClassicProps) => {
     return (
         
-          <div className="flex flex-col basis-1/2 items-left bg-white rounde:xl">
-                <Image className="rounded-full p-8"
+          <div className="flex flex-col items-left bg-white rounded-xl items-center m-6">
+                <Image className=""
                     src={StaffImage}
-                    width={250}
-                    height={250}
                     alt="Picture of the author"
                 />
-                <p className="h5">{name}</p>
-                <p className="h6">{role}</p>
+                <div className="flex flex-col w-[100%] my-6">
+                    <p className="h6 text-left md:pl-[16px] pl-[32px]">{name}</p>
+                    <p className="p2 text-left md:pl-[16px] pl-[32px]">{role}</p>
+                </div>
+                
             </div>
         
     )
