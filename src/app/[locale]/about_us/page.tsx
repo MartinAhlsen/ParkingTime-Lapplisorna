@@ -31,34 +31,7 @@ const About_us = () => {
         overtitle={null}
       />
       <div className="flex flex-col px-[5%] lg:grid  lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
-        <StaffCard
-          staffImg={MatildaImg}
-          hueA={20}
-          hueB={40}
-          text1="Matilda Öhman"
-          text2="CEO"
-        />
-        <StaffCard
-          staffImg={Swedbank}
-          hueA={60}
-          hueB={90}
-          text1="Johan E. Bengtsson"
-          text2="CTO"
-        />
-        <StaffCard
-          staffImg={Nordea}
-          hueA={80}
-          hueB={120}
-          text1="Ingemar Öhman"
-          text2="Accountant"
-        />
-        <StaffCard
-          staffImg={Vattenfall}
-          hueA={100}
-          hueB={140}
-          text1="Fredrik Jodstam"
-          text2="Buisseness strategist"
-        />
+        
       </div>
       <TitleSubtitle
         title="Want to know more?"
