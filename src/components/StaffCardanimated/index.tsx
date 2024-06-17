@@ -30,7 +30,7 @@ interface StaffCardProps {
     text2: string;
   }
 const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
-const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
+const StaffCardAnimated= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
     const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
   return (
@@ -56,4 +56,4 @@ const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
   );
 };
 
-export default StaffCard
+export default StaffCardAnimated

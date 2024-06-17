@@ -8,17 +8,18 @@ import Header from "../../../components/header";
 import Banner from "../../../components/Hero";
 import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
-import StaffCard from "../../../components/StaffCard";
+
 import Story from "@/components/Story";
 import Quotation from "@/components/Quotation";
+import StaffCardClassic from "@/components/StaffCardClassic";
 
 const About_us = () => {
   return (
     <>
       <Header />
       <Banner page="about" />
-      
-      <Story/>
+
+      <Story />
       <TitleSubtitle
         title="Our Values"
         subtitle="The things we believe in."
@@ -30,35 +31,13 @@ const About_us = () => {
         subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
         overtitle={null}
       />
-      <div className="flex flex-col px-[5%] lg:grid  lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
-        <StaffCard
-          staffImg={MatildaImg}
-          hueA={20}
-          hueB={40}
-          text1="Matilda Öhman"
-          text2="CEO"
-        />
-        <StaffCard
-          staffImg={Swedbank}
-          hueA={60}
-          hueB={90}
-          text1="Johan E. Bengtsson"
-          text2="CTO"
-        />
-        <StaffCard
-          staffImg={Nordea}
-          hueA={80}
-          hueB={120}
-          text1="Ingemar Öhman"
-          text2="Accountant"
-        />
-        <StaffCard
-          staffImg={Vattenfall}
-          hueA={100}
-          hueB={140}
-          text1="Fredrik Jodstam"
-          text2="Buisseness strategist"
-        />
+      <div className="flex flex-col px-[5%] lg:grid lg:gap-[32px] lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
+    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
+    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
+    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
+    <StaffCardClassic StaffImage={MatildaImg} name={"Matilda"} role={"CEO"} />
+
+
       </div>
       <TitleSubtitle
         title="Want to know more?"
