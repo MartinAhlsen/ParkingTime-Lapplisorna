@@ -69,6 +69,7 @@ export default function Home() {
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
+        <DownloadNow />
         <MatildaCEO />
         <TitleSubtitle
           title={t("Comp_5_title")}

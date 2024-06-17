@@ -9,7 +9,6 @@ import Banner from "../../../components/Hero";
 import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
 import StaffCard from "../../../components/StaffCard";
-import Story from "@/components/Story";
 import Quotation from "@/components/Quotation";
 
 const About_us = () => {
@@ -18,7 +17,8 @@ const About_us = () => {
       <Header />
       <Banner page="about" />
       
-      <Story/>
+
+      <RightTextLeftImage />
       <TitleSubtitle
         title="Our Values"
         subtitle="The things we believe in."
