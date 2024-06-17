@@ -66,10 +66,6 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("news1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("news2")}</h1>
@@ -84,10 +80,6 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("contact1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
@@ -102,10 +94,6 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4 md:mt-2">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("about1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("about2")}</h1>
