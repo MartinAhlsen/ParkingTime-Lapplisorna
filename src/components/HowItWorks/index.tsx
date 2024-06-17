@@ -1,8 +1,10 @@
 "use client"
 import React from "react";
 import Button from "../Button";
+import { useTranslations } from "next-intl";
 
 const HowItWorks: React.FC = () => {
+    const b= useTranslations("buttons")
     return (
         
      <div className="bg-pt-background min-h-[50vh]">
@@ -46,9 +48,10 @@ const HowItWorks: React.FC = () => {
         </div>
         <div className="flex justify-center pb-10">
         <Button 
-          text="Download app" 
+          text={b("download")} 
           url="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" 
           colorTheme="dark" 
+          
         />
         </div>
      </div>
