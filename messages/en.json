@@ -41,6 +41,7 @@
       "about5": "municipalities, and property owners."
 
     },
+
   "smart_parking_solution": {
       "title":"Smart Parking Solution",
       "paragraph":"The parking disc has long been a tool to promote circulation and activity in your city's center. It's a fantastic invention that benefits residents, visitors, and local businesses alike. We want to be part of this evolution by creating a free digital parking disc.",
@@ -49,14 +50,16 @@
       "arrow3": "Any parking attendant systems can easily be integrated with our system.",
       "final_paragraph": "We're excited to share more about our solution in a meeting."
   },
+
   "testimonials": {
-    "title": "Customer testimonials",
-    "subtitle": "Hear from some of our client",
-    "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
-    "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
-    "role1":"City Architect, Falköping Kommun",
-    "role2": "Municipal Manager, Nässjö Kommun" 
-},
+      "title": "Customer testimonials",
+      "subtitle": "Hear from some of our client",
+      "main_text1":"“Parking Time has significantly improved our parking management and user satisfaction in the city center. The ease of use and intuitive interface have made it simple for residents and visitors to find and manage parking. We highly recommend Parking Time to other municipalities looking for a modern and efficient parking solution.”",
+      "main_text2":"“Implementing Parking Time has been a game-changer for our urban planning efforts. The detailed usage data and behavior patterns provided by the app have given us valuable insights into parking trends and helped us optimize our parking resources. Parking Time has truly revolutionized the way we approach parking and urban development.”",
+      "role1":"City Architect, Falköping Kommun",
+      "role2": "Municipal Manager, Nässjö Kommun" 
+  },
+
     "why_parking_time": {
       "title":"Why Parking Time?",
       "Comp_1_title":"Increased revenue & reduced stress",
@@ -73,10 +76,7 @@
       "stat2": "Parking sessions",
       "stat3": "Parking zones"
     },
-    "download_now": {
-      "title": "Download now",
-      "p": "The app is free to download for you as a user. However, your municipality must be registered as a customer with us for our app to be valid in your area. If our app is not available in your municipality, you are welcome to contact us or suggest us to your municipality!"
-    },
+
     "MatildaCEO": {
       "title": "Want to know more?",
       "paragraph": "Contact us to find out more about our solution and how we can implement it in your municipality.",

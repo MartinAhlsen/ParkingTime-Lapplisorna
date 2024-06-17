@@ -34,6 +34,9 @@ const TestButton: ButtonProperties = {
 export default function Home() {
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
+  const [isAnimationAlreadyRun, setAnimationAlreadyRun] = useState(false);
+
+  
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -43,9 +46,12 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 2700);
+      }, 1500);
     })();
   }, []);
+
+
+  
   const t = useTranslations("home");
   return (
     <div>
