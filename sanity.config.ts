@@ -13,7 +13,6 @@ import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
 import schemas from './sanity/schemas'
 
-
 export default defineConfig({
   basePath: '/studio',
   projectId: "m838832i",

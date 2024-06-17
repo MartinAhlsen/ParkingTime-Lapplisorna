@@ -19,6 +19,7 @@ import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
+import Articles from '@/components/Articles';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -76,6 +77,7 @@ export default function Home() {
           subtitle={t("Comp_5_subtitle")}
           overtitle={t("Comp_5_overtitle")}
         />
+        <Articles />
         <FAQ />
       </NextUIProvider>
     </div>
