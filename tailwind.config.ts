@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -32,7 +33,7 @@ const config: Config = {
         "pt-darkblue2": "#2A394E",
         "pt-gray1": "#868686",
         "pt-lightgrayborder": "#E8E8E8",
-        "pt-gray2": "#F9F9F9",
+        "pt-gray2": "#F0F0F0",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
