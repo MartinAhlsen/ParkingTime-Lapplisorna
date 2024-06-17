@@ -24,9 +24,9 @@ const MatildaCEO: React.FC = () => {
                 <p className="h6">{"Matilda@email.com"}</p>
             </div>
 
-      <div className="flex flex-col basis-1/2 items-start">
-        <p className="h4 pb-10 pt-6 md:pt-0 text-left">{t("title")}</p>
-        <p className="p2 text-left w-[60%]">{t("paragraph")}</p>
+      <div className="flex flex-col basis-1/2 md:items-start text-center">
+        <p className="h4 pb-10 pt-6 md:pt-0 text-center md:text-left">{t("title")}</p>
+        <p className="p2 md:text-left w-[88%] md:w-[60%] text-center">{t("paragraph")}</p>
       </div>
     </div>
   );
