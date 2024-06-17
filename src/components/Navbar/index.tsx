@@ -76,11 +76,11 @@ const Navbar = () => {
             <Link href={`/${locale}/news`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("News")}</li>
             </Link>
-            <Link href="/FAQ" className="flex items-center">
+            <Link href={`/${locale}/faq_page`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("FAQ")}</li>
             </Link>
             
-            <Link href={`/${locale}/{contact_us}`} className="flex items-center">
+            <Link href={`/${locale}/contact_us`} className="flex items-center">
             
               <Button {...ContactButton}/>
             </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
           <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
           <motion.a variants={itemVariants} href={`/${locale}/about_us`} className="block mb-2 button-text">About Us</motion.a>
           <motion.a variants={itemVariants} href={`/${locale}/news`} className="block mb-2 button-text">News</motion.a>
-          <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
+          <motion.a variants={itemVariants} href={`/${locale}/faq_page`}className="block mb-2 button-text">FAQ</motion.a>
           
           <Button {...ContactButton} />
           
