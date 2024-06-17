@@ -49,7 +49,7 @@ const Navbar = () => {
   const locale = useLocale(); // Get the current locale from next-intl
   const ContactButton: ButtonProperties = {
   text: "Contact us",
-  url: "/se/contact_us",
+  url: `/${locale}/contact_us`,
   colorTheme: "light",
 };
   return (
@@ -120,8 +120,8 @@ const Navbar = () => {
           className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
         >
           <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
-          <motion.a variants={itemVariants} href="/about_us" className="block mb-2 button-text">About Us</motion.a>
-          <motion.a variants={itemVariants} href="/news" className="block mb-2 button-text">News</motion.a>
+          <motion.a variants={itemVariants} href={`/${locale}/about_us`} className="block mb-2 button-text">About Us</motion.a>
+          <motion.a variants={itemVariants} href={`/${locale}/news`} className="block mb-2 button-text">News</motion.a>
           <motion.a variants={itemVariants} href="/FAQ" className="block mb-2 button-text">FAQ</motion.a>
           
           <Button {...ContactButton} />
