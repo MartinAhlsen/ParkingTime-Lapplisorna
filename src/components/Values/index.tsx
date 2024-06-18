@@ -9,7 +9,7 @@ import Friendly from "../../../public/Images/values/userFriendly-icon.png"
 const Values = () => {
     const t = useTranslations("about_us")
     return (
-        <div className="flex flex-col  bg-pt-background items-center">
+        <div className="flex flex-col bg-pt-background items-center">
           <TitleSubtitle
         title={t("values_title")}
         subtitle={t("values_subtitle")}

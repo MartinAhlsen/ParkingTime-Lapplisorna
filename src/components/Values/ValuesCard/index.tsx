@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
-import Image from "next/image"
+import Image from "next/image";
 import React from "react";
-
 
 interface ValuesCardProps {
     imageLink: StaticImageData,
@@ -9,26 +8,26 @@ interface ValuesCardProps {
     paragraph: string
 }
 
-const ValuesCard = ({imageLink, title, paragraph}:ValuesCardProps) => {
+const ValuesCard = ({imageLink, title, paragraph}: ValuesCardProps) => {
     return (
-        <div className="flex flex-col p-4 m-4 md:m-8 md:p-8 items-center flex-basis-1/3">
-            <div className="bg-white flex items-center w-[95px] mb-6 rounded-[18px] border-pt-lightgrayborder border-2">
-            <Image src={imageLink} 
-            className="items-center "
-                objectFit="cover"
-                width={250} 
-                height={250} 
-                alt={title} 
+        <div className="flex flex-col p-2 md:p-20 items-center">
+            <div className="bg-white mb-2 md:mb-4 rounded-[18px] border-pt-lightgrayborder border-2">
+                <Image
+                    src={imageLink}
+                    className="object-cover rounded-lg"
+                    width={120}
+                    height={120}
+                    alt={title}
                 />
-
             </div>
             
-            <p className="p4 bg-pt-background pb-6 w-[197px] text-center">{title}</p>
-            <p className="p2 bg-pt-background text-center">{paragraph}</p>
-          
+            <div className="text-center max-w-48">
+                <p className="bg-pt-background pb-2 text-lg font-bold">{title}</p>
+                <p className="bg-pt-background text-sm md:text-base">{paragraph}</p>
+            </div>
         </div>
-    )
+    );
 };
 
-export default ValuesCard
+export default ValuesCard;
 
