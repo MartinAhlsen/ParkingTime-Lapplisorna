@@ -17,6 +17,7 @@ const About_us = () => {
 
   const t = useTranslations("about_us")
   const team= useTranslations("team")
+  const know = useTranslations("MatildaCEO")
   return (
     <>
       <Header />
@@ -43,8 +44,8 @@ const About_us = () => {
 
       </div>
       <TitleSubtitle
-        title="Want to know more?"
-        subtitle="Contact us to find out more about our solution and how we can implement it in your municipality"
+        title={know("title")}
+        subtitle={know("paragraph")}
         overtitle={null}
       />
     </>
