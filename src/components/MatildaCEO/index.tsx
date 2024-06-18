@@ -26,6 +26,7 @@ const MatildaCEO: React.FC = () => {
         <p className="h4 pb-10 pt-6 md:pt-0 text-center md:text-left">{t("title")}</p>
         <p className="p2 md:text-left w-[88%] md:w-[60%] text-center">{t("paragraph")}</p>
       </div>
+      
     </div>
   );
 };
