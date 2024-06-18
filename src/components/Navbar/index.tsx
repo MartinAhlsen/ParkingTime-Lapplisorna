@@ -77,7 +77,7 @@ const Navbar = () => {
             <Link href={`/${locale}/news`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("News")}</li>
             </Link>
-            <Link href={`/${locale}/faq_page`} className="flex items-center">
+            <Link href={`/${locale}/#faq`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("FAQ")}</li>
             </Link>
             
@@ -120,10 +120,10 @@ const Navbar = () => {
           variants={wrapperVariants}
           className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
         >
-          <motion.p variants={itemVariants} className="button-text" >Why Parking Time?</motion.p>
+          <motion.a variants={itemVariants} href={`/${locale}/#why-parking-time`} className="button-text" >Why Parking Time?</motion.a>
           <motion.a variants={itemVariants} href={`/${locale}/about_us`} className="block mb-2 button-text">About Us</motion.a>
           <motion.a variants={itemVariants} href={`/${locale}/news`} className="block mb-2 button-text">News</motion.a>
-          <motion.a variants={itemVariants} href={`/${locale}/faq_page`}className="block mb-2 button-text">FAQ</motion.a>
+          <motion.a variants={itemVariants} href={`/${locale}/#faq`}className="block mb-2 button-text">FAQ</motion.a>
           
           <Button {...ContactButton} />
           

@@ -73,6 +73,7 @@ export default function Home() {
         <DownloadNow />
         <Articles />
         <MatildaCEO />
+        <span id="faq"></span>
         <TitleSubtitle
           title={t("Comp_5_title")}
           subtitle={t("Comp_5_subtitle")}
