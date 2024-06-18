@@ -71,13 +71,14 @@ export default function Home() {
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
         <DownloadNow />
+        <Articles />
         <MatildaCEO />
         <TitleSubtitle
           title={t("Comp_5_title")}
           subtitle={t("Comp_5_subtitle")}
           overtitle={t("Comp_5_overtitle")}
         />
-        <Articles />
+        
         <FAQ />
       </NextUIProvider>
     </div>
