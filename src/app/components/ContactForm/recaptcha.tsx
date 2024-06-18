@@ -76,7 +76,6 @@ function HomeInside() {
       <main className="mt-5">
         {" "}
         {/* Add a top margin for better spacing */}
-        <h2>Interested in Silicon Valley Code Camp</h2>
         <form onSubmit={handleSubmitForm}>
           <div className="mb-3">
             <input
