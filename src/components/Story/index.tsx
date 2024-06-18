@@ -1,32 +1,31 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Button from "../Button";
 
 const Story: React.FC = () => {
+  const t= useTranslations("story")
+
+
   return (
     <div className="container mx-auto flex xl:flex-row w-full min-h-[60vh] justify-between items-center py-20 text-pt-darkblue2 bg-white">
       <div className="flex flex-col xl:w-1/2">
 
         <div className="p-10 xl:w-3/4">
-          <p className="h5">Our Vision</p>
+          <p className="h5">{t("title1")}</p>
 
           <p className="p2 ">
-            Parking Time Sweden is a tech startup aiming to revolutionize the
-            parking experience for all parties involved – the parker, the
-            parking attendant, the municipality, and the property owner.
+          {t("p1")}
           </p>
 
           <p className="p2">
-            We currently offer a free digital parking disc within an app to
-            complement the existing range of parking apps.
+          {t("p2")}
           </p>
         </div>
 
         <div className="xl:w-3/4 px-10 md:pb-0">
-          <p className="h5">Our story</p>
+          <p className="h5">{t("title2")}</p>
           <p className="p2 pt-4">
-            Parking Time Sweden was founded in 2021 in Luleå. Today, we operate
-            throughout Sweden with the ambition to expand globally in the coming
-            years, and we hope to have you with us on our journey!
+          {t("p3")}
           </p>
         </div>
         <div className="flex p-10 justify-center md:justify-normal">
