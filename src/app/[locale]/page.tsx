@@ -9,6 +9,7 @@ import SplashScreen from '@/components/SplashScreen/SplashScreen';
 import Header from '@/components/header';
 import Banner from '@/components/Hero';
 import SmartParkingSolution from '@/components/SmartParkingSolution';
+import HowItWorks from '@/components/HowItWorks';
 import TitleSubtitle from '@/components/TitleSubtitle';
 import WhyParkingTime from '@/components/WhyParkingTime';
 import TrustedBy from '@/components/TrustedBy';
@@ -16,8 +17,8 @@ import Statistics from '@/components/Statistics';
 import MatildaCEO from '@/components/MatildaCEO';
 import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
+import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
-import HowItWorks from '@/components/HowItWorks';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -57,17 +58,8 @@ export default function Home() {
         <SmartParkingSolution />
         <HowItWorks/>
         <WhyParkingTime />
-        <TitleSubtitle
-          title={t("Comp_3_title")}
-          subtitle={t("Comp_3_subtitle")}
-          overtitle={null}
-        />
-
-        <TitleSubtitle
-          title={t("Comp_4_title")}
-          subtitle={t("Comp_4_subtitle")}
-          overtitle={t("Comp_4_overtitle")}
-        />
+       
+        <Testimonial />
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />

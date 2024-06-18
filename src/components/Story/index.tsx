@@ -1,7 +1,7 @@
 "use client";
 import Button from "../Button";
 
-const Story = () => {
+const Story: React.FC = () => {
   return (
     <div className="container mx-auto flex xl:flex-row w-full min-h-[60vh] justify-between items-center py-20 text-pt-darkblue2 bg-white">
       <div className="flex flex-col xl:w-1/2">

@@ -44,7 +44,7 @@ const HowItWorks: React.FC = () => {
                 <div  className="p2">Once you select your parking zone, you can review any applicable rules, start parking, and then simply close the app.</div>
             </div>  
         </div>
-        <div className="flex justify-center pb-10 xl:py-0">
+        <div className="flex justify-center pb-10">
         <Button 
           text="Download app" 
           url="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" 
