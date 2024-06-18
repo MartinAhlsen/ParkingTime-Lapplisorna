@@ -15,39 +15,39 @@ const HowItWorks: React.FC = () => {
                 <div className="flex justify-between">
                 <img src="/Images/pen-icon.png" alt="pen"
                 className="w-[48px] h-[48px]" />
-                <div className="text-pt-gray2 text-[100px] leading-none">01</div>
+                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">01</div>
                 </div>
                 <div className="h5">{t("t1")}</div>
                 <div className="p2">{t("p1")}</div>
             </div>
-            <div className="p-4">
+            <div className="flex mx-auto p-4 items-center">
                 <img src="/Images/right-icon.png" alt="right arrow"
                 className="rotate-90 xl:rotate-0"/>
             </div>
-            <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
-            <div className="flex justify-between">
-                <img src="/Images/parking-icon.png" alt="parking icon"
+            <div className="bg-white mx-auto w-[380px] p-6 rounded-[20px] relative">
+                <div className="pb-10">
+                <img src="/Images/parking-icon.png" alt="parking"
                 className="w-[48px] h-[48px]" />
-                <div className="flex text-pt-gray2 text-[100px] leading-none">02</div>
+                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">02</div>
                 </div>
                 <div className="h5">{t("t2")}</div>
                 <div className="p2">{t("p2")}</div>
             </div>
-            <div className="p-4">
+            <div className="flex mx-auto p-4 items-center">
                 <img src="/Images/right-icon.png" alt="right arrow"
                 className="rotate-90 xl:rotate-0"/>
             </div>
-            <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
-            <div className="flex justify-between">
-                <img src="/Images/clock-icon.png" alt="clock icon"
+            <div className="bg-white mx-auto w-[380px] p-6 rounded-[20px] relative">
+                <div className="pb-10">
+                <img src="/Images/clock-icon.png" alt="clock"
                 className="w-[48px] h-[48px]" />
-                <div className="flex text-pt-gray2 text-[100px] leading-none">03</div>
+                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">03</div>
                 </div>
                 <div className="h5">{t("t3")}</div>
                 <div  className="p2">{t("p3")}</div>
             </div>  
         </div>
-        <div className="flex justify-center pb-10">
+        <div className="flex justify-center p-10">
         <Button 
           text={b("download")} 
           url="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" 
