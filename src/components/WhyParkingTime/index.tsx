@@ -26,7 +26,7 @@ const WhyParkingTime = () => {
   };
 
   return (
-    <div className="bg-pt-primary min-h-screen flex flex-col items-center">
+    <div id="why-parking-time" className="bg-pt-primary min-h-screen flex flex-col items-center">
       <p className="text-4xl font-bold text-center text-white p-10 leading-tight">
         {t("title")}
       </p>

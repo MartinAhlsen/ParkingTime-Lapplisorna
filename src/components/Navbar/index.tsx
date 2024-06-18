@@ -68,7 +68,7 @@ const Navbar = () => {
         </Link>
         <div className="hidden md:flex">
           <ul className="flex justify-end gap-[5%]">
-            <Link href="/WhyParkingTime" className="flex items-center">
+            <Link href={`/${locale}/#why-parking-time`}  className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("Why_parking_time?")}</li>
             </Link>
             <Link href={`/${locale}/about_us`} className="flex items-center">
