@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <>
       <Header />
-      <h2>Privacy</h2>
+      
     </>
   );
 };

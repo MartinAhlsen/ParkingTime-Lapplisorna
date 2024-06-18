@@ -1,18 +1,22 @@
 import React from "react";
-import TitleSubtitle from "../../../components/TitleSubtitle";
+
 import Banner from "../../../components/Hero";
 import Header from "../../../components/header";
+import TitleSubtitle from "@/components/TitleSubtitle";
+import { useTranslations } from "next-intl";
 
 const News = () => {
+const t = useTranslations("home")
+
   return (
     <>
       <Header />
       <Banner page="news" />
-      <h2>news</h2>
+     
       <TitleSubtitle
-        title="Don´t miss"
-        subtitle="We are expanding rapidly, subscribe to our newsletter."
-        overtitle="News"
+        title={t("Comp_4_title")}
+        subtitle={t("Comp_4_subtitle")}
+        overtitle={t("Comp_4_overtitle")}
       />
     </>
   );
