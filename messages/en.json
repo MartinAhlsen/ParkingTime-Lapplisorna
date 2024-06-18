@@ -121,6 +121,15 @@
   "buttons": {
     "contact_us": "Contact us",
     "download": "Download app"
+  },
+  "howitworks": {
+    "main_title": "How it works",
+    "t1": "Enter your registration number",
+    "p1": "Open the app, register with your car's registration number.",
+    "t2": "Find your desired parking location",
+    "p2": "Use the map, search function, or zone list to find your desired parking location.",
+    "t3": "Start your digital parking disc",
+    "p3": "Once you select your parking zone, you can review any applicable rules, start parking, and then simply close the app."
   }
 
 

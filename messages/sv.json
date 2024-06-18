@@ -129,6 +129,15 @@
   "buttons": {
     "contact_us": "Kontakta oss",
     "download": "Ladda ner appen"
+  },
+  "howitworks": {
+    "main_title": "Hur det fungerar",
+    "t1": "Ange ditt registreringsnummer",
+    "p1": "Öppna appen, registrera dig med ditt bils registreringsnummer.",
+    "t2": "Hitta din önskade parkeringsplats",
+    "p2": "Använd kartan, sökfunktionen eller zonlistan för att hitta din önskade parkeringsplats.",
+    "t3": "Starta din digitala parkeringsskiva",
+    "p3": "När du har valt din parkeringszon kan du granska eventuella tillämpliga regler, starta parkeringen och sedan enkelt stänga appen."
   }
 
  
