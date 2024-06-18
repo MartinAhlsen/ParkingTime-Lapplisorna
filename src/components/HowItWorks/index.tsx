@@ -11,8 +11,8 @@ const HowItWorks: React.FC = () => {
      <div className="bg-pt-background min-h-[50vh]">
         <div className="h3 text-center ">{t("main_title")}</div>
         <div className="flex w-full mx-auto flex-col xl:flex-row container justify-evenly items-center">
-            <div className="bg-white w-[380px] m-10 p-6 rounded-[20px]">
-                <div className="flex justify-between">
+        <div className="bg-white mx-auto w-[380px] p-6 rounded-[20px] relative">
+        <div className="pb-10">
                 <img src="/Images/pen-icon.png" alt="pen"
                 className="w-[48px] h-[48px]" />
                 <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">01</div>
