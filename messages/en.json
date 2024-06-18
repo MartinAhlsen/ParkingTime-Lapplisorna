@@ -1,7 +1,6 @@
 {
-    "home": {
-      "title": "Parking time",
-
+  "home": {
+    "title": "Parking time",
     "Comp_2_title":"How it works?",
     "Comp_3_title": "Customer testimonials",
     "Comp_3_subtitle": "Hear from some of our client",
@@ -10,7 +9,7 @@
     "Comp_4_overtitle":"News",
     "Comp_5_title": "Do you have a question?",
     "Comp_5_subtitle": "Here some common questions answered",
-    "Comp_5_overtitle":"FAQ"
+    "Comp_5_overtitle": "FAQ"
   },
   "NavItem": {
   "Why_parking_time?": "Why parking Time?",
