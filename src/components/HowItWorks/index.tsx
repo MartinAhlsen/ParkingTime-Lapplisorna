@@ -24,11 +24,11 @@ const HowItWorks: React.FC = () => {
                 <img src="/Images/right-icon.png" alt="right arrow"
                 className="rotate-90 xl:rotate-0"/>
             </div>
-            <div className="bg-white mx-auto w-[380px] p-6 rounded-[20px] relative">
+            <div className="bg-white mx-auto w-[380px] p-6 rounded-[20px] relative overflow:hidden">
                 <div className="pb-10">
                 <img src="/Images/parking-icon.png" alt="parking"
                 className="w-[48px] h-[48px]" />
-                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">02</div>
+                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-10px]">02</div>
                 </div>
                 <div className="h5">{t("t2")}</div>
                 <div className="p2">{t("p2")}</div>
@@ -41,7 +41,7 @@ const HowItWorks: React.FC = () => {
                 <div className="pb-10">
                 <img src="/Images/clock-icon.png" alt="clock"
                 className="w-[48px] h-[48px]" />
-                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-15px]">03</div>
+                <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-10px]">03</div>
                 </div>
                 <div className="h5">{t("t3")}</div>
                 <div  className="p2">{t("p3")}</div>
