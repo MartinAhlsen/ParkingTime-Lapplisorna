@@ -128,7 +128,9 @@
   "buttons": {
     "contact_us": "Contact us",
     "download": "Download app",
-    "learnmore": "Learn more about us"
+    "learnmore": "Learn more about us",
+    "view_all": "View all",
+    "meeting": "Book a meeting"
   },
   "howitworks": {
     "main_title": "How it works",

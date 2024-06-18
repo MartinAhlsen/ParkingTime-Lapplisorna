@@ -137,7 +137,9 @@
   "buttons": {
     "contact_us": "Kontakta oss",
     "download": "Ladda ner appen",
-    "learnmore": "Läs mer om oss"
+    "learnmore": "Läs mer om oss",
+    "view_all": "Se alla nyheter",
+    "meeting": "Boka ett möte"
   },
   "howitworks": {
     "main_title": "Hur det fungerar",
