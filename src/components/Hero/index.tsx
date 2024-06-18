@@ -24,7 +24,7 @@ const DownloadButton: ButtonProperties = {
 };
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
-  let src, alt, imageClass, bannerContent, greenBar;
+  let src, alt, imageClass, bannerContent;
   const t = useTranslations("hero")
 
   switch (page) {
