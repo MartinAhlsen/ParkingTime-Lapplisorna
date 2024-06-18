@@ -4,6 +4,7 @@ import Banner from "../../../components/Hero";
 import Header from "../../../components/header";
 import TitleSubtitle from "@/components/TitleSubtitle";
 import { useTranslations } from "next-intl";
+import Articles from "@/components/Articles";
 
 const News = () => {
 const t = useTranslations("home")
@@ -12,7 +13,7 @@ const t = useTranslations("home")
     <>
       <Header />
       <Banner page="news" />
-     
+      <Articles />
       <TitleSubtitle
         title={t("Comp_4_title")}
         subtitle={t("Comp_4_subtitle")}
