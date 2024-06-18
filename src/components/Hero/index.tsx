@@ -17,7 +17,7 @@ interface ButtonProperties {
 
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
-  let src, alt, imageClass, bannerContent, greenBar;
+  let src, alt, imageClass, bannerContent;
   const t = useTranslations("hero")
   const b = useTranslations("buttons")
   const locale = useLocale()
