@@ -116,7 +116,9 @@
   "about_us": {
     "title": "About Us",
     "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
-    "author": "- Matilda, CEO and Founder."
+    "author": "- Matilda, CEO and Founder.",
+    "values_title": "Our Values",
+    "values_subtitle": "The things we believe in."
   },
   "buttons": {
     "contact_us": "Contact us",
@@ -137,6 +139,14 @@
     "p2": "We currently offer a free digital parking disc within an app to complement the existing range of parking apps.",
     "title2": "Our Story",
     "p3": "Parking Time Sweden was founded in 2021 in Luleå. Today, we operate throughout Sweden with the ambition to expand globally in the coming years, and we hope to have you with us on our journey!"
+  },
+  "team": {
+    "title": "Meet our team",
+    "subtitle": "Each member brings a unique blend of expertise, passion, and forward-thinking mindset.",
+    "role1": "CEO",
+    "role2": "Chief Technical Officer",
+    "role3": "Accountant",
+    "role4": "Business Strategist"
   }
 
 
