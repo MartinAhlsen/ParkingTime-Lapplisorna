@@ -7,6 +7,7 @@ import TitleSubtitle from '../TitleSubtitle';
 import Image, { StaticImageData } from 'next/image';
 
 import { Project } from '../../../types/Project';
+import { useTranslations } from 'next-intl';
 
 
 
@@ -23,12 +24,14 @@ const Articles: React.FC = () => {
     fetchProjects();
   }, []);
 
+  const t = useTranslations("home")
+
     return (
         <div className="min-h-[1000px] bg-pt-background">
             <TitleSubtitle
-                title="Don’t miss"
-                subtitle="We are expanding rapidly, subscribe to our newsletter."
-                overtitle="News"
+            title={t("Comp_4_title")}
+            subtitle={t("Comp_4_subtitle")}
+            overtitle={t("Comp_4_overtitle")}
             />
             
             <div className="flex  flex-col md:flex-row justify-evenly bg-pt-background pt-14 pb-14 md:pb-10">
