@@ -4,25 +4,23 @@ import { useRouter } from "next/navigation";
 import React from "react";
 interface ButtonProps {
   text: string;
-  url: string;
+  url?: string | undefined;
   colorTheme: "light" | "dark";
   formCategoryState?: string;
   extraWide?: boolean;
+  type?: "button" | "submit";
 }
 
-const Button = ({
-  text,
-  url,
-  colorTheme,
-  formCategoryState,
-  extraWide,
-}: ButtonProps) => {
+const Button = ({ text, url, colorTheme, formCategoryState, type, extraWide }: ButtonProps) => {
   const router = useRouter();
   const handleClick = (): void => {
-    router.push(url);
+    if (type !== "submit" && url) {
+      router.push(url);
+    }
   };
   return (
     <button
+      {...(type ? { type } : {})}
       onClick={handleClick}
       className={`
             ${
