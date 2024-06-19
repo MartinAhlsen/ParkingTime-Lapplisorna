@@ -8,13 +8,14 @@ import ContactLink from "@/components/Contact/ContactLinks";
 import MailIcon from "@/../public/Images/Email.png";
 import PhoneIcon from "@/../public/Images/Phone.png";
 import MapLocationIcon from "@/../public/Images/Pin.png";
+import { Home2 } from "@/app/components/MergeCaptcha";
 
 const Contact_us = () => {
   return (
     <>
       <Header />
       <Banner page="contact" />
-      <div className="contactContainer flex flex-col md:flex-row md:p-[80px] justify-evenly bg-pt-gray2">
+      <div className="contactContainer flex flex-col md:flex-row md:p-[80px] pt-[100px] px-[30px] pb-[80px] justify-evenly bg-pt-gray2">
         <div className="informationContainer flex flex-col md:basis-2/5">
           <h3 className="h3">Contact us</h3>
           <p className="p1">
@@ -41,7 +42,8 @@ const Contact_us = () => {
           </div>
         </div>
         <div className="formWwrapper md:basis-2/5">
-          <ContactForm />
+          {/* <ContactForm /> */}
+          <Home2 />
         </div>
       </div>
     </>

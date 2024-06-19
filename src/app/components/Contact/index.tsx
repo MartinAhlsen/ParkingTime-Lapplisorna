@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/app/utils/sendEmail";
-import Button from "../Button";
+import Button from "@/components/Button";
 
 export type FormData = {
   name: string;
