@@ -3,12 +3,11 @@
 import React from "react";
 import Header from "../../../components/header";
 import Banner from "../../../components/Hero";
-import ContactForm from "@/app/components/ContactForm";
 import ContactLink from "@/components/Contact/ContactLinks";
 import MailIcon from "@/../public/Images/Email.png";
 import PhoneIcon from "@/../public/Images/Phone.png";
 import MapLocationIcon from "@/../public/Images/Pin.png";
-import { Home2 } from "@/app/components/MergeCaptcha";
+import { Home2 } from "@/components/Contact/ContactForm";
 
 const Contact_us = () => {
   return (
@@ -42,7 +41,6 @@ const Contact_us = () => {
           </div>
         </div>
         <div className="formWwrapper md:basis-2/5">
-          {/* <ContactForm /> */}
           <Home2 />
         </div>
       </div>
