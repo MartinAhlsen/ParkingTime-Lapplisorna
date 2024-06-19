@@ -7,13 +7,15 @@ import TitleSubtitle from '../TitleSubtitle';
 import Image, { StaticImageData } from 'next/image';
 
 import { Project } from '../../../types/Project';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 
 
 const Articles: React.FC = () => {
   const pathname = usePathname();
   const [projects, setProjects] = useState<Project[]>([]);
+  const [singleArticle, setSingleArticle] = useState<any>(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -25,6 +27,8 @@ const Articles: React.FC = () => {
   }, []);
 
   const t = useTranslations("home")
+  const locale = useLocale(); 
+
 
     return (
         <div className="min-h-[1000px] bg-pt-background">
@@ -49,7 +53,12 @@ const Articles: React.FC = () => {
                         <p className='h6 pt-4 pb-4'>{project.name} </p>
                         <p className='p2 max-w-[300px]'>{project.text2}</p>
                         
-                        <p className='links'>Read more</p>
+                        <Link
+                              href={`/${locale}/news/${project.slug}`}
+                              className="hover:text-grey1 underline"
+                                  >
+                                Read more
+                    </Link>
                     
                     </div>
                     
