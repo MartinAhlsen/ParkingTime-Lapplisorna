@@ -1,73 +1,77 @@
  @tailwind base;
-@tailwind components;
-@tailwind utilities;
+ @tailwind components;
+ @tailwind utilities;
 
-html {
-  min-height: 100vh;
-}
+ html {
+   min-height: 100vh;
+ }
 
-body {
-  height: 100%;
-}
+ body {
+   height: 100%;
+ }
 
-@layer components {
-  .h1 {
-    @apply font-lato font-bold text-[80px] leading-[80px];
-  }
+ .grecaptcha-badge {
+   visibility: hidden !important;
+ }
 
-  .h2 {
-    @apply font-lato font-semibold text-[24px] leading-[35px];
-  }
+ @layer components {
+   .h1 {
+     @apply font-lato font-bold text-[80px] leading-[80px];
+   }
 
-  .h3 {
-    @apply font-lato font-bold text-[48px] leading-[120px];
-  }
+   .h2 {
+     @apply font-lato font-semibold text-[24px] leading-[35px];
+   }
 
-  .h4 {
-    @apply font-lato font-bold text-[36px];
-  }
+   .h3 {
+     @apply font-lato font-bold text-[48px] leading-[120px];
+   }
 
-  .h5 {
-    @apply font-lato font-bold text-[32px];
-  }
+   .h4 {
+     @apply font-lato font-bold text-[36px];
+   }
 
-  .h6 {
-    @apply font-lato font-bold text-[24px];
-  }
+   .h5 {
+     @apply font-lato font-bold text-[32px];
+   }
 
-  .h7 {
-    @apply font-lato font-bold text-[18px]
-  }
+   .h6 {
+     @apply font-lato font-bold text-[24px];
+   }
 
-  .button-text {
-    @apply font-lato font-medium text-[16px];
-  }
+   .h7 {
+     @apply font-lato font-bold text-[18px]
+   }
 
-  .p1 {
-    @apply font-roboto font-medium text-[16px] leading-[32px];
-  }
+   .button-text {
+     @apply font-lato font-medium text-[16px];
+   }
 
-  .links {
-    @apply font-roboto font-medium text-[16px] leading-[150%]
-  }
+   .p1 {
+     @apply font-roboto font-medium text-[16px] leading-[32px];
+   }
 
-  .p2 {
-    @apply font-roboto font-normal text-[16px] leading-[150%];
-  }
+   .links {
+     @apply font-roboto font-medium text-[16px] leading-[150%]
+   }
 
-  .p3 {
-    @apply font-roboto italic font-normal text-[14px];
-  }
+   .p2 {
+     @apply font-roboto font-normal text-[16px] leading-[150%];
+   }
 
-  .p3Italic {
-    @apply font-roboto italic font-normal text-[16px] leading-[26px]
-  }
+   .p3 {
+     @apply font-roboto italic font-normal text-[14px];
+   }
 
-  .p3Quote {
-    @apply font-roboto italic font-normal text-[16px] leading-[150%]
-  }
+   .p3Italic {
+     @apply font-roboto italic font-normal text-[16px] leading-[26px]
+   }
 
-  .p3QuoteDesktop {
-    @apply font-roboto italic font-normal text-[24px] leading-[150%]
-  }
-}
+   .p3Quote {
+     @apply font-roboto italic font-normal text-[16px] leading-[150%]
+   }
+
+   .p3QuoteDesktop {
+     @apply font-roboto italic font-normal text-[24px] leading-[150%]
+   }
+ }
