@@ -167,6 +167,10 @@ function HomeInside() {
               //   {...register("message", { required: true })}
             />
           </div>
+          <p className="p3 mb-5">This site is protected by reCAPTCHA and the Google 
+    <a className=" text-blue-500" href="https://policies.google.com/privacy"> Privacy Policy </a> and 
+    <a className=" text-blue-500" href="https://policies.google.com/terms"> Terms of Service</a> apply.</p>
+          {notification && <p className="mt-3 text-info">{notification}</p>}
           <div className="wrapperTems mb-5 form-check">
             <input
               type="checkbox"
@@ -180,7 +184,7 @@ function HomeInside() {
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text="Send message" />
           </div>
-          {notification && <p className="mt-3 text-info">{notification}</p>}
+
         </form>
       </main>
     </div>
