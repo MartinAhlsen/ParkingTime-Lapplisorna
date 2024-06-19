@@ -19,6 +19,7 @@ import FAQ from '@/components/FAQ';
 import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
+import Articles from '@/components/Articles';
 interface ButtonProperties {
   text: string;
   url: string;
@@ -34,6 +35,9 @@ const TestButton: ButtonProperties = {
 export default function Home() {
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
+  const [isAnimationAlreadyRun, setAnimationAlreadyRun] = useState(false);
+
+  
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -43,9 +47,12 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 2700);
+      }, 1500);
     })();
   }, []);
+
+
+  
   const t = useTranslations("home");
   return (
     <div>
@@ -63,12 +70,15 @@ export default function Home() {
 
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
+        <DownloadNow />
+        <Articles />
         <MatildaCEO />
         <TitleSubtitle
           title={t("Comp_5_title")}
           subtitle={t("Comp_5_subtitle")}
           overtitle={t("Comp_5_overtitle")}
         />
+        
         <FAQ />
       </NextUIProvider>
     </div>

@@ -11,7 +11,7 @@ interface WhyCardProps {
 
 const WhyCard = ({imageLink, title, paragraph}:WhyCardProps) => {
     return (
-        <div className="flex flex-col p-4 m-4 md:m-8 md:p-8">
+        <div className="flex flex-col p-4 m-4 md:m-10 md:p-10">
             <Image src={imageLink} 
                 width={50} 
                 height={50} 

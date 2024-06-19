@@ -7,16 +7,11 @@ interface ButtonProps {
   url?: string | undefined;
   colorTheme: "light" | "dark";
   formCategoryState?: string;
+  extraWide?: boolean;
   type?: "button" | "submit";
 }
 
-const Button = ({
-  text,
-  url,
-  colorTheme,
-  formCategoryState,
-  type,
-}: ButtonProps) => {
+const Button = ({ text, url, colorTheme, formCategoryState, type, extraWide }: ButtonProps) => {
   const router = useRouter();
   const handleClick = (): void => {
     if (type !== "submit" && url) {
@@ -35,11 +30,11 @@ const Button = ({
             }
             rounded-full 
             button-text 
+            ${extraWide ? "md:w-[200px]" : "md:w-[160px]"}
             py-[15px]
             px-[32px]
             h-[48px]
             w-[300px]
-            md:w-[160px]
             flex
             justify-center
             items-center

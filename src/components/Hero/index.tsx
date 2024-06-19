@@ -1,5 +1,7 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
+
+
 
 interface BannerProps {
   page: string;
@@ -12,21 +14,23 @@ interface ButtonProperties {
   formCategoryState?: string;
 }
  
-const ContactButton: ButtonProperties = {
-  text: "Contact us",
-  url: "/contact_us",
-  colorTheme: "light",
-}
-const DownloadButton: ButtonProperties = {
-  text: "Download app",
-  url: " ",
-  colorTheme: "dark",
-};
+
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
-  let src, alt, imageClass, bannerContent, greenBar;
+  let src, alt, imageClass, bannerContent;
   const t = useTranslations("hero")
-
+  const b = useTranslations("buttons")
+  const locale = useLocale()
+  const ContactButton: ButtonProperties = {
+    text: b("contact_us"),
+    url: `/${locale}/contact_us`,
+    colorTheme: "light",
+  }
+  const DownloadButton: ButtonProperties = {
+    text: b("download"),
+    url: "https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" ,
+    colorTheme: "dark",
+  };
   switch (page) {
     case 'home':
       src = '/Images/hero-homepage.png';
@@ -66,10 +70,6 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("news1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("news2")}</h1>
@@ -84,10 +84,6 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("contact1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
@@ -102,16 +98,26 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4 md:mt-2">
-            <span className="relative flex h-3 w-3 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-            </span>
             <span className="text-lg button-text">{t("about1")}</span>
           </div>
           <h1 className="button-text text-3xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("about2")}</h1>
           <p className="button-text mb-2">{t("about3")}</p>
           <p className="button-text mb-2">{t("about4")}</p>
           <p className="button-text mb-2">{t("about5")}</p>
+        </div>
+      );
+      break;
+      case 'faq_page':
+      src = '/Images/hero-contact.png';
+      alt = 'Contact Banner';
+      imageClass = 'hidden md:block';
+      bannerContent = (
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="flex items-center mb-4">
+            <span className="text-lg button-text">{t("faq_page1")}</span>
+          </div>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("faq_page2")}</h1>
+          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("faq_page3")}</h1>
         </div>
       );
       break;

@@ -1,68 +1,63 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 import MatildaImg from "../../../../public/Images/Matilda-image.png";
-import Nordea from "../../../../public/Images/nordea.jpg";
-import Vattenfall from "../../../../public/Images/vattenfall.jpg";
-import Swedbank from "../../../../public/Images/swedbank.jpg";
+import PlaceholderImg from "../../../../public/Images/Placeholder- Image.png";
+
 import Header from "../../../components/header";
 import Banner from "../../../components/Hero";
 import RightTextLeftImage from "../../../components/RightTextLeftImage";
 import TitleSubtitle from "../../../components/TitleSubtitle";
-import StaffCard from "../../../components/StaffCard";
+
 import Story from "@/components/Story";
 import Quotation from "@/components/Quotation";
+import StaffCardClassic from "@/components/StaffCardClassic";
+
+
+import Values from "@/components/Values";
 
 const About_us = () => {
+  const t = useTranslations("about_us");
+  const team = useTranslations("team");
+  const know = useTranslations("MatildaCEO");
   return (
     <>
       <Header />
       <Banner page="about" />
-      
-      <Story/>
-      <TitleSubtitle
-        title="Our Values"
-        subtitle="The things we believe in."
-        overtitle={null}
-      />
+
+      <Story />
+      <Values />
       <Quotation />
       <TitleSubtitle
-        title="Meet our team"
-        subtitle="Each member brings a unique blend of expertise, passion, and forward-thinking mindset."
+        title={team("title")}
+        subtitle={team("subtitle")}
         overtitle={null}
       />
-      <div className="flex flex-col px-[5%] lg:grid  lg:grid-cols-2 2xl:grid-cols-4  bg-pt-background ">
-        <StaffCard
-          staffImg={MatildaImg}
-          hueA={20}
-          hueB={40}
-          text1="Matilda Öhman"
-          text2="CEO"
+      <div className="flex flex-col px-[5%] md:grid  md:grid-cols-2 lg:gap-[32px] lg:grid-cols-4  bg-pt-background ">
+        <StaffCardClassic
+          StaffImage={MatildaImg}
+          name={"Matilda Öhman"}
+          role={team("role1")}
         />
-        <StaffCard
-          staffImg={Swedbank}
-          hueA={60}
-          hueB={90}
-          text1="Johan E. Bengtsson"
-          text2="CTO"
+        <StaffCardClassic
+          StaffImage={PlaceholderImg}
+          name={"Johan E. Bengtsson"}
+          role={team("role2")}
         />
-        <StaffCard
-          staffImg={Nordea}
-          hueA={80}
-          hueB={120}
-          text1="Ingemar Öhman"
-          text2="Accountant"
+        <StaffCardClassic
+          StaffImage={PlaceholderImg}
+          name={"Ingemar Öhman"}
+          role={team("role3")}
         />
-        <StaffCard
-          staffImg={Vattenfall}
-          hueA={100}
-          hueB={140}
-          text1="Fredrik Jodstam"
-          text2="Buisseness strategist"
+        <StaffCardClassic
+          StaffImage={PlaceholderImg}
+          name={"Fredrik Jodstam"}
+          role={team("role4")}
         />
       </div>
       <TitleSubtitle
-        title="Want to know more?"
-        subtitle="Contact us to find out more about our solution and how we can implement it in your municipality"
+        title={know("title")}
+        subtitle={know("paragraph")}
         overtitle={null}
       />
     </>
