@@ -5,8 +5,9 @@ import { usePathname } from 'next/navigation';
 import { getProjects } from '../../../sanity/sanity-utils';
 import TitleSubtitle from '../TitleSubtitle';
 import Image, { StaticImageData } from 'next/image';
-
 import { Project } from '../../../types/Project';
+import { useLocale, useTranslations } from "next-intl";
+import Button from "@/components/Button";
 
 
 
@@ -23,15 +24,18 @@ const Articles: React.FC = () => {
     fetchProjects();
   }, []);
 
+  const t = useTranslations("home")
+  const b = useTranslations("buttons")
+  const locale = useLocale(); 
     return (
         <div className="min-h-[1000px] bg-pt-background">
             <TitleSubtitle
-                title="Don’t miss"
-                subtitle="We are expanding rapidly, subscribe to our newsletter."
-                overtitle="News"
+            title={t("Comp_4_title")}
+            subtitle={t("Comp_4_subtitle")}
+            overtitle={t("Comp_4_overtitle")}
             />
             
-            <div className="flex  flex-col md:flex-row justify-evenly bg-pt-background pt-14 pb-14 md:pb-10">
+            <div className="flex  flex-col md:flex-row justify-evenly bg-pt-background pt-14">
                 {projects.map((project, index) => (
                     <div className="flex bg-white flex-col basis-1/3 p-10" key={index}>
                         
@@ -53,6 +57,13 @@ const Articles: React.FC = () => {
 
                 ))}
             </div>
+            <div className='flex justify-center py-16'>
+            <Button 
+          text={b("view_all")} 
+          url={`/${locale}/news`} 
+          colorTheme="dark" 
+        />
+        </div>
         </div>
     );
 };
