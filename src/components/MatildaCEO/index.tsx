@@ -36,6 +36,7 @@ const MatildaCEO: React.FC = () => {
         />
         </div>
       </div>
+      
     </div>
   );
 };
