@@ -41,10 +41,6 @@ const Navbar = () => {
     },
   };
 
-  const itemVariants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: -20 },
-  };
   const t = useTranslations("NavItem");
   const b = useTranslations("buttons");
   const locale = useLocale(); 
