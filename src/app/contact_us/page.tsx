@@ -1,7 +1,6 @@
 "use client";
 
 import TitleSubtitle from "../components/TitleSubtitle";
-import ContactForm from "../components/ContactForm";
 
 const Contact_us = () => {
   return (
@@ -12,7 +11,6 @@ const Contact_us = () => {
           subtitle="Whether you have a question, feedback, or need assistance, please fill out the form below, and our team will get back to you as soon as possible."
         />
         <h2>Hej</h2>
-        <ContactForm />
       </div>
     </>
   );
