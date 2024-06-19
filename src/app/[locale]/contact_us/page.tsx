@@ -3,11 +3,11 @@
 import React from "react";
 import Header from "../../../components/header";
 import Banner from "../../../components/Hero";
-import ContactLink from "@/components/Contact/ContactLinks";
+import ContactLink from "@/components/ContactLinks";
 import MailIcon from "@/../public/Images/Email.png";
 import PhoneIcon from "@/../public/Images/Phone.png";
 import MapLocationIcon from "@/../public/Images/Pin.png";
-import { Home2 } from "@/components/Contact/ContactForm";
+import { Home2 } from "@/components/ContactForm";
 
 const Contact_us = () => {
   return (
