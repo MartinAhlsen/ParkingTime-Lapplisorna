@@ -15,14 +15,14 @@ const MatildaCEO: React.FC = () => {
   return (
     <div className="h-[840px] md:h-[494px] bg-pt-primary flex flex-col text-center text-white items-center p-6 md:flex-row">
       <div className="flex flex-col basis-1/2 items-center">
-                <Image className="rounded-[100%] p-8"
+                <Image className="rounded-full aspect-square object-cover p-2"
                     src={MatildaImg}
                     width={250}
                     height={250}
                     alt="Picture of the author"
                 />
                 <p className="h5">{t("text1")}</p>
-                <p className="h6">{"Matilda@email.com"}</p>
+                <p className="h6 underline">{"Matilda@parkingtime.se"}</p>
             </div>
 
       <div className="flex flex-col basis-1/2 md:items-start text-center">
