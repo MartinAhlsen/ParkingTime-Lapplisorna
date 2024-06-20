@@ -45,13 +45,13 @@ const Articles: React.FC = () => {
                         
                         <Image
                         className='rounded-xl'
-                        src={project.image}
+                        src={project.image_article}
                         width={300}
                         height={300}
-                        alt={project.name}
+                        alt={project.title_SWE}
                         />
-                        <p className='h6 pt-4 pb-4'>{project.name} </p>
-                        <p className='p2 max-w-[300px]'>{project.text2}</p>
+                        <p className='h6 pt-4 pb-4'>{project.title_SWE} </p>
+                        <p className='p2 max-w-[300px]'>{project.text_Short_SWE}</p>
                         
                         <Link
                               href={`/${locale}/news/${project.slug}`}

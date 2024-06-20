@@ -30,8 +30,8 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
     <>
       <Header />
       
-                        <p className='h4 pt-4 pb-4'>{article.name} </p>
-                        <p className='p2 max-w-[300px]'>{article.text2}</p>
+                        <p className='h4 pt-4 pb-4'>{article.title_SWE} </p>
+                        <p className='p2 max-w-[300px]'>{article.text_Short_SWE}</p>
      
       
      

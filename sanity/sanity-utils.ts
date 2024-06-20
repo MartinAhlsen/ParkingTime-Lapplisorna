@@ -15,10 +15,17 @@ export async function getProjects(): Promise<Project[]> {
             _createdAt,
             name,
             "slug": slug.current,
-            "image": image.asset->url,
+            "image_article": image_article.asset->url,
             url,
-            content,
-            text2,
+            title_sv,
+            title_en,
+            text_Short_sv,
+            text_Long_sv,
+            text_Short_en,
+            text_Long_en,
+            "image_author": image_author.asset->url,
+            author,
+            date,
         }`
     );
 }
