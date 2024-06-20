@@ -12,6 +12,7 @@ import StaffCardClassic from "@/components/StaffCardClassic";
 import Values from "@/components/Values";
 import { useLocale, useTranslations } from "next-intl";
 import Button from "@/components/Button";
+import Footer from "@/components/Footer";
 
 
 const About_us = () => {
@@ -67,7 +68,7 @@ const About_us = () => {
           colorTheme="dark" 
         />
       </div>
-        
+        <Footer/>
     </>
   );
 };
