@@ -48,10 +48,10 @@ const Articles: React.FC = () => {
                         src={project.image_article}
                         width={300}
                         height={300}
-                        alt={project.title_SWE}
+                        alt={project.title_sv}
                         />
-                        <p className='h6 pt-4 pb-4'>{project.title_SWE} </p>
-                        <p className='p2 max-w-[300px]'>{project.text_Short_SWE}</p>
+                        <p className='h6 pt-4 pb-4'>{project.title_sv} </p>
+                        <p className='p2 max-w-[300px]'>{project.text_Short_sv}</p>
                         
                         <Link
                               href={`/${locale}/news/${project.slug}`}
