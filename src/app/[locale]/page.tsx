@@ -53,7 +53,7 @@ export default function Home() {
 
 
   
-  const t = useTranslations("home");
+  
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -73,12 +73,8 @@ export default function Home() {
         <DownloadNow />
         <Articles />
         <MatildaCEO />
-        <span id="faq"></span>
-        <TitleSubtitle
-          title={t("Comp_5_title")}
-          subtitle={t("Comp_5_subtitle")}
-          overtitle={t("Comp_5_overtitle")}
-        />
+        
+        
         
         <FAQ />
       </NextUIProvider>
