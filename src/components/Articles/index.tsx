@@ -25,7 +25,7 @@ const Articles: React.FC = () => {
 
     fetchProjects();
   }, []);
-
+  const x = useTranslations("read")
   const t = useTranslations("home")
   const locale = useLocale(); 
 
@@ -38,9 +38,9 @@ const Articles: React.FC = () => {
             overtitle={t("Comp_4_overtitle")}
             />
             
-            <div className="flex  flex-col md:flex-row justify-evenly bg-pt-background pt-14 pb-14 md:pb-10">
+            <div className="flex  flex-col m-6 md:grid md:grid-cols-3 md:gap-6 rounded-lg justify-evenly bg-pt-background pt-14 pb-14 md:pb-10 items-center md:items-start">
                 {projects.map((project, index) => (
-                    <div className="flex bg-white flex-col basis-1/3 p-10" key={index}>
+                    <div className="flex bg-white flex-col basis-1/3 p-10 min-h-[580px] my-4" key={index}>
                         
                         
                         <Image
@@ -55,9 +55,9 @@ const Articles: React.FC = () => {
                         
                         <Link
                               href={`/${locale}/news/${project.slug}`}
-                              className="hover:text-grey1 underline"
+                              className="hover:text-grey1 underline font-bold"
                                   >
-                                Read more
+                                {x("text")}
                     </Link>
                     
                     </div>

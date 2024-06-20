@@ -162,6 +162,9 @@
     "role2": "Teknisk chef",
     "role3": "Redovisningsekonom",
     "role4": "Affärsstrateg"
+  },
+  "read": {
+    "text": "Läs mer"
   }
 
  
