@@ -1,19 +1,18 @@
-
-
 "use client"
-
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import styles from "./FAQ.module.css"
-import { useTranslations } from "next-intl";
-
+import { useLocale, useTranslations } from "next-intl";
+import Button from "../Button";
 
 const FAQ = () => {
-  const t = useTranslations("FAQ")
+  const b = useTranslations("buttons");
+  const t = useTranslations("FAQ");
+  const locale = useLocale();
  
   return (
-    <div>
-      <Accordion className="bg-[#ECF2F1] p-5 flex flex-col justify-center items-center" >
+    <div className="bg-[#ECF2F1]">
+      <Accordion className=" p-5 flex flex-col justify-center items-center" >
         <AccordionItem className="bg-white border h7 border-pt-lightgrayborder rounded-xl mb-2.5 transition-colors duration-300 ease-in-out flex flex-col  p-2.5 gap-2.5 text-lg font-bold w-[300px] md:w-[500px]" key="1" aria-label="Accordion 1" title={t("title1")} >
           <div className="font-normal">{t("answer1")}</div>
         </AccordionItem>
@@ -30,6 +29,13 @@ const FAQ = () => {
           <div className="font-normal">{t("answer5")}</div>
         </AccordionItem>
       </Accordion>
+      <div className="flex justify-center pb-6">
+      <Button 
+          text={b("contact_us")} 
+          url={`/${locale}/contact_us`}
+          colorTheme="dark" 
+        />
+        </div>
     </div>
   );
 }

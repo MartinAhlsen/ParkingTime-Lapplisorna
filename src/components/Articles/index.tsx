@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { getProjects } from '../../../sanity/sanity-utils';
 import TitleSubtitle from '../TitleSubtitle';
 import Image, { StaticImageData } from 'next/image';
-
 import { Project } from '../../../types/Project';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -65,6 +64,7 @@ const Articles: React.FC = () => {
 
                 ))}
             </div>
+            
         </div>
     );
 };

@@ -26,8 +26,8 @@ const WhyParkingTime = () => {
   };
 
   return (
-    <div className="bg-pt-primary min-h-screen flex flex-col items-center">
-      <p className="text-4xl font-bold text-center text-white p-10 leading-tight">
+    <div className="bg-pt-primary min-h-screen flex flex-col items-center" style={{ paddingTop: '112px', paddingBottom: '112px' }}>
+      <p className="h3 font-bold text-center text-white p-10 leading-tight">
         {t("title")}
       </p>
       <div className="bg-pt-primary min-h-screen grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 p-4 md:p-10 lg:p-20">
@@ -60,3 +60,4 @@ const WhyParkingTime = () => {
 };
 
 export default WhyParkingTime;
+

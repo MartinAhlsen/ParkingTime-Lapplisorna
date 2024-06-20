@@ -1,9 +1,11 @@
 "use client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
 
 const Story: React.FC = () => {
-  const t= useTranslations("story")
+  const t = useTranslations("story");
+  const b = useTranslations("buttons");
+  const locale = useLocale();
 
 
   return (
@@ -30,8 +32,8 @@ const Story: React.FC = () => {
         </div>
         <div className="flex p-10 justify-center md:justify-normal">
         <Button
-          text="Book a meeting" 
-          url="/contact_us" 
+          text={b("meeting")} 
+          url={`/${locale}/contact_us`}
           colorTheme="dark"
         />
         </div>
