@@ -157,6 +157,9 @@
     "role3": "Accountant",
     "role4": "Business Strategist"
   },
+  "read": {
+    "text": "Read more"
+  },
   "privacypolicy": {
     "h1": "Privacy Policy",
     "p0": "Effective date: April 3, 2023",
