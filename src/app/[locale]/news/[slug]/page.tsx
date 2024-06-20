@@ -15,19 +15,23 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
   useEffect(() => {
     const fetchProjects = async () => {
       const fetchedProjects = await getProjects();
-      setArticle(fetchedProjects);
+      const filteredArticle = fetchedProjects.find((project: any) => project.slug === params.slug);
+      setArticle(filteredArticle);
     };
 
     fetchProjects();
   }, [params.slug]);
 
+  if (!article) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <>
       <Header />
       
-                        <p className='h6 pt-4 pb-4'>{params.slug} </p>
-                        <p className='p2 max-w-[300px]'>{params.slug}</p>
+                        <p className='h6 pt-4 pb-4'>{article.name} </p>
+                        <p className='p2 max-w-[300px]'>{article.text2}</p>
      
       
      
