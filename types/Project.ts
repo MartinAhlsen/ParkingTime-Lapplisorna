@@ -9,9 +9,9 @@ export type Project = {
     image_article: string;
     url: string;
     title_sv: string,
-    title_en: string,
     text_Short_sv: string;
     text_Long_sv: string;
+    title_en: string,
     text_Short_en: string;
     text_Long_en: string;
     image_author: string;

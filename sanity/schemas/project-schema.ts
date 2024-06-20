@@ -41,11 +41,6 @@ const project = {
         type: "string"
     },
     {
-        name:"title_en",
-        title: "title_en",
-        type: "string"
-    },
-    {
         name:"text_Short_sv",
         title: "text_Short_sv",
         type: "string"
@@ -53,6 +48,11 @@ const project = {
     {
         name:"text_Long_sv",
         title: "text_Long_sv",
+        type: "string"
+    },
+    {
+        name:"title_en",
+        title: "title_en",
         type: "string"
     },
     {

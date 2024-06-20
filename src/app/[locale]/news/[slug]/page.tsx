@@ -5,11 +5,12 @@ import React, { useEffect, useState } from "react";
 import Header from "../../../../components/header";
 import { getProjects } from "../../../../../sanity/sanity-utils";
 import Image, { StaticImageData } from 'next/image';
+import { useLocale } from "next-intl";
 
 
 
 const SingleNews = ({ params }: { params: { slug: string } }) => {
-  
+  const locale = useLocale(); 
   const [article, setArticle] = useState<any>(null);
 
   useEffect(() => {
@@ -25,15 +26,23 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
   if (!article) {
     return <p>Loading...</p>;
   }
-
+`/${locale}/contact_us`
   return (
     <>
       <Header />
       
-                        <p className='h4 pt-4 pb-4'>{article.title_sv} </p>
-                        <p className='p2 max-w-[300px]'>{article.text_Short_sv}</p>
+                        
+                        
      
+      {locale==="sv" &&
+      <p className='p2 max-w-[300px]'>{article.text_Short_sv}</p>
       
+      }
+
+      {locale!=="sv" &&
+      
+      <p className='p2 max-w-[300px]'>{article.text_Short_en}</p>
+      }
      
     </>
   );
