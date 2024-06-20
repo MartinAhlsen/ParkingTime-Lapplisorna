@@ -16,7 +16,8 @@
   "About_us": "About us",
   "News": "News",
   "FAQ": "FAQ",
-  "Contact_us": "Contact us"
+  "Contact_us": "Contact us",
+  "language":"Change Language"
 },
 "hero": {
     "text1": "What time is it?",
@@ -117,7 +118,7 @@
     "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
     "author": "- Matilda, CEO and Founder.",
     "values_title": "Our Values",
-    "values_subtitle": "The things we believe in.",
+    "values_subtitle": "What we believe in",
     "card_1_title": "Simplicity",
     "card_1_p": "We are striving to create simple and smooth experiences.",
     "card_2_title": "Innovation",
@@ -155,6 +156,9 @@
     "role2": "Chief Technical Officer",
     "role3": "Accountant",
     "role4": "Business Strategist"
+  },
+  "read": {
+    "text": "Read more"
   },
   "privacypolicy": {
     "h1": "Privacy Policy",

@@ -19,7 +19,8 @@
       "Why_parking_time?": "Varför parking Time?",
       "About_us": "Om oss",
       "News": "Nyheter",
-      "FAQ": "FAQ"
+      "FAQ": "FAQ",
+      "language":"Ändra språk"
   
   },
   "hero": {
@@ -164,6 +165,9 @@
     "role2": "Teknisk chef",
     "role3": "Redovisningsekonom",
     "role4": "Affärsstrateg"
+  },
+  "read": {
+    "text": "Läs mer"
   },
   "privacypolicy": {
   "h1": "Integritetspolicy",
