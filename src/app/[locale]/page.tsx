@@ -1,6 +1,6 @@
 "use client"
 
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NextUIProvider } from "@nextui-org/react";
@@ -20,6 +20,8 @@ import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
 import Articles from '@/components/Articles';
+import Footer from '@/components/Footer';
+
 interface ButtonProperties {
   text: string;
   url: string;
@@ -32,13 +34,14 @@ const TestButton: ButtonProperties = {
   url: "/se/news",
   colorTheme: "dark",
 };
+
 export default function Home() {
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
-  const [isAnimationAlreadyRun, setAnimationAlreadyRun] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-  
   useEffect(() => {
+    setIsMounted(true);
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const locomotiveScroll = new LocomotiveScroll();
@@ -46,38 +49,42 @@ export default function Home() {
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
-        
       }, 1500);
     })();
   }, []);
 
+  const t = useTranslations("home");
+  const locale = pathname.split('/')[1] || 'en';
+  if (!isMounted) {
+    return null;
+  }
 
-  
-  
   return (
     <div>
       <AnimatePresence mode="wait">
-        {isLoading && <SplashScreen />}
+        {isLoading && <SplashScreen locale={locale} />}
       </AnimatePresence>
       <Header />
       <Banner page={"home"} />
       <NextUIProvider>
         <SmartParkingSolution />
-        <HowItWorks/>
+        <HowItWorks />
         <WhyParkingTime />
-       
         <Testimonial />
-
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
         <Statistics />
         <DownloadNow />
         <Articles />
         <MatildaCEO />
-        
-        
-        
+        <span id="faq"></span>
+        <TitleSubtitle
+          title={t("Comp_5_title")}
+          subtitle={t("Comp_5_subtitle")}
+          overtitle={t("Comp_5_overtitle")}
+        />
         <FAQ />
       </NextUIProvider>
+      <Footer />
     </div>
   );
 }

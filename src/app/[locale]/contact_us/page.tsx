@@ -8,6 +8,7 @@ import MailIcon from "@/../public/Images/Email.png";
 import PhoneIcon from "@/../public/Images/Phone.png";
 import MapLocationIcon from "@/../public/Images/Pin.png";
 import { Home2 } from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 
 const Contact_us = () => {
   return (
@@ -44,6 +45,7 @@ const Contact_us = () => {
           <Home2 />
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

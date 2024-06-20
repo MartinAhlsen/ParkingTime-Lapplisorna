@@ -4,62 +4,50 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
 
-const words = [
-  'Parkera',
-  'Enkel',
-  "Med",
-  'Parking Time',
-]
-/*
-ALTERNATIVE DEMO 3
-const words = [
-  'Vi',
-  'Gör',
-  'Parkering',
-  'Enkel'
-  
-]*/
+type WordsType = {
+  [key: string]: string[]
+}
 
+const words: WordsType = {
+  en: [
+    'We',
+    'Make',
+    "Parking",
+    'Easy',
+  ],
+  sv: [
+    'Vi',
+    'Gör',
+    "Parkering",
+    'Enkel',
+  ]
+}
 
-/*DEMO2
-const words = [
-  'Parking...',
-  'Has',
-  'Never',
-  'Been',
-  'So',
-  'Easy',
-  "with",
-  'Parking Time',
-  
-]*/
-/*DEMO 1
-const words = [
-  'Parking',
-  'Has',
-  'Never',
-  'Been',
-  'So',
-  'Easy',
-  
-]*/
-export default function SplashScreen() {
+interface SplashScreenProps {
+  locale: string
+}
+
+const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
   const [index, setIndex] = useState(0)
-  const [dimension, setDimension] = useState({ width: 0, height: 0 })
+  const [dimension, setDimension] = useState<{ width: number, height: number }>({ width: 0, height: 0 })
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
+    setIsMounted(true)
   }, [])
 
   useEffect(() => {
-    if (index == words.length - 1) return
-    setTimeout(
+    if (!isMounted) return
+    if (index === words[locale].length - 1) return
+    const timer = setTimeout(
       () => {
         setIndex(index + 1)
       },
-      index == 0 ||index==3  ? 800 : 200, //here control speed by words //1st and last word slower originalk value 150
+      index === 0 || index === 3 ? 800 : 300, //control speed by words; 1st and last word slower
     )
-  }, [index])
+    return () => clearTimeout(timer)
+  }, [index, locale, isMounted])
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -81,6 +69,10 @@ export default function SplashScreen() {
     },
   }
 
+  if (!isMounted) {
+    return null
+  }
+
   return (
     <motion.div
       variants={slideUp}
@@ -88,11 +80,10 @@ export default function SplashScreen() {
       exit="exit"
       className={styles.introduction}
     >
-      {dimension.width > 0 && (
+      {dimension.width > 0 && words[locale] && (
         <>
           <motion.p variants={opacity} initial="initial" animate="enter">
-            
-            {words[index]}
+            {words[locale][index]}
           </motion.p>
           <svg>
             <motion.path
@@ -106,3 +97,5 @@ export default function SplashScreen() {
     </motion.div>
   )
 }
+
+export default SplashScreen
