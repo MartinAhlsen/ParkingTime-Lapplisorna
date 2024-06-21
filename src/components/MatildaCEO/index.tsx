@@ -22,7 +22,7 @@ const MatildaCEO: React.FC = () => {
                     alt="Picture of the author"
                 />
                 <p className="h5">{t("text1")}</p>
-                <p className="h6 underline">{"Matilda@parkingtime.se"}</p>
+                <p className="links underline">{"Matilda@parkingtime.se"}</p>
             </div>
 
       <div className="flex flex-col basis-1/2 md:items-start text-center">
