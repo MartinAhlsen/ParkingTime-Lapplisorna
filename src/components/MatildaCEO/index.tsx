@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import MatildaImg from "../../../public/Images/Matilda-image.png";
+import MatildaImg from "../../../public/Images/ceo-profile.png";
 import "./styles.css";
 import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
