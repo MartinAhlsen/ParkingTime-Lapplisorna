@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import MatildaImg from "../../../public/Images/Matilda-image.png";
+import MatildaImg from "../../../public/Images/ceo-profile.png";
 import "./styles.css";
 import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
@@ -22,7 +22,7 @@ const MatildaCEO: React.FC = () => {
                     alt="Picture of the author"
                 />
                 <p className="h5">{t("text1")}</p>
-                <p className="h6 underline">{"Matilda@parkingtime.se"}</p>
+                <p className="links underline">{"Matilda@parkingtime.se"}</p>
             </div>
 
       <div className="flex flex-col basis-1/2 md:items-start text-center">

@@ -39,7 +39,7 @@ const Articles: React.FC = () => {
             
             <div className="flex  flex-col m-6 md:grid md:grid-cols-3 md:gap-6 rounded-lg justify-evenly bg-pt-background pt-14 pb-14 md:pb-10 items-center md:items-start">
                 {projects.map((project, index) => (
-                    <div className="flex bg-white flex-col basis-1/3 p-10 min-h-[580px] my-4" key={index}>
+                    <div className="flex bg-white flex-col basis-1/3 p-10 min-h-[600px] my-4" key={index}>
                         
                         
                         <Image

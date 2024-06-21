@@ -19,14 +19,17 @@ const TestimonialCard = ({ imageMain, mainText, name, role }: TestimonialCardPro
                 height={100}
                 alt="Picture of the author"
                 />
-                <div className="overflow-auto px-4 py-4 flex flex-col flex-grow justify-between">
-                    <p className="p3Quote">{mainText}</p>
-                    <div className="flex flex-col items-center mt-4">
+                <div className="overflow-auto hide-scrollbar px-4 py-4 flex flex-col flex-grow justify-between items-center sm:px-6 sm:py-6">
+                    <div className="flex-grow flex flex-col justify-center items-center">
+                        <p className="p3Quote text-center px-2 sm:px-2">{mainText}</p>
+                    </div>
+                    <div className="flex flex-col items-center mt-4 sm:mt-6">
                         <p className="links text-[#F85252] text-lg font-semibold text-center max-w-full break-words">{name}</p>
                         <p className="p2 text-center max-w-full break-words">{role}</p>
                     </div>
                 </div>
-            </div>
+
+        </div>
         )
     };
     
