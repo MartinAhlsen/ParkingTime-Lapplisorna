@@ -25,8 +25,8 @@ const Button = ({ text, url, colorTheme, formCategoryState, type, extraWide }: B
       className={`
             ${
               colorTheme === "dark"
-                ? "bg-pt-secondary text-white"
-                : "bg-white text-pt-secondary"
+                ? "bg-pt-secondary text-white hover:bg-gray-900 hover:border border-gray-800"
+                : "bg-white text-pt-secondary hover:bg-gray-100 hover:border border-gray-500"
             }
             rounded-full 
             button-text 
@@ -39,7 +39,6 @@ const Button = ({ text, url, colorTheme, formCategoryState, type, extraWide }: B
             justify-center
             items-center
             text-nowrap
-
         `}
     >
       {text}
