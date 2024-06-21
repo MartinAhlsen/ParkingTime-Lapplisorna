@@ -115,9 +115,6 @@
   "policy": {
     "title": "Politik SE"
   },
-  "contact_us": {
-    "title": "Kontakta Oss"
-  },
   "news": {
     "title": "Nyheter"
   },
@@ -140,7 +137,9 @@
     "download": "Ladda ner appen",
     "learnmore": "Läs mer om oss",
     "view_all": "Se alla nyheter",
-    "meeting": "Boka ett möte"
+    "meeting": "Boka ett möte",
+    "sendMessage": "Skicka meddelande"
+
   },
   "howitworks": {
     "main_title": "Hur det fungerar",
@@ -237,9 +236,26 @@
 "li16-1": "Användning av dina transaktioner för vår redovisning och rapportering.",
 "li16-2": "Rättslig grund: Fullgörande av rättsliga förpliktelser",
 "p17": "För varje syfte identifieras en tydlig rättslig grund för att säkerställa överensstämmelse med relevanta lagkrav. Dessa syften är tydligt avgränsade för att underlätta transparens och ansvarsskyldighet vid behandling av personuppgifter av Parking Time Sweden AB."
+},
+"contact_us": {
+    "title": "Kontakta oss",
+    "paragraph": "Om du har en fråga eller behöver hjäp så får du gärna fylla i fomuläret. Vårt team återkommer till dig så snart som möjligt.",
+    "name": "Namn",
+    "namePlaceholder": "Namn",
+    "email": "Epost",
+    "emailPlaceholder": "exempel@domän.se",
+    "phoneNumber": "Telefonnummer",
+    "phoneNumberPlaceholder": "+46708123456",
+    "reasonForContact": "Ärende",
+    "reasonForContactPlaceholder": "Ärende",
+    "writeMessage": "Skriv ett meddelande till oss",
+    "writeMessagePlaceholder": "Skriv ditt meddelande",
+    "recaptcha1": "Sidan skyddas av reCAPTCHA och Googles",
+    "recaptcha2": "Integritetspolicy",
+    "recaptcha3": "och",
+    "recaptcha4": "Användarvilkår",
+    "recaptcha5": "gäller.",
+    "terms": "Jag godkänner vilkåren"
 }
-
-
-
  
 }

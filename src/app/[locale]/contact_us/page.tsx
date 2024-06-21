@@ -9,18 +9,20 @@ import PhoneIcon from "@/../public/Images/Phone.png";
 import MapLocationIcon from "@/../public/Images/Pin.png";
 import { Home2 } from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import { useTranslations } from "next-intl";
 
 const Contact_us = () => {
+  const t = useTranslations("contact_us")
+
   return (
     <>
       <Header />
       <Banner page="contact" />
       <div className="contactContainer flex flex-col md:flex-row md:p-[80px] pt-[100px] px-[30px] pb-[80px] justify-evenly bg-pt-gray2">
         <div className="informationContainer flex flex-col md:basis-2/5">
-          <h3 className="h3">Contact us</h3>
+          <h3 className="h3">{t("title")}</h3>
           <p className="p1">
-            Wheter you have a question, or need assistance, please fill out the
-            form below, and our team will get back to you as soon as possible
+            {t("paragraph")}
           </p>
           <div className="linkWrapper flex flex-col gap-10 py-10">
             <ContactLink

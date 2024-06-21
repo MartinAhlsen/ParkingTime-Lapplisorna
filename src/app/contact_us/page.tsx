@@ -1,14 +1,22 @@
 "use client";
 
+
+import { useTranslations } from "next-intl";
 import TitleSubtitle from "../components/TitleSubtitle";
 
 const Contact_us = () => {
+  const t = useTranslations("contact_us")
+
+
   return (
     <>
       <div className="contactUs bg-pt-gray2  h-screen w-screen">
+        <p>
+        title={t("title")}
+        </p>
         <TitleSubtitle
-          title="Contact us"
-          subtitle="Whether you have a question, feedback, or need assistance, please fill out the form below, and our team will get back to you as soon as possible."
+          title={t("title")}
+          subtitle={t("paragraph")}
         />
         <h2>Hej</h2>
       </div>
