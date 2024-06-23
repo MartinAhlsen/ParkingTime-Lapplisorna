@@ -44,7 +44,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
       () => {
         setIndex(index + 1)
       },
-      index === 0 || index === 3 ? 800 : 300, //control speed by words; 1st and last word slower
+      index === 0 || index === 3 ? 800 : 200, //control speed by words; 1st and last word slower
     )
     return () => clearTimeout(timer)
   }, [index, locale, isMounted])
