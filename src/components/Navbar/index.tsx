@@ -59,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
+    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow shadow-2xl" style={{height: '80px'}}>
       <div className="flex justify-between grow">
         <Link href={`/${locale}/`} className="flex items-center">
           <Image
