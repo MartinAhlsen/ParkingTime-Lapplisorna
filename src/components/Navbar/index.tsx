@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
-import LangToogle from "../LangToogle";
+import LangToggle from "../LangToogle";
 
 interface ButtonProperties {
   text: string;
@@ -59,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow" style={{height: '80px'}}>
+    <nav className="p-5 bg-pt-primary text-white items-center sticky top-0 z-50 flex justify-evenly grow shadow-2xl" style={{height: '80px'}}>
       <div className="flex justify-between grow">
         <Link href={`/${locale}/`} className="flex items-center">
           <Image
@@ -90,10 +90,11 @@ const Navbar = () => {
               <Button {...ContactButton} />
             </Link>
           </ul>
-          <LangToogle />
+          <div className="mt-3">
+          <LangToggle />
+          </div>
         </div>
         <div className="flex items-center md:hidden">
-          <LangToogle />
           <button
             className="focus:outline-none flex items-center justify-center"
             onClick={toggleMenu}
@@ -124,10 +125,14 @@ const Navbar = () => {
           variants={wrapperVariants}
           className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
         >
-          <motion.a variants={itemVariants} href={`/${locale}/#why-parking-time`} className="button-text">Why Parking Time?</motion.a>
-          <motion.a variants={itemVariants} href={`/${locale}/about_us`} className="block mb-2 button-text">About Us</motion.a>
-          <motion.a variants={itemVariants} href={`/${locale}/news`} className="block mb-2 button-text">News</motion.a>
-          <motion.a variants={itemVariants} href={`/${locale}/#faq`} className="block mb-2 button-text">FAQ</motion.a>
+          <Link href={`/${locale}/#why-parking-time`} className="button-text" >{t("Why_parking_time?")}</Link>
+          <Link href={`/${locale}/about_us`} className="block mb-2 button-text">{t("About_us")}</Link>
+          <Link href={`/${locale}/news`} className="block mb-2 button-text">{t("News")}</Link>
+          <Link href={`/${locale}/#faq`} className="block mb-2 button-text">{t("FAQ")}</Link>
+          <div className="flex items-center">
+            <LangToggle/>
+            <span className="ml-2">{t("language")}</span>
+          </div>
           <Button {...ContactButton} />
         </motion.div>
       )}

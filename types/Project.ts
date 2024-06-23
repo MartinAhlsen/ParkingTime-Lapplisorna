@@ -6,8 +6,15 @@ export type Project = {
     _createdAt: Date;
     name: string;
     slug: string;
-    image: string;
+    image_article: string;
     url: string;
-    content: PortableTextBlock[];
-    text2: string;
+    title_sv: string,
+    text_Short_sv: string;
+    text_Long_sv: string;
+    title_en: string,
+    text_Short_en: string;
+    text_Long_en: string;
+    image_author: string;
+    author: string;
+    date: string;
 }

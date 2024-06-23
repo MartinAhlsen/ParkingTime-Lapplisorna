@@ -17,8 +17,8 @@ const project = {
         options: {source:"name"}
     },
     {
-        name:"image",
-        title: "Image",
+        name:"image_article",
+        title: "image_article",
         type: "image", //inbuild type in QROQ
         options: {hotspot:true},
         fields: [ 
@@ -36,17 +36,58 @@ const project = {
         
     },
     {
-        name:"content",
-        title: "Content",
-        type: "array", //inbuild type in QROQ
-        of: [{type: "block"}]
-    },
-    {
-        name:"text2",
-        title: "Text2",
+        name:"title_sv",
+        title: "title_sv",
         type: "string"
     },
-       
+    {
+        name:"text_Short_sv",
+        title: "text_Short_sv",
+        type: "string"
+    },
+    {
+        name:"text_Long_sv",
+        title: "text_Long_sv",
+        type: "string"
+    },
+    {
+        name:"title_en",
+        title: "title_en",
+        type: "string"
+    },
+    {
+        name:"text_Short_en",
+        title: "text_Short_en",
+        type: "string"
+    },
+    {
+        name:"text_Long_en",
+        title: "text_Long_en",
+        type: "string"
+    },
+    {
+        name:"image_author",
+        title: "image_author",
+        type: "image", //inbuild type in QROQ
+        options: {hotspot:true},
+        fields: [ 
+            {
+            name: "alt",
+            title: "Alt",
+            type: "string"
+        }
+        ]
+    },
+    {
+        name:"author",
+        title: "author",
+        type: "string"
+    },
+    {
+        name:"date",
+        title: "date",
+        type: "string"
+    },
 
     ]
 }
