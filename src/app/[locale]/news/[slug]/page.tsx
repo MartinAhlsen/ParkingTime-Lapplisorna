@@ -31,10 +31,10 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
     <>
       <Header />
       
-              <div className="flex flex-col items-center p-8 grow">         
+      <div className="flex flex-col mx-auto p-8 grow">         
                         
      
-              {locale==="sv" &&
+      {locale==="sv" &&
       <>
       <div className="flex flex-row items-center justify-start">
       <Image
@@ -51,8 +51,8 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
       <Image
                         className='rounded-xl md:w-[500px] md:h-[300px] lg:w-[700px] lg:h-[650px]'
                         src={article.image_article}
-                        width={300}
-                        height={300}
+                        width={1000}
+                        height={650}
                         alt={article.title_sv}
                         />
       <p className='p2 max-w-[300px] md:max-w-[700px] py-6'>{article.text_Long_sv}</p>
@@ -75,13 +75,13 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
       
       <p className='h4 max-w-[300px] md:max-w-[700px] py-6'>{article.title_en}</p>
       <Image
-                        className='rounded-xl md:w-[500px] md:h-[300px] lg:w-[700px] lg:h-[650px]'
+                        className='rounded-xl w-full h-[240px] md:h-[650px] object-cover mb-4 py-6'
                         src={article.image_article}
-                        width={300}
-                        height={300}
+                        width={1000}
+                        height={650}
                         alt={article.title_en}
                         />
-      <p className='p2 max-w-[300px] md:max-w-[700px] py-6'>{article.text_Long_en}</p>
+      <p className='p2 w-full  py-6'>{article.text_Long_en}</p>
       
       </>
       }
