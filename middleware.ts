@@ -16,7 +16,7 @@ export const config = {
 
 let headers = { "accept-language": "en-US,en;q=0.5" };
 let languages = new Negotiator({ headers }).languages();
-let locales = ["en-US", "se-SE", "se"];
+let locales = ["en-US", "se-SE", "ch-CH", "se"];
 let defaultLocale = "se-SE";
 
 match(languages, locales, defaultLocale);
