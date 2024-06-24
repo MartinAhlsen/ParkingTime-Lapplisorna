@@ -83,13 +83,13 @@ function HomeInside() {
             <label
               htmlFor="name"
               className="mb-5 block text-base font-medium text-black p1"
-              id="name"
             >
               First and last name *
             </label>
             <input
               type="text"
               name="name"
+              id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
