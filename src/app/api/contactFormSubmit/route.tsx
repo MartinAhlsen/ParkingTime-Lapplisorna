@@ -13,16 +13,19 @@ export async function POST(request: NextRequest) {
   }
 
   const postData = await request.json();
-  const { gRecaptchaToken, firstName, lastName, email, hearFromSponsors } =
+  const { gRecaptchaToken, name, email, phoneNumber, reasonForContact, message, terms, notification  } =
     postData;
 
   console.log(
-    "gRecaptchaToken, firstName, lastName, email, hearFromSponsors:",
+    "gRecaptchaToken, name, email, phoneNumber, reasonForContact, message, terms, notification:",
     gRecaptchaToken?.slice(0, 10) + "...",
-    firstName,
-    lastName,
+    name,
     email,
-    hearFromSponsors
+    phoneNumber,
+    reasonForContact,
+    message,
+    terms,
+    notification
   );
 
   try {
@@ -41,17 +44,15 @@ export async function POST(request: NextRequest) {
       // Save data to the database from here
       console.log(
         "Saving data to the database:",
-        firstName,
-        lastName,
+        name,
         email,
-        hearFromSponsors
+
       );
       console.log("res.data?.score:", res.data?.score);
 
       return NextResponse.json({
         success: true,
-        firstName,
-        lastName,
+        name,
         score: res.data?.score,
       });
     } else {
