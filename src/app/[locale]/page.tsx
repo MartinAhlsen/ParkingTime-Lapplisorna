@@ -38,10 +38,9 @@ const TestButton: ButtonProperties = {
 export default function Home() {
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
-  const [isMounted, setIsMounted] = useState(false);
+  
 
   useEffect(() => {
-    setIsMounted(true);
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const locomotiveScroll = new LocomotiveScroll();
@@ -49,20 +48,19 @@ export default function Home() {
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
+
       }, 1500);
     })();
   }, []);
 
   const t = useTranslations("home");
-  const locale = pathname.split('/')[1] || 'en';
-  if (!isMounted) {
-    return null;
-  }
+ 
+ 
 
   return (
     <div>
       <AnimatePresence mode="wait">
-        {isLoading && <SplashScreen locale={locale} />}
+        {isLoading && <SplashScreen />}
       </AnimatePresence>
       <Header />
       <Banner page={"home"} />

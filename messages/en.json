@@ -158,9 +158,6 @@
   "read": {
     "text": "Read more"
   },
-  "read": {
-    "text": "Read more"
-  },
   "privacypolicy": {
     "h1": "Privacy Policy",
     "p0": "Effective date: April 3, 2023",
@@ -249,6 +246,12 @@
       "recaptcha4": "Terms of Service",
       "recaptcha5": "apply.",
       "terms": "I accept the terms"
+  },
+  "intromessage" : {
+    "word1": "We",
+    "word2": "Make",
+    "word3": "Parking",
+    "word4": "Easy"
   }
 }
 
