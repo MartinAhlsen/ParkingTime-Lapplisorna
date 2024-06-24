@@ -68,7 +68,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       alt = 'News Banner';
       imageClass = 'h-[40vh] object-cover md:h-auto';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
             <span className="text-lg button-text">{t("news1")}</span>
           </div>
@@ -80,23 +80,23 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
     case 'contact':
       src = '/Images/hero-contact.png';
       alt = 'Contact Banner';
-      imageClass = 'hidden md:block';
+      imageClass = 'h-[40vh] object-cover md:h-[60vh] max-w-full';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
-          <div className="hidden md:flex items-center mb-4">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="md:flex items-center mb-4">
             <span className="text-lg button-text">{t("contact1")}</span>
           </div>
-          <h1 className="hidden md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
-          <h1 className="hidden md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
+          <h1 className="md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
+          <h1 className="md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
         </div>
       );
       break;
     case 'about':
       src = '/Images/hero-aboutUs.png';
       alt = 'About Us Banner';
-      imageClass = 'h-[40vh] object-cover md:h-auto max-w-full';
+      imageClass = 'h-[40vh] object-cover md:h-[60vh] max-w-full';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-900 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4 md:mt-2">
             <span className="text-lg button-text">{t("about1")}</span>
           </div>
