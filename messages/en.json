@@ -114,6 +114,12 @@
     "title": "About Us",
     "quotation": "“Of all the things you need to think about during the day, parking should be one of the least. Parking should be so seamless that you hardly need to think about it; it should just work. We call this Smart Parking.",
     "author": "- Matilda, CEO and Founder."
+  },
+  "intromessage" : {
+    "word1": "We",
+    "word2": "Make",
+    "word3": "Parking",
+    "word4": "Easy"
   }
 
 }
