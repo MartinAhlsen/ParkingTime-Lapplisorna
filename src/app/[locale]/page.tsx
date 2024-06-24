@@ -72,11 +72,11 @@ export default function Home() {
         <WhyParkingTime />
         <Testimonial />
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
-        <Statistics />
-        <DownloadNow />
         <Articles />
-        <MatildaCEO />
+        <DownloadNow />
+        <Statistics />
         <FAQ />
+        <MatildaCEO />
       </NextUIProvider>
       <Footer />
     </div>
