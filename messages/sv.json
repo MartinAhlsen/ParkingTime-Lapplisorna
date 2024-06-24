@@ -118,7 +118,6 @@
   "news": {
     "title": "Nyheter"
   },
-
   "about_us": {
     "title": "Om oss",
     "quotation": "“Av allt du behöver tänka på under dagen bör parkering vara en av de minsta. Parkering ska vara så sömlös att du knappt behöver tänka på det; det borde bara fungera. Vi kallar detta Smart Parkering.",
@@ -256,6 +255,12 @@
     "recaptcha4": "Användarvilkår",
     "recaptcha5": "gäller.",
     "terms": "Jag godkänner vilkåren"
-}
+},
+"intromessage" : {
+  "word1": "Vi",
+  "word2": "Gör",
+  "word3": "Parkering",
+  "word4": "Enkel"
  
+}
 }

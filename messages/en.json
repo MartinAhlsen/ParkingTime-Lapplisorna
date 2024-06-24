@@ -246,6 +246,12 @@
       "recaptcha4": "Terms of Service",
       "recaptcha5": "apply.",
       "terms": "I accept the terms"
+  },
+  "intromessage" : {
+    "word1": "We",
+    "word2": "Make",
+    "word3": "Parking",
+    "word4": "Easy"
   }
 }
 
