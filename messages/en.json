@@ -158,9 +158,6 @@
   "read": {
     "text": "Read more"
   },
-  "read": {
-    "text": "Read more"
-  },
   "privacypolicy": {
     "h1": "Privacy Policy",
     "p0": "Effective date: April 3, 2023",
@@ -231,7 +228,7 @@
     "p17":"For each purpose, a distinct legal basis is identified, ensuring compliance with relevant legal requirements. These purposes are clearly delineated to facilitate transparency and accountability in the processing of personal data by Parking Time Sweden AB."
   },
   "contact_us": {
-      "title": "Contac Us",
+      "title": "Contact Us",
       "paragraph": "Whether you have a question or need assistance, please fill out the form below, and our team will get back to you as soon as possible",
       "name": "Name",
       "namePlaceholder": "Name",
@@ -249,6 +246,12 @@
       "recaptcha4": "Terms of Service",
       "recaptcha5": "apply.",
       "terms": "I accept the terms"
+  },
+  "intromessage" : {
+    "word1": "We",
+    "word2": "Make",
+    "word3": "Parking",
+    "word4": "Easy"
   }
 }
 

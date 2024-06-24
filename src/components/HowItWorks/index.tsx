@@ -48,12 +48,6 @@ const HowItWorks: React.FC = () => {
             </div>  
         </div>
         <div className="flex justify-center p-10" >
-        <Button 
-          text={b("download")} 
-          url="https://play.google.com/store/apps/details?id=se.parkingtime.app&hl=en_US&pli=1" 
-          colorTheme="dark" 
-          
-        />
         <span id="why-parking-time"></span>
         </div>
         
