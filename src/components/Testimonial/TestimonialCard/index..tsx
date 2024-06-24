@@ -12,7 +12,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ imageMain, mainText, name, role }: TestimonialCardProps) => {
     return (
-        <div className='flex flex-col h-[400px] md:h-[450px] md:w-[500px] lg:h-[410px] rounded-2xl bg-white m-6 sm:m-20 md:m-6 shadow-lg'>
+        <div className='flex flex-col h-[550px] md:h-[500px] md:w-[500px] lg:w-[450px] lg:h-[485px] rounded-2xl bg-white m-6 sm:m-20 md:m-6 shadow-lg'>
             <Image className="m-8 sm:m-16 md:m-8"
                 src={imageMain}
                 width={100}
