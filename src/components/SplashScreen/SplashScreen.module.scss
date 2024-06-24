@@ -1,6 +1,6 @@
 .introduction {
   align-items: center;
-  background-color: #06433F;
+  background-color: #FFFFFF;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -15,13 +15,13 @@
     width: 100%;
 
     path {
-      fill: #06433F;
+      fill: #FFFFFF;
     }
   }
 
   p {
     align-items: center;
-    color: white;
+    color: #0C051D;
     display: flex;
     font-size: 52px;
     position: absolute;
@@ -32,7 +32,7 @@
   .introduction {
     p {
       align-items: center;
-      color: white;
+      color: #0C051D;
       display: flex;
       font-size: 84px;
       position: absolute;
