@@ -85,8 +85,7 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
             >
               First and last name *
-            </label>
-            <input
+              <input
               type="text"
               name="name"
               id="name"
@@ -96,6 +95,8 @@ function HomeInside() {
               placeholder="First and last name"
               //   {...register("name", { required: true })}
             />
+            </label>
+
           </div>
           <div className="wrapper flex flex-col md:flex-row md:gap-3">
             <div className="flex-grow wrapperEmail mb-5">
@@ -105,8 +106,7 @@ function HomeInside() {
                 id="email"
               >
                 Email *
-              </label>
-              <input
+                <input
                 type="email"
                 name="email"
                 value={email}
@@ -115,6 +115,8 @@ function HomeInside() {
                 placeholder="example@domain.com"
                 //   {...register("email", { required: true })}
               />
+              </label>
+
             </div>
             <div className="wrapperPhoneNumber mb-5">
               <label
@@ -123,8 +125,7 @@ function HomeInside() {
                 id="phoneNumber"
               >
                 Phone number
-              </label>
-              <input
+                <input
                 type="tel"
                 name="phoneNumber"
                 value={phoneNumber}
@@ -133,6 +134,8 @@ function HomeInside() {
                 placeholder="+46708123456"
                 //   {...register("phoneNumber", { required: true })}
               />
+              </label>
+
             </div>
           </div>
           <div className="wrapperRFC mb-5">
@@ -142,8 +145,7 @@ function HomeInside() {
               id="reasonForContact"
             >
               Reason for contact
-            </label>
-            <input
+              <input
               type="text"
               name="reasonForContact"
               value={reasonForContact}
@@ -152,6 +154,8 @@ function HomeInside() {
               placeholder="Reason for contact"
               //   {...register("name", { required: true })}
             />
+            </label>
+
           </div>
           <div className="wrapperMessage mb-5">
             <label
@@ -159,9 +163,8 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
               id="message"
             >
-              Write us a message
-            </label>
-            <textarea
+              Write us a message *
+              <textarea
               rows={4}
               name="message"
               value={message}
@@ -171,6 +174,8 @@ function HomeInside() {
               placeholder="Type your message"
               //   {...register("message", { required: true })}
             />
+            </label>
+            
           </div>
           <p className="p3 mb-5">This site is protected by reCAPTCHA and the Google 
     <a className=" text-blue-500" href="https://policies.google.com/privacy"> Privacy Policy </a> and 
