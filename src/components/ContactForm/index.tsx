@@ -78,14 +78,14 @@ function HomeInside() {
   return (
     <div className="container">
       <main className="mt-5">
-        <form onSubmit={handleSubmitForm} className="bg-pt-gray2 p-4">
+        <form id="contactForm" onSubmit={handleSubmitForm} className="bg-pt-gray2 p-4">
           <div className="wrapperName mb-5">
             <label
               htmlFor="name"
               className="mb-5 block text-base font-medium text-black p1"
               id="name"
             >
-              First and last name
+              First and last name *
             </label>
             <input
               type="text"
@@ -104,7 +104,7 @@ function HomeInside() {
                 className="mb-5 block text-base font-medium text-black p1"
                 id="email"
               >
-                Email
+                Email *
               </label>
               <input
                 type="email"
