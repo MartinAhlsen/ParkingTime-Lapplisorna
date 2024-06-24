@@ -75,7 +75,7 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
       
       <p className='h4 max-w-[300px] md:max-w-[700px] py-6'>{article.title_en}</p>
       <Image
-                        className='rounded-xl w-full h-[240px] md:h-[650px] object-cover mb-4 py-6'
+                        className='rounded-xl w-full h-[240px] md:h-[650px] md:w-[1000px] object-cover mb-4 py-6'
                         src={article.image_article}
                         width={1000}
                         height={650}
