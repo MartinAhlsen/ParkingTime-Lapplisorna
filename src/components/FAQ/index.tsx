@@ -38,11 +38,6 @@ const FAQ = () => {
         </AccordionItem>
       </Accordion>
       <div className="flex justify-center pb-6">
-      <Button 
-          text={b("contact_us")} 
-          url={`/${locale}/contact_us`}
-          colorTheme="dark" 
-        />
         </div>
     </div>
   );

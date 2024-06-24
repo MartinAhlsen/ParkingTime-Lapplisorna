@@ -83,7 +83,7 @@ function HomeInside() {
   return (
     <div className="container">
       <main className="mt-5">
-        <form onSubmit={handleSubmitForm} className="bg-pt-gray2 p-4">
+        <form onSubmit={handleSubmitForm} className="p-4">
           <div className="wrapperName mb-5">
             <label
               htmlFor="name"
@@ -96,7 +96,7 @@ function HomeInside() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder={t("namePlaceholder")}
               //   {...register("name", { required: true })}
             />
@@ -114,7 +114,7 @@ function HomeInside() {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+                className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
                 placeholder={t("emailPlaceholder")}
                 //   {...register("email", { required: true })}
               />
@@ -131,7 +131,7 @@ function HomeInside() {
                 name="phoneNumber"
                 value={phoneNumber}
                 onChange={(e) => setphoneNumber(e.target.value)}
-                className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+                className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
                 placeholder={t("phoneNumberPlaceholder")}
                 //   {...register("phoneNumber", { required: true })}
               />
@@ -149,7 +149,7 @@ function HomeInside() {
               name="reasonForContact"
               value={reasonForContact}
               onChange={(e) => setReasonForContact(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder={t("reasonForContactPlaceholder")}
               //   {...register("name", { required: true })}
             />
@@ -166,7 +166,7 @@ function HomeInside() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               //   {...register("phoneNumber", { required: true })}
               placeholder={t("writeMessagePlaceholder")}
               //   {...register("message", { required: true })}

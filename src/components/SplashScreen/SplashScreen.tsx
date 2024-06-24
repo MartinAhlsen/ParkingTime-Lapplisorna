@@ -3,51 +3,34 @@ import styles from './SplashScreen.module.scss'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
+import { useTranslations } from 'next-intl'
 
-type WordsType = {
-  [key: string]: string[]
-}
 
-const words: WordsType = {
-  en: [
-    'We',
-    'Make',
-    "Parking",
-    'Easy',
-  ],
-  sv: [
-    'Vi',
-    'Gör',
-    "Parkering",
-    'Enkel',
-  ]
-}
-
-interface SplashScreenProps {
-  locale: string
-}
-
-const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
+export default function SplashScreen() {
   const [index, setIndex] = useState(0)
-  const [dimension, setDimension] = useState<{ width: number, height: number }>({ width: 0, height: 0 })
-  const [isMounted, setIsMounted] = useState(false)
+  const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
+  const t= useTranslations("intromessage")
+
+  const words = [
+    t("word1"),
+    t("word2"),
+    t("word3"),
+    t("word4"),
+  ]
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
-    setIsMounted(true)
   }, [])
 
   useEffect(() => {
-    if (!isMounted) return
-    if (index === words[locale].length - 1) return
-    const timer = setTimeout(
+    if (index == words.length - 1) return
+    setTimeout(
       () => {
         setIndex(index + 1)
       },
-      index === 0 || index === 3 ? 800 : 200, //control speed by words; 1st and last word slower
+      index == 0 ||index==3  ? 800 : 200, //here control speed by words //1st and last word slower originalk value 150
     )
-    return () => clearTimeout(timer)
-  }, [index, locale, isMounted])
+  }, [index])
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -69,10 +52,6 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
     },
   }
 
-  if (!isMounted) {
-    return null
-  }
-
   return (
     <motion.div
       variants={slideUp}
@@ -80,10 +59,11 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
       exit="exit"
       className={styles.introduction}
     >
-      {dimension.width > 0 && words[locale] && (
+      {dimension.width > 0 && (
         <>
           <motion.p variants={opacity} initial="initial" animate="enter">
-            {words[locale][index]}
+            
+            {words[index]}
           </motion.p>
           <svg>
             <motion.path
@@ -97,5 +77,3 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ locale }) => {
     </motion.div>
   )
 }
-
-export default SplashScreen
