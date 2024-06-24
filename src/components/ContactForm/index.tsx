@@ -83,6 +83,7 @@ function HomeInside() {
             <label
               htmlFor="name"
               className="mb-5 block text-base font-medium text-black p1"
+              id="name"
             >
               First and last name
             </label>
@@ -101,6 +102,7 @@ function HomeInside() {
               <label
                 htmlFor="email"
                 className="mb-5 block text-base font-medium text-black p1"
+                id="email"
               >
                 Email
               </label>
@@ -118,6 +120,7 @@ function HomeInside() {
               <label
                 htmlFor="phoneNumber"
                 className="mb-5 block text-base font-medium text-black p1"
+                id="phoneNumber"
               >
                 Phone number
               </label>
@@ -136,6 +139,7 @@ function HomeInside() {
             <label
               htmlFor="reasonForContact"
               className="mb-5 block text-base font-medium text-black p1"
+              id="reasonForContact"
             >
               Reason for contact
             </label>
@@ -153,6 +157,7 @@ function HomeInside() {
             <label
               htmlFor="message"
               className="mb-5 block text-base font-medium text-black p1"
+              id="message"
             >
               Write us a message
             </label>
@@ -179,7 +184,7 @@ function HomeInside() {
               onChange={(e) => setTerms(e.target.checked)}
               className="form-check-input"
             />
-            <label className="form-check-label">I accept the terms</label>
+            <label className="form-check-label" id="formCheckLabel">I accept the terms</label>
           </div>
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text="Send message" />
