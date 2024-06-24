@@ -35,6 +35,10 @@ function HomeInside() {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleSubmitForm = async (e: React.FormEvent) => {
+    const debug = {
+      name, email, phoneNumber, reasonForContact, message, terms, notification
+    }
+    console.log(debug)
     e.preventDefault();
     if (!executeRecaptcha) {
       console.log("Execute recaptcha not available yet");
@@ -45,6 +49,7 @@ function HomeInside() {
     }
     try {
       const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
+      console.log("recaptcha token" + gRecaptchaToken)
       await submitEnquiryForm(gRecaptchaToken);
     } catch (error) {
       console.log("Recaptcha execution error:", error);
@@ -85,18 +90,16 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
             >
               First and last name *
-              <input
+            </label>
+            <input
               type="text"
               name="name"
-              id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder="First and last name"
               //   {...register("name", { required: true })}
             />
-            </label>
-
           </div>
           <div className="wrapper flex flex-col md:flex-row md:gap-3">
             <div className="flex-grow wrapperEmail mb-5">
@@ -106,7 +109,8 @@ function HomeInside() {
                 id="email"
               >
                 Email *
-                <input
+              </label>
+              <input
                 type="email"
                 name="email"
                 value={email}
@@ -115,8 +119,6 @@ function HomeInside() {
                 placeholder="example@domain.com"
                 //   {...register("email", { required: true })}
               />
-              </label>
-
             </div>
             <div className="wrapperPhoneNumber mb-5">
               <label
@@ -125,7 +127,8 @@ function HomeInside() {
                 id="phoneNumber"
               >
                 Phone number
-                <input
+              </label>
+              <input
                 type="tel"
                 name="phoneNumber"
                 value={phoneNumber}
@@ -134,8 +137,6 @@ function HomeInside() {
                 placeholder="+46708123456"
                 //   {...register("phoneNumber", { required: true })}
               />
-              </label>
-
             </div>
           </div>
           <div className="wrapperRFC mb-5">
@@ -145,7 +146,8 @@ function HomeInside() {
               id="reasonForContact"
             >
               Reason for contact
-              <input
+            </label>
+            <input
               type="text"
               name="reasonForContact"
               value={reasonForContact}
@@ -154,8 +156,6 @@ function HomeInside() {
               placeholder="Reason for contact"
               //   {...register("name", { required: true })}
             />
-            </label>
-
           </div>
           <div className="wrapperMessage mb-5">
             <label
@@ -163,8 +163,9 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
               id="message"
             >
-              Write us a message *
-              <textarea
+              Write us a message
+            </label>
+            <textarea
               rows={4}
               name="message"
               value={message}
@@ -174,8 +175,6 @@ function HomeInside() {
               placeholder="Type your message"
               //   {...register("message", { required: true })}
             />
-            </label>
-            
           </div>
           <p className="p3 mb-5">This site is protected by reCAPTCHA and the Google 
     <a className=" text-blue-500" href="https://policies.google.com/privacy"> Privacy Policy </a> and 
