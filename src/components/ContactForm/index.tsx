@@ -71,6 +71,11 @@ function HomeInside() {
 
       if (response.data.success) {
         setNotification(`Success with score: ${response.data.score}`);
+        const responseEmail = await axios.post("/api/email", {
+          name,
+          email,
+          message,
+        });
       } else {
         setNotification(`Failure with score: ${response.data.score}`);
       }

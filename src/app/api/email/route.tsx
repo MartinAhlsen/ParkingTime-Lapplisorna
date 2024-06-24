@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
+  console.log("testing email")
   try {
     const { email, name, message } = await request.json();
 
@@ -16,14 +17,14 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.MY_GEMAIL,
-        pass: process.env.MY_GPASSWORD,
+        user: process.env.MY_GMAIL,
+        pass: process.env.MY_GMAIL_PASSWORD,
       },
     });
 
     const mailOptions: Mail.Options = {
-      from: process.env.MY_GEMAIL,
-      to: process.env.MY_GEMAIL,
+      from: process.env.MY_GMAIL,
+      to: process.env.MY_GMAIL,
       subject: `Message from ${name} (${email})`,
       text: message,
     };

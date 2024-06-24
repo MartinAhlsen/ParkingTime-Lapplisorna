@@ -3,6 +3,7 @@ import { NextResponse, NextRequest } from "next/server";
 import axios from "axios";
 
 export async function POST(request: NextRequest) {
+  console.log("testing POST")
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 
   if (!secretKey) {
