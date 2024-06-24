@@ -39,8 +39,8 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
           <p className="text-lg md:text-2xl">{t("text3")}</p>
           <p className="text-lg md:text-2xl mb-10">{t("text4")}</p>
           <div className="flex flex-col md:flex-row md:space-x-4 md:space-y-0 space-y-4">
+          <Button {...DownloadButton}/>
             <Button {...ContactButton}/>
-            <Button {...DownloadButton}/>
           </div>
           <div className="absolute inset-x-0 bottom-0 h-32 md:h-16 flex flex-wrap md:flex-nowrap justify-around items-center text-white p-4 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md">
             <div className="w-1/2 md:w-auto text-center md:text-left mb-2 md:mb-0">
