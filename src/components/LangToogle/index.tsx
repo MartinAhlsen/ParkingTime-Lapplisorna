@@ -86,7 +86,7 @@ const LangToogle = () => {
               transition: { duration: 0.4 },
             }}
             viewport={{ once: true }}
-            className="absolute rounded mt-3 -ml-3 z-20 items-center text-white bg-pt-primary w-[73px]"
+            className="absolute rounded mt-3 -ml-3 z-20 items-center bg-pt-primary w-[73px]"
           >
             <motion.li
               initial={{ opacity: 0, y: -10 }}

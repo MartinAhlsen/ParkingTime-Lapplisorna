@@ -13,7 +13,7 @@ const MatildaCEO: React.FC = () => {
   const locale = useLocale();
 
   return (
-    <div className="h-[840px] md:h-[494px] bg-pt-primary flex flex-col text-center text-white items-center p-6 md:flex-row">
+    <div className="h-[840px] md:h-[494px] bg-pt-navyblue flex flex-col text-center text-white items-center p-6 md:flex-row">
       <div className="flex flex-col basis-1/2 items-center">
                 <Image className="rounded-full aspect-square object-cover p-2"
                     src={MatildaImg}

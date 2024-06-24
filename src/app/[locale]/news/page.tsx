@@ -15,11 +15,6 @@ const t = useTranslations("home")
       <Header />
       <Banner page="news" />
       <Articles />
-      <TitleSubtitle
-        title={t("Comp_4_title")}
-        subtitle={t("Comp_4_subtitle")}
-        overtitle={t("Comp_4_overtitle")}
-      />
       <Footer/>
     </>
   );
