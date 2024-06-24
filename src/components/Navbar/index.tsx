@@ -59,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-5 bg-pt-primary items-center sticky top-0 z-50 flex justify-evenly grow shadow-2xl" style={{height: '80px'}}>
+    <nav className="p-5 bg-pt-gray2 items-center sticky top-0 z-50 flex justify-evenly grow shadow-2xl" style={{height: '80px'}}>
       <div className="flex justify-between grow">
         <Link href={`/${locale}/`} className="flex items-center">
           <Image
@@ -123,7 +123,7 @@ const Navbar = () => {
           initial="closed"
           animate="open"
           variants={wrapperVariants}
-          className="bg-pt-primary w-full md:hidden flex flex-col p-6 space-y-4 fixed top-[80px]"
+          className="bg-pt-gray2 w-full md:hidden flex flex-col p-6 space-y-6 fixed top-[70px]"
         >
           <Link href={`/${locale}/#why-parking-time`} className="button-text" >{t("Why_parking_time?")}</Link>
           <Link href={`/${locale}/about_us`} className="block mb-2 button-text">{t("About_us")}</Link>
