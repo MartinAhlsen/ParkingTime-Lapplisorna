@@ -6,12 +6,13 @@ export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
-    secure: false, // true for 465, false for other ports
-    port: 587,
+    service: "Gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: process.env.MY_EMAIL,
-      pass: process.env.MY_PASSWORD,
+      user: process.env.MY_GEMAIL,
+      pass: process.env.MY_GPASSWORD,
     },
     tls: {
       ciphers: "SSLv3",
@@ -19,8 +20,8 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
+    from: process.env.MY_GEMAIL,
+    to: process.env.MY_GEMAIL,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `Message from ${name} (${email})`,
     text: message,
