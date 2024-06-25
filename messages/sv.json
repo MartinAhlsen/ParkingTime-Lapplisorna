@@ -241,6 +241,8 @@
     "paragraph": "Om du har en fråga eller behöver hjäp så får du gärna fylla i fomuläret. Vårt team återkommer till dig så snart som möjligt.",
     "name": "Namn",
     "namePlaceholder": "Namn",
+    "jobTitle": "Arbetstitel",
+    "jobTitlePlaceholder": "Arbetstitel",
     "email": "Epost",
     "emailPlaceholder": "exempel@domän.se",
     "phoneNumber": "Telefonnummer",
