@@ -61,7 +61,7 @@ const About_us = () => {
         subtitle={know("paragraph")}
         overtitle={null}
       />
-      <div className="flex justify-center py-12">
+      <div className="flex justify-center py-12 bg-pt-background">
       <Button 
           text={b("contact_us")} 
           url={`/${locale}/contact_us`}
