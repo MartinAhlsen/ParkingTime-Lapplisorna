@@ -232,6 +232,8 @@
       "paragraph": "Whether you have a question or need assistance, please fill out the form below, and our team will get back to you as soon as possible",
       "name": "Name",
       "namePlaceholder": "Name",
+      "jobTitle": "Job title",
+      "jobTitlePlaceholder": "Job title",
       "email": "Email",
       "emailPlaceholder": "example@domain.com",
       "phoneNumber": "Phone number",

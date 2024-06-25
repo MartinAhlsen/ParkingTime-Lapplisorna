@@ -18,7 +18,7 @@ const Contact_us = () => {
     <>
       <Header />
       <Banner page="contact" />
-      <div className="contactContainer flex flex-col md:flex-row md:p-[80px] pt-[100px] px-[30px] pb-[80px] justify-evenly">
+      <div className="contactContainer flex flex-col md:flex-row md:p-[80px] pt-[100px] px-[30px] pb-[80px] justify-evenly bg-pt-gray2">
         <div className="informationContainer flex flex-col md:basis-2/5">
           <h3 className="h3">{t("title")}</h3>
           <p className="p1">
@@ -38,7 +38,7 @@ const Contact_us = () => {
             <ContactLink
               imageLink={MapLocationIcon}
               title={"maplocation icon"}
-              paragraph={"Nyköpingsvögen 52 | 611 50"}
+              paragraph={"Nyköpingsvägen 52 | 611 50"}
               paragraph2={"Nyköping"}
             />
           </div>
