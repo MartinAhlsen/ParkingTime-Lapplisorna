@@ -35,7 +35,7 @@ const Contact_us = () => {
             <ContactLink
               imageLink={MapLocationIcon}
               title={"maplocation icon"}
-              paragraph={"Nyköpingsvögen 52 | 611 50"}
+              paragraph={"Nyköpingsvägen 52 | 611 50"}
               paragraph2={"Nyköping"}
             />
           </div>
