@@ -27,7 +27,7 @@ const ContactLink = ({
   return (
     <div className={`relative flex gap-1`}>
       <div
-        className={`imageWrapper flex ${title !== "maplocation icon" ? "align-center" : "justify-start flex-grow-0"}`}
+        className={`imageWrapper ${title !== "maplocation icon" ? " flex align-center" : "pt-2"}`}
       >
         <Image
           src={imageLink}
@@ -66,7 +66,7 @@ const ContactLink = ({
               <p className="p-2 flex items-center">{paragraph2}</p>
             )}
             {copied && (
-              <div className="button-text absolute top-0 left-0 w-full h-full flex items-center justify-center bg-pt-secondary text-white z-10 rounded-full">
+              <div className="button-text absolute top-0 left-0 w-[165px] px-10 h-full flex items-center justify-center text-nowrap bg-pt-secondary text-white z-10 rounded-full">
                 Copied to clipboard
               </div>
             )}
