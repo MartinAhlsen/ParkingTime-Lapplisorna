@@ -247,7 +247,10 @@
       "recaptcha3": "and",
       "recaptcha4": "Terms of Service",
       "recaptcha5": "apply.",
-      "terms": "I accept the terms"
+      "terms": "I accept the terms",
+      "required": "This field is required",
+      "agreeToTerms": "You must agree to the terms"
+
   },
   "intromessage" : {
     "word1": "We",
