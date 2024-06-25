@@ -14,7 +14,7 @@ const t = useTranslations("home")
   return (
     <>
       <Header />
-      <Banner page="news" />
+      <Banner page="faq_page" />
       <FAQ />
       <Footer/>
     </>
