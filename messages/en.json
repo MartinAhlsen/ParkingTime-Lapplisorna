@@ -248,7 +248,9 @@
     "recaptcha5": "apply.",
     "terms1": "I accept the ",
     "terms2": "terms",
-    "language": "/en"
+    "language": "/en",
+    "required": "This field is required",
+    "agreeToTerms": "You must agree to the terms"
   },
   "intromessage": {
     "word1": "We",

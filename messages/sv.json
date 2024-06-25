@@ -235,8 +235,8 @@
     "paragraph": "Om du har en fråga eller behöver hjäp så får du gärna fylla i fomuläret. Vårt team återkommer till dig så snart som möjligt.",
     "name": "Namn",
     "namePlaceholder": "Namn",
-    "jobTitle": "Arbetstitel",
-    "jobTitlePlaceholder": "Arbetstitel",
+    "jobTitle": "Yrkestitel",
+    "jobTitlePlaceholder": "Yrkestitel",
     "email": "Epost",
     "emailPlaceholder": "exempel@domän.se",
     "phoneNumber": "Telefonnummer",
@@ -252,7 +252,9 @@
     "recaptcha5": "gäller.",
     "terms1": "Jag godkänner ",
     "terms2": "villkoren",
-    "language": "/sv"
+    "language": "/sv",
+    "required": "Fältet är obligatoriskt",
+    "agreeToTerms": "Du behöver acceptera villkoren"
   },
   "intromessage": {
     "word1": "Vi",
