@@ -1,0 +1,40 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 148px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c051d;
+    color: white;
+    z-index: 10;
+    border-radius: 15%;
+    padding: 0 15px;
+}
