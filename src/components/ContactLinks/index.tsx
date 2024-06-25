@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./contactLinks.module.css"; // Assuming you have defined this correctly
 
 interface ContactLinkProps {
   imageLink: StaticImageData;
@@ -26,7 +25,7 @@ const ContactLink = ({
   };
 
   return (
-    <div className={`relative flex gap-1 ${styles.contactLinkContainer}`}>
+    <div className={`relative flex gap-1`}>
       <div
         className={`imageWrapper flex ${title !== "maplocation icon" ? "align-center" : "justify-start flex-grow-0"}`}
       >
@@ -58,14 +57,10 @@ const ContactLink = ({
         ) : (
           <>
             <p
-              className={`p-2 flex items-center relative cursor-pointer ${styles.hoverUnderlineAnimation}`}
+              className={`p-2 flex items-center relative cursor-pointer`}
               onClick={() => handleCopyToClipboard(paragraph)}
             >
               {paragraph}
-              {/* Underline animation */}
-              <span
-                className={`absolute inset-x-0 bottom-0 h-0.5 bg-current transform origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}
-              />
             </p>
             {paragraph2 && (
               <p className="p-2 flex items-center">{paragraph2}</p>
