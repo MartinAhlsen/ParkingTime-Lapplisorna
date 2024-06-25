@@ -108,6 +108,111 @@
     },
     "news": {
       "title": "Nyheder"
-    }
-  }
+    },
+    "about_us": {
+    "title": "Om os",
+    "quotation": "“Af alle de ting, du skal tænke på i løbet af dagen, bør parkering være en af de mindste. Parkering bør være så problemfri, at du næsten ikke behøver at tænke på det; det skal bare fungere. Vi kalder dette Smart Parkering.",
+    "author": "- Matilda, CEO og grundlægger.",
+    "values_title": "Vores værdier",
+    "values_subtitle": "Hvad vi tror på",
+    "card_1_title": "Enkelhed",
+    "card_1_p": "Vi stræber efter at skabe enkle og smidige oplevelser.",
+    "card_2_title": "Innovation",
+    "card_2_p": "Altid forsøger at forbedre og gøre vores app til en leder inden for sit felt.",
+    "card_3_title": "Brugervenlig",
+    "card_3_p": "Det er afgørende, at vores service opfylder brugernes behov og forbedrer deres parkeringsoplevelse."
+  },
+  "buttons": {
+    "contact_us": "Kontakt os",
+    "download": "Download app",
+    "learnmore": "Lær mere om os",
+    "view_all": "Se alle",
+    "meeting": "Book et møde",
+    "sendMessage": "Send besked"
+  },
+  "howitworks": {
+    "main_title": "Hvordan det fungerer",
+    "t1": "Indtast dit registreringsnummer",
+    "p1": "Åbn appen, registrer med dit bils registreringsnummer.",
+    "t2": "Find din ønskede parkeringsplads",
+    "p2": "Brug kortet, søgefunktionen eller zonelisten til at finde din ønskede parkeringsplads.",
+    "t3": "Start din digitale parkeringsskive",
+    "p3": "Når du har valgt din parkeringszone, kan du gennemgå eventuelle gældende regler, starte parkeringen og derefter blot lukke appen."
+  },
+  "story": {
+    "title1": "Vores Vision",
+    "p1": "Parkeringstid Sverige er en tech startup, der sigter mod at revolutionere parkeringsoplevelsen for alle involverede parter – parkøren, parkeringsvagten, kommunen og ejendomsejeren.",
+    "p2": "Vi tilbyder i øjeblikket en gratis digital parkeringsskive i en app for at supplere det eksisterende udvalg af parkeringsapps.",
+    "title2": "Vores Historie",
+    "p3": "Parkeringstid Sverige blev grundlagt i 2021 i Luleå. I dag opererer vi i hele Sverige med ambitionen om at ekspandere globalt i de kommende år, og vi håber at have dig med på vores rejse!"
+  },
+  "team": {
+    "title": "Mød vores team",
+    "subtitle": "Hvert medlem bringer en unik blanding af ekspertise, passion og fremsynet mindset.",
+    "role1": "Administrerende direktør",
+    "role2": "Chief Technical Officer",
+    "role3": "Regnskabsfører",
+    "role4": "Forretningsstrateg"
+  },
+  "read": {
+    "text": "Læs mere"
+  },
+  "privacypolicy": {
+    "h1": "Privatlivspolitik",
+    "p0": "Gyldighedsdato: 3. april 2023",
+    "h2-privacypolicy": "Privatlivspolitik",
+    "p1": "Denne politik gælder for alle hjemmesider hos Parking Time Sweden AB. Persondatapolitikken gælder for Parking Time i forbindelse med tjenester og produkter relateret til køb, kundeservice, anden kontakt med Parking Time og besøg på hjemmesiden. Dine personlige data er vigtige for os.",
+    "h2-personaldata": "Dine personlige data er vigtige for os",
+    "p2": "Parking Time indsamler og behandler personlige data om dig, når du besøger eller foretager køb på en af vores hjemmesider eller kontakter Parking Time via e-mail eller sociale medier. Parking Time er forpligtet til at beskytte dit privatliv og stræber efter høj databeskyttelse. Denne privatlivspolitik forklarer, hvorfor og hvordan vi indsamler og bruger dine personlige oplysninger. Den beskriver også dine rettigheder og hvordan du kan udøve dem. Det er vigtigt for os, at de persondata, du betror os som kunde og læser, håndteres på en omhyggelig, ansvarlig, gennemsigtig og lovlig måde.",
+    "h2-responsible": "Hvem er ansvarlig for de data, vi indsamler?",
+    "p3": "Parking Time Sweden AB er ansvarlig for behandlingen af dine personlige data hos Parking Time og er ansvarlig for at sikre, at sådan behandling sker i overensstemmelse med gældende lovgivning.",
+    "h2-whatispersonaldata": "Hvad er persondata?",
+    "p4": "Persondata er enhver form for information, der direkte eller indirekte kan tilskrives en levende person. Eksempler på persondata omfatter navn, e-mailadresse, telefonnummer og personnummer. Billeder og videooptagelser betragtes også som persondata, selvom ingen navne nævnes. Krypterede data og forskellige elektroniske identiteter (såsom IP-adresser) betragtes også som persondata, hvis de kan tilknyttes fysiske personer.",
+    "h2-personaldatacomefrom": "Hvor kommer dine persondata fra?",
+    "p5": "Den primære kilde til persondata om dig er dig selv, såsom de oplysninger, du giver, når du tilmelder dig en abonnement, kontakter os via e-mail og modtager / svarer på en e-mailkommunikation. Persondata oprettes også som følge af, at du læser information på vores hjemmeside, bruger tjenester og kommunikerer med os. For eksempel kan vi gemme besøgs-, trafik- og andre kommunikationsdata. Eksempler på sådanne persondata inkluderer din IP-adresse. Disse data indsamles via cookies og bruges til at vise indhold til dig baseret på målrettet besøgsinformation. For at gøre dette har vi brug for dit samtykke. Du giver dette ved at acceptere cookies, når du besøger vores hjemmeside.",
+    "h2-parkingtimeinformation": "Hvor får Parking Time information for parkeringszonerne fra?",
+    "p6": "Parking Time Sweden AB præsenterer parkeringszoner i appen. Oplysninger om parkeringszonerne kommer fra de kommuner, der ejer appen. Oplysningerne importeres fra kommunerne, og Parking Time er et aktieselskab og repræsenterer ikke nogen offentlig myndighed.",
+    "h2-personaldatacollect": "Persondata vi indsamler om dig, hvis du kræver dem",
+    "p7": "Vi indsamler persondata, som du giver os, såsom dit navn, kontaktoplysninger og betalingsoplysninger. Vi kan også indsamle data om din brug af vores tjenester for at forbedre vores tilbud.",
+    "li1": "Fornavn og efternavn.",
+    "li2": "Brugerens køretøjsregistreringsnummer.",
+    "li3": "Brugerens GPS-placering ved parkeringstidspunktet.",
+    "li4": "Kontaktoplysninger (adresse, e-mail og telefonnummer).",
+    "h2-cookies": "Cookies",
+    "p8": "I en cookie er det muligt at spore en brugers browseraktivitet. Cookies bruges til at give dig som besøgende adgang til forskellige funktioner og til at tilpasse indhold i vores tjenester. Vi bruger cookies til at indsamle indhold i vores annoncering. Vi bruger også cookies på vores hjemmeside til at indsamle statistik over, hvor meget hjemmesiden anvendes. En cookie er en tekstfil, der gemmes på din enhed, så hjemmesiden kan genkende din enhed. Denne cookie indeholder ikke personlige oplysninger. Der er to typer cookies: permanente og midlertidige (såkaldte sessionscookies). Permanente cookies gemmes på filer på din enhed i længere tid, mens sessionscookies midlertidigt placeres på din enhed og kun bruges, mens du browser på hjemmesiden, de slettes derefter. Hvis du vil vide, hvornår din enhed modtager en cookie, kan du indstille din browser til at give dig besked. På denne måde har du mulighed for at acceptere eller afvise cookies. Din enhed kan også indstilles til at afvise alle cookies. Vær opmærksom på, at hvis du vælger ikke at acceptere cookies, kan visse funktioner i vores online tjenester muligvis ikke længere fungere som til tænkt.",
+    "h2-consent": "Særlige overvejelser for samtykke til direkte markedsføring",
+    "p9": "Såfremt du har givet os dit udtrykkelige samtykke, vil vi løbende sende og offentliggøre information og markedsføring via forskellige digitale kanaler baseret på din profil. Du kan til enhver tid framelde dig modtagelse af markedsføringskommunikation fra os ved at klikke på afmeld i den e-mail- eller SMS-kommunikation, som vi sender dig. Du kan også kontakte Parking Time via [e-mail] for hjælp til at framelde vores kommunikation.",
+    "h2-keepinformation": "Hvor længe opbevarer vi dine oplysninger?",
+    "p10": "Dine personlige data opbevares kun så længe der er behov for at opbevare dem for at opfylde de formål, hvortil dataene blev indsamlet. Parking Time kan opbevare dataene længere, hvis det er nødvendigt for at overholde juridiske krav eller for at beskytte Parking Time's juridiske interesser, f.eks. under en retlig proces.",
+    "h2-sharepersonal": "Hvem kan vi dele dine personlige oplysninger med?",
+  },
+  "contact_us": {
+  "title": "Kontakt os",
+  "paragraph": "Hvis du har spørgsmål eller har brug for hjælp, udfyld venligst formularen nedenfor, og vores team vil vende tilbage til dig så hurtigt som muligt.",
+  "name": "Navn",
+  "namePlaceholder": "Navn",
+  "jobTitle": "Jobtitel",
+  "jobTitlePlaceholder": "Jobtitel",
+  "email": "Email",
+  "emailPlaceholder": "eksempel@domæne.dk",
+  "phoneNumber": "Telefonnummer",
+  "phoneNumberPlaceholder": "+46708123456",
+  "reasonForContact": "Årsag til kontakt",
+  "reasonForContactPlaceholder": "Årsag til kontakt",
+  "writeMessage": "Skriv os en besked",
+  "writeMessagePlaceholder": "Skriv din besked her",
+  "recaptcha1": "Denne side er beskyttet af reCAPTCHA og Google",
+  "recaptcha2": "Privatlivspolitik",
+  "recaptcha3": "og",
+  "recaptcha4": "Servicevilkår",
+  "recaptcha5": "gælder.",
+  "terms": "Jeg accepterer vilkårene"
+},
+"intromessage": {
+  "word1": "Vi",
+  "word2": "Gør",
+  "word3": "Parkering",
+  "word4": "Enkelt"
+}
+}
   
