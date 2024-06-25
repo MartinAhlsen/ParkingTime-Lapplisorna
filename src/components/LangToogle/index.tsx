@@ -7,6 +7,7 @@ import { useEffect, useState, useTransition } from 'react';
 import Image from 'next/image';
 import Sweden from "../../../public/Images/languages/sweden.png"
 import England from "../../../public/Images/languages/uk.png"
+import Norway from "../../../public/Images/languages/norway.png"
 
 
 const defaultLanguage = 'sv'; 
@@ -22,7 +23,7 @@ const LangToogle = () => {
   useEffect(() => {
     
     const localeFromUrl = pathname.split('/')[1];
-    if (localeFromUrl && ['sv', 'en'].includes(localeFromUrl)) {
+    if (localeFromUrl && ['sv', 'en', "no"].includes(localeFromUrl)) {
       setSelectedLocale(localeFromUrl);
     } else {
       setSelectedLocale(defaultLanguage); 
@@ -58,6 +59,8 @@ const LangToogle = () => {
       return Sweden;
     } else if (locale === 'en') {
       return England;
+    } else if (locale === "no") {
+      return Norway
     } else {
       return Sweden; // Default to Swedish if locale is not recognized
     }
@@ -128,6 +131,27 @@ const LangToogle = () => {
                 className="mr-2"
               />{' '}
               En
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.4 },
+              }}
+              viewport={{ once: true }}
+              onClick={() => onSelectChange('no')}
+              className="flex items-center p-2 cursor-pointer"
+            >
+              <Image
+                src={Norway}
+                alt="Norwigian"
+                width={20}
+                height={20}
+                className="mr-2"
+              />{' '}
+              No
             </motion.li>
           </motion.ul>
         )}

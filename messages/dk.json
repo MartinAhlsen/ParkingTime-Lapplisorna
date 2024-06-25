@@ -1,0 +1,113 @@
+{
+    "home": {
+      "title": "Parkeringstid",
+      "Comp_2_title": "Hvordan virker det?",
+      "Comp_3_title": "Kundeudtalelser",
+      "Comp_3_subtitle": "Hør fra nogle af vores kunder",
+      "Comp_4_title": "Nyheder",
+      "Comp_4_subtitle": "Vi udvider hurtigt, læs vores nyheder her",
+      "Comp_4_overtitle": "Nyheder",
+      "Comp_5_title": "Har du et spørgsmål?",
+      "Comp_5_subtitle": "Her er nogle almindelige spørgsmål besvaret",
+      "Comp_5_overtitle": "FAQ"
+    },
+    "NavItem": {
+      "Why_parking_time?": "Hvorfor Parkeringstid?",
+      "About_us": "Om os",
+      "News": "Nyheder",
+      "FAQ": "FAQ",
+      "Contact_us": "Kontakt os",
+      "language": "Skift sprog"
+    },
+    "hero": {
+      "text1": "Hvad er klokken?",
+      "text2": "Parkeringstid!",
+      "text3": "Digital parkeringsskive - direkte på din mobil.",
+      "text4": "Et vindende koncept i et nyt, digitalt format",
+      "sub1": "Let at bruge",
+      "sub2": "Gratis at downloade",
+      "sub3": "Undgå bøder",
+      "sub4": "Reducer stress",
+      "news1": "Nyheder",
+      "news2": "Vi transformerer",
+      "news3": "parkeringsoplevelser",
+      "contact1": "Kontakt",
+      "contact2": "Vi vil gerne",
+      "contact3": "høre fra dig!",
+      "about1": "Om os",
+      "about2": "Parkeringstid Sverige",
+      "about3": "Vi er en tech startup dedikeret til at transformere parkeringsoplevelsen",
+      "about4": "for alle interessenter – parkeringsbrugere, parkeringsvagter,",
+      "about5": "kommuner og ejendomsejere.",
+      "faq_page1": "FAQ",
+      "faq_page2": "Mest hyppigt",
+      "faq_page3": "stillede spørgsmål!"
+    },
+    "smart_parking_solution": {
+      "title": "Smart parkeringsløsning",
+      "paragraph": "Parkeringsskiven har længe været et værktøj til at fremme cirkulation og aktivitet i din bys centrum. Det er en fantastisk opfindelse, der gavner både beboere, besøgende og lokale virksomheder. Vi vil være en del af denne udvikling ved at skabe en gratis digital parkeringsskive.",
+      "arrow1": "Vi sigter mod at støtte væksten og effektiviteten i byområder.",
+      "arrow2": "Vores digitale parkeringsskive forenkler parkeringsprocessen.",
+      "arrow3": "Ethvert parkeringsvagtsystem kan nemt integreres med vores system.",
+      "final_paragraph": "Vi ser frem til at dele mere om vores løsning ved et møde."
+    },
+    "testimonials": {
+      "title": "Kundeudtalelser",
+      "subtitle": "Hør fra nogle af vores kunder",
+      "main_text1": "“Parkeringstid har markant forbedret vores parkeringshåndtering og bruger tilfredshed i byens centrum. Brugervenligheden og det intuitive interface har gjort det nemt for beboere og besøgende at finde og administrere parkering. Vi anbefaler stærkt Parkeringstid til andre kommuner, der leder efter en moderne og effektiv parkeringsløsning.”",
+      "main_text2": "“Implementeringen af Parkeringstid har været en game-changer for vores byplanlægningsindsatser. De detaljerede brugsdata og adfærdsmønstre, som appen leverer, har givet os værdifuld indsigt i parkeringsmønstre og hjulpet os med at optimere vores parkeringsressourcer. Parkeringstid har virkelig revolutioneret vores tilgang til parkering og byudvikling.”",
+      "role1": "Byarkitekt, Falköping Kommune",
+      "role2": "Kommunalchef, Nässjö Kommune"
+    },
+    "why_parking_time": {
+      "title": "Hvorfor Parkeringstid?",
+      "Comp_1_title": "Øgede indtægter & reduceret stress",
+      "Comp_1_paragraph": "Vores digitale løsning tiltrækker flere besøgende ved at eliminere fysiske skiver og reducere bøder. Dette forenkler parkeringen, øger fodtrafik, økonomisk aktivitet og byens livlighed, samtidig med at stress reduceres.",
+      "Comp_2_title": "Forenklet parkering for brugere",
+      "Comp_2_paragraph": "Vores app lader dig nemt indstille, justere og overvåge parkeringstid. Med en brugervenlig grænseflade kan du hurtigt finde pladser og administrere parkering. Vi opdaterer løbende baseret på kundefeedback for at sikre en effektiv og problemfri oplevelse.",
+      "Comp_3_title": "Integration med eksisterende systemer",
+      "Comp_3_paragraph": "Vores system til parkeringsvagter integreres problemfrit med dit eksisterende setup. Et samlet system gavner dig ved at strømline operationer og forbedre oplevelsen for personale ved at eliminere behovet for to forskellige systemer og enheder. Vi gør denne integration effektiv, intuitiv og enkel!",
+      "Comp_4_title": "Datadrevet byplanlægning",
+      "Comp_4_paragraph": "Den digitale parkeringsskive kan på sigt optimere parkeringsressourcer og byplanlægning gennem værdifulde brugsdata og adfærdsmønstre, hvilket fører til et sikrere samfund med bedre kontrol og adgang til parkeringspladser."
+    },
+    "statistics": {
+      "stat1": "Downloads",
+      "stat2": "Parkeringssessioner",
+      "stat3": "Parkeringszoner"
+    },
+    "download_now": {
+      "title": "Download nu",
+      "p": "Appen er gratis at downloade for dig som bruger. Din kommune skal dog være registreret som kunde hos os, for at vores app er gyldig i dit område. Hvis vores app ikke er tilgængelig i din kommune, er du velkommen til at kontakte os eller foreslå os til din kommune!"
+    },
+    "MatildaCEO": {
+      "title": "Vil du vide mere?",
+      "paragraph": "Kontakt os for at finde ud af mere om vores løsning og hvordan vi kan implementere den i din kommune.",
+      "text1": "Matilda Öhman, CEO"
+    },
+    "FAQ": {
+      "title1": "Hvad er Parkeringstid?",
+      "answer1": "Parkeringstid er en ny fantastisk teknologi, der vil hjælpe dig i hverdagen med at justere din p-skive",
+      "title2": "Hvordan bruger jeg Parkeringstid?",
+      "answer2": "Download appen og brug den gratis! Når du har brug for at parkere, juster din digitale p-skive!",
+      "title3": "Er det gratis?",
+      "answer3": "Selvfølgelig er det gratis!",
+      "title4": "Hvordan får jeg det i min kommune?",
+      "answer4": "Kontakt din kommune, hvis du vil implementere denne fantastiske teknologi i dit område!",
+      "title5": "Kendte problemer med appen",
+      "answer5": "Ingen kendte problemer med appen! Bedste app og hjemmeside nogensinde!"
+    },
+    "footer": {
+      "contact": "Kontakt",
+      "about_us": "Om os",
+      "news": "Nyheder",
+      "policy": "Privatlivspolitik",
+      "link": "Links"
+    },
+    "policy": {
+      "title": "Politik EN"
+    },
+    "news": {
+      "title": "Nyheder"
+    }
+  }
+  
