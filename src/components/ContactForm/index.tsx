@@ -59,7 +59,7 @@ function HomeInside() {
         setNotification(`Success with score: ${response.data.score}`);
         await axios.post("/api/email", formData);
         setShowMessagePopup(true);
-        setTimeout(() => setShowMessagePopup(false), 5000);
+        setTimeout(() => setShowMessagePopup(false), 8000);
       } else {
         setNotification(`Failure with score: ${response.data.score}`);
       }
