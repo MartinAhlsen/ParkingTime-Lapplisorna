@@ -1,18 +1,18 @@
-"use client";
-
 import React, { useState } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import axios from "axios";
 import GoogleCaptchaWrapper from "@/app/google-captcha-wrapper";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "@/app/utils/sendEmail";
 import Button from "@/components/Button";
 import { useTranslations } from "next-intl";
 
-interface PostData {
-  gRecaptchaToken: string;
+interface FormData {
   name: string;
+  jobTitle: string;
   email: string;
+  phoneNumber?: string;
+  reasonForContact?: string;
+  message: string;
   terms: boolean;
 }
 
@@ -25,60 +25,35 @@ export function Home2() {
 }
 
 function HomeInside() {
-  const [name, setName] = useState("");
-  const [jobTitle, setJobTitle] = useState(""); // New state for job title
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [reasonForContact, setReasonForContact] = useState("");
-  const [message, setMessage] = useState("");
-  const [terms, setTerms] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
   const [notification, setNotification] = useState("");
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
-
-  const handleSubmitForm = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!executeRecaptcha) {
-      console.log("Execute recaptcha not available yet");
-      setNotification(
-        "Execute recaptcha not available yet likely meaning key not recaptcha key not set"
-      );
-      return;
-    }
+  const onSubmit = async (data: FormData) => {
     try {
       const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
-      await submitEnquiryForm(gRecaptchaToken);
+      if (gRecaptchaToken) {
+        await submitEnquiryForm({ ...data, gRecaptchaToken });
+      } else {
+        setNotification("Failed to obtain reCAPTCHA token.");
+      }
     } catch (error) {
       console.log("Recaptcha execution error:", error);
       setNotification("Recaptcha execution error");
     }
   };
 
-  const submitEnquiryForm = async (gRecaptchaToken: string) => {
+  const submitEnquiryForm = async (formData: FormData) => {
     try {
-      const response = await axios.post("/api/contactFormSubmit", {
-        name,
-        jobTitle,
-        email,
-        phoneNumber,
-        reasonForContact,
-        message,
-        terms,
-        gRecaptchaToken,
-      });
+      const response = await axios.post("/api/contactFormSubmit", formData);
 
       if (response.data.success) {
         setNotification(`Success with score: ${response.data.score}`);
-        const responseEmail = await axios.post("/api/email", {
-          name,
-          jobTitle,
-          email,
-          phoneNumber,
-          reasonForContact,
-          message,
-          terms,
-        });
+        await axios.post("/api/email", formData);
       } else {
         setNotification(`Failure with score: ${response.data.score}`);
       }
@@ -94,24 +69,36 @@ function HomeInside() {
   return (
     <div className="container">
       <main className="mt-5">
-        <form id="contactForm" onSubmit={handleSubmitForm} className="bg-pt-gray2 p-4">
+        <form
+          id="contactForm"
+          onSubmit={handleSubmit(onSubmit)}
+          className="bg-pt-gray2 p-4"
+        >
           <div className="wrapperName mb-5">
             <label
               htmlFor="name"
               className="mb-5 block text-base font-medium text-black p1"
             >
               {t("name")}
+              {
+                <span
+                  className={`ml-1 ${errors.name ? "text-red-500" : "text-black"}`}
+                >
+                  *
+                </span>
+              }
             </label>
             <input
               type="text"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              {...register("name", { required: true })}
+              className={`form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2 ${errors.name ? "border-red-500" : ""}`}
               placeholder={t("namePlaceholder")}
             />
+            {errors.name && (
+              <span className="text-red-500">{t("required")}</span>
+            )}
           </div>
-          <div className="wrapperJobTitle mb-5"> {/* New Job Title field */}
+          <div className="wrapperJobTitle mb-5">
             <label
               htmlFor="jobTitle"
               className="mb-5 block text-base font-medium text-black p1"
@@ -120,10 +107,8 @@ function HomeInside() {
             </label>
             <input
               type="text"
-              name="jobTitle"
-              value={jobTitle}
-              onChange={(e) => setJobTitle(e.target.value)}
-              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              {...register("jobTitle")}
+              className={`form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2`}
               placeholder={t("jobTitlePlaceholder")}
             />
           </div>
@@ -132,18 +117,25 @@ function HomeInside() {
               <label
                 htmlFor="email"
                 className="mb-5 block text-base font-medium text-black p1"
-                id="email"
               >
                 {t("email")}
+                {
+                  <span
+                    className={`ml-1 ${errors.email ? "text-red-500" : "text-black"}`}
+                  >
+                    *
+                  </span>
+                }
               </label>
               <input
                 type="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+                {...register("email", { required: true })}
+                className={`form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2 ${errors.email ? "border-red-500" : ""}`}
                 placeholder={t("emailPlaceholder")}
               />
+              {errors.email && (
+                <span className="text-red-500">{t("required")}</span>
+              )}
             </div>
             <div className="wrapperPhoneNumber mb-5">
               <label
@@ -155,9 +147,7 @@ function HomeInside() {
               </label>
               <input
                 type="tel"
-                name="phoneNumber"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                {...register("phoneNumber")}
                 className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
                 placeholder={t("phoneNumberPlaceholder")}
               />
@@ -173,9 +163,7 @@ function HomeInside() {
             </label>
             <input
               type="text"
-              name="reasonForContact"
-              value={reasonForContact}
-              onChange={(e) => setReasonForContact(e.target.value)}
+              {...register("reasonForContact")}
               className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder={t("reasonForContactPlaceholder")}
             />
@@ -187,37 +175,46 @@ function HomeInside() {
               id="message"
             >
               {t("writeMessage")}
+              {
+                <span
+                  className={`ml-1 ${errors.message ? "text-red-500" : "text-black"}`}
+                >
+                  *
+                </span>
+              }
             </label>
             <textarea
               rows={4}
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              {...register("message", { required: true })}
+              className={`form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2 ${errors.message ? "border-red-500" : ""}`}
               placeholder={t("writeMessagePlaceholder")}
             />
+            {errors.message && (
+              <span className="text-red-500">{t("required")}</span>
+            )}
           </div>
           <p className="p3 mb-5">
             {t("recaptcha1")}
-            <a className="text-blue-500" href="https://policies.google.com/privacy">
-              {` ${t("recaptcha2")} `}
-            </a>
+            <a
+              className="text-blue-500"
+              href="https://policies.google.com/privacy"
+            >{` ${t("recaptcha2")} `}</a>{" "}
             {t("recaptcha3")}
-            <a className="text-blue-500" href="https://policies.google.com/terms">
-              {` ${t("recaptcha4")} `}
-            </a>
+            <a
+              className="text-blue-500"
+              href="https://policies.google.com/terms"
+            >{` ${t("recaptcha4")} `}</a>
             {t("recaptcha5")}
           </p>
           {notification && <p className="mt-3 text-info">{notification}</p>}
-          <div className="wrapperTerms mb-5 form-check">
+          <div className="wrapperTems mb-5 form-check">
             <input
               type="checkbox"
-              name="terms"
-              checked={terms}
-              onChange={(e) => setTerms(e.target.checked)}
+              {...register("terms", { required: true })}
               className="form-check-input"
             />
-            <label className="form-check-label ml-1">{t("terms")}</label>
+            <label className="form-check-label ml-1">{t("terms")}*</label>
+            {<span className="text-red-500 ml-1">{t("agreeToTerms")}</span>}
           </div>
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
@@ -228,16 +225,4 @@ function HomeInside() {
   );
 }
 
-export type FormData = {
-  name: string;
-  email: string;
-  message: string;
-};
-
-const Contact = () => {
-  const { register, handleSubmit } = useForm<FormData>();
-
-  function onSubmit(data: FormData) {
-    sendEmail(data);
-  }
-};
+export default HomeInside;
