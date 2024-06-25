@@ -82,7 +82,7 @@ const Navbar = () => {
             <Link href={`/${locale}/news`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("News")}</li>
             </Link>
-            <Link href={`/${locale}/#faq`} className="flex items-center">
+            <Link href={`/${locale}/faq_page`} className="flex items-center">
               <li className="hover:border-b button-text text-nowrap">{t("FAQ")}</li>
             </Link>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
           <Link href={`/${locale}/#why-parking-time`} className="button-text" >{t("Why_parking_time?")}</Link>
           <Link href={`/${locale}/about_us`} className="block mb-2 button-text">{t("About_us")}</Link>
           <Link href={`/${locale}/news`} className="block mb-2 button-text">{t("News")}</Link>
-          <Link href={`/${locale}/#faq`} className="block mb-2 button-text">{t("FAQ")}</Link>
+          <Link href={`/${locale}/faq_page`} className="block mb-2 button-text">{t("FAQ")}</Link>
           <div className="flex items-center">
             <LangToggle/>
             <span className="ml-2">{t("language")}</span>
