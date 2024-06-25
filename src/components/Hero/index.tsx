@@ -104,7 +104,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       );
       break;
       case 'faq_page':
-      src = '/Images/hero-faq.png';
+      src = '/Images/hero-FAQ.png';
       alt = 'Contact Banner';
       imageClass = 'h-[40vh] object-cover max-w-full';
       bannerContent = (
