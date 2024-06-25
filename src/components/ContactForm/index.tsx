@@ -14,6 +14,7 @@ interface FormData {
   reasonForContact?: string;
   message: string;
   terms: boolean;
+  gRecaptchaToken: string;
 }
 
 export function Home2() {
@@ -35,11 +36,14 @@ function HomeInside() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
-      if (gRecaptchaToken) {
+      if (executeRecaptcha) {
+        const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
+        if (gRecaptchaToken) {
+          await submitEnquiryForm({ ...data, gRecaptchaToken });
+        } else {
+          setNotification("Failed to obtain reCAPTCHA token.");
+        }
         await submitEnquiryForm({ ...data, gRecaptchaToken });
-      } else {
-        setNotification("Failed to obtain reCAPTCHA token.");
       }
     } catch (error) {
       console.log("Recaptcha execution error:", error);
@@ -206,16 +210,23 @@ function HomeInside() {
             >{` ${t("recaptcha4")} `}</a>
             {t("recaptcha5")}
           </p>
-          {notification && <p className="mt-3 text-info">{notification}</p>}
-          <div className="wrapperTems mb-5 form-check">
+          {notification && (
+            <p className="mt-3 text-info">
+              {"Message sent and recaptcha suscceeded"}
+            </p>
+          )}
+          <div className="wrapperTerms mb-5 form-check">
             <input
               type="checkbox"
               {...register("terms", { required: true })}
               className="form-check-input"
             />
             <label className="form-check-label ml-1">{t("terms")}*</label>
-            {<span className="text-red-500 ml-1">{t("agreeToTerms")}</span>}
+            {errors.terms && (
+              <span className="text-red-500 ml-1">{t("agreeToTerms")}</span>
+            )}
           </div>
+
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
           </div>
