@@ -228,7 +228,7 @@ function HomeInside() {
           <div className="wrapperButton flex items-center relative">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
             {showMessagePopup && (
-              <div className="popup bg-[#63d285] text-white  ml-3 absolute inset-y-0 left-[-13px] rounded-full button-text py-[15px] px-[32px] h-[48px] w-[303px] flex justify-center items-center text-nowrap">
+              <div className="popup bg-[#63d285] text-pt-gray2  ml-3 absolute inset-y-0 left-[-13px] rounded-full button-text py-[15px] px-[32px] h-[48px] w-[303px] flex justify-center items-center text-nowrap">
                 Message sent successfully!
               </div>
             )}
