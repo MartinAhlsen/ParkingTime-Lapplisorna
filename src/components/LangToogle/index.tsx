@@ -67,7 +67,7 @@ const LangToogle = () => {
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="rounded bg-transparent text-white px-4 py-1 flex items-center"
+        className="rounded bg-transparent text-white md:ml-4 flex items-center"
       >
         <Image
           src={getFlagImage(selectedLocale)}
@@ -86,7 +86,7 @@ const LangToogle = () => {
               transition: { duration: 0.4 },
             }}
             viewport={{ once: true }}
-            className="absolute rounded mt-3 ml-2 z-20 items-center text-white md:bg-pt-primary w-[73px]"
+            className="absolute rounded mt-3 -ml-3 z-20 items-center bg-pt-primary w-[73px]"
           >
             <motion.li
               initial={{ opacity: 0, y: -10 }}

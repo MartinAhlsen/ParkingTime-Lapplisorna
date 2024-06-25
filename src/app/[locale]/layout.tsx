@@ -2,7 +2,7 @@ import React from "react";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import "../globals.css"
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 import { Metadata } from 'next';
 import { Lato, Roboto } from "next/font/google";
 
@@ -44,8 +44,6 @@ export default async function LocaleLayout({
       <NextIntlClientProvider messages={messages} >
           {children}
         </NextIntlClientProvider>
-     
-        <Footer />
       </body>
     </html>
   );

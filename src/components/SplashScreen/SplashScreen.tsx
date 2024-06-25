@@ -3,50 +3,21 @@ import styles from './SplashScreen.module.scss'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { opacity, slideUp } from './animation'
-
-const words = [
-  'Parkera',
-  'Enkel',
-  "Med",
-  'Parking Time',
-]
-/*
-ALTERNATIVE DEMO 3
-const words = [
-  'Vi',
-  'Gör',
-  'Parkering',
-  'Enkel'
-  
-]*/
+import { useTranslations } from 'next-intl'
 
 
-/*DEMO2
-const words = [
-  'Parking...',
-  'Has',
-  'Never',
-  'Been',
-  'So',
-  'Easy',
-  "with",
-  'Parking Time',
-  
-]*/
-/*DEMO 1
-const words = [
-  'Parking',
-  'Has',
-  'Never',
-  'Been',
-  'So',
-  'Easy',
-  
-]*/
 export default function SplashScreen() {
   const [index, setIndex] = useState(0)
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
+  const t= useTranslations("intromessage")
+
+  const words = [
+    t("word1"),
+    t("word2"),
+    t("word3"),
+    t("word4"),
+  ]
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
   }, [])

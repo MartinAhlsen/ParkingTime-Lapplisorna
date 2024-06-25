@@ -1,8 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import Button from "../Button";
 
-
-
 interface BannerProps {
   page: string;
 }
@@ -13,8 +11,6 @@ interface ButtonProperties {
   colorTheme: "light" | "dark";
   formCategoryState?: string;
 }
- 
-
 
 const Banner: React.FC<BannerProps> = ({ page }) => {
   let src, alt, imageClass, bannerContent;
@@ -43,10 +39,10 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
           <p className="text-lg md:text-2xl">{t("text3")}</p>
           <p className="text-lg md:text-2xl mb-10">{t("text4")}</p>
           <div className="flex flex-col md:flex-row md:space-x-4 md:space-y-0 space-y-4">
+          <Button {...DownloadButton}/>
             <Button {...ContactButton}/>
-            <Button {...DownloadButton}/>
           </div>
-          <div className="bg-pt-green bg-opacity-80 absolute inset-x-0 bottom-0 h-32 md:h-16 flex flex-wrap md:flex-nowrap justify-around md:justify-center items-center md:space-x-20 text-white p-4">
+          <div className="absolute inset-x-0 bottom-0 h-32 md:h-16 flex flex-wrap md:flex-nowrap justify-around items-center text-white p-4 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md">
             <div className="w-1/2 md:w-auto text-center md:text-left mb-2 md:mb-0">
               <p>• {t("sub1")}</p>
             </div>
@@ -68,7 +64,7 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       alt = 'News Banner';
       imageClass = 'h-[40vh] object-cover md:h-auto';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
             <span className="text-lg button-text">{t("news1")}</span>
           </div>
@@ -80,23 +76,23 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
     case 'contact':
       src = '/Images/hero-contact.png';
       alt = 'Contact Banner';
-      imageClass = 'hidden md:block';
+      imageClass = 'h-[40vh] object-cover max-w-full';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
-          <div className="flex items-center mb-4">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-800 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+          <div className="md:flex items-center mb-4">
             <span className="text-lg button-text">{t("contact1")}</span>
           </div>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
-          <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
+          <h1 className="md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("contact2")}</h1>
+          <h1 className="md:block button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("contact3")}</h1>
         </div>
       );
       break;
     case 'about':
       src = '/Images/hero-aboutUs.png';
       alt = 'About Us Banner';
-      imageClass = 'h-[40vh] object-cover md:h-auto max-w-full';
+      imageClass = 'h-[40vh] object-cover max-w-full';
       bannerContent = (
-        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
+        <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 bg-zinc-900 bg-opacity-20 backdrop-blur-sm md:backdrop-blur-md flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4 md:mt-2">
             <span className="text-lg button-text">{t("about1")}</span>
           </div>

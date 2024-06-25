@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ImageCarPhone from '../../../public/Images/mobileDownloadNow-picture.png';
+import ImageCarPhone from '../../../public/Images/mobileDownloadNow-picture.svg';
 import Apple from '../../../public/Images/appleButton.png';
 import Google from '../../../public/Images/googleButton.png';
 import QRCode from '../../../public/Images/qrCode.png';

@@ -1,6 +1,6 @@
 "use client"
 
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { NextUIProvider } from "@nextui-org/react";
@@ -10,7 +10,7 @@ import Header from '@/components/header';
 import Banner from '@/components/Hero';
 import SmartParkingSolution from '@/components/SmartParkingSolution';
 import HowItWorks from '@/components/HowItWorks';
-import TitleSubtitle from '@/components/TitleSubtitle';
+
 import WhyParkingTime from '@/components/WhyParkingTime';
 import TrustedBy from '@/components/TrustedBy';
 import Statistics from '@/components/Statistics';
@@ -20,6 +20,8 @@ import { trustedByOne, trustedByTwo } from "../../../public/data/trustedByData"
 import Testimonial from '@/components/Testimonial';
 import DownloadNow from '@/components/DownloadNow';
 import Articles from '@/components/Articles';
+import Footer from '@/components/Footer';
+
 interface ButtonProperties {
   text: string;
   url: string;
@@ -32,12 +34,12 @@ const TestButton: ButtonProperties = {
   url: "/se/news",
   colorTheme: "dark",
 };
+
 export default function Home() {
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
-  const [isAnimationAlreadyRun, setAnimationAlreadyRun] = useState(false);
-
   
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -46,14 +48,15 @@ export default function Home() {
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
-        window.scrollTo(0, 0);
+
       }, 1500);
     })();
   }, []);
 
-
-  
   const t = useTranslations("home");
+ 
+ 
+
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -63,24 +66,17 @@ export default function Home() {
       <Banner page={"home"} />
       <NextUIProvider>
         <SmartParkingSolution />
-        <HowItWorks/>
+        <HowItWorks />
         <WhyParkingTime />
-       
         <Testimonial />
-
         <TrustedBy arrayOne={trustedByOne} arrayTwo={trustedByTwo} />
-        <Statistics />
-        <DownloadNow />
         <Articles />
-        <MatildaCEO />
-        <TitleSubtitle
-          title={t("Comp_5_title")}
-          subtitle={t("Comp_5_subtitle")}
-          overtitle={t("Comp_5_overtitle")}
-        />
-        
+        <DownloadNow />
+        <Statistics />
         <FAQ />
+        <MatildaCEO />
       </NextUIProvider>
+      <Footer />
     </div>
   );
 }

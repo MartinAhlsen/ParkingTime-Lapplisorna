@@ -17,8 +17,8 @@ const WhyCard = ({imageLink, title, paragraph}:WhyCardProps) => {
                 height={50} 
                 alt={title} 
                 />
-            <p className="h5 text-white py-4">{title}</p>
-            <p className="p2 text-white">{paragraph}</p>
+            <p className="h5 py-4">{title}</p>
+            <p className="p2">{paragraph}</p>
           
         </div>
     )

@@ -7,6 +7,7 @@ import GoogleCaptchaWrapper from "@/app/google-captcha-wrapper";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/app/utils/sendEmail";
 import Button from "@/components/Button";
+import { useTranslations } from "next-intl";
 
 interface PostData {
   gRecaptchaToken: string;
@@ -85,6 +86,10 @@ function HomeInside() {
     }
   };
 
+
+  const t = useTranslations("contact_us");
+  const tb = useTranslations("buttons");
+
   return (
     <div className="container">
       <main className="mt-5">
@@ -94,15 +99,15 @@ function HomeInside() {
               htmlFor="name"
               className="mb-5 block text-base font-medium text-black p1"
             >
-              First and last name *
+              {t("name")}
             </label>
             <input
               type="text"
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
-              placeholder="First and last name"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              placeholder={t("namePlaceholder")}
               //   {...register("name", { required: true })}
             />
           </div>
@@ -113,15 +118,15 @@ function HomeInside() {
                 className="mb-5 block text-base font-medium text-black p1"
                 id="email"
               >
-                Email *
+                {t("email")}
               </label>
               <input
                 type="email"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
-                placeholder="example@domain.com"
+                className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+                placeholder={t("emailPlaceholder")}
                 //   {...register("email", { required: true })}
               />
             </div>
@@ -131,15 +136,15 @@ function HomeInside() {
                 className="mb-5 block text-base font-medium text-black p1"
                 id="phoneNumber"
               >
-                Phone number
+                {t("phoneNumber")}
               </label>
               <input
                 type="tel"
                 name="phoneNumber"
                 value={phoneNumber}
                 onChange={(e) => setphoneNumber(e.target.value)}
-                className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
-                placeholder="+46708123456"
+                className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+                placeholder={t("phoneNumberPlaceholder")}
                 //   {...register("phoneNumber", { required: true })}
               />
             </div>
@@ -150,15 +155,15 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
               id="reasonForContact"
             >
-              Reason for contact
+            {t("reasonForContact")}
             </label>
             <input
               type="text"
               name="reasonForContact"
               value={reasonForContact}
               onChange={(e) => setReasonForContact(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
-              placeholder="Reason for contact"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              placeholder={t("reasonForContactPlaceholder")}
               //   {...register("name", { required: true })}
             />
           </div>
@@ -168,22 +173,22 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
               id="message"
             >
-              Write us a message
+              {t("writeMessage")}
             </label>
             <textarea
               rows={4}
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="form-control w-full border border-pt-primary rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               //   {...register("phoneNumber", { required: true })}
-              placeholder="Type your message"
+              placeholder={t("writeMessagePlaceholder")}
               //   {...register("message", { required: true })}
             />
           </div>
-          <p className="p3 mb-5">This site is protected by reCAPTCHA and the Google 
-    <a className=" text-blue-500" href="https://policies.google.com/privacy"> Privacy Policy </a> and 
-    <a className=" text-blue-500" href="https://policies.google.com/terms"> Terms of Service</a> apply.</p>
+          <p className="p3 mb-5">{t("recaptcha1")}
+    <a className=" text-blue-500" href="https://policies.google.com/privacy">{` ${t("recaptcha2")} `}</a> {t("recaptcha3")}
+    <a className=" text-blue-500" href="https://policies.google.com/terms">{` ${t("recaptcha4")} `}</a>{t("recaptcha5")}</p>
           {notification && <p className="mt-3 text-info">{notification}</p>}
           <div className="wrapperTems mb-5 form-check">
             <input
@@ -193,10 +198,10 @@ function HomeInside() {
               onChange={(e) => setTerms(e.target.checked)}
               className="form-check-input"
             />
-            <label className="form-check-label" id="formCheckLabel">I accept the terms</label>
+            <label className="form-check-label">{t("terms")}</label>
           </div>
           <div className="wrapperButton">
-            <Button colorTheme="dark" type="submit" text="Send message" />
+            <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
           </div>
 
         </form>
