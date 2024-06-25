@@ -26,8 +26,9 @@ export function Home2() {
 
 function HomeInside() {
   const [name, setName] = useState("");
+  const [jobTitle, setJobTitle] = useState(""); // New state for job title
   const [email, setEmail] = useState("");
-  const [phoneNumber, setphoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [reasonForContact, setReasonForContact] = useState("");
   const [message, setMessage] = useState("");
   const [terms, setTerms] = useState(false);
@@ -36,11 +37,8 @@ function HomeInside() {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleSubmitForm = async (e: React.FormEvent) => {
-    const debug = {
-      name, email, phoneNumber, reasonForContact, message, terms, notification
-    }
-    console.log(debug)
     e.preventDefault();
+
     if (!executeRecaptcha) {
       console.log("Execute recaptcha not available yet");
       setNotification(
@@ -50,7 +48,6 @@ function HomeInside() {
     }
     try {
       const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
-      console.log("recaptcha token" + gRecaptchaToken)
       await submitEnquiryForm(gRecaptchaToken);
     } catch (error) {
       console.log("Recaptcha execution error:", error);
@@ -62,6 +59,7 @@ function HomeInside() {
     try {
       const response = await axios.post("/api/contactFormSubmit", {
         name,
+        jobTitle,
         email,
         phoneNumber,
         reasonForContact,
@@ -74,8 +72,12 @@ function HomeInside() {
         setNotification(`Success with score: ${response.data.score}`);
         const responseEmail = await axios.post("/api/email", {
           name,
+          jobTitle,
           email,
+          phoneNumber,
+          reasonForContact,
           message,
+          terms,
         });
       } else {
         setNotification(`Failure with score: ${response.data.score}`);
@@ -85,7 +87,6 @@ function HomeInside() {
       setNotification("Form submission error");
     }
   };
-
 
   const t = useTranslations("contact_us");
   const tb = useTranslations("buttons");
@@ -108,7 +109,22 @@ function HomeInside() {
               onChange={(e) => setName(e.target.value)}
               className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder={t("namePlaceholder")}
-              //   {...register("name", { required: true })}
+            />
+          </div>
+          <div className="wrapperJobTitle mb-5"> {/* New Job Title field */}
+            <label
+              htmlFor="jobTitle"
+              className="mb-5 block text-base font-medium text-black p1"
+            >
+              {t("jobTitle")}
+            </label>
+            <input
+              type="text"
+              name="jobTitle"
+              value={jobTitle}
+              onChange={(e) => setJobTitle(e.target.value)}
+              className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
+              placeholder={t("jobTitlePlaceholder")}
             />
           </div>
           <div className="wrapper flex flex-col md:flex-row md:gap-3">
@@ -127,7 +143,6 @@ function HomeInside() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
                 placeholder={t("emailPlaceholder")}
-                //   {...register("email", { required: true })}
               />
             </div>
             <div className="wrapperPhoneNumber mb-5">
@@ -142,10 +157,9 @@ function HomeInside() {
                 type="tel"
                 name="phoneNumber"
                 value={phoneNumber}
-                onChange={(e) => setphoneNumber(e.target.value)}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
                 placeholder={t("phoneNumberPlaceholder")}
-                //   {...register("phoneNumber", { required: true })}
               />
             </div>
           </div>
@@ -155,7 +169,7 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
               id="reasonForContact"
             >
-            {t("reasonForContact")}
+              {t("reasonForContact")}
             </label>
             <input
               type="text"
@@ -164,7 +178,6 @@ function HomeInside() {
               onChange={(e) => setReasonForContact(e.target.value)}
               className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
               placeholder={t("reasonForContactPlaceholder")}
-              //   {...register("name", { required: true })}
             />
           </div>
           <div className="wrapperMessage mb-5">
@@ -181,16 +194,22 @@ function HomeInside() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className="form-control w-full border border-black rounded-md bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md p2"
-              //   {...register("phoneNumber", { required: true })}
               placeholder={t("writeMessagePlaceholder")}
-              //   {...register("message", { required: true })}
             />
           </div>
-          <p className="p3 mb-5">{t("recaptcha1")}
-    <a className=" text-blue-500" href="https://policies.google.com/privacy">{` ${t("recaptcha2")} `}</a> {t("recaptcha3")}
-    <a className=" text-blue-500" href="https://policies.google.com/terms">{` ${t("recaptcha4")} `}</a>{t("recaptcha5")}</p>
+          <p className="p3 mb-5">
+            {t("recaptcha1")}
+            <a className="text-blue-500" href="https://policies.google.com/privacy">
+              {` ${t("recaptcha2")} `}
+            </a>
+            {t("recaptcha3")}
+            <a className="text-blue-500" href="https://policies.google.com/terms">
+              {` ${t("recaptcha4")} `}
+            </a>
+            {t("recaptcha5")}
+          </p>
           {notification && <p className="mt-3 text-info">{notification}</p>}
-          <div className="wrapperTems mb-5 form-check">
+          <div className="wrapperTerms mb-5 form-check">
             <input
               type="checkbox"
               name="terms"
@@ -198,12 +217,11 @@ function HomeInside() {
               onChange={(e) => setTerms(e.target.checked)}
               className="form-check-input"
             />
-            <label className="form-check-label">{t("terms")}</label>
+            <label className="form-check-label ml-1">{t("terms")}</label>
           </div>
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
           </div>
-
         </form>
       </main>
     </div>

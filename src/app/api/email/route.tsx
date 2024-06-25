@@ -6,9 +6,8 @@ export async function POST(request: NextRequest) {
   console.log("Testing email");
 
   try {
-    const { email, name, message } = await request.json();
+    const { name, jobTitle, email, phoneNumber, reasonForContact, message, } = await request.json();
 
-    // Check if required fields are present
     if (!email || !name || !message) {
       return NextResponse.json(
         { error: "Missing required fields: email, name, or message" },
@@ -16,24 +15,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create a transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.MY_GMAIL,        // Your Gmail address
-        pass: process.env.MY_GMAIL_PASSWORD,   // Your Gmail password or App Password
+        user: process.env.MY_GMAIL,
+        pass: process.env.MY_GMAIL_PASSWORD,
       },
     });
 
-    // Setup email data with unicode symbols
     const mailOptions: Mail.Options = {
-      from: process.env.MY_GMAIL,        // Sender address
-      to: process.env.MY_GMAIL,          // List of receivers (in this case, yourself)
-      subject: `Message from ${name} (${email})`, // Subject line
-      text: message,                      // Plain text body
+      from: process.env.MY_GMAIL,
+      to: process.env.MY_GMAIL,
+      subject: `Contact form message from ${name}`,
+      text: `Name: ${name} \nEmail: ${email} \n${jobTitle ? `Job title: ${jobTitle} \n` : ""}${phoneNumber ? `Phone number: ${phoneNumber} \n` : ""}${reasonForContact ? `Reason for contact: ${reasonForContact} \n` : ""}\nMessage: ${message} \n`,
     };
 
-    // Function to send email and handle promises
     const sendMailPromise = () =>
       new Promise<string>((resolve, reject) => {
         transporter.sendMail(mailOptions, function (err) {
