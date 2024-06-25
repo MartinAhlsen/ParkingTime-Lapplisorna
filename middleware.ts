@@ -5,7 +5,7 @@ import type { NextRequest } from "next/server";
 
 // This function can be marked `async` if using `await` inside
 export function middleware(request: NextRequest) {
-  console.log(process.env.MY_EMAIL);
+  console.log(process.env.MATILDA_EMAIL);
   return NextResponse.redirect(new URL("/home", request.url));
 }
 
