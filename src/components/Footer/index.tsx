@@ -6,7 +6,7 @@ const Footer = () => {
   const t = useTranslations("footer");
   const locale = useLocale();
   return (
-    <footer className="bg-pt-primary py-8 mx-auto px-8">
+    <footer className="bg-pt-gray2 py-8 mx-auto px-8">
     <div className="container mx-auto px-8 flex flex-col md:flex-row justify-between items-start">
       <div className="flex flex-col md:flex-row items-start ">
         <img src="../../Images/P-icon.png" alt="Logo" className="w-[80px] h-[80px] mb-4 md:mb-0 md:mr-4" />

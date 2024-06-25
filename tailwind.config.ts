@@ -32,7 +32,7 @@ const config: Config = {
         "pt-darkblue2": "#2A394E",
         "pt-gray1": "#868686",
         "pt-lightgrayborder": "#E8E8E8",
-        "pt-gray2": "#F0F0F0",
+        "pt-gray2": "#F9F9F9",
         "pt-navyblue":"#0B051D",
       },
       backgroundImage: {
