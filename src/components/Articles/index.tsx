@@ -34,7 +34,7 @@ const Articles: React.FC = () => {
             <TitleSubtitle
             title={t("Comp_4_title")}
             subtitle={t("Comp_4_subtitle")}
-            overtitle={t("Comp_4_overtitle")}
+            overtitle={null}
             />
             
             <div className="flex  flex-col m-6 md:grid md:grid-cols-3 md:gap-6 rounded-lg justify-evenly bg-pt-background pt-14 pb-14 md:pb-10 items-center md:items-start">
