@@ -94,7 +94,11 @@ function HomeInside() {
   return (
     <div className="container">
       <main className="mt-5">
-        <form id="contactForm" onSubmit={handleSubmitForm} className="bg-pt-gray2 p-4">
+        <form
+          id="contactForm"
+          onSubmit={handleSubmitForm}
+          className="bg-pt-gray2 p-4"
+        >
           <div className="wrapperName mb-5">
             <label
               htmlFor="name"
@@ -111,7 +115,9 @@ function HomeInside() {
               placeholder={t("namePlaceholder")}
             />
           </div>
-          <div className="wrapperJobTitle mb-5"> {/* New Job Title field */}
+          <div className="wrapperJobTitle mb-5">
+            {" "}
+            {/* New Job Title field */}
             <label
               htmlFor="jobTitle"
               className="mb-5 block text-base font-medium text-black p1"
@@ -199,11 +205,17 @@ function HomeInside() {
           </div>
           <p className="p3 mb-5">
             {t("recaptcha1")}
-            <a className="text-blue-500" href="https://policies.google.com/privacy">
+            <a
+              className="text-blue-500"
+              href="https://policies.google.com/privacy"
+            >
               {` ${t("recaptcha2")} `}
             </a>
             {t("recaptcha3")}
-            <a className="text-blue-500" href="https://policies.google.com/terms">
+            <a
+              className="text-blue-500"
+              href="https://policies.google.com/terms"
+            >
               {` ${t("recaptcha4")} `}
             </a>
             {t("recaptcha5")}
@@ -217,7 +229,15 @@ function HomeInside() {
               onChange={(e) => setTerms(e.target.checked)}
               className="form-check-input"
             />
-            <label className="form-check-label ml-1">{t("terms")}</label>
+            <label className="form-check-label ml-1">
+              {t("terms1")}
+              <a
+                className="text-blue-500"
+                href={`${t("language")}/terms_of_service`}
+              >
+                {` ${t("terms2")} `}
+              </a>
+            </label>
           </div>
           <div className="wrapperButton">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
