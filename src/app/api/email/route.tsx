@@ -19,13 +19,13 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: process.env.MATILDA_MAIL,
+        user: process.env.MATILDA_EMAIL,
         pass: process.env.MATILDA_PASSWORD,
       },
     });
 
     const mailOptions: Mail.Options = {
-      from: process.env.MATILDA_MAIL,
+      from: process.env.MATILDA_EMAIL,
       to: process.env.MY_GMAIL,
       subject: `Contact form message from ${name}`,
       text: `Name: ${name} \nEmail: ${email} \n${jobTitle ? `Job title: ${jobTitle} \n` : ""}${phoneNumber ? `Phone number: ${phoneNumber} \n` : ""}${reasonForContact ? `Reason for contact: ${reasonForContact} \n` : ""}\nMessage: ${message} \n`,
