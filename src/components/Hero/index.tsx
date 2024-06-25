@@ -104,13 +104,13 @@ const Banner: React.FC<BannerProps> = ({ page }) => {
       );
       break;
       case 'faq_page':
-      src = '/Images/hero-contact.png';
+      src = '/Images/hero-FAQ.png';
       alt = 'Contact Banner';
-      imageClass = 'hidden md:block';
+      imageClass = 'h-[40vh] object-cover max-w-full';
       bannerContent = (
         <div className="absolute inset-0 md:inset-y-0 md:left-0 md:w-2/5 lg:w-1/3 xl:w-2/5 backdrop-blur flex flex-col items-start justify-center text-white text-left p-4 md:p-8 lg:p-10 xl:p-12">
           <div className="flex items-center mb-4">
-            <span className="text-lg button-text">{t("faq_page1")}</span>
+          
           </div>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{t("faq_page2")}</h1>
           <h1 className="button-text text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10">{t("faq_page3")}</h1>

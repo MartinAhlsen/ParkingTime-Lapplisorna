@@ -9,7 +9,6 @@ export default function GoogleCaptchaWrapper({
   children: React.ReactNode;
 }) {
   const recaptchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
-  // const recaptchaKey = "6LeNVPMpAAAAAMXmnLDV2PSLLBDsqjPGcMCJIBTY";
   console.log("logging key" + process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
   console.log("RECAPTCHA_SECRET_KEY" + recaptchaKey)
   if (!recaptchaKey) {
