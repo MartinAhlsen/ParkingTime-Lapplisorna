@@ -33,6 +33,8 @@ function HomeInside() {
     formState: { errors },
   } = useForm<FormData>();
   const [notification, setNotification] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [showMessagePopup, setShowMessagePopup] = useState(false);
 
   const submitEnquiryForm = async (formData: FormData) => {
     try {
@@ -41,6 +43,8 @@ function HomeInside() {
       if (response.data.success) {
         setNotification(`Success with score: ${response.data.score}`);
         await axios.post("/api/email", formData);
+        setShowMessagePopup(true);
+        setTimeout(() => setShowMessagePopup(false), 8000);
       } else {
         setNotification(`Failure with score: ${response.data.score}`);
       }
@@ -203,11 +207,7 @@ function HomeInside() {
             >{` ${t("recaptcha4")} `}</a>
             {t("recaptcha5")}
           </p>
-          {notification && (
-            <p className="mt-3 text-info">
-              {"Message sent and recaptcha succeeded"}
-            </p>
-          )}
+          {/* {notification && <p className="mt-3 text-info">{notification}</p>} */}
           <div className="wrapperTerms mb-5 form-check">
             <input
               type="checkbox"
@@ -227,8 +227,37 @@ function HomeInside() {
             )}
           </div>
 
-          <div className="wrapperButton">
+          <div className="wrapperButton flex items-center relative">
             <Button colorTheme="dark" type="submit" text={tb("sendMessage")} />
+            {showMessagePopup && (
+              <div className="popup bg-[#63d285] text-pt-gray2  ml-3 absolute inset-y-0 left-[-13px] rounded-full button-text py-[15px] px-[32px] h-[48px] w-[303px] flex justify-center items-center text-nowrap">
+                Message sent successfully!
+              </div>
+            )}
+            {isLoading && (
+              <div className="loading-spinner ml-3">
+                <svg
+                  className="animate-spin h-5 w-5 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                  ></path>
+                </svg>
+              </div>
+            )}
           </div>
         </form>
       </main>
