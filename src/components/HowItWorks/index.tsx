@@ -17,7 +17,7 @@ const HowItWorks: React.FC = () => {
               alt="pen"
               className="w-[48px] h-[48px]"
             />
-            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-10px]">
+            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[0px]">
               01
             </div>
           </div>
@@ -38,7 +38,7 @@ const HowItWorks: React.FC = () => {
               alt="parking"
               className="w-[48px] h-[48px]"
             />
-            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-10px]">
+            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[0px]">
               02
             </div>
           </div>
@@ -59,7 +59,7 @@ const HowItWorks: React.FC = () => {
               alt="clock"
               className="w-[48px] h-[48px]"
             />
-            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[-10px]">
+            <div className="text-pt-gray2 text-[100px] leading-none font-bold absolute top-[-20px] right-[0px]">
               03
             </div>
           </div>
