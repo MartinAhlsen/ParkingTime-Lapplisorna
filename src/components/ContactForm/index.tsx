@@ -216,7 +216,14 @@ function HomeInside() {
               {...register("terms", { required: true })}
               className="form-check-input"
             />
-            <label className="form-check-label ml-1">{t("terms1")}*</label>
+            <label className="form-check-label ml-1">
+              {t("terms1")}{" "}
+              <a
+                className="text-blue-500"
+                href={`${t("language")}/terms_of_service`}
+              >{` ${t("terms2")} `}</a>
+              *
+            </label>
             {errors.terms && (
               <span className="text-red-500 ml-1">{t("agreeToTerms")}</span>
             )}
