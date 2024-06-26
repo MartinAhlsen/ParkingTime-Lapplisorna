@@ -34,28 +34,6 @@ function HomeInside() {
   } = useForm<FormData>();
   const [notification, setNotification] = useState("");
 
-  const onSubmit = async (data: FormData) => {
-    try {
-      if (executeRecaptcha) {
-        const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
-        if (gRecaptchaToken) {
-          await submitEnquiryForm({ ...data, gRecaptchaToken });
-        } else {
-          setNotification("Failed to obtain reCAPTCHA token.");
-        }
-      }
-  const onSubmit = async (data: FormData) => {
-    try {
-      if (executeRecaptcha) {
-        const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
-        await submitEnquiryForm({ ...data, gRecaptchaToken });
-      }
-    } catch (error) {
-      console.log("Recaptcha execution error:", error);
-      setNotification("Recaptcha execution error");
-    }
-  };
-
   const submitEnquiryForm = async (formData: FormData) => {
     try {
       const response = await axios.post("/api/contactFormSubmit", formData);
@@ -69,6 +47,22 @@ function HomeInside() {
     } catch (error) {
       console.log("Form submission error:", error);
       setNotification("Form submission error");
+    }
+  };
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      if (executeRecaptcha) {
+        const gRecaptchaToken = await executeRecaptcha("enquiryFormSubmit");
+        if (gRecaptchaToken) {
+          await submitEnquiryForm({ ...data, gRecaptchaToken });
+        } else {
+          setNotification("Failed to obtain reCAPTCHA token.");
+        }
+      }
+    } catch (error) {
+      console.log("Recaptcha execution error:", error);
+      setNotification("Recaptcha execution error");
     }
   };
 
@@ -89,13 +83,11 @@ function HomeInside() {
               className="mb-5 block text-base font-medium text-black p1"
             >
               {t("name")}
-              {
-                <span
-                  className={`ml-1 ${errors.name ? "text-red-500" : "text-black"}`}
-                >
-                  *
-                </span>
-              }
+              <span
+                className={`ml-1 ${errors.name ? "text-red-500" : "text-black"}`}
+              >
+                *
+              </span>
             </label>
             <input
               type="text"
@@ -128,13 +120,11 @@ function HomeInside() {
                 className="mb-5 block text-base font-medium text-black p1"
               >
                 {t("email")}
-                {
-                  <span
-                    className={`ml-1 ${errors.email ? "text-red-500" : "text-black"}`}
-                  >
-                    *
-                  </span>
-                }
+                <span
+                  className={`ml-1 ${errors.email ? "text-red-500" : "text-black"}`}
+                >
+                  *
+                </span>
               </label>
               <input
                 type="email"
@@ -184,13 +174,11 @@ function HomeInside() {
               id="message"
             >
               {t("writeMessage")}
-              {
-                <span
-                  className={`ml-1 ${errors.message ? "text-red-500" : "text-black"}`}
-                >
-                  *
-                </span>
-              }
+              <span
+                className={`ml-1 ${errors.message ? "text-red-500" : "text-black"}`}
+              >
+                *
+              </span>
             </label>
             <textarea
               rows={4}
@@ -217,7 +205,7 @@ function HomeInside() {
           </p>
           {notification && (
             <p className="mt-3 text-info">
-              {"Message sent and recaptcha suscceeded"}
+              {"Message sent and recaptcha succeeded"}
             </p>
           )}
           <div className="wrapperTerms mb-5 form-check">
@@ -248,4 +236,4 @@ function HomeInside() {
   );
 }
 
-export default HomeInside;
+export default Home2;
