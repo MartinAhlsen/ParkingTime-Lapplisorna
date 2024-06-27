@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions: Mail.Options = {
       from: process.env.MATILDA_EMAIL,
-      to: process.env.MY_GMAIL,
+      to: process.env.PARKINGTIME_EMAIL,
       subject: `Contact form message from ${name}`,
       text: `Name: ${name} \nEmail: ${email} \n${jobTitle ? `Job title: ${jobTitle} \n` : ""}${phoneNumber ? `Phone number: ${phoneNumber} \n` : ""}${reasonForContact ? `Reason for contact: ${reasonForContact} \n` : ""}\nMessage: ${message} \n`,
     };
