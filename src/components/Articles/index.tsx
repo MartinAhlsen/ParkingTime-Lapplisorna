@@ -37,9 +37,9 @@ const Articles: React.FC = () => {
             overtitle={null}
             />
             
-            <div className="flex  flex-col m-6 md:grid md:grid-cols-3 md:gap-6 rounded-lg justify-evenly bg-pt-background pt-14 pb-14 md:pb-10 items-center md:items-start">
-                {projects.map((project, index) => (
-                    <div className="flex bg-white flex-col basis-1/3 p-10 min-h-[600px] max-w-[300px] sm:min-w-[580px] md:min-h-[750px] lg:min-h-[650px] my-4" key={index}>
+            <div className="m-6 flex flex-col md:grid md:grid-cols-3 md:gap-6 rounded-lg bg-pt-background pt-14 pb-14 md:pb-10 justify-evenly items-center md:items-start">
+    {projects.map((project, index) => (
+        <div  className="bg-white flex flex-col p-10 my-4  w-full sm:w-[580px] md:min-h-[750px] lg:min-h-[650px] md:max-w-none md:w-auto" key={index}>
                         {locale==="sv" &&
                         <>
                           <Image
