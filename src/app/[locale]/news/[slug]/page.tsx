@@ -6,6 +6,7 @@ import Header from "../../../../components/header";
 import { getProjects } from "../../../../../sanity/sanity-utils";
 import Image, { StaticImageData } from 'next/image';
 import { useLocale } from "next-intl";
+import Footer from "@/components/Footer";
 
 
 
@@ -85,7 +86,9 @@ const SingleNews = ({ params }: { params: { slug: string } }) => {
       
       </>
       }
+      
      </div> 
+     <Footer />
     </>
   );
 };
