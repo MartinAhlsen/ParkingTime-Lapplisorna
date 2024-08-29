@@ -1,7 +1,7 @@
 {
   "home": {
-    "title": "Parkerings Tid",
-    "Comp_1_title": "En smart lösning för parkering",
+    "title": "Parkering Time",
+    "Comp_1_title": "Smart lösning för parkering",
     "Comp_1_paragraph": "P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
     "Comp_2_title": "Hur det fungerar",
     "Comp_3_title": "Kundreferenser",
@@ -22,10 +22,9 @@
     "language": "Ändra språk"
   },
   "hero": {
-    "text1": "Vilken tid är nu?",
-    "text2": "Parking time!",
-    "text3": "Digital parkeringsskiva - direkt på din mobil.",
-    "text4": "Ett vinnande koncept i ett nytt, digitaliserat format",
+    "text1": "Parking Time",
+    "text2": "Digital parkeringsskiva - direkt på din mobil.",
+    "text3": "Ett vinnande koncept i ett nytt, digitaliserat format",
     "sub1": "Lätt att använda",
     "sub2": "Gratis nedladdning",
     "sub3": "Undvik böter",
@@ -39,38 +38,38 @@
     "about1": "Om Oss",
     "about2": "Parking Time Sweden",
     "about3": "Vi är en teknikstartup som är dedikerad till att förändra",
-    "about4": "parkeringsupplevelsen för alla intressenter – parkerare,",
+    "about4": "parkeringsupplevelsen för alla parter – parkörer,",
     "about5": "parkeringsvakter, kommuner och fastighetsägare.",
     "faq_page1": "FAQ",
     "faq_page2": "Här är svaren",
     "faq_page3": "på våra vanligaste frågor!"
   },
   "smart_parking_solution": {
-    "title": "En smart lösning för parkering",
+    "title": "Smart lösning för parkering",
     "paragraph": "P-skivan har länge varit ett verktyg för att främja cirkulation och aktivitet i stadens centrum. Det är en fantastisk uppfinning som gynnar både invånare, besökare och lokala företag. Vi vill vara en del av denna utveckling genom att skapa en gratis digital p-skiva.",
-    "arrow1": "Vi strävar efter att stödja tillväxten och effektiviteten i stadsmiljöer.",
+    "arrow1": "Vi strävar efter att stödja tillväxten och aktiviteten i stadsmiljöer.",
     "arrow2": "Vår digitala p-skiva förenklar parkeringsprocessen.",
     "arrow3": "Befintliga parkeringsvaktssystem kan enkelt integreras med vårt system.",
-    "final_paragraph": "Vi ser fram emot att dela mer om vår lösning i ett möte."
+    "final_paragraph": "Vi ser fram emot att berätta mer om vår lösning i ett möte."
   },
   "testimonials": {
     "title": "Kundreferenser",
     "subtitle": "Hör från några av våra kunder.",
-    "main_text1": "“Parking Time har betydligt förbättrat vår parkeringshantering och användarnöjdhet i stadskärnan. Enkelheten och den intuitiva gränssnittet har gjort det enkelt för invånare och besökare att hitta och hantera parkering. Vi rekommenderar starkt Parking Time till andra kommuner som letar efter en modern och effektiv parkeringslösning.”",
-    "main_text2": "“Implementering av Parking Time har varit en spelomvandlare för vårt stadsplaneringsarbete. De detaljerade användningsdata och beteendemönster som tillhandahålls av appen har gett oss värdefulla insikter om parkeringstrender och hjälpt oss att optimera våra parkeringsresurser. Parking Time har verkligen revolutionerat vårt sätt att närma oss parkering och stadsutveckling.”",
-    "role1": "Stad Arkitekt, Falköping Kommun",
-    "role2": "Kommun ansvarig, Nässjö Kommun"
+    "main_text1": "“De flesta digitala parkeringslösningar riktar sig till avgiftsparkering, vilket inte riktigt passar oss. Därför blev vi intresserade av Parking Times lösning som innebär att enkelt kunna använda en digital p-skiva utan kostnad.”",
+    "main_text2": "“Nässjö kommun jobbar med digitalisering inom flera områden, där parkering är en del. Här har vi satsat på ett samarbete med Parking Time, vilket har fungerat väldigt bra ur flera aspekter”",
+    "role1": "Trafikingenjör, Falköping Kommun",
+    "role2": "Trafikingenjör, Nässjö Kommun"
   },
   "why_parking_time": {
     "title": "Varför Parking Time?",
     "Comp_1_title": "Undvik böter och minska stressen",
-    "Comp_1_paragraph": "Vår digitala lösning lockar fler besökare genom att eliminera fysiska skivor och minska böter. Detta förenklar parkeringen, ökar fottrafiken, ekonomisk aktivitet och stadens vitalitet samtidigt som det minskar stressen.",
+    "Comp_1_paragraph": "Genom våra innovativa funktioner hjälper vår digitala lösning invånare och besökare att parkera rätt och undvika parkeringsanmärkning - något som gynnar både trafiksäkerheten och plånboken.",
     "Comp_2_title": "Förenklad parkering för användare",
-    "Comp_2_paragraph": "Vår app låter dig enkelt sätta, justera och övervaka parkeringstiden. Med en användarvänlig gränssnitt kan du snabbt hitta platser och hantera parkering. Vi uppdaterar kontinuerligt baserat på kundfeedback för att säkerställa en effektiv och problemfri upplevelse.",
+    "Comp_2_paragraph": "Vår app låter dig enkelt sätta, justera och övervaka parkeringstiden. Med en användarvänlig gränssnitt kan du snabbt hitta platser och hantera parkering. Vi utvecklar tjänsten löpande för att säkerställa en effektiv och problemfri upplevelse.",
     "Comp_3_title": "Integration med befintliga system",
-    "Comp_3_paragraph": "Vårt system för parkeringsvakter integreras sömlöst med din befintliga setup. Ett enhetligt system gynnar dig genom att effektivisera operationer och förbättra upplevelsen för personalen genom att eliminera behovet av två olika system och enheter. Vi gör denna integration effektiv, intuitiv och enkel!",
+    "Comp_3_paragraph": "Vårt system för parkeringsvakter integreras sömlöst med ert befintliga övervakningssystem. Ett enhetligt system underlättar administration och förbättrar upplevelsen för parkeringsvakten genom att eliminera behovet av två olika system och enheter. Vi gör denna integration effektiv, intuitiv och enkel!",
     "Comp_4_title": "Datastyrd stadsplanering",
-    "Comp_4_paragraph": "Den digitala parkeringsskivan kan på sikt optimera parkeringsresurser och stadsplanering genom värdefull användningsdata och beteendemönster, vilket leder till ett säkrare samhälle med bättre kontroll och tillgång till parkeringsplatser."
+    "Comp_4_paragraph": "Genom vår digitala parkeringsskiva erbjuder vi unik parkeringsinformation och data som är värdefullt för beslutsunderlag och stadsplanering. Något som möjliggör ett balanserat trafikflöde och säkrare samhälle med optimal tillgänlighet av parkeringsplatser för besökare och invånare."
   },
   "statistics": {
     "stat1": "Nedladdningar",
@@ -78,8 +77,8 @@
     "stat3": "Parkeringplatser"
   },
   "download_now": {
-    "title": "Ladda ned nu",
-    "p": "Appen är gratis att ladda ner för dig som användare. Men din kommun måste vara registrerad som kund hos oss för att vår app ska vara giltig i ditt område. Om vår app inte är tillgänglig i din kommun är du välkommen att kontakta oss eller föreslå oss för din kommun!"
+    "title": "Ladda ned appen idag",
+    "p": "Appen är gratis att ladda ner för dig som användare. Däremot måste din kommun vara registrerad som kund hos oss för att vår app ska vara användbar i ditt område. Om vår app inte är tillgänglig i din kommun än är du varmt välkommen att kontakta oss eller föreslå oss för din kommun!"
   },
   "MatildaCEO": {
     "title": "Vill du veta mer?",
@@ -89,15 +88,15 @@
 
   "FAQ": {
     "title1": "Vad är Parking Time?",
-    "answer1": "Parking Time är en ny fantastisk teknik som hjälper dig i vardagen att justera din p-skiva.",
+    "answer1": "Parking Time är enkel och smidig parkeringsapp för parkeringar med p-skiva.",
     "title2": "Hur använder jag Parking Time?",
-    "answer2": "Ladda ner appen och använd den gratis! När du behöver parkera, justera din digitala p-skiva!",
+    "answer2": "Ladda ner appen, skriv in fordonets registreringsnummer, välj parkeringszon och starta därefter din parkering. Inga känsliga bank- eller personuppgifter krävs.",
     "title3": "Är det gratis?",
-    "answer3": "Självklart är det gratis!",
+    "answer3": "Ja det är gratis.",
     "title4": "Hur får jag det i min kommun?",
-    "answer4": "Kontakta din kommun om du vill implementera denna fantastiska teknik i ditt område!",
-    "title5": "Kända problem med appen",
-    "answer5": "Inga kända problem med appen! Bästa appen och webbplatsen någonsin!"
+    "answer4": "Kontakta din kommun om du vill att Parking Time-appen ska fungera i ditt område.",
+    "title5": "Behöver jag lämna min smartphone i bilens framruta som med den traditionella p-skivan?",
+    "answer5": "Nej, till skillnad från den traditionella p-skivan startar du din parkering i appen och tar därefter med dig din smartphone när du lämnar ditt fordon."
   },
 
   "footer": {
@@ -118,11 +117,11 @@
     "quotation": "“Av allt du behöver tänka på under dagen bör parkering vara en av de minsta. Parkering ska vara så sömlös att du knappt behöver tänka på det; det borde bara fungera. Vi kallar detta Smart Parkering.",
     "author": "- Matilda, CEO och Grundare.",
     "values_title": "Våra värderingar",
-    "values_subtitle": "Detta tror vi på.",
+    "values_subtitle": "Detta är Parking Time.",
     "card_1_title": "Enkelhet",
-    "card_1_p": "Vi strävar efter att skapa enkla och smidiga upplevelser.",
+    "card_1_p": "Vi strävar efter att hela tiden erbjuda enkla och smidiga upplevelser.",
     "card_2_title": "Innovation",
-    "card_2_p": "Försöker alltid förbättra och göra vår app till en ledande inom sitt område.",
+    "card_2_p": "Vi lyssnar till våra kunder och försöker alltid förbättra för att göra vår app ledande inom sitt område.",
     "card_3_title": "Användarvänlig",
     "card_3_p": "Det är avgörande att vår tjänst möter användarnas behov och förbättrar deras parkeringsupplevelse."
   },
@@ -145,17 +144,17 @@
   },
   "story": {
     "title1": "Vår vision",
-    "p1": "Parking Time Sweden är en teknikstartup som syftar till att revolutionera parkeringsupplevelsen för alla parter – parkerare, parkeringsvakter, kommuner och fastighetsägare. ",
-    "p2": "Vi erbjuder för närvarande en gratis digital parkeringsskiva inom en app för att komplettera det befintliga utbudet av parkeringsappar.",
+    "p1": "Vår vision är att göra parkering enklare än någonsin och dessutom tillgängliggöra vår lösning i områden som idag saknar digital parkering helt. ",
+    "p2": "Digitala parkeringslösningar möjliggör för orter att ta del av nya digitala värden - så som, effektiviseringar, kostnadsbesparingar och parkeringsinformation som är användbart som beslutsunderlag för framtida stadsplanering. Digital parkering hjälper dessutom användare att parkera korrekt och undvika böter - något som gynnar både plånboken och trafiksäkerheten.",
     "title2": "Vår historia",
-    "p3": "Parking Time Sweden grundades 2021 i Luleå. Idag verkar vi i hela Sverige med ambitionen att expandera globalt inom de kommande åren, och vi hoppas att du vill följa med oss på vår resa!"
+    "p3": "Parking Time Sweden grundades 2021 i Luleå. Idag verkar vi i hela Sverige med ambitionen att expandera globalt inom de kommande åren. Vi hoppas att ni vill vara en del av vår resa. "
   },
   "team": {
-    "title": " Möt vårat team",
-    "subtitle": "Varje medlem bidrar med en unik blandning av expertis, passion och framtidstänkande.",
-    "role1": "Verkställande Direktör",
+    "title": " Möt vårt team",
+    "subtitle": "Vårt team består av en unik blandning av expertis, passion och framtidstänkande.",
+    "role1": "VD",
     "role2": "Teknisk chef",
-    "role3": "Redovisningsekonom",
+    "role3": "Ekonomiansvarig",
     "role4": "Affärsstrateg"
   },
   "read": {
